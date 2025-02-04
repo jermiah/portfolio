@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>Your Name</h1>
+            <h2>Your Title</h2>
+            <ul class="contact-info">
+                <li>🌙 <button id="theme-toggle">Light mode</button></li>
+                <li>🌍 <button id="translate-btn">Translate to French</button></li>
+                <li>📂 <a href="#">GitHub</a></li>
+                <li>🔗 <a href="#">LinkedIn</a></li>
+                <li>📧 <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+                <li>📞 +123 456 7890</li>
+            </ul>
+            <button class="resume-btn">See Resume</button>
+        </aside>
+        <main class="content">
+            <nav class="tabs">
+                <button class="tab active" data-tab="overview">Overview</button>
+                <button class="tab" data-tab="skills">Skills</button>
+                <button class="tab" data-tab="education">Education</button>
+                <button class="tab" data-tab="experience">Experience</button>
+                <button class="tab" data-tab="certification">Certification</button>
+                <button class="tab" data-tab="extras">Extras</button>
+            </nav>
+            <section id="overview" class="tab-content active">
+                <h2>Overview</h2>
+                <p>
+                    I am a seasoned professional with experience in various industries, specializing in [Your Expertise]. 
+                    I have worked on projects involving [Key Achievements] and utilize tools like Python, SQL, AWS, and more.
+                </p>
+            </section>
+            <section id="skills" class="tab-content">Skills content here...</section>
+            <section id="education" class="tab-content">Education content here...</section>
+            <section id="experience" class="tab-content">Experience content here...</section>
+            <section id="certification" class="tab-content">Certification content here...</section>
+            <section id="extras" class="tab-content">Extras content here...</section>
+        </main>
+    </div>
+</body>
+</html>
