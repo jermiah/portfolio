@@ -21,7 +21,7 @@ const translations = {
         overview: {
             title: { en: "Overview", fr: "Aperçu" },
             content: { 
-                en: `<p>I am a Data Science Enthusiast with five years of experience in data management, product management, and financial markets. My expertise spans across banking, e-commerce, pharma, and QSR, where I have tackled complex challenges in credit risk, market mix modeling, and AI-driven analytics to deliver impactful solutions.</p>
+                en: `<p>I am a Data Science Enthusiast with five years of experience in data management, product management, and financial markets. My expertise spans across banking and financial markets.</p>
                 
                 <p>Currently pursuing a Master of Science in Data Science and Artificial Intelligence Strategy at Emlyon Business School, I am further honing my expertise in machine learning, deep learning, and large language models (LLMs). My strong academic foundation includes an MBA in Finance & Analytics and a BTech in Computer Science and Engineering, equipping me with both technical proficiency and business acumen.</p>
                 
