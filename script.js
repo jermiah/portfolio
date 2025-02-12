@@ -60,7 +60,8 @@ function updateContent() {
                 titleElement.textContent = translations.sections[sectionKey].title[lang];
             }
             
-            const contentElement = section.querySelector('p, ul, div');
+            // Changed selector to target a container that can hold multiple paragraphs.
+            const contentElement = section.querySelector('.section-content');
             if (contentElement) {
                 contentElement.innerHTML = translations.sections[sectionKey].content[lang];
             }
