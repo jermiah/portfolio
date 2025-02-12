@@ -29,7 +29,7 @@ const translations = {
                 
                 <p>I am also a Certified Scrum Product Owner, skilled in managing agile workflows and product development, ensuring seamless data-driven decision-making processes.</p>`,
                 
-                fr: `<p>Je suis un passionné de science des données avec cinq ans d'expérience en gestion des données, gestion de produit et marchés financiers. Mon expertise couvre la banque, le commerce électronique, la pharmacie et la restauration rapide (QSR), où j'ai relevé des défis complexes liés au risque de crédit, à la modélisation du mix marketing et à l'analyse basée sur l'IA pour fournir des solutions percutantes.</p>
+                fr: `<p>Je suis un passionné de science des données avec cinq ans d'expérience en gestion des données, gestion de produit et marchés financiers. Mon expertise couvre la banque et les marchés financiers.</p>
                 
                 <p>Actuellement en train de poursuivre un Master of Science en Science des Données et Stratégie d'Intelligence Artificielle à l'Emlyon Business School, j'affine encore mon expertise en apprentissage automatique, apprentissage profond et modèles de langage de grande envergure (LLMs). Ma solide formation académique comprend un MBA en Finance & Analytics et un BTech en Informatique et Ingénierie, me dotant à la fois de compétences techniques et d'une compréhension approfondie du business.</p>
                 
