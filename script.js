@@ -21,7 +21,7 @@ const translations = {
         overview: {
             title: { en: "Overview", fr: "Aperçu" },
             content: { 
-                en: `<p>I am a Data Science Enthusiast with five years of experience in data management, product management, and financial markets. My expertise spans across banking and financial markets.</p>
+                en: `<p>I am a Data Science Enthusiast with five years of experience in data management, product management, and financial markets. My expertise spans across banking, e-commerce, pharma, and QSR, where I have tackled complex challenges in credit risk, market mix modeling, and AI-driven analytics to deliver impactful solutions.</p>
                 
                 <p>Currently pursuing a Master of Science in Data Science and Artificial Intelligence Strategy at Emlyon Business School, I am further honing my expertise in machine learning, deep learning, and large language models (LLMs). My strong academic foundation includes an MBA in Finance & Analytics and a BTech in Computer Science and Engineering, equipping me with both technical proficiency and business acumen.</p>
                 
@@ -29,7 +29,7 @@ const translations = {
                 
                 <p>I am also a Certified Scrum Product Owner, skilled in managing agile workflows and product development, ensuring seamless data-driven decision-making processes.</p>`,
                 
-                fr: `<p>Je suis un passionné de science des données avec cinq ans d'expérience en gestion des données, gestion de produit et marchés financiers. Mon expertise couvre la banque et les marchés financiers.</p>
+                fr: `<p>Je suis un passionné de science des données avec cinq ans d'expérience en gestion des données, gestion de produit et marchés financiers. Mon expertise couvre la banque, le commerce électronique, la pharmacie et la restauration rapide (QSR), où j'ai relevé des défis complexes liés au risque de crédit, à la modélisation du mix marketing et à l'analyse basée sur l'IA pour fournir des solutions percutantes.</p>
                 
                 <p>Actuellement en train de poursuivre un Master of Science en Science des Données et Stratégie d'Intelligence Artificielle à l'Emlyon Business School, j'affine encore mon expertise en apprentissage automatique, apprentissage profond et modèles de langage de grande envergure (LLMs). Ma solide formation académique comprend un MBA en Finance & Analytics et un BTech en Informatique et Ingénierie, me dotant à la fois de compétences techniques et d'une compréhension approfondie du business.</p>
                 
@@ -60,8 +60,7 @@ function updateContent() {
                 titleElement.textContent = translations.sections[sectionKey].title[lang];
             }
             
-            // Changed selector to target a container that can hold multiple paragraphs.
-            const contentElement = section.querySelector('.section-content');
+            const contentElement = section.querySelector('p, ul, div');
             if (contentElement) {
                 contentElement.innerHTML = translations.sections[sectionKey].content[lang];
             }
