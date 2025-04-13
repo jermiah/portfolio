@@ -244,7 +244,7 @@ experience: {
 </ul>
 
 <h4>Deep Learning Projects 
-  <a href="https://github.com/jermiah/deep_learning/blob/main/README.md" target="_blank" style="font-size:0.75em; font-weight:normal; margin-left:8px;">(GitHub)</a>
+  <a href="https://github.com/jermiah/deep_learning/blob/main/README.md" target="_blank" style="font-size:0.75em; font-weight:normal; margin-left:8px;">(View code)</a>
 </h4>
 
 <ul>
@@ -274,7 +274,7 @@ experience: {
 </ul>
 
 <h4>Projets de Deep Learning 
-  <a href="https://github.com/jermiah/deep_learning/blob/main/README.md" target="_blank" style="font-size:0.75em; font-weight:normal; margin-left:8px;">(GitHub)</a>
+  <a href="https://github.com/jermiah/deep_learning/blob/main/README.md" target="_blank" style="font-size:0.75em; font-weight:normal; margin-left:8px;">(Voir le code)</a>
 </h4>
 
 <ul>
