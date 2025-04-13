@@ -32,7 +32,11 @@ const translations = {
   <li>Banking Experience: At BNP Paribas and HSBC, I led key projects in data assurance, automation, and product optimization—earning three awards, including the <em>Kaizen Award</em>.</li>
   <li>Product Thinking Meets Data Science: Developed a Product Strategy Assistant App using Streamlit + LLMs + RAG, generating real-time strategy suggestions for 5,000+ retail products by combining segmentation, KPIs, and feedback.</li>
   <li>Enterprise AI Research: Currently leading a project with BNP Paribas on the strategic adoption of open-source multimodal Enterprise RAG systems, evaluating business impact and KPIs.</li>
-  <li>Tools: Python, SQL, PyTorch, AWS, Power BI, Excel/VBA, Pyspark, Power Query (Certified Scrum Product Owner)</li>
+</ul>
+
+<p><strong>Tools & Technologies</strong></p>
+<ul>
+  <li>AWS, Python, PyTorch, SQL, LLMs, Fine-tuning, Power BI, Tableau, Excel/VBA, JIRA, Git</li>
 </ul>
 
 <p><strong>My Focus</strong></p>
@@ -54,7 +58,11 @@ A smart assistant for retail strategy that uses LLMs and segmentation to drive p
   <li>Expérience bancaire : Chez BNP Paribas et HSBC, j'ai dirigé des projets clés en assurance qualité des données, automatisation et optimisation produit — obtenant trois prix d'innovation, dont le <em>Kaizen Award</em>.</li>
   <li>Produit & Data Science : Création d'une application d'assistance à la stratégie produit avec Streamlit + LLMs + RAG, générant des recommandations pour plus de 5 000 produits de détail grâce à la segmentation, aux KPI et aux retours utilisateurs.</li>
   <li>Recherche en IA d'entreprise : Responsable d’un projet avec BNP Paribas sur l’adoption stratégique de RAG multimodaux open source, évaluant leur impact business et les KPI associés.</li>
-  <li>Technologies : Python, SQL, PyTorch, AWS, Power BI, Excel/VBA, Pyspark, Power Query (Certified Scrum Product Owner)</li>
+</ul>
+
+<p><strong>Outils & Technologies</strong></p>
+<ul>
+  <li>AWS, Python, PyTorch, SQL, LLMs, Fine-tuning, Power BI, Tableau, Excel/VBA, JIRA, Git</li>
 </ul>
 
 <p><strong>Mon objectif</strong></p>
@@ -66,6 +74,31 @@ Un assistant intelligent pour la stratégie de vente au détail, exploitant les 
 
 <p>Connectons-nous et construisons l’avenir ensemble.</p>
                 `
+            }
+        },
+        skills: {
+            title: { en: "Skills", fr: "Compétences" },
+            content: {
+                en: `
+<ul>
+  <li>Programming: Python, SQL, VBA</li>
+  <li>Libraries: NumPy, Pandas, Scikit-learn, PyTorch, Matplotlib</li>
+  <li>Tools: Power BI, Tableau, Excel (Advanced), JIRA, Git, Power Query</li>
+  <li>Cloud & Automation: AWS, Streamlit, Web scraping, Automation (macros/scripts)</li>
+  <li>AI Specialization: LLMs, Fine-tuning, RAG architecture</li>
+  <li>Methodologies: Agile, Scrum (Certified Scrum Product Owner)</li>
+</ul>
+`,
+                fr: `
+<ul>
+  <li>Programmation : Python, SQL, VBA</li>
+  <li>Librairies : NumPy, Pandas, Scikit-learn, PyTorch, Matplotlib</li>
+  <li>Outils : Power BI, Tableau, Excel (avancé), JIRA, Git, Power Query</li>
+  <li>Cloud & Automatisation : AWS, Streamlit, Web scraping, automatisation (macros/scripts)</li>
+  <li>Spécialisation en IA : LLMs, Fine-tuning, architecture RAG</li>
+  <li>Méthodologies : Agile, Scrum (Certified Scrum Product Owner)</li>
+</ul>
+`
             }
         }
     }
@@ -109,4 +142,23 @@ document.addEventListener('DOMContentLoaded', function() {
     updateContent();
     const langToggle = document.getElementById('lang-toggle');
     langToggle.addEventListener('click', toggleLanguage);
+
+    // Section tab switching logic
+    document.querySelectorAll('#main-nav .nav-link').forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('data-target');
+
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+
+            document.querySelectorAll('#main-nav .nav-link').forEach(link => {
+                link.classList.remove('active');
+            });
+
+            document.getElementById(targetId).classList.add('active');
+            this.classList.add('active');
+        });
+    });
 });
