@@ -81,22 +81,26 @@ Un assistant intelligent pour la stratégie de vente au détail, exploitant les 
             content: {
                 en: `
 <ul>
-  <li>Programming: Python, SQL, VBA</li>
-  <li>Libraries: NumPy, Pandas, Scikit-learn, PyTorch, Matplotlib</li>
-  <li>Tools: Power BI, Tableau, Excel (Advanced), JIRA, Git, Power Query</li>
-  <li>Cloud & Automation: AWS, Streamlit, Web scraping, Automation (macros/scripts)</li>
-  <li>AI Specialization: LLMs, Fine-tuning, RAG architecture</li>
-  <li>Methodologies: Agile, Scrum (Certified Scrum Product Owner)</li>
+  <li><strong>Programming:</strong> Python, R, SQL, NoSQL, VBA (Excel Macros)</li>
+  <li><strong>Libraries & Frameworks:</strong> PyTorch, TensorFlow, Keras, LangChain, Hugging Face, Scikit-learn, NumPy, Pandas</li>
+  <li><strong>Data Tools:</strong> Power BI, Tableau, Advanced Excel, Power Query, Bloomberg, Reuters</li>
+  <li><strong>Cloud & Platforms:</strong> AWS, GCP, Snowflake, Databricks</li>
+  <li><strong>AI & ML:</strong> Machine Learning, Deep Learning, NLP, Large Language Models (LLMs), Fine-tuning, RAG architecture, Prompt Engineering</li>
+  <li><strong>Version Control & DevOps:</strong> Git, GitHub, CUDA</li>
+  <li><strong>Project Management:</strong> Agile, Scrum (Certified Scrum Product Owner), Jira</li>
+  <li><strong>Domain Knowledge:</strong> Financial Markets, Product Management, Data Assurance, Regulatory Compliance, Retail Analytics</li>
 </ul>
 `,
                 fr: `
 <ul>
-  <li>Programmation : Python, SQL, VBA</li>
-  <li>Librairies : NumPy, Pandas, Scikit-learn, PyTorch, Matplotlib</li>
-  <li>Outils : Power BI, Tableau, Excel (avancé), JIRA, Git, Power Query</li>
-  <li>Cloud & Automatisation : AWS, Streamlit, Web scraping, automatisation (macros/scripts)</li>
-  <li>Spécialisation en IA : LLMs, Fine-tuning, architecture RAG</li>
-  <li>Méthodologies : Agile, Scrum (Certified Scrum Product Owner)</li>
+  <li><strong>Programmation :</strong> Python, R, SQL, NoSQL, VBA (Macros Excel)</li>
+  <li><strong>Bibliothèques & Frameworks :</strong> PyTorch, TensorFlow, Keras, LangChain, Hugging Face, Scikit-learn, NumPy, Pandas</li>
+  <li><strong>Outils de Données :</strong> Power BI, Tableau, Excel avancé, Power Query, Bloomberg, Reuters</li>
+  <li><strong>Cloud & Plateformes :</strong> AWS, GCP, Snowflake, Databricks</li>
+  <li><strong>IA & ML :</strong> Machine Learning, Deep Learning, NLP, Modèles de langage (LLMs), Fine-tuning, architecture RAG, Ingénierie de prompt</li>
+  <li><strong>Contrôle de version & DevOps :</strong> Git, GitHub, CUDA</li>
+  <li><strong>Gestion de Projet :</strong> Agile, Scrum (Product Owner certifié), Jira</li>
+  <li><strong>Domaine :</strong> Marchés financiers, Gestion de produit, Assurance qualité des données, Conformité réglementaire, Analyse du retail</li>
 </ul>
 `
             }
