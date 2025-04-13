@@ -142,7 +142,7 @@ experience: {
  extras: {
             title: { en: "Extras", fr: "Extras" },
             content: {
-                en: [
+                en: `[
                         <ul>
                           <li><strong>Awards:</strong>
                             <ul>
@@ -173,8 +173,8 @@ experience: {
                             </ul>
                           </li>
                         </ul>
-                        ],
-                fr: 
+                        ]`,
+                fr: `
                     [<ul>
                       <li><strong>Récompenses :</strong>
                         <ul>
@@ -205,11 +205,11 @@ experience: {
                         </ul>
                       </li>
                     </ul>
-                    ]
+                    ]`
 
             }
         }
-        // Add education, experience, certification, extras blocks here (as you already have them)
+     
     }
 };
 
