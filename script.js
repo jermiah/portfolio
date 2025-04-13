@@ -78,6 +78,66 @@ const translations = {
 `
             }
         }
+        education: {
+    title: { en: "Education", fr: "Éducation" },
+    content: {
+        en: `
+<ul>
+  <li><strong>emlyon business school</strong> – MSc in Data Science & AI Strategy<br/>2024–2025 · Lyon & Paris, France</li>
+  <li><strong>Thiagarajar School of Management</strong> – MBA in Finance & Analytics<br/>2019–2021 · Madurai, India</li>
+  <li><strong>National Institute of Technology, Tiruchirappalli</strong> – BTech in Computer Science and Engineering<br/>2014–2018 · Tiruchirappalli, India</li>
+</ul>
+`,
+        fr: `
+<ul>
+  <li><strong>emlyon business school</strong> – MSc en Data Science & Stratégie IA<br/>2024–2025 · Lyon & Paris, France</li>
+  <li><strong>Thiagarajar School of Management</strong> – MBA en Finance & Analytics<br/>2019–2021 · Madurai, Inde</li>
+  <li><strong>Institut national de technologie de Tiruchirappalli</strong> – BTech en informatique<br/>2014–2018 · Tiruchirappalli, Inde</li>
+</ul>
+`
+    }
+},
+experience: {
+            title: { en: "Experience", fr: "Expérience" },
+            content: {
+                en: `
+<ul>
+  <li><strong>HSBC, India — Assistant Manager - Product Management</strong> (12/2022 – 08/2024)<br/>
+  Ensured compliance and mitigated regulatory risks for global e-communication and audio communication surveillance across two products, minimizing operational vulnerabilities.<br/>
+  Led data assurance projects including deployments, migrations, and integrations, reducing data issues by 80%, optimizing workflows to ensure data accuracy, reliability, and regulatory compliance, and maintaining seamless data delivery by global stakeholders.<br/>
+  Configured JIRA for issue backlogs and custodian processes, streamlining workflows and improving operational efficiency by 20%. Designed and automated global KPI dashboards for data quality reporting, collectively saving 0.2 FTE annually while enhancing transparency across stakeholders.
+  </li>
+  <li><strong>BNP Paribas GSO, India — Data Quality Associate</strong> (06/2021 – 10/2022)<br/>
+  Conducted data profiling and implemented a Data Quality process for Trade Reference Data in asset creation, ensuring 100% precision in NAV calculation.<br/>
+  Analyzed data errors and developed dashboards to enhance quality processes.<br/>
+  Automated workflows, reducing errors by 95% and processing time by 80%, earning the Kaizen Award for Innovation.
+  </li>
+  <li><strong>Enprou Technologies India Pvt. Ltd. — Project Finance Trainee</strong> (05/2018 – 06/2019)<br/>
+  Performed cash flow analysis and forecasted requirements to ensure smooth financial operations.<br/>
+  Optimized inventory and procurement processes, minimizing wastage and avoiding project delays.
+  </li>
+</ul>
+`,
+                fr: `
+<ul>
+  <li><strong>HSBC, Inde — Assistant Manager - Gestion de Produit</strong> (12/2022 – 08/2024)<br/>
+  Assuré la conformité et réduit les risques réglementaires pour la surveillance des communications électroniques et audio à l'échelle mondiale sur deux produits, minimisant les vulnérabilités opérationnelles.<br/>
+  Dirigé des projets d'assurance des données incluant déploiements, migrations et intégrations, réduisant les problèmes de données de 80% et garantissant la fiabilité pour les parties prenantes mondiales.<br/>
+  Configuré JIRA pour la gestion des backlogs et processus de conservation, améliorant l'efficacité de 20%. Conçu des tableaux de bord KPI automatisés pour la qualité des données, économisant 0.2 ETP par an.
+  </li>
+  <li><strong>BNP Paribas GSO, Inde — Data Quality Associate</strong> (06/2021 – 10/2022)<br/>
+  Réalisé du profilage de données et mis en place un processus de qualité des données pour les données de référence dans la création d'actifs, assurant une précision de 100% dans le calcul de la valeur liquidative (NAV).<br/>
+  Analysé les erreurs de données et développé des tableaux de bord pour améliorer les processus qualité.<br/>
+  Automatisé des workflows, réduisant les erreurs de 95% et le temps de traitement de 80%, recevant le prix Kaizen pour l'innovation.
+  </li>
+  <li><strong>Enprou Technologies India Pvt. Ltd. — Stagiaire en finance de projet</strong> (05/2018 – 06/2019)<br/>
+  Réalisé des analyses de trésorerie et prévisions pour garantir la fluidité des opérations financières.<br/>
+  Optimisé les processus d'inventaire et d'approvisionnement, minimisant les gaspillages et évitant les retards de projets.
+  </li>
+</ul>
+`
+            }
+        },
         // Add education, experience, certification, extras blocks here (as you already have them)
     }
 };
