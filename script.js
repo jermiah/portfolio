@@ -15,6 +15,7 @@ const translations = {
         education: { en: "Education", fr: "Éducation" },
         experience: { en: "Experience", fr: "Expérience" },
         certification: { en: "Certification", fr: "Certification" },
+        projects: { en: "Projects", fr: "Projets" },
         showcase: { en: "Showcase", fr: "Showcase" }
     },
     sections: {
