@@ -243,13 +243,13 @@ experience: {
 
 <h4>Deep Learning Projects <a href="https://github.com/jermiah/deep_learning/blob/main/README.md" target="_blank">(GitHub)</a></h4>
 <ul>
-  <li><strong>Speaker Recognition</strong>: Identifies speakers from audio using ECAPA-TDNN embeddings. Combines classification (custom neural net) and cosine similarity-based verification. Features a real-time Gradio demo interface and hybrid evaluation.</li>
-  <li><strong>Sentiment Classification (BERT)</strong>: Fine-tuned BERT model for classifying IMDb movie reviews into sentiment categories. Uses tokenization, attention masks, and Hugging Face Transformers.</li>
-  <li><strong>Image Classification</strong>: Image recognition pipeline using transfer learning with ResNet. Includes augmentation, training visualization, and performance evaluation.</li>
+  <li><strong>Speaker Recognition</strong>: Speaker identification using ECAPA-TDNN embeddings and a hybrid approach combining classification (neural network) and verification (cosine similarity). Features Gradio demo, audio preprocessing with torchaudio, and SpeechBrain embeddings.</li>
+  <li><strong>Sentiment Classification (BERT)</strong>: NLP classification using fine-tuned BERT on IMDb movie review sentiments. Built with HuggingFace Transformers, includes tokenization, attention masking, and model evaluation.</li>
+  <li><strong>Image Classification</strong>: Image recognition using transfer learning (ResNet). Features data augmentation, training visualization, and evaluation metrics for custom datasets.</li>
 </ul>
 
 <h4>Upcoming Project</h4>
-<p><strong>Frugal AI</strong>: Designing a resource-efficient offline AI assistant that can summarize, translate, and strategize using lightweight LLMs and edge deployment architecture.</p>
+<p><strong>Frugal AI</strong>: Designing a lightweight, offline assistant for Edge Devices using on-device LLMs for real-time translation and explanation in zero connectivity environments.</p>
 `,
                 fr: `
 <h4>Projets en entreprise</h4>
@@ -267,13 +267,13 @@ experience: {
 
 <h4>Projets de Deep Learning <a href="https://github.com/jermiah/deep_learning/blob/main/README.md" target="_blank">(GitHub)</a></h4>
 <ul>
-  <li><strong>Reconnaissance vocale</strong> : Identification de locuteurs à partir d'enregistrements audio via ECAPA-TDNN. Combine classification par réseau neuronal et vérification par similarité. Interface Gradio et évaluation hybride incluses.</li>
-  <li><strong>Classification des sentiments (BERT)</strong> : Classification des avis de films IMDb par sentiment avec BERT fine-tuné. Utilise la tokenisation, les masques d'attention et Hugging Face Transformers.</li>
-  <li><strong>Classification d’images</strong> : Reconnaissance d’images avec transfert d’apprentissage (ResNet). Inclut des augmentations de données, visualisations et évaluations de performance.</li>
+  <li><strong>Reconnaissance vocale</strong> : Identification des locuteurs à partir d’audios à l’aide d’ECAPA-TDNN. Combine classification (réseau neuronal) et vérification par similarité (cosine). Démo Gradio, traitement audio avec torchaudio et embeddings SpeechBrain.</li>
+  <li><strong>Classification des sentiments (BERT)</strong> : Classification NLP avec BERT fine-tuné sur les avis de films IMDb. Utilisation des Transformers HuggingFace, tokenisation, masquage d'attention et évaluation du modèle.</li>
+  <li><strong>Classification d’images</strong> : Reconnaissance d’images avec transfert d’apprentissage (ResNet). Augmentation des données, visualisation de l'entraînement et évaluation sur jeux de données personnalisés.</li>
 </ul>
 
 <h4>Projet à venir</h4>
-<p><strong>Frugal AI</strong> : Conception d’un assistant IA hors ligne, économe en ressources, capable de résumer, traduire et générer des stratégies via des modèles LLM légers.</p>
+<p><strong>Frugal AI</strong> : Conception d’un assistant léger et hors ligne pour dispositifs Edge, utilisant des LLMs embarqués pour la traduction et l’explication en temps réel en l’absence de connectivité.</p>
 `
             }
         },
