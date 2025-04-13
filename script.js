@@ -18,34 +18,32 @@ const translations = {
         extras: { en: "Extras", fr: "Extras" }
     },
     sections: {
-        overview: {
+         overview: {
             title: { en: "Overview", fr: "Aperçu" },
             content: {
                 en: `
 <p>I’m a data-driven product thinker with 5+ years of experience in banking and financial services, specializing in data quality, workflow automation, and product management. I’ve worked across BNP Paribas and HSBC, where I led impactful projects that improved regulatory compliance, streamlined operations, and enhanced decision-making through data.</p>
 <p>Currently, I’m pursuing a Master of Science in Data Science & AI Strategy at emlyon business school, where I’m transitioning into the world of machine learning, deep learning, and LLMs. My academic journey also includes an MBA in Finance & Analytics and a BTech in Computer Science, allowing me to connect business goals with technical execution.</p>
-<p><strong>What I Bring to the Table</strong></p>
+<p>What I Bring to the Table</p>
 <ul>
-  <li>Banking Experience: At BNP Paribas and HSBC, I led key projects in data assurance, automation, and product optimization—earning three awards including the Antares and Spirit of Kaizen Awards.</li>
-  <li>Product & Strategy: Designed an AI Strategy Copilot App using LLMs, RAG, and Streamlit for retail product planning across 5000+ SKUs.</li>
-  <li>Research: Leading a project at BNP Paribas on the adoption of open-source enterprise AI agents using RAG & multi-modal models.</li>
+  <li>Banking Experience: At BNP Paribas and HSBC, I led key projects in data assurance, automation, and product optimization—earning three awards including the Antares Award and two Spirit of Kaizen Awards.</li>
+  <li>Product & Strategy: Designed an AI Strategy Copilot App using LLMs, RAG, and Streamlit for retail product planning across 5,000+ SKUs.</li>
+  <li>Research: Leading a strategic project at BNP Paribas on the adoption of open-source enterprise AI agents using multimodal models and RAG frameworks.</li>
 </ul>
-<p><strong>Tools & Technologies</strong>: Python, SQL, AWS, PyTorch, Excel/VBA, Power BI, Tableau, Git, Streamlit, JIRA, LLMs, Fine-tuning, RAG architecture</p>
-<p><strong>Recent Project:</strong><br/>
+<p>Recent Project:<br/>
 <a href="https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb" target="_blank">AI Strategy Copilot – Retail Use Case</a></p>
 <p>Let’s connect and build the future together.</p>
                 `,
                 fr: `
-<p>Je suis un professionnel axé sur les produits et les données, avec plus de 5 ans d'expérience dans les services bancaires et financiers, spécialisé dans la qualité des données, l'automatisation des workflows et la gestion de produit. J'ai travaillé chez BNP Paribas et HSBC, où j'ai mené des projets impactants améliorant la conformité réglementaire, rationalisant les opérations et facilitant la prise de décision.</p>
-<p>Je poursuis actuellement un Master of Science en Data Science & Stratégie en Intelligence Artificielle à emlyon business school, me spécialisant dans le machine learning, deep learning et les modèles de langage (LLMs). Mon parcours comprend également un MBA en Finance & Analytics et un BTech en Informatique.</p>
-<p><strong>Ce que j'apporte</strong></p>
+<p>Je suis un professionnel axé sur les produits et les données, avec plus de 5 ans d'expérience dans les services bancaires et financiers, spécialisé dans la qualité des données, l'automatisation des workflows et la gestion de produit. J'ai travaillé chez BNP Paribas et HSBC, où j'ai mené des projets à fort impact améliorant la conformité réglementaire, rationalisant les opérations et facilitant la prise de décision basée sur les données.</p>
+<p>Je poursuis actuellement un Master of Science en Data Science & Stratégie en IA à emlyon business school, où je me spécialise en machine learning, deep learning et modèles de langage (LLMs). Mon parcours comprend également un MBA en Finance & Analytics et un BTech en Informatique.</p>
+<p>Ce que j'apporte</p>
 <ul>
-  <li>Expérience bancaire : conduite de projets en automatisation, assurance qualité, optimisation de produit, avec des prix comme le Antares et Spirit of Kaizen.</li>
-  <li>Produit & stratégie : développement d’une application AI Strategy Copilot avec LLMs, RAG et Streamlit pour la planification de produits de détail.</li>
-  <li>Recherche : projet en cours chez BNP Paribas sur l’adoption de RAG open source multimodal pour les agents d’entreprise.</li>
+  <li>Expérience bancaire : Projets menés chez BNP Paribas et HSBC sur la qualité des données, l'automatisation, et l'optimisation produit — récompensés par trois prix dont le Prix Antares et deux Prix Spirit of Kaizen.</li>
+  <li>Produit & stratégie : Conception d'une application de stratégie IA avec LLMs, RAG et Streamlit pour la planification de 5 000 produits de retail.</li>
+  <li>Recherche : Projet stratégique chez BNP Paribas sur l'intégration de modèles open-source multimodaux pour les agents IA d'entreprise.</li>
 </ul>
-<p><strong>Outils & Technologies</strong> : Python, SQL, AWS, PyTorch, Excel/VBA, Power BI, Tableau, Git, Streamlit, JIRA, LLMs, Fine-tuning, architecture RAG</p>
-<p><strong>Projet récent :</strong><br/>
+<p>Projet récent :<br/>
 <a href="https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb" target="_blank">Assistant stratégique IA – Cas d’usage Retail</a></p>
 <p>Connectons-nous et construisons l’avenir ensemble.</p>
                 `
