@@ -224,19 +224,19 @@ experience: {
 `
     }
 },
-   projects: {
+    projects: {
             title: { en: "Projects", fr: "Projets" },
             content: {
                 en: `
 <h4>In-Company Projects</h4>
 <ul>
-  <li><strong>AI Strategy Copilot</strong>: A Streamlit + LLM-powered assistant for retail product strategy using RAG, unsupervised learning, feedback loops, and advanced prompt engineering. <a href="https://github.com/jermiah/Product-Strategy-App/blob/main/README.md" target="_blank">View Code</a> | <a href="https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb" target="_blank">See Demo</a></li>
-  <li><strong>Enterprise AI Agent Research @ BNP Paribas</strong>: Investigating open-source, multimodal RAG frameworks and their strategic impact across banking use cases.</li>
+  <li><strong>AI Strategy Copilot @ <a href="https://www.prosol.fr/" target="_blank">Prosol</a></strong>: A Streamlit + LLM-powered assistant for retail product strategy using RAG, unsupervised learning, feedback loops, and advanced prompt engineering. <a href="https://github.com/jermiah/Product-Strategy-App/blob/main/README.md" target="_blank">View Code</a> | <a href="https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb" target="_blank">See Demo</a></li>
+  <li><strong>Business White Paper Research @ <a href="https://group.bnpparibas/" target="_blank">BNP Paribas</a></strong>: "Strategic Adoption of Open-Source Multimodal Enterprise RAG: Challenges, KPIs, and Business Impact." Focused on evaluating use cases, performance benchmarks, and implementation pathways for enterprise AI agents in banking.</li>
 </ul>
 
 <h4>Machine Learning & Data Science Projects <a href="https://github.com/jermiah/machine_learning/blob/main/README.md" target="_blank">(GitHub)</a></h4>
 <ul>
-  <li><strong>Bankruptcy Prediction</strong>: Predicting company bankruptcy by averaging predictions from Logistic Regression and XGBoost ensemble models trained on financial data.</li>
+  <li><strong>Bankruptcy Prediction</strong>: Built classification models using ensemble techniques (Logistic Regression + XGBoost) to detect bankruptcy in imbalanced datasets.</li>
   <li><strong>Length of Stay Prediction</strong>: Healthcare model to estimate hospital patient stay duration using ensemble learning.</li>
   <li><strong>Cool Wipes - Linear Programming</strong>: Supply chain optimization using Gurobi for optimal plant location and demand satisfaction.</li>
 </ul>
@@ -254,13 +254,13 @@ experience: {
                 fr: `
 <h4>Projets en entreprise</h4>
 <ul>
-  <li><strong>AI Strategy Copilot</strong> : Assistant IA basé sur Streamlit + LLM pour la stratégie produit retail, intégrant RAG, apprentissage non supervisé, boucles de rétroaction et ingénierie de prompt avancée. <a href="https://github.com/jermiah/Product-Strategy-App/blob/main/README.md" target="_blank">Voir le code</a> | <a href="https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb" target="_blank">Voir la démo</a></li>
-  <li><strong>Recherche IA d'entreprise chez BNP Paribas</strong> : Exploration des RAG open source multimodaux pour l'adoption stratégique dans les services bancaires.</li>
+  <li><strong>AI Strategy Copilot chez <a href="https://www.prosol.fr/" target="_blank">Prosol</a></strong> : Assistant IA basé sur Streamlit + LLM pour la stratégie produit retail, intégrant RAG, apprentissage non supervisé, boucles de rétroaction et ingénierie de prompt avancée. <a href="https://github.com/jermiah/Product-Strategy-App/blob/main/README.md" target="_blank">Voir le code</a> | <a href="https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb" target="_blank">Voir la démo</a></li>
+  <li><strong>Recherche stratégique chez <a href="https://group.bnpparibas/" target="_blank">BNP Paribas</a></strong> : "Adoption stratégique des RAG open-source multimodaux en entreprise : défis, KPIs et impact business." Livre blanc axé sur les cas d’usage, les benchmarks de performance et les voies d’implémentation des agents IA en banque.</li>
 </ul>
 
 <h4>Projets de Machine Learning et Data Science <a href="https://github.com/jermiah/machine_learning/blob/main/README.md" target="_blank">(GitHub)</a></h4>
 <ul>
-  <li><strong>Prédiction de faillite</strong> : Modélisation du risque de faillite en moyennant les prédictions de modèles de régression logistique et XGBoost.</li>
+  <li><strong>Prédiction de faillite</strong> : Modèles de classification utilisant des techniques d'ensemble (régression logistique + XGBoost) pour détecter les faillites dans des jeux de données déséquilibrés.</li>
   <li><strong>Durée de séjour hospitalier</strong> : Estimation des séjours patients avec Random Forest, XGBoost et CatBoost.</li>
   <li><strong>Cool Wipes - Programmation linéaire</strong> : Optimisation de la chaîne logistique via Gurobi.</li>
 </ul>
