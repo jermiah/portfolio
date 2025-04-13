@@ -108,7 +108,7 @@ body.light-mode .box {
     border-radius: 50%;
     background-size: cover;
     background-position: center;
-    background-image: url('photo.jpg');
+    background-image: url('abhi3.jpeg');
     margin: 0 auto 20px;
     border: 3px solid white;
     transition: transform 0.3s ease;
@@ -462,4 +462,23 @@ body.light-mode #main-content {
     .right-box #main-content {
         font-size: 7px; /* Smallest text for mobile */
     }
+}
+
+body:not(.light-mode) .achievement-link {
+    color: white;
+    text-decoration: underline;
+}
+
+body:not(.light-mode) .achievement-link:hover {
+    color: #f0f0f0;
+}
+
+/* Achievement links in light mode - black text */
+body.light-mode .achievement-link {
+    color: black;
+    text-decoration: underline;
+}
+
+body.light-mode .achievement-link:hover {
+    color: #333333;
 }
