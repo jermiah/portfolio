@@ -3,6 +3,7 @@
   zoom: 1.0;
 }
 
+/* COLOR & THEME VARIABLES */
 :root {
     --squircle-bg-dark: rgba(0, 0, 0, 0.7);
     --squircle-bg-light: rgba(255, 255, 255, 0.7);
@@ -20,6 +21,7 @@
     --resume-button-color: #4CAF50;
 }
 
+/* BASIC RESET */
 html, body {
     margin: 0;
     padding: 0;
@@ -30,9 +32,7 @@ html, body {
     height: 100%;
     font-size: 16px;
     overflow: auto;
-    min-height: 100%;
-    min-width: 100%;
-    overflow-x: hidden;
+    overflow-x: hidden; /* hide horizontal scroll if not needed */
 }
 
 body {
@@ -45,6 +45,7 @@ body.light-mode {
     color: var(--text-color-light);
 }
 
+/* WEBGL BACKGROUND */
 #webgl-container {
     position: fixed;
     top: 0;
@@ -56,6 +57,7 @@ body.light-mode {
     z-index: -1;
 }
 
+/* LAYOUT CONTAINER */
 .portfolio-container {
     display: flex;
     justify-content: center;
@@ -66,6 +68,7 @@ body.light-mode {
     box-sizing: border-box;
 }
 
+/* BOX STYLING */
 .box {
     background-color: var(--squircle-bg-dark);
     backdrop-filter: blur(10px);
@@ -76,13 +79,13 @@ body.light-mode {
     display: flex;
     flex-direction: column;
 }
-
 body.light-mode .box {
     background-color: var(--squircle-bg-light);
 }
 
+/* LEFT COLUMN */
 .left-box {
-    width: 23%; /* reduced from 25% */
+    width: 23%; /* reduced from 25% to allow more nav space */
     margin-right: 40px;
     padding: 20px;
     display: flex;
@@ -91,12 +94,14 @@ body.light-mode .box {
     overflow-y: hidden;
 }
 
+/* RIGHT COLUMN */
 .right-box {
-    width: 65%; /* increased from 60% */
+    width: 65%; /* increased from 60% to allow more nav space */
     padding: 20px;
     overflow-y: auto;
 }
 
+/* PROFILE AREA */
 .profile-section {
     text-align: center;
     margin-bottom: 20px;
@@ -113,7 +118,6 @@ body.light-mode .box {
     border: 3px solid white;
     transition: transform 0.3s ease;
 }
-
 .circular-profile:hover {
     transform: scale(1.05);
 }
@@ -129,12 +133,7 @@ h2 {
     opacity: 0.8;
 }
 
-.vertical-navbar {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
+/* BUTTONS & LINKS (LEFT COLUMN) */
 .nav-button {
     background: none;
     border: none;
@@ -151,16 +150,13 @@ h2 {
     text-decoration: none;
     border-radius: 10px;
 }
-
 .nav-button:hover {
     background-color: var(--nav-active-dark);
     transform: scale(1.05);
 }
-
 body.light-mode .nav-button:hover {
     background-color: var(--nav-active-light);
 }
-
 .button-icon {
     margin-right: 15px;
     font-size: 16px;
@@ -169,22 +165,22 @@ body.light-mode .nav-button:hover {
     text-align: center;
 }
 
+/* CONTACT INFO */
 .contact-info {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-
 .contact-info .nav-button {
     padding: 8px 12px;
 }
-
 .info-text {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
+/* DOWNLOAD BUTTON */
 .download-btn {
     background-color: var(--resume-button-color);
     color: white;
@@ -198,59 +194,60 @@ body.light-mode .nav-button:hover {
     align-items: center;
     transition: transform 0.3s ease;
 }
-
 .download-btn:hover {
     background-color: var(--resume-button-color);
     transform: scale(1.05);
 }
-
 body.light-mode .download-btn,
 body.light-mode .download-btn:hover {
     background-color: var(--resume-button-color);
     color: white;
 }
 
+/* TOP NAV BAR */
 #main-nav {
     display: flex;
     justify-content: space-around;
     padding: 5px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    flex-wrap: wrap;
+    /* Force nav items to stay on one line & scroll horizontally if too long */
+    flex-wrap: nowrap;
+    overflow-x: auto;
 }
 
+/* INDIVIDUAL NAV LINKS */
 .nav-link {
     color: inherit;
     text-decoration: none;
     font-size: 14px;
-    /* changed from percentage padding to fixed pixel values */
+    /* smaller fixed padding so they fit on one line */
     padding: 6px 10px;
     border-radius: 10px;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    margin: 3px; /* reduced margin */
+    margin: 3px;
+    white-space: nowrap; /* ensures text doesn’t wrap to a second line */
 }
-
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     background-color: var(--nav-active-dark);
     transform: scale(1.1);
 }
-
-body.light-mode .nav-link:hover, 
+body.light-mode .nav-link:hover,
 body.light-mode .nav-link.active {
     background-color: var(--nav-active-light);
 }
 
+/* MAIN CONTENT AREA */
 #main-content {
     flex-grow: 1;
     overflow-y: auto;
     padding: 20px;
 }
-
 .section {
     display: none;
     opacity: 0;
     transition: opacity 0.5s ease;
 }
-
 .section.active {
     display: block;
     opacity: 1;
@@ -260,24 +257,22 @@ h3 {
     font-size: 1.6em;
     margin-bottom: 20px;
 }
-
 h4 {
     font-size: 1.2em;
     margin-top: 20px;
     margin-bottom: 10px;
 }
-
 ul {
     padding-left: 30px;
     list-style-type: disc;
 }
-
 li {
     margin-bottom: 5px;
     padding-left: 5px;
     text-indent: 0px;
 }
 
+/* TOOLTIP STYLING */
 #tooltip {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.8);
@@ -291,195 +286,99 @@ li {
     z-index: 1000;
 }
 
+/* HORIZONTAL DIVIDER */
 .experience-divider {
     border: 0;
     height: 1px;
     background: rgba(255, 255, 255, 0.2);
     margin: 20px 0;
 }
-
 body.light-mode .experience-divider {
     background: rgba(0, 0, 0, 0.2);
 }
 
-/* Custom scrollbar styles */
+/* CUSTOM SCROLLBAR STYLES */
 .right-box::-webkit-scrollbar,
 #main-content::-webkit-scrollbar {
     width: 8px;
 }
-
 .right-box::-webkit-scrollbar-track,
 #main-content::-webkit-scrollbar-track {
     background: var(--scrollbar-bg-dark);
     border-radius: 5px;
 }
-
 .right-box::-webkit-scrollbar-thumb,
 #main-content::-webkit-scrollbar-thumb {
     background: var(--scrollbar-thumb-dark);
     border-radius: 5px;
 }
-
 .right-box::-webkit-scrollbar-thumb:hover,
 #main-content::-webkit-scrollbar-thumb:hover {
     background: var(--scrollbar-thumb-hover-dark);
 }
 
-/* Light mode scrollbar styles */
+/* LIGHT MODE SCROLLBAR */
 body.light-mode .right-box::-webkit-scrollbar-track,
 body.light-mode #main-content::-webkit-scrollbar-track {
     background: var(--scrollbar-bg-light);
 }
-
 body.light-mode .right-box::-webkit-scrollbar-thumb,
 body.light-mode #main-content::-webkit-scrollbar-thumb {
     background: var(--scrollbar-thumb-light);
 }
-
 body.light-mode .right-box::-webkit-scrollbar-thumb:hover,
 body.light-mode #main-content::-webkit-scrollbar-thumb:hover {
     background: var(--scrollbar-thumb-hover-light);
 }
 
-/* For Firefox */
+/* FIREFOX SCROLLBAR */
 .right-box,
 #main-content {
     scrollbar-width: thin;
     scrollbar-color: var(--scrollbar-thumb-dark) var(--scrollbar-bg-dark);
 }
-
 body.light-mode .right-box,
 body.light-mode #main-content {
     scrollbar-color: var(--scrollbar-thumb-light) var(--scrollbar-bg-light);
 }
 
-/* Responsive design */
+/* OPTIONAL: KEEP THIS SO TALL SCREENS CAN EXPAND THE BOXES */
 @media (min-width: 1201px) {
     .left-box, .right-box {
         height: calc(90vh - 40px);
     }
-    
     .left-box {
         overflow-y: hidden;
     }
-    
     .right-box {
         overflow-y: auto;
     }
-
     .right-box #main-content {
-        font-size: 13px; /* Larger text for desktop */
+        font-size: 16px; /* maintain normal desktop font size */
     }
 }
 
-@media (max-width: 1200px) {
-    .portfolio-container {
-        flex-direction: column;
-        align-items: center;
-    }
+/* OPTIONAL: You can remove or tweak these if you want full desktop layout on all screens */
+/*@media (max-width: 1200px) {
+    // Remove or adjust if you don't want it to become a column layout
+}*/
 
-    .left-box, .right-box {
-        width: 90%;
-        margin: 10px 0;
-    }
+/*@media (max-width: 768px) {
+    // Remove or adjust if you don't want smaller font on mobile
+}*/
 
-    .left-box {
-        max-height: none;
-        overflow-y: hidden;
-    }
-
-    .right-box {
-        max-height: 60vh;
-        overflow-y: auto;
-    }
-
-    .circular-profile {
-        width: 120px;
-        height: 120px;
-    }
-
-    h1 {
-        font-size: 1.4em;
-    }
-
-    h2 {
-        font-size: 0.9em;
-    }
-
-    .right-box #main-content {
-        font-size: 10px; /* Smaller text for laptop */
-    }
-}
-
-@media (max-width: 768px) {
-    body {
-        -webkit-text-size-adjust: none;
-    }
-
-    .portfolio-container {
-        padding: 15px;
-        min-height: 100vh;
-        height: auto;
-    }
-
-    .left-box, .right-box {
-        width: calc(100% - 30px);
-        margin: 10px 0;
-        padding: 15px;
-    }
-
-    .circular-profile {
-        width: 100px;
-        height: 100px;
-    }
-
-    h1 {
-        font-size: 1.2em;
-    }
-
-    h2 {
-        font-size: 0.8em;
-    }
-
-    .nav-button, .nav-link {
-        font-size: 12px;
-        padding: 6px 10px;
-    }
-
-    #main-nav {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-        gap: 5px;
-        overflow-x: visible;
-        white-space: normal;
-    }
-
-    .nav-link {
-        text-align: center;
-        padding: 8px 5px;
-        margin: 2px;
-    }
-
-    .right-box #main-content {
-        font-size: 7px; /* Smallest text for mobile */
-    }
-}
-
+/* ACHIEVEMENT LINKS THEME STYLING */
 body:not(.light-mode) .achievement-link {
     color: white;
     text-decoration: underline;
 }
-
 body:not(.light-mode) .achievement-link:hover {
     color: #f0f0f0;
 }
-
-/* Achievement links in light mode - black text */
 body.light-mode .achievement-link {
     color: black;
     text-decoration: underline;
 }
-
 body.light-mode .achievement-link:hover {
     color: #333333;
 }
