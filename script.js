@@ -353,10 +353,13 @@ function showSection(sectionId) {
     const target = document.getElementById(sectionId);
     if (target) target.classList.add('active');
 }
-
 document.addEventListener('DOMContentLoaded', function () {
     updateContent();
     showSection('overview'); // Show Overview by default
+
+    // ✅ Set initial theme toggle label
+    const isLight = document.body.classList.contains('light-mode');
+    document.getElementById('mode-toggle').innerHTML = `<span class="button-icon">${isLight ? '🌑' : '☀️'}</span> ${isLight ? 'Dark mode' : 'Light mode'}`;
 
     // Language toggle
     const langToggle = document.getElementById('lang-toggle');
