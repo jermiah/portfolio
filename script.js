@@ -237,15 +237,15 @@ experience: {
 <h4>Machine Learning & Data Science Projects <a href="https://github.com/jermiah/machine_learning/blob/main/README.md" target="_blank">(GitHub)</a></h4>
 <ul>
   <li><strong>Bankruptcy Prediction</strong>: Built classification models using ensemble techniques (Logistic Regression + XGBoost) to detect bankruptcy in imbalanced datasets.</li>
-  <li><strong>Length of Stay Prediction</strong>: Healthcare model to estimate hospital patient stay duration using ensemble learning.</li>
+  <li><strong>Length of Stay Prediction</strong>: Developed classification models using Random Forest, XGBoost, and CatBoost to estimate hospital stay duration and optimize healthcare resource allocation.</li>
   <li><strong>Cool Wipes - Linear Programming</strong>: Supply chain optimization using Gurobi for optimal plant location and demand satisfaction.</li>
 </ul>
 
 <h4>Deep Learning Projects <a href="https://github.com/jermiah/deep_learning/blob/main/README.md" target="_blank">(GitHub)</a></h4>
 <ul>
-  <li><strong>Speaker Recognition</strong>: Deep learning audio classification using ECAPA-TDNN and PyTorch with Gradio-based testing.</li>
-  <li><strong>Sentiment Classification (BERT)</strong>: NLP project using fine-tuned BERT for classifying text sentiment.</li>
-  <li><strong>Image Classification</strong>: Vision task using CNNs and transfer learning (ResNet) for fast image model deployment.</li>
+  <li><strong>Speaker Recognition</strong>: Identifies speakers from audio using ECAPA-TDNN embeddings. Combines classification (custom neural net) and cosine similarity-based verification. Features a real-time Gradio demo interface and hybrid evaluation.</li>
+  <li><strong>Sentiment Classification (BERT)</strong>: Fine-tuned BERT model for classifying IMDb movie reviews into sentiment categories. Uses tokenization, attention masks, and Hugging Face Transformers.</li>
+  <li><strong>Image Classification</strong>: Image recognition pipeline using transfer learning with ResNet. Includes augmentation, training visualization, and performance evaluation.</li>
 </ul>
 
 <h4>Upcoming Project</h4>
@@ -261,15 +261,15 @@ experience: {
 <h4>Projets de Machine Learning et Data Science <a href="https://github.com/jermiah/machine_learning/blob/main/README.md" target="_blank">(GitHub)</a></h4>
 <ul>
   <li><strong>Prédiction de faillite</strong> : Modèles de classification utilisant des techniques d'ensemble (régression logistique + XGBoost) pour détecter les faillites dans des jeux de données déséquilibrés.</li>
-  <li><strong>Durée de séjour hospitalier</strong> : Estimation des séjours patients avec Random Forest, XGBoost et CatBoost.</li>
+  <li><strong>Durée de séjour hospitalier</strong> : Modèles de classification avec Random Forest, XGBoost et CatBoost pour estimer la durée d’hospitalisation des patients et améliorer l'allocation des ressources.</li>
   <li><strong>Cool Wipes - Programmation linéaire</strong> : Optimisation de la chaîne logistique via Gurobi.</li>
 </ul>
 
 <h4>Projets de Deep Learning <a href="https://github.com/jermiah/deep_learning/blob/main/README.md" target="_blank">(GitHub)</a></h4>
 <ul>
-  <li><strong>Reconnaissance vocale</strong> : Classification audio avec ECAPA-TDNN et PyTorch, interface Gradio.</li>
-  <li><strong>Classification des sentiments (BERT)</strong> : Analyse de sentiments textuels avec modèle BERT fine-tuné.</li>
-  <li><strong>Classification d’images</strong> : Projet de vision par apprentissage par transfert (ResNet).</li>
+  <li><strong>Reconnaissance vocale</strong> : Identification de locuteurs à partir d'enregistrements audio via ECAPA-TDNN. Combine classification par réseau neuronal et vérification par similarité. Interface Gradio et évaluation hybride incluses.</li>
+  <li><strong>Classification des sentiments (BERT)</strong> : Classification des avis de films IMDb par sentiment avec BERT fine-tuné. Utilise la tokenisation, les masques d'attention et Hugging Face Transformers.</li>
+  <li><strong>Classification d’images</strong> : Reconnaissance d’images avec transfert d’apprentissage (ResNet). Inclut des augmentations de données, visualisations et évaluations de performance.</li>
 </ul>
 
 <h4>Projet à venir</h4>
