@@ -23,48 +23,48 @@ const translations = {
             title: { en: "Overview", fr: "Aperçu" },
             content: {
                 en: `
-<p>I’m a data-driven product thinker with 5+ years of experience in <strong>banking and financial services</strong>, specializing in <strong>data quality, workflow automation, and product management</strong>. I’ve worked across <strong>BNP Paribas and HSBC</strong>, where I led impactful projects that improved regulatory compliance, streamlined operations, and enhanced decision-making through data.</p>
+<p>I’m a data-driven product thinker with 5+ years of experience in banking and financial services, specializing in data quality, workflow automation, and product management. I’ve worked across BNP Paribas and HSBC, where I led impactful projects that improved regulatory compliance, streamlined operations, and enhanced decision-making through data.</p>
 
-<p>Currently, I’m pursuing a <strong>Master of Science in Data Science & AI Strategy</strong> at <strong>emlyon business school</strong>, where I’m transitioning into the world of <strong>machine learning, deep learning, and LLMs</strong>. My academic journey also includes an <strong>MBA in Finance & Analytics</strong> and a <strong>BTech in Computer Science</strong>, allowing me to connect business goals with technical execution.</p>
+<p>Currently, I’m pursuing a Master of Science in Data Science & AI Strategy at emlyon business school, where I’m transitioning into the world of machine learning, deep learning, and LLMs. My academic journey also includes an MBA in Finance & Analytics and a BTech in Computer Science, allowing me to connect business goals with technical execution.</p>
 
 <p><strong>What I Bring to the Table</strong></p>
 <ul>
-  <li><strong>Banking Experience:</strong> At BNP Paribas and HSBC, I led key projects in data assurance, automation, and product optimization—earning <strong>three innovation awards</strong>, including the <em>Kaizen Award</em>.</li>
-  <li><strong>Product Thinking Meets Data Science:</strong> Developed a <em>Product Strategy Assistant App</em> using Streamlit + LLMs + RAG, generating real-time strategy suggestions for 5,000+ retail products by combining segmentation, KPIs, and feedback.</li>
-  <li><strong>Enterprise AI Research:</strong> Currently leading a project with BNP Paribas on the strategic adoption of open-source multimodal Enterprise RAG systems, evaluating business impact and KPIs.</li>
-  <li><strong>Tools:</strong> Python, SQL, PyTorch, AWS, Power BI, Excel/VBA, Pyspark, Power Query (Certified Scrum Product Owner)</li>
+  <li>Banking Experience: At BNP Paribas and HSBC, I led key projects in data assurance, automation, and product optimization—earning three awards, including the <em>Kaizen Award</em>.</li>
+  <li>Product Thinking Meets Data Science: Developed a Product Strategy Assistant App using Streamlit + LLMs + RAG, generating real-time strategy suggestions for 5,000+ retail products by combining segmentation, KPIs, and feedback.</li>
+  <li>Enterprise AI Research: Currently leading a project with BNP Paribas on the strategic adoption of open-source multimodal Enterprise RAG systems, evaluating business impact and KPIs.</li>
+  <li>Tools: Python, SQL, PyTorch, AWS, Power BI, Excel/VBA, Pyspark, Power Query (Certified Scrum Product Owner)</li>
 </ul>
 
 <p><strong>My Focus</strong></p>
-<p>While my foundation is rooted in <strong>data and product</strong>, my current focus is on <strong>AI-powered solutions</strong>—with an emphasis on practical impact and business alignment.</p>
+<p>While my foundation is rooted in data and product, my current focus is on AI-powered solutions—with an emphasis on practical impact and business alignment.</p>
 
-<p><strong>Featured Project:</strong><br/>
+<p><strong>Recent Project:</strong><br/>
 <a href="https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb" target="_blank">AI Strategy Copilot – Retail Use Case</a><br/>
 A smart assistant for retail strategy that uses LLMs and segmentation to drive planning and merchandising decisions.</p>
 
-<p>Let’s connect and build the future of <strong>data-first, human-centered financial innovation</strong>.</p>
+<p>Let’s connect and build the future together.</p>
                 `,
                 fr: `
-<p>Je suis un professionnel orienté produit et guidé par les données, avec plus de 5 ans d'expérience dans les <strong>services bancaires et financiers</strong>, spécialisé en <strong>qualité des données, automatisation des flux de travail et gestion de produit</strong>. J'ai travaillé chez <strong>BNP Paribas et HSBC</strong>, où j'ai mené des projets à fort impact améliorant la conformité réglementaire, optimisant les opérations et favorisant la prise de décisions basée sur les données.</p>
+<p>Je suis un professionnel orienté produit et guidé par les données, avec plus de 5 ans d'expérience dans les services bancaires et financiers, spécialisé en qualité des données, automatisation des flux de travail et gestion de produit. J'ai travaillé chez BNP Paribas et HSBC, où j'ai mené des projets à fort impact améliorant la conformité réglementaire, optimisant les opérations et favorisant la prise de décisions basée sur les données.</p>
 
-<p>Actuellement, je poursuis un <strong>Master of Science en Data Science & Stratégie en IA</strong> à <strong>emlyon business school</strong>, où je me spécialise en <strong>machine learning, deep learning et modèles de langage (LLMs)</strong>. Mon parcours académique comprend également un <strong>MBA en Finance & Analytics</strong> et un <strong>BTech en Informatique</strong>, me permettant d’aligner les objectifs business avec la mise en œuvre technique.</p>
+<p>Actuellement, je poursuis un Master of Science en Data Science & Stratégie en IA à emlyon business school, où je me spécialise en machine learning, deep learning et modèles de langage (LLMs). Mon parcours académique comprend également un MBA en Finance & Analytics et un BTech en Informatique, me permettant d’aligner les objectifs business avec la mise en œuvre technique.</p>
 
 <p><strong>Ce que j'apporte</strong></p>
 <ul>
-  <li><strong>Expérience bancaire :</strong> Chez BNP Paribas et HSBC, j'ai dirigé des projets clés en assurance qualité des données, automatisation et optimisation produit — obtenant <strong>trois prix d'innovation</strong>, dont le <em>Kaizen Award</em>.</li>
-  <li><strong>Produit & Data Science :</strong> Création d'une <em>application d'assistance à la stratégie produit</em> avec Streamlit + LLMs + RAG, générant des recommandations pour plus de 5 000 produits de détail grâce à la segmentation, aux KPI et aux retours utilisateurs.</li>
-  <li><strong>Recherche en IA d'entreprise :</strong> Responsable d’un projet avec BNP Paribas sur l’adoption stratégique de RAG multimodaux open source, évaluant leur impact business et les KPI associés.</li>
-  <li><strong>Technologies :</strong> Python, SQL, PyTorch, AWS, Power BI, Excel/VBA, Pyspark, Power Query (Certified Scrum Product Owner)</li>
+  <li>Expérience bancaire : Chez BNP Paribas et HSBC, j'ai dirigé des projets clés en assurance qualité des données, automatisation et optimisation produit — obtenant trois prix d'innovation, dont le <em>Kaizen Award</em>.</li>
+  <li>Produit & Data Science : Création d'une application d'assistance à la stratégie produit avec Streamlit + LLMs + RAG, générant des recommandations pour plus de 5 000 produits de détail grâce à la segmentation, aux KPI et aux retours utilisateurs.</li>
+  <li>Recherche en IA d'entreprise : Responsable d’un projet avec BNP Paribas sur l’adoption stratégique de RAG multimodaux open source, évaluant leur impact business et les KPI associés.</li>
+  <li>Technologies : Python, SQL, PyTorch, AWS, Power BI, Excel/VBA, Pyspark, Power Query (Certified Scrum Product Owner)</li>
 </ul>
 
 <p><strong>Mon objectif</strong></p>
-<p>Bien que mes bases soient dans les <strong>données et le produit</strong>, je me concentre actuellement sur les <strong>solutions IA appliquées</strong> — avec une attention particulière à leur impact réel et leur alignement stratégique.</p>
+<p>Bien que mes bases soient dans les données et le produit, je me concentre actuellement sur les solutions IA appliquées — avec une attention particulière à leur impact réel et leur alignement stratégique.</p>
 
-<p><strong>Projet en vedette :</strong><br/>
+<p><strong>Projet récent :</strong><br/>
 <a href="https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb" target="_blank">Assistant stratégique IA – Cas d’usage Retail</a><br/>
 Un assistant intelligent pour la stratégie de vente au détail, exploitant les LLMs et la segmentation pour piloter les décisions de planification et de merchandising.</p>
 
-<p>Connectons-nous pour construire ensemble le futur de l’<strong>innovation financière centrée sur les données et l’humain</strong>.</p>
+<p>Connectons-nous et construisons l’avenir ensemble.</p>
                 `
             }
         }
@@ -75,13 +75,13 @@ function updateContent() {
     const lang = isEnglish ? 'en' : 'fr';
     document.getElementById('name').textContent = translations.name[lang];
     document.getElementById('title').textContent = translations.title[lang];
-    
+
     const navLinks = document.querySelectorAll('#main-nav .nav-link');
     navLinks.forEach(link => {
         const key = link.getAttribute('data-target');
         link.textContent = translations.nav[key][lang];
     });
-    
+
     Object.keys(translations.sections).forEach(sectionKey => {
         const section = document.getElementById(sectionKey);
         if (section) {
