@@ -34,6 +34,11 @@ const translations = {
   <li>Enterprise AI Research: Currently leading a project with BNP Paribas on the strategic adoption of open-source multimodal Enterprise RAG systems, evaluating business impact and KPIs.</li>
 </ul>
 
+<p><strong>Tools & Technologies</strong></p>
+<ul>
+  <li>AWS, Python, PyTorch, SQL, LLMs, Fine-tuning, Power BI, Tableau, Excel/VBA, JIRA, Git</li>
+</ul>
+
 <p><strong>My Focus</strong></p>
 <p>While my foundation is rooted in data and product, my current focus is on AI-powered solutions—with an emphasis on practical impact and business alignment.</p>
 
@@ -55,6 +60,11 @@ A smart assistant for retail strategy that uses LLMs and segmentation to drive p
   <li>Recherche en IA d'entreprise : Responsable d’un projet avec BNP Paribas sur l’adoption stratégique de RAG multimodaux open source, évaluant leur impact business et les KPI associés.</li>
 </ul>
 
+<p><strong>Outils & Technologies</strong></p>
+<ul>
+  <li>AWS, Python, PyTorch, SQL, LLMs, Fine-tuning, Power BI, Tableau, Excel/VBA, JIRA, Git</li>
+</ul>
+
 <p><strong>Mon objectif</strong></p>
 <p>Bien que mes bases soient dans les données et le produit, je me concentre actuellement sur les solutions IA appliquées — avec une attention particulière à leur impact réel et leur alignement stratégique.</p>
 
@@ -71,26 +81,45 @@ Un assistant intelligent pour la stratégie de vente au détail, exploitant les 
             content: {
                 en: `
 <ul>
-  <li><strong>Programming:</strong> Python, R, SQL, NoSQL, VBA (Excel Macros)</li>
+  <li><strong>Programming:</strong> Python, SQL, VBA (Excel Macros)</li>
   <li><strong>Libraries & Frameworks:</strong> PyTorch, TensorFlow, Keras, LangChain, Hugging Face, Scikit-learn, NumPy, Pandas</li>
-  <li><strong>Data Tools:</strong> Power BI, Tableau, Advanced Excel, Power Query, Bloomberg, Reuters</li>
+  <li><strong>Data Tools:</strong> Power BI, Tableau, Excel (Advanced), Power Query</li>
   <li><strong>Cloud & Platforms:</strong> AWS, GCP, Snowflake, Databricks</li>
-  <li><strong>AI & ML:</strong> Machine Learning, Deep Learning, NLP, Large Language Models (LLMs), Fine-tuning, RAG architecture, Prompt Engineering</li>
-  <li><strong>Version Control & DevOps:</strong> Git, GitHub, CUDA</li>
-  <li><strong>Project Management:</strong> Agile, Scrum (Certified Scrum Product Owner), Jira</li>
-  <li><strong>Domain Knowledge:</strong> Financial Markets, Product Management, Data Assurance, Regulatory Compliance, Retail Analytics</li>
+  <li><strong>AI & ML:</strong> LLMs, Fine-tuning, RAG, Prompt Engineering, Machine Learning, Deep Learning, NLP</li>
+  <li><strong>Version Control:</strong> Git, GitHub, CUDA</li>
+  <li><strong>Project Management:</strong> Scrum (Certified), Agile, Jira</li>
+  <li><strong>Domain Expertise:</strong> Financial Markets, Product Management, Data Assurance, Regulatory Compliance, Retail Analytics</li>
 </ul>
 `,
                 fr: `
 <ul>
-  <li><strong>Programmation :</strong> Python, R, SQL, NoSQL, VBA (Macros Excel)</li>
-  <li><strong>Bibliothèques & Frameworks :</strong> PyTorch, TensorFlow, Keras, LangChain, Hugging Face, Scikit-learn, NumPy, Pandas</li>
-  <li><strong>Outils de Données :</strong> Power BI, Tableau, Excel avancé, Power Query, Bloomberg, Reuters</li>
+  <li><strong>Programmation :</strong> Python, SQL, VBA (Macros Excel)</li>
+  <li><strong>Librairies & Frameworks :</strong> PyTorch, TensorFlow, Keras, LangChain, Hugging Face, Scikit-learn, NumPy, Pandas</li>
+  <li><strong>Outils de Données :</strong> Power BI, Tableau, Excel (avancé), Power Query</li>
   <li><strong>Cloud & Plateformes :</strong> AWS, GCP, Snowflake, Databricks</li>
-  <li><strong>IA & ML :</strong> Machine Learning, Deep Learning, NLP, Modèles de langage (LLMs), Fine-tuning, architecture RAG, Ingénierie de prompt</li>
-  <li><strong>Contrôle de version & DevOps :</strong> Git, GitHub, CUDA</li>
-  <li><strong>Gestion de Projet :</strong> Agile, Scrum (Product Owner certifié), Jira</li>
-  <li><strong>Domaine :</strong> Marchés financiers, Gestion de produit, Assurance qualité des données, Conformité réglementaire, Analyse du retail</li>
+  <li><strong>IA & ML :</strong> LLMs, Fine-tuning, RAG, Ingénierie de Prompt, Machine Learning, Deep Learning, NLP</li>
+  <li><strong>Contrôle de Version :</strong> Git, GitHub, CUDA</li>
+  <li><strong>Gestion de Projet :</strong> Scrum (Certifié), Agile, Jira</li>
+  <li><strong>Domaine :</strong> Marchés Financiers, Gestion de Produit, Assurance Qualité des Données, Conformité Réglementaire, Analyse Retail</li>
+</ul>
+`
+            }
+        },
+        education: {
+            title: { en: "Education", fr: "Éducation" },
+            content: {
+                en: `
+<ul>
+  <li><strong>emlyon business school</strong> — MSc in Data Science & AI Strategy<br/>2024 – 2025, Lyon/Paris, France</li>
+  <li><strong>Thiagarajar School of Management</strong> — MBA in Finance & Analytics<br/>2019 – 2021, Madurai, India</li>
+  <li><strong>National Institute of Technology, Tiruchirappalli</strong> — BTech in Computer Science and Engineering<br/>2014 – 2018, Tiruchirappalli, India</li>
+</ul>
+`,
+                fr: `
+<ul>
+  <li><strong>emlyon business school</strong> — MSc en Data Science & Stratégie en IA<br/>2024 – 2025, Lyon/Paris, France</li>
+  <li><strong>Thiagarajar School of Management</strong> — MBA en Finance & Analyse<br/>2019 – 2021, Madurai, Inde</li>
+  <li><strong>Institut National de Technologie, Tiruchirappalli</strong> — BTech en Informatique et Ingénierie<br/>2014 – 2018, Tiruchirappalli, Inde</li>
 </ul>
 `
             }
