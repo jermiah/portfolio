@@ -204,7 +204,7 @@ experience: {
 },
         
  : {
-            title: { en: "showcase", fr: "showcase" },
+            title: { en: "Showcase", fr: "Showcase" },
             content: {
                 en: `
                         <ul>
