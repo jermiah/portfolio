@@ -228,7 +228,7 @@ experience: {
             title: { en: "Projects", fr: "Projets" },
             content: {
                 en: `
-<h4>AI Strategy Copilot <a href="https://github.com/jermiah/Product-Strategy-App/blob/main/README.md" target="_blank">(GitHub)</a></h4>
+<h4>AI Strategy Copilot </h4>
 <p>A Streamlit + LLM-powered assistant for retail product strategy using RAG, unsupervised learning, feedback loops, and advanced prompt engineering.</p>
 <p><a href="https://github.com/jermiah/Product-Strategy-App/blob/main/README.md" target="_blank">View Code</a> | <a href="https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb" target="_blank">See Demo</a></p>
 
@@ -247,7 +247,7 @@ experience: {
 </ul>
 `,
                 fr: `
-<h4>AI Strategy Copilot <a href="https://github.com/jermiah/Product-Strategy-App/blob/main/README.md" target="_blank">(GitHub)</a></h4>
+<h4>AI Strategy Copilot </h4>
 <p>Assistant IA basé sur Streamlit + LLM pour la stratégie produit retail, intégrant RAG, apprentissage non supervisé, boucles de rétroaction et ingénierie de prompt avancée.</p>
 <p><a href="https://github.com/jermiah/Product-Strategy-App/blob/main/README.md" target="_blank">Voir le code</a> | <a href="https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb" target="_blank">Voir la démo</a></p>
 
