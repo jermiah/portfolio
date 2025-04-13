@@ -225,26 +225,42 @@ experience: {
     }
 },
 projects: {
-    title: { en: "Projects", fr: "Projets" },
-    content: {
-        en: `
-            <ul>
-                <li><strong>AI Strategy Copilot</strong> – Retail product segmentation and strategy generation using LLM + RAG (Streamlit)</li>
-                <li><strong>Speaker Identification System</strong> – Deep learning model (ECAPA-TDNN) for classifying speakers using PyTorch</li>
-                <li><strong>HR Analytics Dashboard</strong> – Workforce insights and attrition prediction using Tableau & LightGBM</li>
-                <li><strong>Portfolio Website</strong> – Built using Three.js, multilingual support, dark/light mode, and responsive layout</li>
-            </ul>
-        `,
-        fr: `
-            <ul>
-                <li><strong>Assistant stratégique IA</strong> – Segmentation et génération de stratégie produit retail avec LLM + RAG (Streamlit)</li>
-                <li><strong>Système d’identification vocale</strong> – Modèle deep learning (ECAPA-TDNN) pour classer les intervenants via PyTorch</li>
-                <li><strong>Tableau de bord RH</strong> – Analyse RH et prédiction de l’attrition avec Tableau & LightGBM</li>
-                <li><strong>Site de portfolio</strong> – Construit avec Three.js, multilingue, mode clair/sombre, design responsive</li>
-            </ul>
-        `
-    }
-},
+            title: { en: "Projects", fr: "Projets" },
+            content: {
+                en: `
+<h4>Machine Learning & Data Science Projects <a href="https://github.com/jermiah/machine_learning/blob/main/README.md" target="_blank">(GitHub)</a></h4>
+<ul>
+  <li><strong>AI Strategy Copilot</strong>: A Streamlit + LLM-powered assistant for retail product strategy using RAG and segmentation logic. <a href="https://github.com/jermiah/Product-Strategy-App/blob/main/README.md" target="_blank">View Code</a></li>
+  <li><strong>Bankruptcy Prediction</strong>: Predicting company bankruptcy using financial data with Logistic Regression, XGBoost, and ensemble models.</li>
+  <li><strong>Length of Stay Prediction</strong>: Healthcare model to estimate hospital patient stay duration using ensemble learning.</li>
+  <li><strong>Cool Wipes - Linear Programming</strong>: Supply chain optimization using Gurobi for optimal plant location and demand satisfaction.</li>
+</ul>
+
+<h4>Deep Learning Projects <a href="https://github.com/jermiah/deep_learning/blob/main/README.md" target="_blank">(GitHub)</a></h4>
+<ul>
+  <li><strong>Speaker Recognition</strong>: Deep learning audio classification using ECAPA-TDNN and PyTorch with Gradio-based testing.</li>
+  <li><strong>Sentiment Classification (BERT)</strong>: NLP project using fine-tuned BERT for classifying text sentiment.</li>
+  <li><strong>Image Classification</strong>: Vision task using CNNs and transfer learning (ResNet) for fast image model deployment.</li>
+</ul>
+`,
+                fr: `
+<h4>Projets de Machine Learning et Data Science <a href="https://github.com/jermiah/machine_learning/blob/main/README.md" target="_blank">(GitHub)</a></h4>
+<ul>
+  <li><strong>AI Strategy Copilot</strong> : Assistant IA pour la stratégie produit dans le retail. <a href="https://github.com/jermiah/Product-Strategy-App/blob/main/README.md" target="_blank">Voir le code</a></li>
+  <li><strong>Prédiction de faillite</strong> : Modélisation du risque de faillite des entreprises avec des modèles d’ensemble.</li>
+  <li><strong>Durée de séjour hospitalier</strong> : Estimation des séjours patients avec Random Forest, XGBoost et CatBoost.</li>
+  <li><strong>Cool Wipes - Programmation linéaire</strong> : Optimisation de la chaîne logistique via Gurobi.</li>
+</ul>
+
+<h4>Projets de Deep Learning <a href="https://github.com/jermiah/deep_learning/blob/main/README.md" target="_blank">(GitHub)</a></h4>
+<ul>
+  <li><strong>Reconnaissance vocale</strong> : Classification audio avec ECAPA-TDNN et PyTorch, interface Gradio.</li>
+  <li><strong>Classification des sentiments (BERT)</strong> : Analyse de sentiments textuels avec modèle BERT fine-tuné.</li>
+  <li><strong>Classification d’images</strong> : Projet de vision par apprentissage par transfert (ResNet).</li>
+</ul>
+`
+            }
+        },
 
         
  showcase : {
