@@ -34,11 +34,6 @@ const translations = {
   <li>Enterprise AI Research: Currently leading a project with BNP Paribas on the strategic adoption of open-source multimodal Enterprise RAG systems, evaluating business impact and KPIs.</li>
 </ul>
 
-<p><strong>Tools & Technologies</strong></p>
-<ul>
-  <li>AWS, Python, PyTorch, SQL, LLMs, Fine-tuning, Power BI, Tableau, Excel/VBA, JIRA, Git</li>
-</ul>
-
 <p><strong>My Focus</strong></p>
 <p>While my foundation is rooted in data and product, my current focus is on AI-powered solutions—with an emphasis on practical impact and business alignment.</p>
 
@@ -58,11 +53,6 @@ A smart assistant for retail strategy that uses LLMs and segmentation to drive p
   <li>Expérience bancaire : Chez BNP Paribas et HSBC, j'ai dirigé des projets clés en assurance qualité des données, automatisation et optimisation produit — obtenant trois prix d'innovation, dont le <em>Kaizen Award</em>.</li>
   <li>Produit & Data Science : Création d'une application d'assistance à la stratégie produit avec Streamlit + LLMs + RAG, générant des recommandations pour plus de 5 000 produits de détail grâce à la segmentation, aux KPI et aux retours utilisateurs.</li>
   <li>Recherche en IA d'entreprise : Responsable d’un projet avec BNP Paribas sur l’adoption stratégique de RAG multimodaux open source, évaluant leur impact business et les KPI associés.</li>
-</ul>
-
-<p><strong>Outils & Technologies</strong></p>
-<ul>
-  <li>AWS, Python, PyTorch, SQL, LLMs, Fine-tuning, Power BI, Tableau, Excel/VBA, JIRA, Git</li>
 </ul>
 
 <p><strong>Mon objectif</strong></p>
