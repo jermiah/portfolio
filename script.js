@@ -224,17 +224,17 @@ experience: {
 `
     }
 },
- projects: {
+   projects: {
             title: { en: "Projects", fr: "Projets" },
             content: {
                 en: `
 <h4>AI Strategy Copilot <a href="https://github.com/jermiah/Product-Strategy-App/blob/main/README.md" target="_blank">(GitHub)</a></h4>
-<p>A Streamlit + LLM-powered assistant for retail product strategy using RAG and segmentation logic.</p>
+<p>A Streamlit + LLM-powered assistant for retail product strategy using RAG, unsupervised learning, feedback loops, and advanced prompt engineering.</p>
 <p><a href="https://github.com/jermiah/Product-Strategy-App/blob/main/README.md" target="_blank">View Code</a> | <a href="https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb" target="_blank">See Demo</a></p>
 
 <h4>Machine Learning & Data Science Projects <a href="https://github.com/jermiah/machine_learning/blob/main/README.md" target="_blank">(GitHub)</a></h4>
 <ul>
-  <li><strong>Bankruptcy Prediction</strong>: Predicting company bankruptcy using financial data with Logistic Regression, XGBoost, and ensemble models.</li>
+  <li><strong>Bankruptcy Prediction</strong>: Predicting company bankruptcy by averaging predictions from Logistic Regression and XGBoost ensemble models trained on financial data.</li>
   <li><strong>Length of Stay Prediction</strong>: Healthcare model to estimate hospital patient stay duration using ensemble learning.</li>
   <li><strong>Cool Wipes - Linear Programming</strong>: Supply chain optimization using Gurobi for optimal plant location and demand satisfaction.</li>
 </ul>
@@ -248,12 +248,12 @@ experience: {
 `,
                 fr: `
 <h4>AI Strategy Copilot <a href="https://github.com/jermiah/Product-Strategy-App/blob/main/README.md" target="_blank">(GitHub)</a></h4>
-<p>Assistant IA basé sur Streamlit + LLM pour la stratégie produit retail utilisant RAG et la segmentation.</p>
+<p>Assistant IA basé sur Streamlit + LLM pour la stratégie produit retail, intégrant RAG, apprentissage non supervisé, boucles de rétroaction et ingénierie de prompt avancée.</p>
 <p><a href="https://github.com/jermiah/Product-Strategy-App/blob/main/README.md" target="_blank">Voir le code</a> | <a href="https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb" target="_blank">Voir la démo</a></p>
 
 <h4>Projets de Machine Learning et Data Science <a href="https://github.com/jermiah/machine_learning/blob/main/README.md" target="_blank">(GitHub)</a></h4>
 <ul>
-  <li><strong>Prédiction de faillite</strong> : Modélisation du risque de faillite des entreprises avec des modèles d’ensemble.</li>
+  <li><strong>Prédiction de faillite</strong> : Modélisation du risque de faillite en moyennant les prédictions de modèles de régression logistique et XGBoost.</li>
   <li><strong>Durée de séjour hospitalier</strong> : Estimation des séjours patients avec Random Forest, XGBoost et CatBoost.</li>
   <li><strong>Cool Wipes - Programmation linéaire</strong> : Optimisation de la chaîne logistique via Gurobi.</li>
 </ul>
@@ -263,6 +263,25 @@ experience: {
   <li><strong>Reconnaissance vocale</strong> : Classification audio avec ECAPA-TDNN et PyTorch, interface Gradio.</li>
   <li><strong>Classification des sentiments (BERT)</strong> : Analyse de sentiments textuels avec modèle BERT fine-tuné.</li>
   <li><strong>Classification d’images</strong> : Projet de vision par apprentissage par transfert (ResNet).</li>
+</ul>
+`
+            }
+        },
+        education: {
+            title: { en: "Education", fr: "Éducation" },
+            content: {
+                en: `
+<ul>
+  <li><strong><a href="https://em-lyon.com/en" target="_blank">emlyon business school</a> × <a href="https://www.mcgill.ca/" target="_blank">McGill University</a></strong> – MSc in Data Science & AI Strategy<br/>2024–2025 · Paris, France & Montreal, Canada<br/><em>emlyon: CGE Accredited, EQUIS/AMBA/AACSB Triple Crown, #4 in France for Business Studies<br/>McGill: Top Canadian public university known for AI research and global excellence</em></li>
+  <li><strong><a href="https://tsm.ac.in" target="_blank">Thiagarajar School of Management</a></strong> – MBA in Finance & Analytics<br/>2019–2021 · Madurai, India<br/><em>NAAC Accredited, Ranked among top private B-schools in South India</em></li>
+  <li><strong><a href="https://www.nitt.edu/" target="_blank">National Institute of Technology, Tiruchirappalli</a></strong> – BTech in Computer Science and Engineering<br/>2014–2018 · Tiruchirappalli, India<br/><em>Top 10 Engineering Institutes in India (NIRF Rankings)</em></li>
+</ul>
+`,
+                fr: `
+<ul>
+  <li><strong><a href="https://em-lyon.com/fr" target="_blank">emlyon business school</a> × <a href="https://www.mcgill.ca/" target="_blank">Université McGill</a></strong> – MSc en Data Science & Stratégie IA<br/>2024–2025 · Paris, France & Montréal, Canada<br/><em>emlyon : Accréditée CGE, Triple accréditation EQUIS/AMBA/AACSB, #4 en France<br/>McGill : Université publique canadienne reconnue pour la recherche en IA</em></li>
+  <li><strong><a href="https://tsm.ac.in" target="_blank">Thiagarajar School of Management</a></strong> – MBA en Finance & Analytics<br/>2019–2021 · Madurai, Inde<br/><em>École accréditée NAAC, reconnue parmi les meilleures écoles du Sud de l'Inde</em></li>
+  <li><strong><a href="https://www.nitt.edu/" target="_blank">Institut national de technologie de Tiruchirappalli</a></strong> – BTech en informatique<br/>2014–2018 · Tiruchirappalli, Inde<br/><em>Top 10 des instituts d’ingénierie en Inde (classements NIRF)</em></li>
 </ul>
 `
             }
