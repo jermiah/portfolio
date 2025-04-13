@@ -6,8 +6,8 @@ const translations = {
         fr: "Jermiah Jerome"
     },
     title: {
-        en: "Data Scientist",
-        fr: "Scientifique des Données"
+        en: "Data Scientist | AI & ML Engineer",
+        fr: "Scientifique des Données | Ingénieur IA & ML"
     },
     nav: {
         overview: { en: "Overview", fr: "Aperçu" },
