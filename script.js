@@ -213,6 +213,7 @@ experience: {
     }
 };
 
+
 function updateContent() {
     const lang = isEnglish ? 'en' : 'fr';
     document.getElementById('name').textContent = translations.name[lang];
@@ -247,8 +248,62 @@ function toggleLanguage() {
     langToggle.innerHTML = `<span class="button-icon">🌐</span> ${isEnglish ? 'Translate to French' : 'Traduire en anglais'}`;
 }
 
+function toggleMode() {
+    const body = document.body;
+    body.classList.toggle('light-mode');
+    const isLight = body.classList.contains('light-mode');
+    const modeToggle = document.getElementById('mode-toggle');
+    modeToggle.innerHTML = `<span class="button-icon">${isLight ? '🌑' : '☀️'}</span> ${isLight ? 'Dark mode' : 'Light mode'}`;
+
+    // Optional: Update WebGL background mode if defined
+    if (typeof updateBackgroundMode === 'function') {
+        updateBackgroundMode(isLight);
+    }
+}
+
+function showSection(sectionId) {
+    const sections = document.querySelectorAll('#main-content .section');
+    sections.forEach(section => section.classList.remove('active'));
+    const target = document.getElementById(sectionId);
+    if (target) target.classList.add('active');
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     updateContent();
+    showSection('overview'); // Show Overview by default
+
+    // Language toggle
     const langToggle = document.getElementById('lang-toggle');
     langToggle.addEventListener('click', toggleLanguage);
+
+    // Theme toggle
+    const modeToggle = document.getElementById('mode-toggle');
+    modeToggle.addEventListener('click', toggleMode);
+
+    // Navigation tab switching
+    const navLinks = document.querySelectorAll('#main-nav .nav-link');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('data-target');
+            showSection(targetId);
+
+            // Active nav styling
+            navLinks.forEach(nav => nav.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+
+    // Copy contact info to clipboard
+    const emailInfo = document.getElementById('email-info');
+    const phoneInfo = document.getElementById('phone-info');
+
+    [emailInfo, phoneInfo].forEach(el => {
+        el.addEventListener('click', function () {
+            const text = this.textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                alert(`Copied to clipboard: ${text}`);
+            });
+        });
+    });
 });
