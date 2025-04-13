@@ -1,4 +1,3 @@
-/* script.js */
 let isEnglish = true;
 
 const translations = {
@@ -33,8 +32,7 @@ const translations = {
 </ul>
 <p><strong>Tools & Technologies</strong>: Python, SQL, AWS, PyTorch, Excel/VBA, Power BI, Tableau, Git, Streamlit, JIRA, LLMs, Fine-tuning, RAG architecture</p>
 <p><strong>Recent Project:</strong><br/>
-<a href="https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb" target="_blank">AI Strategy Copilot – Retail Use Case</a><br/>
-A smart assistant for retail strategy that uses LLMs and segmentation to drive planning and merchandising decisions.</p>
+<a href="https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb" target="_blank">AI Strategy Copilot – Retail Use Case</a></p>
 <p>Let’s connect and build the future together.</p>
                 `,
                 fr: `
@@ -48,8 +46,7 @@ A smart assistant for retail strategy that uses LLMs and segmentation to drive p
 </ul>
 <p><strong>Outils & Technologies</strong> : Python, SQL, AWS, PyTorch, Excel/VBA, Power BI, Tableau, Git, Streamlit, JIRA, LLMs, Fine-tuning, architecture RAG</p>
 <p><strong>Projet récent :</strong><br/>
-<a href="https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb" target="_blank">Assistant stratégique IA – Cas d’usage Retail</a><br/>
-Un assistant intelligent pour la stratégie retail basé sur les LLMs et la segmentation pour optimiser la planification produit.</p>
+<a href="https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb" target="_blank">Assistant stratégique IA – Cas d’usage Retail</a></p>
 <p>Connectons-nous et construisons l’avenir ensemble.</p>
                 `
             }
@@ -81,6 +78,7 @@ Un assistant intelligent pour la stratégie retail basé sur les LLMs et la segm
 `
             }
         }
+        // Add education, experience, certification, extras blocks here (as you already have them)
     }
 };
 
@@ -118,7 +116,7 @@ function toggleLanguage() {
     langToggle.innerHTML = `<span class="button-icon">🌐</span> ${isEnglish ? 'Translate to French' : 'Traduire en anglais'}`;
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     updateContent();
     const langToggle = document.getElementById('lang-toggle');
     langToggle.addEventListener('click', toggleLanguage);
