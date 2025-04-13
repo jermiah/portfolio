@@ -50,32 +50,78 @@ const translations = {
             }
         },
         skills: {
-            title: { en: "Skills", fr: "Compétences" },
-            content: {
-                en: `
+    title: { en: "Skills", fr: "Compétences" },
+    content: {
+        en: `
+<h4>Expertise</h4>
 <ul>
-  <li>Programming: Python, SQL, VBA</li>
-  <li>Libraries: NumPy, Pandas, Scikit-learn, PyTorch, Matplotlib</li>
-  <li>Tools: Power BI, Tableau, Excel (Advanced), JIRA, Git, Power Query, Streamlit</li>
-  <li>Cloud & Automation: AWS, Web scraping, Automation (macros/scripts)</li>
-  <li>AI Specialization: LLMs, Fine-tuning, RAG architecture</li>
-  <li>Domains: Financial Markets, Product Management, Retail Analytics, Data Assurance</li>
-  <li>Methodologies: Agile, Scrum (Certified Scrum Product Owner)</li>
+  <li>Business Intelligence & Data Analysis</li>
+  <li>Data Visualization</li>
+  <li>Big Data & Data Science</li>
+  <li>Machine Learning</li>
+  <li>Deep Learning</li>
+  <li>Natural Language Processing (NLP)</li>
+  <li>Large Language Models (LLM)</li>
+  <li>Prompt Engineering</li>
+  <li>Financial Markets</li>
+  <li>Artificial Intelligence Strategy</li>
+</ul>
+<h4>Professional</h4>
+<ul>
+  <li>Product Management</li>
+  <li>Tech Project Management</li>
+  <li>Problem Solving & Decision Making</li>
+  <li>Collaboration and Teamwork</li>
+  <li>Stakeholder Management</li>
+  <li>Team Management & Leadership</li>
+  <li>Technical Communication</li>
+</ul>
+<h4>Technical</h4>
+<ul>
+  <li>Python, R, SQL, NoSQL, VBA/Macros, Scala, DAX</li>
+  <li>PyTorch, TensorFlow, Keras, LangChain, LoRA, QLoRA</li>
+  <li>Git, GitHub, CUDA, Hugging Face</li>
+  <li>GCP, AWS, Snowflake, Databricks</li>
+  <li>Power BI, Tableau, Advanced Excel</li>
+  <li>Bloomberg, Reuters</li>
 </ul>
 `,
-                fr: `
+        fr: `
+<h4>Expertise</h4>
 <ul>
-  <li>Programmation : Python, SQL, VBA</li>
-  <li>Librairies : NumPy, Pandas, Scikit-learn, PyTorch, Matplotlib</li>
-  <li>Outils : Power BI, Tableau, Excel (avancé), JIRA, Git, Power Query, Streamlit</li>
-  <li>Cloud & Automatisation : AWS, Web scraping, automatisation (macros/scripts)</li>
-  <li>Spécialisation en IA : LLMs, Fine-tuning, architecture RAG</li>
-  <li>Secteurs : marchés financiers, gestion de produit, analytique retail, assurance qualité des données</li>
-  <li>Méthodologies : Agile, Scrum (Certified Scrum Product Owner)</li>
+  <li>Business Intelligence et analyse de données</li>
+  <li>Visualisation de données</li>
+  <li>Big Data et Data Science</li>
+  <li>Apprentissage automatique</li>
+  <li>Apprentissage profond</li>
+  <li>Traitement du langage naturel (NLP)</li>
+  <li>Modèles de langage (LLM)</li>
+  <li>Prompt Engineering</li>
+  <li>Marchés financiers</li>
+  <li>Stratégie en intelligence artificielle</li>
+</ul>
+<h4>Professionnel</h4>
+<ul>
+  <li>Gestion de produit</li>
+  <li>Gestion de projets technologiques</li>
+  <li>Résolution de problèmes & prise de décision</li>
+  <li>Collaboration et travail d'équipe</li>
+  <li>Gestion des parties prenantes</li>
+  <li>Management d'équipe et leadership</li>
+  <li>Communication technique</li>
+</ul>
+<h4>Technique</h4>
+<ul>
+  <li>Python, R, SQL, NoSQL, VBA/Macros, Scala, DAX</li>
+  <li>PyTorch, TensorFlow, Keras, LangChain, LoRA, QLoRA</li>
+  <li>Git, GitHub, CUDA, Hugging Face</li>
+  <li>GCP, AWS, Snowflake, Databricks</li>
+  <li>Power BI, Tableau, Excel Avancé</li>
+  <li>Bloomberg, Reuters</li>
 </ul>
 `
-            }
-        },
+    }
+},
         education: {
     title: { en: "Education", fr: "Éducation" },
     content: {
