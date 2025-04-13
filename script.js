@@ -202,8 +202,30 @@ experience: {
 `
     }
 },
+projects: {
+    title: { en: "Projects", fr: "Projets" },
+    content: {
+        en: `
+            <ul>
+                <li><strong>AI Strategy Copilot</strong> – Retail product segmentation and strategy generation using LLM + RAG (Streamlit)</li>
+                <li><strong>Speaker Identification System</strong> – Deep learning model (ECAPA-TDNN) for classifying speakers using PyTorch</li>
+                <li><strong>HR Analytics Dashboard</strong> – Workforce insights and attrition prediction using Tableau & LightGBM</li>
+                <li><strong>Portfolio Website</strong> – Built using Three.js, multilingual support, dark/light mode, and responsive layout</li>
+            </ul>
+        `,
+        fr: `
+            <ul>
+                <li><strong>Assistant stratégique IA</strong> – Segmentation et génération de stratégie produit retail avec LLM + RAG (Streamlit)</li>
+                <li><strong>Système d’identification vocale</strong> – Modèle deep learning (ECAPA-TDNN) pour classer les intervenants via PyTorch</li>
+                <li><strong>Tableau de bord RH</strong> – Analyse RH et prédiction de l’attrition avec Tableau & LightGBM</li>
+                <li><strong>Site de portfolio</strong> – Construit avec Three.js, multilingue, mode clair/sombre, design responsive</li>
+            </ul>
+        `
+    }
+},
+
         
- : {
+ showcase : {
             title: { en: "Showcase", fr: "Showcase" },
             content: {
                 en: `
