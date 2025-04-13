@@ -38,6 +38,7 @@ const translations = {
 <p>
 Product Strategy Assistant App Demo :
 <a href="https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb" target="_blank">
+GrandView by Prosol
 </a>
 </p>
 
@@ -61,6 +62,7 @@ Want to see awards, communities, and hackathons? Check out the Showcase section.
 <p>
 Démo de l’Assistant Stratégique Produit :
 <a href="https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb" target="_blank">
+GrandView by Prosol
 </a>
 </p>
 
