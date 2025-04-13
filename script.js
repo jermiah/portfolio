@@ -224,13 +224,16 @@ experience: {
 `
     }
 },
-projects: {
+ projects: {
             title: { en: "Projects", fr: "Projets" },
             content: {
                 en: `
+<h4>AI Strategy Copilot <a href="https://github.com/jermiah/Product-Strategy-App/blob/main/README.md" target="_blank">(GitHub)</a></h4>
+<p>A Streamlit + LLM-powered assistant for retail product strategy using RAG and segmentation logic.</p>
+<p><a href="https://github.com/jermiah/Product-Strategy-App/blob/main/README.md" target="_blank">View Code</a> | <a href="https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb" target="_blank">See Demo</a></p>
+
 <h4>Machine Learning & Data Science Projects <a href="https://github.com/jermiah/machine_learning/blob/main/README.md" target="_blank">(GitHub)</a></h4>
 <ul>
-  <li><strong>AI Strategy Copilot</strong>: A Streamlit + LLM-powered assistant for retail product strategy using RAG and segmentation logic. <a href="https://github.com/jermiah/Product-Strategy-App/blob/main/README.md" target="_blank">View Code</a></li>
   <li><strong>Bankruptcy Prediction</strong>: Predicting company bankruptcy using financial data with Logistic Regression, XGBoost, and ensemble models.</li>
   <li><strong>Length of Stay Prediction</strong>: Healthcare model to estimate hospital patient stay duration using ensemble learning.</li>
   <li><strong>Cool Wipes - Linear Programming</strong>: Supply chain optimization using Gurobi for optimal plant location and demand satisfaction.</li>
@@ -244,9 +247,12 @@ projects: {
 </ul>
 `,
                 fr: `
+<h4>AI Strategy Copilot <a href="https://github.com/jermiah/Product-Strategy-App/blob/main/README.md" target="_blank">(GitHub)</a></h4>
+<p>Assistant IA basé sur Streamlit + LLM pour la stratégie produit retail utilisant RAG et la segmentation.</p>
+<p><a href="https://github.com/jermiah/Product-Strategy-App/blob/main/README.md" target="_blank">Voir le code</a> | <a href="https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb" target="_blank">Voir la démo</a></p>
+
 <h4>Projets de Machine Learning et Data Science <a href="https://github.com/jermiah/machine_learning/blob/main/README.md" target="_blank">(GitHub)</a></h4>
 <ul>
-  <li><strong>AI Strategy Copilot</strong> : Assistant IA pour la stratégie produit dans le retail. <a href="https://github.com/jermiah/Product-Strategy-App/blob/main/README.md" target="_blank">Voir le code</a></li>
   <li><strong>Prédiction de faillite</strong> : Modélisation du risque de faillite des entreprises avec des modèles d’ensemble.</li>
   <li><strong>Durée de séjour hospitalier</strong> : Estimation des séjours patients avec Random Forest, XGBoost et CatBoost.</li>
   <li><strong>Cool Wipes - Programmation linéaire</strong> : Optimisation de la chaîne logistique via Gurobi.</li>
