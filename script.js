@@ -234,14 +234,14 @@ experience: {
   <li><strong>Business White Paper Research @ <a href="https://group.bnpparibas/" target="_blank">BNP Paribas</a></strong>: "Strategic Adoption of Open-Source Multimodal Enterprise RAG: Challenges, KPIs, and Business Impact." Focused on evaluating use cases, performance benchmarks, and implementation pathways for enterprise AI agents in banking.</li>
 </ul>
 
-<h4>Machine Learning & Data Science Projects <h3 style="display:inline;"> <a href="https://github.com/jermiah/machine_learning/blob/main/README.md" target="_blank">(View code)</a></h3></h4>
+<h4>Machine Learning & Data Science Projects <h5 style="display:inline;"> <a href="https://github.com/jermiah/machine_learning/blob/main/README.md" target="_blank">(View code)</a></h5></h4>
 <ul>
   <li><strong>Bankruptcy Prediction</strong>: Built classification models using ensemble techniques (Logistic Regression + XGBoost) to detect bankruptcy in imbalanced datasets.</li>
   <li><strong>Length of Stay Prediction</strong>: Developed classification models using Random Forest, XGBoost, and CatBoost to estimate hospital stay duration and optimize healthcare resource allocation.</li>
   <li><strong>Cool Wipes - Linear Programming</strong>: Supply chain optimization using Gurobi for optimal plant location and demand satisfaction.</li>
 </ul>
 
-<h4>Deep Learning Projects <a href="https://github.com/jermiah/deep_learning/blob/main/README.md" target="_blank">(GitHub)</a></h4>
+<h4>Deep Learning Projects <h5 style="display:inline;"><a href="https://github.com/jermiah/deep_learning/blob/main/README.md" target="_blank">(GitHub)</a></h5?</h4>
 <ul>
   <li><strong>Speaker Recognition</strong>: Speaker identification using ECAPA-TDNN embeddings and a hybrid approach combining classification (neural network) and verification (cosine similarity). Features Gradio demo, audio preprocessing with torchaudio, and SpeechBrain embeddings.</li>
   <li><strong>Sentiment Classification (BERT)</strong>: NLP classification using fine-tuned BERT on IMDb movie review sentiments. Built with HuggingFace Transformers, includes tokenization, attention masking, and model evaluation.</li>
@@ -258,14 +258,14 @@ experience: {
   <li><strong>Recherche stratégique chez <a href="https://group.bnpparibas/" target="_blank">BNP Paribas</a></strong> : "Adoption stratégique des RAG open-source multimodaux en entreprise : défis, KPIs et impact business." Livre blanc axé sur les cas d’usage, les benchmarks de performance et les voies d’implémentation des agents IA en banque.</li>
 </ul>
 
-<h4>Projets de Machine Learning et Data Science <h3 style="display:inline;"><a href="https://github.com/jermiah/machine_learning/blob/main/README.md" target="_blank">(Voir le code)</a></h3></h4>
+<h4>Projets de Machine Learning et Data Science <h5 style="display:inline;"><a href="https://github.com/jermiah/machine_learning/blob/main/README.md" target="_blank">(Voir le code)</a></h5></h4>
 <ul>
   <li><strong>Prédiction de faillite</strong> : Modèles de classification utilisant des techniques d'ensemble (régression logistique + XGBoost) pour détecter les faillites dans des jeux de données déséquilibrés.</li>
   <li><strong>Durée de séjour hospitalier</strong> : Modèles de classification avec Random Forest, XGBoost et CatBoost pour estimer la durée d’hospitalisation des patients et améliorer l'allocation des ressources.</li>
   <li><strong>Cool Wipes - Programmation linéaire</strong> : Optimisation de la chaîne logistique via Gurobi.</li>
 </ul>
 
-<h4>Projets de Deep Learning <a href="https://github.com/jermiah/deep_learning/blob/main/README.md" target="_blank">(GitHub)</a></h4>
+<h4>Projets de Deep Learning <h5 style="display:inline;"><a href="https://github.com/jermiah/deep_learning/blob/main/README.md" target="_blank">(GitHub)</a></h5></h4>
 <ul>
   <li><strong>Reconnaissance vocale</strong> : Identification des locuteurs à partir d’audios à l’aide d’ECAPA-TDNN. Combine classification (réseau neuronal) et vérification par similarité (cosine). Démo Gradio, traitement audio avec torchaudio et embeddings SpeechBrain.</li>
   <li><strong>Classification des sentiments (BERT)</strong> : Classification NLP avec BERT fine-tuné sur les avis de films IMDb. Utilisation des Transformers HuggingFace, tokenisation, masquage d'attention et évaluation du modèle.</li>
