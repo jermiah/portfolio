@@ -2,7 +2,7 @@ let scene, camera, renderer, material, plane;
 let mouseX = 0, mouseY = 0;
 let targetMouseX = 0, targetMouseY = 0;
 const lerpFactor = 0.1;
-let isDarkMode = true; // Start in dark mode
+let isDarkMode = false; 
 let currentColor1 = new THREE.Vector3(0, 0, 0); // Black
 let currentColor2 = new THREE.Vector3(0.2, 0.4, 0.8); // Initial dark mode color
 let targetColor1 = new THREE.Vector3(0, 0, 0);
