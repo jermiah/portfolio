@@ -42,7 +42,7 @@ Product Strategy Assistant App Demo :
 </p>
 
 <p>Let’s connect and build the future of AI-powered strategy and innovation together. <br>
-Want to see awards, communities, and hackathons? Check out the <a href="#" class="nav-link" data-target="showcase">Showcase section</a>.</p>
+Want to see awards, communities, and hackathons? Check out the Showcase section.</p>
 
                 `,
                 fr: `
@@ -65,7 +65,7 @@ Démo de l’Assistant Stratégique Produit :
 </p>
 
 <p>Connectons-nous et construisons ensemble l’avenir de la stratégie augmentée par l’IA.<br>
-Tu veux découvrir les prix, hackathons et communautés ? Va voir la section <a href="#" class="nav-link" data-target="showcase">Showcase</a>.</p>
+Tu veux découvrir les prix, hackathons et communautés ? Va voir la section Showcase.</p>
 
                 `
             }
