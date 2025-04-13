@@ -15,7 +15,7 @@ const translations = {
         education: { en: "Education", fr: "Éducation" },
         experience: { en: "Experience", fr: "Expérience" },
         certification: { en: "Certification", fr: "Certification" },
-        extras: { en: "Extras", fr: "Extras" }
+        showcase: { en: "Showcase", fr: "Showcase" }
     },
     sections: {
          overview: {
@@ -202,8 +202,8 @@ experience: {
     }
 },
         
- extras: {
-            title: { en: "Extras", fr: "Extras" },
+ : {
+            title: { en: "showcase", fr: "showcase" },
             content: {
                 en: `
                         <ul>
