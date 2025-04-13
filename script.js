@@ -142,7 +142,7 @@ experience: {
  extras: {
             title: { en: "Extras", fr: "Extras" },
             content: {
-                en: `[
+                en: `
                         <ul>
                           <li><strong>Awards:</strong>
                             <ul>
@@ -173,9 +173,9 @@ experience: {
                             </ul>
                           </li>
                         </ul>
-                        ]`,
+                        `,
                 fr: `
-                    [<ul>
+                    <ul>
                       <li><strong>Récompenses :</strong>
                         <ul>
                           <li><em>Prix Antares pour performance exceptionnelle :</em> Reconnu pour l'excellence constante chez BNP Paribas.</li>
@@ -205,7 +205,7 @@ experience: {
                         </ul>
                       </li>
                     </ul>
-                    ]`
+                    `
 
             }
         }
