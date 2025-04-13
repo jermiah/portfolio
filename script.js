@@ -19,107 +19,94 @@ const translations = {
         extras: { en: "Extras", fr: "Extras" }
     },
     sections: {
-        overview: {
-            title: { en: "Overview", fr: "Aperçu" },
-            content: {
-                en: `
-<p>I’m a data-driven product thinker with 5+ years of experience in banking and financial services, specializing in data quality, workflow automation, and product management. I’ve worked across BNP Paribas and HSBC, where I led impactful projects that improved regulatory compliance, streamlined operations, and enhanced decision-making through data.</p>
-
-<p>Currently, I’m pursuing a Master of Science in Data Science & AI Strategy at emlyon business school, where I’m transitioning into the world of machine learning, deep learning, and LLMs. My academic journey also includes an MBA in Finance & Analytics and a BTech in Computer Science, allowing me to connect business goals with technical execution.</p>
-
-<p><strong>What I Bring to the Table</strong></p>
-<ul>
-  <li>Banking Experience: At BNP Paribas and HSBC, I led key projects in data assurance, automation, and product optimization—earning three awards, including the <em>Kaizen Award</em>.</li>
-  <li>Product Thinking Meets Data Science: Developed a Product Strategy Assistant App using Streamlit + LLMs + RAG, generating real-time strategy suggestions for 5,000+ retail products by combining segmentation, KPIs, and feedback.</li>
-  <li>Enterprise AI Research: Currently leading a project with BNP Paribas on the strategic adoption of open-source multimodal Enterprise RAG systems, evaluating business impact and KPIs.</li>
-</ul>
-
-<p><strong>Tools & Technologies</strong></p>
-<ul>
-  <li>AWS, Python, PyTorch, SQL, LLMs, Fine-tuning, Power BI, Tableau, Excel/VBA, JIRA, Git</li>
-</ul>
-
-<p><strong>My Focus</strong></p>
-<p>While my foundation is rooted in data and product, my current focus is on AI-powered solutions—with an emphasis on practical impact and business alignment.</p>
-
-<p><strong>Recent Project:</strong><br/>
-<a href="https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb" target="_blank">AI Strategy Copilot – Retail Use Case</a><br/>
-A smart assistant for retail strategy that uses LLMs and segmentation to drive planning and merchandising decisions.</p>
-
-<p>Let’s connect and build the future together.</p>
-                `,
-                fr: `
-<p>Je suis un professionnel orienté produit et guidé par les données, avec plus de 5 ans d'expérience dans les services bancaires et financiers, spécialisé en qualité des données, automatisation des flux de travail et gestion de produit. J'ai travaillé chez BNP Paribas et HSBC, où j'ai mené des projets à fort impact améliorant la conformité réglementaire, optimisant les opérations et favorisant la prise de décisions basée sur les données.</p>
-
-<p>Actuellement, je poursuis un Master of Science en Data Science & Stratégie en IA à emlyon business school, où je me spécialise en machine learning, deep learning et modèles de langage (LLMs). Mon parcours académique comprend également un MBA en Finance & Analytics et un BTech en Informatique, me permettant d’aligner les objectifs business avec la mise en œuvre technique.</p>
-
-<p><strong>Ce que j'apporte</strong></p>
-<ul>
-  <li>Expérience bancaire : Chez BNP Paribas et HSBC, j'ai dirigé des projets clés en assurance qualité des données, automatisation et optimisation produit — obtenant trois prix d'innovation, dont le <em>Kaizen Award</em>.</li>
-  <li>Produit & Data Science : Création d'une application d'assistance à la stratégie produit avec Streamlit + LLMs + RAG, générant des recommandations pour plus de 5 000 produits de détail grâce à la segmentation, aux KPI et aux retours utilisateurs.</li>
-  <li>Recherche en IA d'entreprise : Responsable d’un projet avec BNP Paribas sur l’adoption stratégique de RAG multimodaux open source, évaluant leur impact business et les KPI associés.</li>
-</ul>
-
-<p><strong>Outils & Technologies</strong></p>
-<ul>
-  <li>AWS, Python, PyTorch, SQL, LLMs, Fine-tuning, Power BI, Tableau, Excel/VBA, JIRA, Git</li>
-</ul>
-
-<p><strong>Mon objectif</strong></p>
-<p>Bien que mes bases soient dans les données et le produit, je me concentre actuellement sur les solutions IA appliquées — avec une attention particulière à leur impact réel et leur alignement stratégique.</p>
-
-<p><strong>Projet récent :</strong><br/>
-<a href="https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb" target="_blank">Assistant stratégique IA – Cas d’usage Retail</a><br/>
-Un assistant intelligent pour la stratégie de vente au détail, exploitant les LLMs et la segmentation pour piloter les décisions de planification et de merchandising.</p>
-
-<p>Connectons-nous et construisons l’avenir ensemble.</p>
-                `
-            }
-        },
-        skills: {
-            title: { en: "Skills", fr: "Compétences" },
+        overview: { title: { en: "Overview", fr: "Aperçu" }, content: { ... } },
+        skills: { ... },
+        education: { ... },
+        experience: { ... },
+        certification: {
+            title: { en: "Certifications", fr: "Certifications" },
             content: {
                 en: `
 <ul>
-  <li><strong>Programming:</strong> Python, SQL, VBA (Excel Macros)</li>
-  <li><strong>Libraries & Frameworks:</strong> PyTorch, TensorFlow, Keras, LangChain, Hugging Face, Scikit-learn, NumPy, Pandas</li>
-  <li><strong>Data Tools:</strong> Power BI, Tableau, Excel (Advanced), Power Query</li>
-  <li><strong>Cloud & Platforms:</strong> AWS, GCP, Snowflake, Databricks</li>
-  <li><strong>AI & ML:</strong> LLMs, Fine-tuning, RAG, Prompt Engineering, Machine Learning, Deep Learning, NLP</li>
-  <li><strong>Version Control:</strong> Git, GitHub, CUDA</li>
-  <li><strong>Project Management:</strong> Scrum (Certified), Agile, Jira</li>
-  <li><strong>Domain Expertise:</strong> Financial Markets, Product Management, Data Assurance, Regulatory Compliance, Retail Analytics</li>
+  <li>Certified Scrum Product Owner – Scrum.org</li>
+  <li>AWS Certified Cloud Practitioner – Amazon Web Services</li>
+  <li>AWS Machine Learning Specialty – Coming May 2025</li>
 </ul>
 `,
                 fr: `
 <ul>
-  <li><strong>Programmation :</strong> Python, SQL, VBA (Macros Excel)</li>
-  <li><strong>Librairies & Frameworks :</strong> PyTorch, TensorFlow, Keras, LangChain, Hugging Face, Scikit-learn, NumPy, Pandas</li>
-  <li><strong>Outils de Données :</strong> Power BI, Tableau, Excel (avancé), Power Query</li>
-  <li><strong>Cloud & Plateformes :</strong> AWS, GCP, Snowflake, Databricks</li>
-  <li><strong>IA & ML :</strong> LLMs, Fine-tuning, RAG, Ingénierie de Prompt, Machine Learning, Deep Learning, NLP</li>
-  <li><strong>Contrôle de Version :</strong> Git, GitHub, CUDA</li>
-  <li><strong>Gestion de Projet :</strong> Scrum (Certifié), Agile, Jira</li>
-  <li><strong>Domaine :</strong> Marchés Financiers, Gestion de Produit, Assurance Qualité des Données, Conformité Réglementaire, Analyse Retail</li>
+  <li>Certified Scrum Product Owner – Scrum.org</li>
+  <li>AWS Certified Cloud Practitioner – Amazon Web Services</li>
+  <li>AWS Spécialité Machine Learning – Prévu pour mai 2025</li>
 </ul>
 `
             }
         },
-        education: {
-            title: { en: "Education", fr: "Éducation" },
+        extras: {
+            title: { en: "Extras", fr: "Extras" },
             content: {
                 en: `
 <ul>
-  <li><strong>emlyon business school</strong> — MSc in Data Science & AI Strategy<br/>2024 – 2025, Lyon/Paris, France</li>
-  <li><strong>Thiagarajar School of Management</strong> — MBA in Finance & Analytics<br/>2019 – 2021, Madurai, India</li>
-  <li><strong>National Institute of Technology, Tiruchirappalli</strong> — BTech in Computer Science and Engineering<br/>2014 – 2018, Tiruchirappalli, India</li>
+  <li><strong>Awards:</strong>
+    <ul>
+      <li><em>Antares Award for Outstanding Performance:</em> Recognized for consistent excellence in delivery and impact at BNP Paribas.</li>
+      <li><em>Spirit of Kaizen – Process Automation:</em> Awarded for automating and optimizing key workflows, enhancing efficiency.</li>
+      <li><em>Spirit of Kaizen – Data Quality Report:</em> Recognized for improving regulatory data quality reporting at BNP Paribas.</li>
+      <li><em>National Talent Search Examination (NTSE) Scholar:</em> Awarded by NCERT (India) for academic excellence in 2012.</li>
+    </ul>
+  </li>
+  <li>2nd Place – District Level Roller Skating Competition</li>
+  <li>2nd Place – District Level Chess Tournament</li>
+  <li>Community Builder – Creator of the Paris AI & Tech Community<br/>
+      <a href="https://www.linkedin.com/posts/jermiah-jerome_paris-ai-tech-community-members-activity-7303817496346730496-QNPT" target="_blank">See community post</a></li>
+  <li>Hackathon & Innovation Challenge Participant:
+    <ul>
+      <li>L'Oréal Brandstorm 2025</li>
+      <li>Novartis AI Hackathon</li>
+      <li>Sopra Steria AI Challenge</li>
+    </ul>
+  </li>
+  <li>Workshops & Summits:
+    <ul>
+      <li>Google Gemini Workshop</li>
+      <li>Web Summit Lisbon</li>
+      <li>AWS Summit Paris</li>
+      <li>AI Developers Meetup – Station F</li>
+      <li>French State of AI – Google Paris</li>
+    </ul>
+  </li>
 </ul>
 `,
                 fr: `
 <ul>
-  <li><strong>emlyon business school</strong> — MSc en Data Science & Stratégie en IA<br/>2024 – 2025, Lyon/Paris, France</li>
-  <li><strong>Thiagarajar School of Management</strong> — MBA en Finance & Analyse<br/>2019 – 2021, Madurai, Inde</li>
-  <li><strong>Institut National de Technologie, Tiruchirappalli</strong> — BTech en Informatique et Ingénierie<br/>2014 – 2018, Tiruchirappalli, Inde</li>
+  <li><strong>Récompenses :</strong>
+    <ul>
+      <li><em>Prix Antares pour performance exceptionnelle :</em> Reconnu pour l'excellence constante chez BNP Paribas.</li>
+      <li><em>Esprit Kaizen – Automatisation des processus :</em> Pour l'automatisation de flux de travail clés et l'amélioration de l'efficacité.</li>
+      <li><em>Esprit Kaizen – Rapport sur la qualité des données :</em> Pour l'amélioration des rapports réglementaires de qualité des données.</li>
+      <li><em>Boursier NTSE :</em> Prix du National Talent Search Examination par le NCERT (Inde) en 2012.</li>
+    </ul>
+  </li>
+  <li>2e place – Compétition de roller au niveau district</li>
+  <li>2e place – Tournoi d'échecs au niveau district</li>
+  <li>Créateur de communauté – Fondateur de la communauté Paris AI & Tech<br/>
+      <a href="https://www.linkedin.com/posts/jermiah-jerome_paris-ai-tech-community-members-activity-7303817496346730496-QNPT" target="_blank">Voir le post LinkedIn</a></li>
+  <li>Participation à des hackathons et concours d'innovation :
+    <ul>
+      <li>L'Oréal Brandstorm 2025</li>
+      <li>Hackathon IA – Novartis</li>
+      <li>Défi IA – Sopra Steria</li>
+    </ul>
+  </li>
+  <li>Ateliers & Sommets :
+    <ul>
+      <li>Atelier Google Gemini</li>
+      <li>Web Summit Lisbonne</li>
+      <li>AWS Summit Paris</li>
+      <li>AI Developers Meetup – Station F</li>
+      <li>French State of AI – Google Paris</li>
+    </ul>
+  </li>
 </ul>
 `
             }
@@ -127,61 +114,8 @@ Un assistant intelligent pour la stratégie de vente au détail, exploitant les 
     }
 };
 
-function updateContent() {
-    const lang = isEnglish ? 'en' : 'fr';
-    document.getElementById('name').textContent = translations.name[lang];
-    document.getElementById('title').textContent = translations.title[lang];
+function updateContent() { ... }
 
-    const navLinks = document.querySelectorAll('#main-nav .nav-link');
-    navLinks.forEach(link => {
-        const key = link.getAttribute('data-target');
-        link.textContent = translations.nav[key][lang];
-    });
+function toggleLanguage() { ... }
 
-    Object.keys(translations.sections).forEach(sectionKey => {
-        const section = document.getElementById(sectionKey);
-        if (section) {
-            const titleElement = section.querySelector('h3');
-            if (titleElement) {
-                titleElement.textContent = translations.sections[sectionKey].title[lang];
-            }
-
-            const contentElement = section.querySelector('.section-content');
-            if (contentElement) {
-                contentElement.innerHTML = translations.sections[sectionKey].content[lang];
-            }
-        }
-    });
-}
-
-function toggleLanguage() {
-    isEnglish = !isEnglish;
-    updateContent();
-    const langToggle = document.getElementById('lang-toggle');
-    langToggle.innerHTML = `<span class="button-icon">🌐</span> ${isEnglish ? 'Translate to French' : 'Traduire en anglais'}`;
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-    updateContent();
-    const langToggle = document.getElementById('lang-toggle');
-    langToggle.addEventListener('click', toggleLanguage);
-
-    // Section tab switching logic
-    document.querySelectorAll('#main-nav .nav-link').forEach(link => {
-        link.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('data-target');
-
-            document.querySelectorAll('.section').forEach(section => {
-                section.classList.remove('active');
-            });
-
-            document.querySelectorAll('#main-nav .nav-link').forEach(link => {
-                link.classList.remove('active');
-            });
-
-            document.getElementById(targetId).classList.add('active');
-            this.classList.add('active');
-        });
-    });
-});
+document.addEventListener('DOMContentLoaded', function() { ... });
