@@ -30,7 +30,7 @@ const translations = {
 <h4>What I Bring to the Table</h4>
 <ul>
   <li><strong>Banking Expertise:</strong> Led impactful initiatives at BNP Paribas and HSBC focused on data assurance, process automation, and regulatory reporting — with multiple recognitions for innovation and delivery.</li>
-  <li><strong>Product & Strategy Innovation:</strong> Developed a <em>Product Strategy Assistant App</em> using LLMs and Retrieval-Augmented Generation (RAG). This tool generated dynamic strategic recommendations for 5,000+ retail products by integrating performance KPIs, customer segmentation insights, and feedback-driven learning loops.</li>
+  <li><strong>Product & Strategy Innovation:</strong> Developed a <em>Product Strategy Assistant App</em> using LLMs and Retrieval-Augmented Generation (RAG). This tool generated dynamic strategic recommendations for 3,000+ retail products by integrating performance KPIs, customer segmentation insights, and feedback-driven learning loops.</li>
   <li><strong>AI Research & Thought Leadership:</strong> Leading an in-company research project at BNP Paribas titled: <em>“Strategic Adoption of Open-Source Multimodal Enterprise RAG: Challenges, KPIs, and Business Impact.”</em></li>
 </ul>
 
@@ -54,7 +54,7 @@ Want to see awards, communities, and hackathons? Check out the Showcase section.
 <h4>Ce que j’apporte</h4>
 <ul>
   <li><strong>Expérience bancaire :</strong> Projets d’impact chez BNP Paribas et HSBC en assurance des données, automatisation et reporting réglementaire — avec plusieurs reconnaissances pour l’innovation et la performance.</li>
-  <li><strong>Innovation produit & stratégie :</strong> Créateur de l’<em>Assistant Stratégique Produit</em>, une application développée avec LLMs et RAG. Elle génère des recommandations stratégiques dynamiques pour plus de 5 000 produits retail, en combinant indicateurs de performance, segmentation client et boucles de retour utilisateur.</li>
+  <li><strong>Innovation produit & stratégie :</strong> Créateur de l’<em>Assistant Stratégique Produit</em>, une application développée avec LLMs et RAG. Elle génère des recommandations stratégiques dynamiques pour plus de 3 000 produits retail, en combinant indicateurs de performance, segmentation client et boucles de retour utilisateur.</li>
   <li><strong>Recherche en IA :</strong> Responsable d’un projet de recherche en entreprise chez BNP Paribas : <em>“Adoption stratégique du RAG multimodal open-source en entreprise : enjeux, KPIs et impact business.”</em></li>
 </ul>
 
