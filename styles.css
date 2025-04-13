@@ -230,7 +230,7 @@ body.light-mode .download-btn:hover {
 .nav-link:hover,
 .nav-link.active {
     background-color: var(--nav-active-dark);
-    transform: scale(1.1);
+     /* transform: scale(1.1); */  /* Removed scaling for consistent size */
 }
 body.light-mode .nav-link:hover,
 body.light-mode .nav-link.active {
