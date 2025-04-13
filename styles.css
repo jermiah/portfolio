@@ -230,7 +230,7 @@ body.light-mode .download-btn:hover {
 .nav-link:hover,
 .nav-link.active {
     background-color: var(--nav-active-dark);
-     /* transform: scale(1.1); */  /* Removed scaling for consistent size */
+    /* transform: scale(1.1);  */  /* Removed scaling for consistent size */
 }
 body.light-mode .nav-link:hover,
 body.light-mode .nav-link.active {
@@ -358,15 +358,6 @@ body.light-mode #main-content {
     }
 }
 
-/* OPTIONAL: You can remove or tweak these if you want full desktop layout on all screens */
-/*@media (max-width: 1200px) {
-    // Remove or adjust if you don't want it to become a column layout
-}*/
-
-/*@media (max-width: 768px) {
-    // Remove or adjust if you don't want smaller font on mobile
-}*/
-
 /* ACHIEVEMENT LINKS THEME STYLING */
 body:not(.light-mode) .achievement-link {
     color: white;
@@ -381,4 +372,10 @@ body.light-mode .achievement-link {
 }
 body.light-mode .achievement-link:hover {
     color: #333333;
+}
+
+/* NEW RULE: REDUCED FONT SIZE FOR SECTION CONTENT */
+.section-content {
+    font-size: 14px;  /* Adjust to desired font size */
+    line-height: 1.4; /* Optional, for improved readability */
 }
