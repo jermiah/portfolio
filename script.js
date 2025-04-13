@@ -182,6 +182,25 @@ experience: {
 `
             }
         },
+        certification: {
+    title: { en: "Certifications", fr: "Certifications" },
+    content: {
+        en: `
+<ul>
+  <li>Certified Scrum Product Owner – Scrum.org</li>
+  <li>AWS Certified Cloud Practitioner – Amazon Web Services</li>
+  <li>AWS Machine Learning Specialty – Coming May 2025</li>
+</ul>
+`,
+        fr: `
+<ul>
+  <li>Certified Scrum Product Owner – Scrum.org</li>
+  <li>AWS Certified Cloud Practitioner – Amazon Web Services</li>
+  <li>AWS Spécialité Machine Learning – Prévu pour mai 2025</li>
+</ul>
+`
+    }
+},
         
  extras: {
             title: { en: "Extras", fr: "Extras" },
