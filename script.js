@@ -250,6 +250,9 @@ experience: {
 
 <h4>Upcoming Project</h4>
 <p><strong>Frugal AI</strong>: Designing a lightweight, offline assistant for Edge Devices using on-device LLMs for real-time translation and explanation in zero connectivity environments.</p>
+
+<p><strong>Intelligent & Automated Service Booking Platform with AI Assistance</strong>: An agentic, RAG-powered system integrated with n8n to automate service bookings with intelligent information retrieval, availability checks with travel constraints, payment processing, and WhatsApp notifications. Built for service-based businesses to streamline customer inquiries, scheduling, and communication with an end-to-end automated experience.</p>
+
 `,
                 fr: `
 <h4>Projets en entreprise</h4>
@@ -274,6 +277,8 @@ experience: {
 
 <h4>Projet à venir</h4>
 <p><strong>Frugal AI</strong> : Conception d’un assistant léger et hors ligne pour dispositifs Edge, utilisant des LLMs embarqués pour la traduction et l’explication en temps réel en l’absence de connectivité.</p>
+
+<p><strong>Plateforme intelligente et automatisée de réservation de services avec assistance IA</strong> : Système agentique basé sur un RAG, intégré à n8n pour automatiser les réservations avec récupération intelligente d’informations, vérification de disponibilité tenant compte des déplacements, traitement des paiements et notifications WhatsApp. Conçue pour les entreprises de services afin de fluidifier les demandes clients, la planification et la communication grâce à une expérience automatisée de bout en bout.</p>
 `
             }
         },
