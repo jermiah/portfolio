@@ -230,7 +230,7 @@ experience: {
                 en: `
 <h4>In-Company Projects</h4>
 <ul>
-  <li><strong>AI Strategy Copilot @ <a href="https://www.prosol.fr/" target="_blank">Prosol</a></strong>: A Streamlit + LLM-powered assistant for retail product strategy using RAG, unsupervised learning, feedback loops, and advanced prompt engineering. <a href="https://github.com/jermiah/Product-Strategy-App/blob/main/README.md" target="_blank">View Code</a> | <a href="https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb" target="_blank">See Demo</a></li>
+  <li><strong>AI Strategy Copilot @ <a href="https://www.prosol.fr/" target="_blank">Prosol</a></strong>: A Streamlit + LLM-powered assistant for retail product strategy using RAG, unsupervised learning, feedback loops, and advanced prompt engineering. <a href="https://github.com/jermiah/Product-Strategy-App/blob/main/README.md" target="_blank" style="font-size:0.75em; font-weight:normal; margin-left:8px;">View Code</a> |  <a href="https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb" target="_blank" style="font-size:0.75em; font-weight:normal; margin-left:8px;">See Demo</a></li>
   <li><strong>Business White Paper Research @ <a href="https://group.bnpparibas/" target="_blank">BNP Paribas</a></strong>: "Strategic Adoption of Open-Source Multimodal Enterprise RAG: Challenges, KPIs, and Business Impact." Focused on evaluating use cases, performance benchmarks, and implementation pathways for enterprise AI agents in banking.</li>
 </ul>
 
@@ -257,7 +257,7 @@ experience: {
                 fr: `
 <h4>Projets en entreprise</h4>
 <ul>
-  <li><strong>AI Strategy Copilot chez <a href="https://www.prosol.fr/" target="_blank">Prosol</a></strong> : Assistant IA basé sur Streamlit + LLM pour la stratégie produit retail, intégrant RAG, apprentissage non supervisé, boucles de rétroaction et ingénierie de prompt avancée. <a href="https://github.com/jermiah/Product-Strategy-App/blob/main/README.md" target="_blank">Voir le code</a> | <a href="https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb" target="_blank">Voir la démo</a></li>
+  <li><strong>AI Strategy Copilot chez <a href="https://www.prosol.fr/" target="_blank">Prosol</a></strong> : Assistant IA basé sur Streamlit + LLM pour la stratégie produit retail, intégrant RAG, apprentissage non supervisé, boucles de rétroaction et ingénierie de prompt avancée. <a href="https://github.com/jermiah/Product-Strategy-App/blob/main/README.md" target="_blank" style="font-size:0.75em; font-weight:normal; margin-left:8px;">Voir le code</a> |  <a href="https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb" target="_blank" style="font-size:0.75em; font-weight:normal; margin-left:8px;">Voir la démo</a></li>
   <li><strong>Recherche stratégique chez <a href="https://group.bnpparibas/" target="_blank">BNP Paribas</a></strong> : "Adoption stratégique des RAG open-source multimodaux en entreprise : défis, KPIs et impact business." Livre blanc axé sur les cas d’usage, les benchmarks de performance et les voies d’implémentation des agents IA en banque.</li>
 </ul>
 
