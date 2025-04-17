@@ -2,7 +2,7 @@ let scene, camera, renderer, material, plane;
 let mouseX = 0, mouseY = 0;
 let targetMouseX = 0, targetMouseY = 0;
 const lerpFactor = 0.1;
-let isDarkMode = false; 
+let isDarkMode = false;
 let currentColor1 = new THREE.Vector3(0, 0, 0); // Black
 let currentColor2 = new THREE.Vector3(0.2, 0.4, 0.8); // Initial dark mode color
 let targetColor1 = new THREE.Vector3(0, 0, 0);
@@ -14,6 +14,7 @@ function init() {
     camera.position.z = 1;
 
     renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setPixelRatio(window.devicePixelRatio); // ✅ MOBILE/RETINA FIX
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.getElementById('webgl-container').appendChild(renderer.domElement);
 
@@ -31,10 +32,10 @@ function init() {
             vec2 uv = gl_FragCoord.xy / resolution.xy;
             vec2 p = (uv * 2.0 - 1.0);
             vec2 m = (mouse / resolution.xy) * 2.0 - 1.0;
-            
+
             vec2 flowVector = m - p;
             float dist = length(flowVector);
-            
+
             vec2 offset = flowVector * FLOW_INTENSITY / (dist + 0.5);
             p += offset;
 
@@ -43,10 +44,10 @@ function init() {
                 p.x += 0.1 / fi * sin(fi * 2.0 * p.y + time * 0.25 + 0.2 * fi);
                 p.y += 0.1 / fi * cos(fi * 2.0 * p.x + time * 0.25 + 0.2 * fi);
             }
-            
+
             float intensity = 0.5 * sin(3.0 * p.x + 2.0 * p.y) + 0.5;
             vec3 color = mix(color1, color2, intensity);
-            
+
             gl_FragColor = vec4(color, 1.0);
         }
     `;
@@ -67,6 +68,14 @@ function init() {
 
     window.addEventListener('resize', onWindowResize, false);
     document.addEventListener('mousemove', onMouseMove, false);
+    
+    // ✅ MOBILE TOUCH SUPPORT
+    document.addEventListener('touchmove', function(event) {
+        const touch = event.touches[0];
+        targetMouseX = touch.clientX;
+        targetMouseY = touch.clientY;
+    }, false);
+
     document.addEventListener('click', changeColorsOnClick, false);
 
     onWindowResize();
@@ -127,7 +136,7 @@ function startAutoColorChange() {
 
 function changeColors() {
     if (isDarkMode) {
-        targetColor1 = new THREE.Vector3(0, 0, 0); // Always black in dark mode
+        targetColor1 = new THREE.Vector3(0, 0, 0);
         targetColor2 = new THREE.Vector3(Math.random(), Math.random(), Math.random());
     } else {
         targetColor1 = new THREE.Vector3(Math.random(), Math.random(), Math.random());
@@ -146,22 +155,20 @@ function toggleMode() {
     isDarkMode = !isDarkMode;
     document.body.classList.toggle('dark-mode', isDarkMode);
     document.body.classList.toggle('light-mode', !isDarkMode);
-    
+
     const modeToggle = document.getElementById('mode-toggle');
     modeToggle.textContent = isDarkMode ? '☀️' : '🌑';
 
-    changeColors(); // Immediately change colors when toggling mode
+    changeColors();
 }
 
-// Event listeners
 document.addEventListener('DOMContentLoaded', function() {
     init();
-    
+
     const modeToggle = document.getElementById('mode-toggle');
     modeToggle.addEventListener('click', toggleMode);
 });
 
-// Function to be called from outside (e.g., from script.js)
 function updateBackgroundMode(isLightMode) {
     isDarkMode = !isLightMode;
     changeColors();
