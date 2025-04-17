@@ -342,7 +342,7 @@ body.light-mode #main-content {
     scrollbar-color: var(--scrollbar-thumb-light) var(--scrollbar-bg-light);
 }
 
-/* OPTIONAL: KEEP THIS SO TALL SCREENS CAN EXPAND THE BOXES */
+/* KEEP THIS SO TALL SCREENS CAN EXPAND THE BOXES */
 @media (min-width: 1201px) {
     .left-box, .right-box {
         height: calc(90vh - 40px);
@@ -380,7 +380,7 @@ body.light-mode .achievement-link:hover {
     line-height: 1.4; /* Optional, for improved readability */
 }
 
-/* 👇 Add at the bottom of your CSS */
+
 @media (max-width: 768px) {
     .portfolio-container {
         flex-direction: column;
