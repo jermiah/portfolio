@@ -388,21 +388,23 @@ body.light-mode .achievement-link:hover {
 
 
 @media (max-width: 768px) {
-    .portfolio-container {
-    padding: 15px;
-    min-height: 100vh;
-    height: auto;
-}
-
-
-    .left-box,
-    .right-box {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 15px;
-    margin: 10px 0;
+    body {
+        -webkit-text-size-adjust: none;
     }
 
+    .portfolio-container {
+        padding: 15px;
+        min-height: 100vh;
+        height: auto;
+    }
+
+
+
+    .left-box, .right-box {
+        width: calc(100% - 30px);
+        margin: 10px 0;
+        padding: 15px;
+    }
 
     .circular-profile {
         width: 100px;
