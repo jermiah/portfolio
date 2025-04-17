@@ -379,3 +379,46 @@ body.light-mode .achievement-link:hover {
     font-size: 14px;  /* Adjust to desired font size */
     line-height: 1.4; /* Optional, for improved readability */
 }
+
+/* 👇 Add at the bottom of your CSS */
+@media (max-width: 768px) {
+    .portfolio-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .left-box,
+    .right-box {
+        width: 100%;
+        margin: 0 0 20px;
+        padding: 15px;
+    }
+
+    .circular-profile {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    h2 {
+        font-size: 0.9em;
+    }
+
+    .nav-button {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+    .right-box #main-content {
+        font-size: 15px;
+    }
+
+    .download-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
