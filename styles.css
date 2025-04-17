@@ -32,6 +32,8 @@ html, body {
     height: 100%;
     font-size: 16px;
     overflow: auto;
+    min-height: 100%;
+    min-width: 100%;
     overflow-x: hidden; /* hide horizontal scroll if not needed */
 }
 
@@ -39,7 +41,6 @@ html {
     -webkit-tap-highlight-color: transparent;
     scroll-behavior: smooth;
 }
-
 
 body {
     transition: background-color 0.5s ease, color 0.5s ease;
@@ -91,7 +92,7 @@ body.light-mode .box {
 
 /* LEFT COLUMN */
 .left-box {
-    width: 23%; /* reduced from 25% to allow more nav space */
+    width: 23%; 
     margin-right: 40px;
     padding: 20px;
     display: flex;
@@ -227,10 +228,10 @@ body.light-mode .download-btn:hover {
     text-decoration: none;
     font-size: 14px;
     /* smaller fixed padding so they fit on one line */
-    padding: 6px 10px;
+    padding: 2% 4%;
     border-radius: 10px;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    margin: 3px;
+    margin: 5px;
     white-space: nowrap; /* ensures text doesn’t wrap to a second line */
 }
 .nav-link:hover,
@@ -353,37 +354,57 @@ body.light-mode #main-content {
     .left-box, .right-box {
         height: calc(90vh - 40px);
     }
+    
     .left-box {
         overflow-y: hidden;
     }
+    
     .right-box {
         overflow-y: auto;
     }
+
     .right-box #main-content {
-        font-size: 16px; /* maintain normal desktop font size */
+        font-size: 13px; /* Larger text for desktop */
     }
 }
 
-/* ACHIEVEMENT LINKS THEME STYLING */
-body:not(.light-mode) .achievement-link {
-    color: white;
-    text-decoration: underline;
-}
-body:not(.light-mode) .achievement-link:hover {
-    color: #f0f0f0;
-}
-body.light-mode .achievement-link {
-    color: black;
-    text-decoration: underline;
-}
-body.light-mode .achievement-link:hover {
-    color: #333333;
-}
+@media (max-width: 1200px) {
+    .portfolio-container {
+        flex-direction: column;
+        align-items: center;
+    }
 
-/* NEW RULE: REDUCED FONT SIZE FOR SECTION CONTENT */
-.section-content {
-    font-size: 14px;  /* Adjust to desired font size */
-    line-height: 1.4; /* Optional, for improved readability */
+    .left-box, .right-box {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .left-box {
+        max-height: none;
+        overflow-y: hidden;
+    }
+
+    .right-box {
+        max-height: 60vh;
+        overflow-y: auto;
+    }
+
+    .circular-profile {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    h2 {
+        font-size: 0.9em;
+    }
+
+    .right-box #main-content {
+        font-size: 10px; /* Smaller text for laptop */
+    }
 }
 
 
