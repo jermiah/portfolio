@@ -370,201 +370,112 @@ body.light-mode #main-content {
 
 @media (min-width: 769px) and (max-width: 1200px) {
     .portfolio-container {
-        display: flex;
-        flex-direction: column;     /* Stack vertically for clean scroll experience */
+        flex-direction: column;
         align-items: center;
-        padding: 20px;
-        gap: 20px;
     }
 
-    .left-box,
-    .right-box {
-        width: 85%;
-        padding: 20px;
-        border-radius: 20px;
-        background-color: var(--squircle-bg-dark);
-        backdrop-filter: blur(10px);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    body.light-mode .left-box,
-    body.light-mode .right-box {
-        background-color: var(--squircle-bg-light);
+    .left-box, .right-box {
+        width: 90%;
+        margin: 10px 0;
     }
 
     .left-box {
-        overflow-y: visible;
+        max-height: none;
+        overflow-y: hidden;
     }
 
     .right-box {
-        max-height: 65vh; /* Allow content scroll */
+        max-height: 60vh;
         overflow-y: auto;
     }
 
     .circular-profile {
         width: 120px;
         height: 120px;
-        margin: 0 auto 20px;
     }
 
     h1 {
-        font-size: 1.6em;
-        text-align: center;
-        margin-bottom: 5px;
+        font-size: 1.4em;
     }
 
     h2 {
-        font-size: 1em;
-        text-align: center;
-        opacity: 0.8;
-        margin-bottom: 20px;
-    }
-
-    .nav-button,
-    .download-btn {
-        font-size: 14px;
-        padding: 10px 14px;
-        border-radius: 10px;
-    }
-
-    .nav-link {
-        font-size: 13px;
-        padding: 8px 10px;
-    }
-
-    #main-nav {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        gap: 8px;
-        overflow-x: auto;
-        white-space: nowrap;
-        padding-bottom: 10px;
-        margin-bottom: 10px;
+        font-size: 0.9em;
     }
 
     .right-box #main-content {
-        font-size: 14px;
-        line-height: 1.6;
-    }
-
-    .section h3 {
-        font-size: 1.2em;
-        margin-bottom: 15px;
-    }
-
-    .info-text {
-        font-size: 13px;
+        font-size: 10px; /* Smaller text for laptop */
     }
 }
 
-
 @media (max-width: 768px) {
-    html, body {
-        overflow-x: hidden;
+    body {
         -webkit-text-size-adjust: none;
     }
 
-    * {
-        box-sizing: border-box;
-    }
-
     .portfolio-container {
-        display: flex;
-        flex-direction: column;      /* Stack vertically */
-        align-items: center;
         padding: 15px;
-        gap: 20px;
+        min-height: 100vh;
+        height: auto;
     }
 
-    .left-box,
-    .right-box {
-        width: 100%;
-        padding: 16px;
-        margin: 0;
-        border-radius: 20px;
-        background-color: var(--squircle-bg-dark);
-        backdrop-filter: blur(10px);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    body.light-mode .left-box,
-    body.light-mode .right-box {
-        background-color: var(--squircle-bg-light);
+    .left-box, .right-box {
+        width: calc(100% - 30px);
+        margin: 10px 0;
+        padding: 15px;
     }
 
     .circular-profile {
         width: 100px;
         height: 100px;
-        margin: 0 auto 20px;
     }
 
     h1 {
-        font-size: 1.3em;
-        text-align: center;
-        margin: 10px 0 5px;
+        font-size: 1.2em;
     }
 
     h2 {
-        font-size: 0.9em;
-        text-align: center;
-        opacity: 0.8;
-        margin-bottom: 15px;
+        font-size: 0.8em;
     }
 
-    .nav-button,
-    .download-btn {
-        font-size: 13px;
-        padding: 10px;
-        border-radius: 10px;
-        width: 100%;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .download-btn {
-        font-weight: bold;
-    }
-
-    .nav-button .button-icon {
-        margin-right: 10px;
-    }
-
-    .contact-info {
-        gap: 10px;
-    }
-
-    .info-text {
-        font-size: 13px;
+    .nav-button, .nav-link {
+        font-size: 12px;
+        padding: 6px 10px;
     }
 
     #main-nav {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
-        gap: 6px;
-        overflow-x: auto;
-        margin-bottom: 10px;
-        padding-bottom: 6px;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        gap: 5px;
+        overflow-x: visible;
+        white-space: normal;
     }
 
     .nav-link {
-        font-size: 12px;
         text-align: center;
-        padding: 8px 6px;
-        white-space: nowrap;
-    }
-
-    .right-box {
-        overflow-y: auto;
-        max-height: 65vh;
+        padding: 8px 5px;
+        margin: 2px;
     }
 
     .right-box #main-content {
-        font-size: 14px;
-        line-height: 1.6;
+        font-size: 7px; /* Smallest text for mobile */
     }
+}
 
-    .section h3 {
-        font-size: 1.2em;
-        margin-bottom: 15px;
-    }
+body:not(.light-mode) .achievement-link {
+    color: white;
+    text-decoration: underline;
+}
+
+body:not(.light-mode) .achievement-link:hover {
+    color: #f0f0f0;
+}
+
+/* Achievement links in light mode - black text */
+body.light-mode .achievement-link {
+    color: black;
+    text-decoration: underline;
+}
+
+body.light-mode .achievement-link:hover {
+    color: #333333;
 }
