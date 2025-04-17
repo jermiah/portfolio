@@ -25,7 +25,7 @@ const translations = {
                 en: `
 <p>I’m a data-driven product thinker with 5+ years of experience in banking and financial services, specializing in data quality, workflow automation, and product management. I’ve contributed to strategic initiatives at BNP Paribas and HSBC, delivering projects that improved regulatory compliance, streamlined operations, and enhanced decision-making through data.</p>
 
-<p>Currently, I’m pursuing a Master of Science in Data Science & AI Strategy at emlyon business school, where I’m expanding my capabilities in machine learning, deep learning, and large language models (LLMs). My academic journey also includes an MBA in Finance & Analytics and a BTech in Computer Science, enabling me to bridge business objectives with technical innovation.</p>
+<p>Currently, I’m pursuing a Master of Science in Data Science & AI Strategy at emlyon business school, where I’m expanding my capabilities in machine learning, deep learning, RAG and large language models. My academic journey also includes an MBA in Finance & Analytics and a BTech in Computer Science, enabling me to bridge business objectives with technical innovation.</p>
 
 <h4>What I Bring to the Table</h4>
 <ul>
@@ -49,7 +49,7 @@ Want to see awards, communities, and hackathons? Check out the Showcase section.
                 fr: `
 <p>Je suis un professionnel orienté produit et données, avec plus de 5 ans d'expérience dans les services bancaires et financiers. Mon expertise porte sur la qualité des données, l'automatisation des workflows et la gestion de produit. J’ai mené des projets stratégiques chez BNP Paribas et HSBC, améliorant la conformité réglementaire, l'efficacité opérationnelle et la prise de décision basée sur les données.</p>
 
-<p>Je poursuis actuellement un Master of Science en Data Science & Stratégie en IA à emlyon business school, où je renforce mes compétences en machine learning, deep learning et modèles de langage (LLMs). Mon parcours inclut également un MBA en Finance & Analytics ainsi qu’un BTech en Informatique, me permettant de faire le lien entre les enjeux business et la technologie.</p>
+<p>Je poursuis actuellement un Master of Science en Data Science & Stratégie en IA à emlyon business school, où je renforce mes compétences en machine learning, deep learning, RAG et modèles de langage (LLMs). Mon parcours inclut également un MBA en Finance & Analytics ainsi qu’un BTech en Informatique, me permettant de faire le lien entre les enjeux business et la technologie.</p>
 
 <h4>Ce que j’apporte</h4>
 <ul>
