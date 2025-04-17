@@ -350,6 +350,8 @@ body.light-mode #main-content {
 }
 
 /* KEEP THIS SO TALL SCREENS CAN EXPAND THE BOXES */
+
+/* Responsive design */
 @media (min-width: 1201px) {
     .left-box, .right-box {
         height: calc(90vh - 40px);
@@ -368,7 +370,7 @@ body.light-mode #main-content {
     }
 }
 
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (max-width: 1200px) {
     .portfolio-container {
         flex-direction: column;
         align-items: center;
