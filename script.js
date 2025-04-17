@@ -282,46 +282,7 @@ experience: {
 `
             }
         },
-        education: {
-            title: { en: "Education", fr: "Éducation" },
-            content: {
-                en: `
-<ul>
-  <li><strong><a href="https://em-lyon.com/en" target="_blank">emlyon business school</a> × <a href="https://www.mcgill.ca/" target="_blank">McGill University</a></strong> – MSc in Data Science & AI Strategy<br/>2024–2025 · Paris, France & Montreal, Canada<br/><em>emlyon: CGE Accredited, EQUIS/AMBA/AACSB Triple Crown, #4 in France for Business Studies<br/>McGill: Top Canadian public university known for AI research and global excellence</em></li>
-  <li><strong><a href="https://tsm.ac.in" target="_blank">Thiagarajar School of Management</a></strong> – MBA in Finance & Analytics<br/>2019–2021 · Madurai, India<br/><em>NAAC Accredited, Ranked among top private B-schools in South India</em></li>
-  <li><strong><a href="https://www.nitt.edu/" target="_blank">National Institute of Technology, Tiruchirappalli</a></strong> – BTech in Computer Science and Engineering<br/>2014–2018 · Tiruchirappalli, India<br/><em>Top 10 Engineering Institutes in India (NIRF Rankings)</em></li>
-</ul>
-`,
-                fr: `
-<ul>
-  <li><strong><a href="https://em-lyon.com/fr" target="_blank">emlyon business school</a> × <a href="https://www.mcgill.ca/" target="_blank">Université McGill</a></strong> – MSc en Data Science & Stratégie IA<br/>2024–2025 · Paris, France & Montréal, Canada<br/><em>emlyon : Accréditée CGE, Triple accréditation EQUIS/AMBA/AACSB, #4 en France<br/>McGill : Université publique canadienne reconnue pour la recherche en IA</em></li>
-  <li><strong><a href="https://tsm.ac.in" target="_blank">Thiagarajar School of Management</a></strong> – MBA en Finance & Analytics<br/>2019–2021 · Madurai, Inde<br/><em>École accréditée NAAC, reconnue parmi les meilleures écoles du Sud de l'Inde</em></li>
-  <li><strong><a href="https://www.nitt.edu/" target="_blank">Institut national de technologie de Tiruchirappalli</a></strong> – BTech en informatique<br/>2014–2018 · Tiruchirappalli, Inde<br/><em>Top 10 des instituts d’ingénierie en Inde (classements NIRF)</em></li>
-</ul>
-`
-            }
-        },
-        education: {
-            title: { en: "Education", fr: "Éducation" },
-            content: {
-                en: `
-<ul>
-  <li><strong><a href="https://em-lyon.com/en" target="_blank">emlyon business school</a> × <a href="https://www.mcgill.ca/" target="_blank">McGill University</a></strong> – MSc in Data Science & AI Strategy<br/>2024–2025 · Paris, France & Montreal, Canada<br/><em>emlyon: CGE Accredited, EQUIS/AMBA/AACSB Triple Crown, #4 in France for Business Studies<br/>McGill: Top Canadian public university known for AI research and global excellence</em></li>
-  <li><strong><a href="https://tsm.ac.in" target="_blank">Thiagarajar School of Management</a></strong> – MBA in Finance & Analytics<br/>2019–2021 · Madurai, India<br/><em>NAAC Accredited, Ranked among top private B-schools in South India</em></li>
-  <li><strong><a href="https://www.nitt.edu/" target="_blank">National Institute of Technology, Tiruchirappalli</a></strong> – BTech in Computer Science and Engineering<br/>2014–2018 · Tiruchirappalli, India<br/><em>Top 10 Engineering Institutes in India (NIRF Rankings)</em></li>
-</ul>
-`,
-                fr: `
-<ul>
-  <li><strong><a href="https://em-lyon.com/fr" target="_blank">emlyon business school</a> × <a href="https://www.mcgill.ca/" target="_blank">Université McGill</a></strong> – MSc en Data Science & Stratégie IA<br/>2024–2025 · Paris, France & Montréal, Canada<br/><em>emlyon : Accréditée CGE, Triple accréditation EQUIS/AMBA/AACSB, #4 en France<br/>McGill : Université publique canadienne reconnue pour la recherche en IA</em></li>
-  <li><strong><a href="https://tsm.ac.in" target="_blank">Thiagarajar School of Management</a></strong> – MBA en Finance & Analytics<br/>2019–2021 · Madurai, Inde<br/><em>École accréditée NAAC, reconnue parmi les meilleures écoles du Sud de l'Inde</em></li>
-  <li><strong><a href="https://www.nitt.edu/" target="_blank">Institut national de technologie de Tiruchirappalli</a></strong> – BTech en informatique<br/>2014–2018 · Tiruchirappalli, Inde<br/><em>Top 10 des instituts d’ingénierie en Inde (classements NIRF)</em></li>
-</ul>
-`
-            }
-        },
-
-        
+                
  showcase : {
             title: { en: "Showcase", fr: "Showcase" },
             content: {
