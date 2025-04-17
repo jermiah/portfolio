@@ -35,6 +35,12 @@ html, body {
     overflow-x: hidden; /* hide horizontal scroll if not needed */
 }
 
+html {
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+}
+
+
 body {
     transition: background-color 0.5s ease, color 0.5s ease;
     position: relative;
