@@ -395,10 +395,12 @@ body.light-mode .achievement-link:hover {
 
     .left-box,
     .right-box {
-        width: 100%;
-        margin: 0 0 20px;
-        padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 10px 0;
     }
+
 
     .circular-profile {
         width: 100px;
