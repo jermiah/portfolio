@@ -388,22 +388,28 @@ body.light-mode .achievement-link:hover {
 
 
 @media (max-width: 768px) {
-    body {
-        -webkit-text-size-adjust: none;
+    html, body {
+        overflow-x: hidden; /* Prevent horizontal scroll */
+        -webkit-text-size-adjust: none; /* Prevent font scaling */
+    }
+
+    * {
+        box-sizing: border-box; /* Prevent layout shift due to padding */
     }
 
     .portfolio-container {
+        flex-direction: column; /* Stack boxes vertically */
         padding: 15px;
         min-height: 100vh;
         height: auto;
     }
 
-
-
-    .left-box, .right-box {
-        width: calc(100% - 30px);
+    .left-box,
+    .right-box {
+        width: 100%;
         margin: 10px 0;
         padding: 15px;
+        box-sizing: border-box;
     }
 
     .circular-profile {
@@ -413,15 +419,34 @@ body.light-mode .achievement-link:hover {
 
     h1 {
         font-size: 1.4em;
+        text-align: center;
     }
 
     h2 {
         font-size: 0.9em;
+        text-align: center;
     }
 
-    .nav-button {
+    .nav-button,
+    .nav-link {
         font-size: 13px;
         padding: 6px 10px;
+    }
+
+    #main-nav {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        gap: 6px;
+        overflow-x: visible;
+        white-space: normal;
+        margin-top: 10px;
+    }
+
+    .nav-link {
+        text-align: center;
+        padding: 10px 5px;
+        margin: 2px;
+        font-size: 13px;
     }
 
     .right-box #main-content {
@@ -431,6 +456,16 @@ body.light-mode .achievement-link:hover {
     .download-btn {
         font-size: 14px;
         padding: 10px;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .info-text {
+        font-size: 13px;
+    }
+
+    .box {
+        border-radius: 16px; /* Slightly smaller radius for small screens */
     }
 }
-
