@@ -403,7 +403,7 @@ body.light-mode #main-content {
     }
 
     .right-box #main-content {
-        font-size: 10px; /* Smaller text for laptop */
+        font-size: 14px; /* Smaller text for laptop */
     }
 }
 
@@ -439,7 +439,7 @@ body.light-mode #main-content {
     }
 
     .right-box #main-content {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .download-btn {
