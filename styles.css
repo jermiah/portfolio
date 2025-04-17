@@ -393,10 +393,9 @@ body.light-mode .achievement-link:hover {
         padding: 10px;
     }
 
-    .left-box,
-    .right-box {
-        width: 100%;
-        margin: 0 0 20px;
+    .left-box, .right-box {
+        width: calc(100% - 30px);
+        margin: 10px 0;
         padding: 15px;
     }
 
