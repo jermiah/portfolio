@@ -1,13 +1,28 @@
 /*─────────────────────────────────────────────────────────────────────────────
-   1) OPTIONAL: CSS @viewport (limited browser support)
+   FORCE full‑screen canvas behind everything
 ─────────────────────────────────────────────────────────────────────────────*/
-@viewport {
-  width: device-width;
-  zoom: 1.0;
+#webgl-container {
+  position: fixed !important;
+  inset: 0 !important;      /* shorthand for top/right/bottom/left:0 */
+  z-index: 0 !important;     /* baseline layer */
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.box {
+  position: relative !important;
+  z-index: 1 !important;     /* sits above the canvas */
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background: none !important;
 }
 
 /*─────────────────────────────────────────────────────────────────────────────
-   2) THEME VARIABLES & GLOBAL RESET
+   THEME VARIABLES & GLOBAL RESET
 ─────────────────────────────────────────────────────────────────────────────*/
 :root {
   /* Colors & themes */
@@ -26,31 +41,13 @@
   --resume-button-color: #4CAF50;
 }
 
-html,
-body {
-  background: transparent !important;
-}
-
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;         /* prevent horizontal scroll */
-  scroll-behavior: smooth;
-  -webkit-tap-highlight-color: transparent;
-}
-
 body {
-  margin: 0;
-  padding: 0;
   font-family: Arial, sans-serif;
   line-height: 1.6;
   font-size: 16px;
@@ -65,18 +62,14 @@ body.light-mode {
 }
 
 /*─────────────────────────────────────────────────────────────────────────────
-   3) WEBGL BACKGROUND CONTAINER
+   WEBGL BACKGROUND CONTAINER
 ─────────────────────────────────────────────────────────────────────────────*/
 #webgl-container {
-  position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
-  z-index: -1;
+  /* already forced above */
 }
 
-
-
 /*─────────────────────────────────────────────────────────────────────────────
-   4) MAIN LAYOUT & CARD STYLING
+   MAIN LAYOUT & CARD STYLING
 ─────────────────────────────────────────────────────────────────────────────*/
 .portfolio-container {
   display: flex;
@@ -104,22 +97,21 @@ body.light-mode .box {
 }
 
 /*─────────────────────────────────────────────────────────────────────────────
-   5) LEFT COLUMN (PROFILE & NAV BUTTONS)
+   LEFT COLUMN (PROFILE & NAV BUTTONS)
 ─────────────────────────────────────────────────────────────────────────────*/
 .left-box {
   flex: 0 0 25%;
   display: flex;
   flex-direction: column;
   padding: 20px;
-  gap: 20px;    
+  gap: 20px;
   overflow-y: hidden;
 }
-
 
 .circular-profile {
   width: 150px;
   height: 150px;
-  margin: 0 auto;        /* removed the bottom margin here */
+  margin: 0 auto;                /* centered, no bottom margin */
   border-radius: 50%;
   background-size: cover;
   background-position: center;
@@ -130,7 +122,6 @@ body.light-mode .box {
 .circular-profile:hover {
   transform: scale(1.05);
 }
-
 
 h1 {
   font-size: 1.6em;
@@ -162,7 +153,6 @@ h2 {
   margin-right: 10px;
   font-size: 16px;
 }
-
 .nav-button:hover {
   background-color: var(--nav-active-dark);
   transform: scale(1.02);
@@ -203,12 +193,12 @@ body.light-mode .nav-button:hover {
 }
 
 /*─────────────────────────────────────────────────────────────────────────────
-   6) RIGHT COLUMN (TABS & CONTENT)
+   RIGHT COLUMN (TABS & CONTENT)
 ─────────────────────────────────────────────────────────────────────────────*/
 .right-box {
   flex: 1;
   padding: 20px;
-  overflow-y: auto;         /* internal scroll for small content */
+  overflow-y: auto;  /* scroll internally */
 }
 
 #main-nav {
@@ -219,11 +209,11 @@ body.light-mode .nav-button:hover {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   overflow-x: auto;
   white-space: nowrap;
-  scrollbar-width: none;     /* Firefox */
-  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;    /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
 }
 #main-nav::-webkit-scrollbar {
-  display: none;             /* WebKit */
+  display: none; /* WebKit */
 }
 
 .nav-link {
@@ -248,7 +238,7 @@ body.light-mode .nav-link:hover {
 
 #main-content {
   flex-grow: 1;
-  overflow-y: auto;         /* allow vertical scroll */
+  overflow-y: auto;
 }
 
 .section {
@@ -266,7 +256,7 @@ body.light-mode .nav-link:hover {
 }
 
 /*─────────────────────────────────────────────────────────────────────────────
-   7) CUSTOM SCROLLBARS
+   CUSTOM SCROLLBARS
 ─────────────────────────────────────────────────────────────────────────────*/
 .right-box::-webkit-scrollbar,
 #main-content::-webkit-scrollbar {
@@ -286,7 +276,6 @@ body.light-mode .nav-link:hover {
 #main-content::-webkit-scrollbar-thumb:hover {
   background: var(--scrollbar-thumb-hover-dark);
 }
-
 body.light-mode .right-box::-webkit-scrollbar-track,
 body.light-mode #main-content::-webkit-scrollbar-track {
   background: var(--scrollbar-bg-light);
@@ -301,79 +290,54 @@ body.light-mode #main-content::-webkit-scrollbar-thumb:hover {
 }
 
 /*─────────────────────────────────────────────────────────────────────────────
-   8) RESPONSIVE BREAKPOINTS
+   RESPONSIVE BREAKPOINTS
 ─────────────────────────────────────────────────────────────────────────────*/
-/* DESKTOP: keep .right-box internal scroll */
+/* DESKTOP (≥1201px) keep right‑box scrollable */
 @media (min-width: 1201px) {
-  .portfolio-container {
-    height: 100vh;
-  }
-  .left-box,
-  .right-box {
-    height: 100%;
-  }
-  .left-box {
-    overflow-y: hidden;
-  }
-  .right-box {
-    overflow-y: auto;
-  }
+  .portfolio-container { height: 100vh; }
+  .left-box, .right-box { height: 100%; }
+  .left-box { overflow-y: hidden; }
+  .right-box { overflow-y: auto; }
 }
 
-/* TABLET / LAPTOP: 769px–1200px */
+/* TABLET / LAPTOP (769px–1200px) */
 @media (min-width: 769px) and (max-width: 1200px) {
   .portfolio-container {
     flex-direction: column;
     align-items: center;
     padding: 20px;
     gap: 20px;
-    height: auto;
   }
-  .left-box,
-  .right-box {
+  .left-box, .right-box {
     width: 90%;
     max-width: 800px;
     margin: 10px 0;
   }
-  .circular-profile {
-    width: 120px;
-    height: 120px;
-  }
+  .circular-profile { width: 120px; height: 120px; }
   h1 { font-size: 1.5em; }
   h2 { font-size: 0.95em; }
   #main-content { font-size: 14px; max-height: 65vh; }
 }
 
-/* MOBILE: up to 768px */
+/* MOBILE (≤768px) */
 @media (max-width: 768px) {
-  body {
-    -webkit-text-size-adjust: none;
-  }
+  body { -webkit-text-size-adjust: none; }
   .portfolio-container {
     flex-direction: column;
     align-items: center;
     padding: 15px;
     gap: 20px;
   }
-  .left-box,
-  .right-box {
+  .left-box, .right-box {
     width: 100%;
     padding: 16px;
     margin: 0;
   }
-  .circular-profile {
-    width: 100px;
-    height: 100px;
-  }
+  .circular-profile { width: 100px; height: 100px; }
   h1 { font-size: 1.3em; }
   h2 { font-size: 0.9em; }
-  .nav-button,
-  .download-btn { font-size: 13px; padding: 10px; }
+  .nav-button, .download-btn { font-size: 13px; padding: 10px; }
   #main-nav { gap: 6px; }
   .nav-link { font-size: 12px; padding: 8px 10px; }
   #main-content { font-size: 14px; max-height: 60vh; }
-}
-
-html, body {
-  background: none !important;
 }
