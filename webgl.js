@@ -7,7 +7,7 @@ let currentColor1 = new THREE.Vector3(0, 0, 0);
 let currentColor2 = new THREE.Vector3(0.2, 0.4, 0.8);
 let targetColor1 = new THREE.Vector3(0, 0, 0);
 let targetColor2 = new THREE.Vector3(0.2, 0.4, 0.8);
-let rafId;
+
 
 function init() {
   // Scene + camera
@@ -17,7 +17,6 @@ function init() {
 
   // Renderer with retina support
   renderer = new THREE.WebGLRenderer({ antialias: true });
-  renderer.setPixelRatio(window.devicePixelRatio);
   renderer.setSize(window.innerWidth, window.innerHeight);
   document.getElementById('webgl-container').appendChild(renderer.domElement);
 
@@ -31,21 +30,27 @@ function init() {
     uniform vec3 color2;
     #define FLOW_INTENSITY 0.05
     void main() {
-      vec2 uv = gl_FragCoord.xy / resolution.xy;
-      vec2 p = uv * 2.0 - 1.0;
-      vec2 m = mouse / resolution.xy * 2.0 - 1.0;
-      vec2 flow = m - p;
-      float dist = length(flow);
-      p += flow * FLOW_INTENSITY / (dist + 0.5);
-      for(int i = 1; i < 7; i++){
-        float fi = float(i);
-        p.x += 0.1/fi * sin(fi*2.0*p.y + time*0.25 + 0.2*fi);
-        p.y += 0.1/fi * cos(fi*2.0*p.x + time*0.25 + 0.2*fi);
-      }
-      float intensity = 0.5 * sin(3.0*p.x + 2.0*p.y) + 0.5;
-      vec3 color = mix(color1, color2, intensity);
-      gl_FragColor = vec4(color, 1.0);
-    }
+            vec2 uv = gl_FragCoord.xy / resolution.xy;
+            vec2 p = (uv * 2.0 - 1.0);
+            vec2 m = (mouse / resolution.xy) * 2.0 - 1.0;
+            
+            vec2 flowVector = m - p;
+            float dist = length(flowVector);
+            
+            vec2 offset = flowVector * FLOW_INTENSITY / (dist + 0.5);
+            p += offset;
+
+            for(int i = 1; i < 7; i++) {
+                float fi = float(i);
+                p.x += 0.1 / fi * sin(fi * 2.0 * p.y + time * 0.25 + 0.2 * fi);
+                p.y += 0.1 / fi * cos(fi * 2.0 * p.x + time * 0.25 + 0.2 * fi);
+            }
+            
+            float intensity = 0.5 * sin(3.0 * p.x + 2.0 * p.y) + 0.5;
+            vec3 color = mix(color1, color2, intensity);
+            
+            gl_FragColor = vec4(color, 1.0);
+        }
   `;
   material = new THREE.ShaderMaterial({
     uniforms: {
@@ -149,11 +154,10 @@ function changeColors() {
 }
 
 function changeColorsOnClick(event) {
-  const tag = event.target.tagName.toLowerCase();
-  if (tag !== 'a' && tag !== 'button') {
-    event.preventDefault();
-    changeColors();
-  }
+    if (event.target.tagName.toLowerCase() !== 'a' && event.target.tagName.toLowerCase() !== 'button') {
+        event.preventDefault();
+        changeColors();
+    }
 }
 
 function toggleMode() {
@@ -166,11 +170,11 @@ function toggleMode() {
 }
 
 // Initialize once DOM is ready
-document.addEventListener('DOMContentLoaded', () => {
-  init();
-  document
-    .getElementById('mode-toggle')
-    .addEventListener('click', toggleMode);
+document.addEventListener('DOMContentLoaded', function() {
+    init();
+    
+    const modeToggle = document.getElementById('mode-toggle');
+    modeToggle.addEventListener('click', toggleMode);
 });
 
 // (Optional) Call to switch externally
