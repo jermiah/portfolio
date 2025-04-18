@@ -70,8 +70,11 @@ body.light-mode {
 #webgl-container {
   position: fixed;
   inset: 0;
+  margin: 0;
+  padding: 0;
   z-index: -1;
 }
+
 
 /*─────────────────────────────────────────────────────────────────────────────
    4) MAIN LAYOUT & CARD STYLING
@@ -370,4 +373,8 @@ body.light-mode #main-content::-webkit-scrollbar-thumb:hover {
   #main-nav { gap: 6px; }
   .nav-link { font-size: 12px; padding: 8px 10px; }
   #main-content { font-size: 14px; max-height: 60vh; }
+}
+
+html, body {
+  background: none !important;
 }
