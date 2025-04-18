@@ -110,15 +110,10 @@ body.light-mode .box {
   overflow-y: hidden;
 }
 
-.profile-section {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
 .circular-profile {
   width: 150px;
   height: 150px;
-  margin: 0 auto 20px;
+  margin: 0 auto;        /* removed the bottom margin here */
   border-radius: 50%;
   background-size: cover;
   background-position: center;
@@ -129,6 +124,7 @@ body.light-mode .box {
 .circular-profile:hover {
   transform: scale(1.05);
 }
+
 
 h1 {
   font-size: 1.6em;
