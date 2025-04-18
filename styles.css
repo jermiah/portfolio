@@ -67,12 +67,10 @@ body.light-mode {
 /*─────────────────────────────────────────────────────────────────────────────
    3) WEBGL BACKGROUND CONTAINER
 ─────────────────────────────────────────────────────────────────────────────*/
-#webgl-container {
-  position: fixed;
-  inset: 0;
-  margin: 0;
-  padding: 0;
-  z-index: -1;
+.box {
+  position: relative;  
+  z-index: 1;         
+
 }
 
 
