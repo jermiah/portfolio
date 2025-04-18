@@ -26,6 +26,12 @@
   --resume-button-color: #4CAF50;
 }
 
+html,
+body {
+  background: transparent !important;
+}
+
+
 *,
 *::before,
 *::after {
