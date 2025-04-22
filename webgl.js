@@ -94,6 +94,9 @@ function onWindowResize() {
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.setSize(width, height);
 
+  renderer.domElement.style.width = '100vw';
+  renderer.domElement.style.height = '100vh';
+
   camera.left   = -width / height;
   camera.right  =  width / height;
   camera.top    =  1;
