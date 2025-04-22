@@ -24,17 +24,18 @@
 }
 
 html, body {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    font-size: 16px;
-    position: relative;
-    color: var(--text-color-dark);
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;     
+  position: relative;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  color: var(--text-color-dark);
 }
+
 
 
 body {
