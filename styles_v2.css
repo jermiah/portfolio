@@ -1,6 +1,3 @@
-/*─────────────────────────────────────────────────────────────────────────────
-   THEME VARIABLES & GLOBAL RESET
-─────────────────────────────────────────────────────────────────────────────*/
 @viewport {
   width: device-width;
   zoom: 1.0;
@@ -24,19 +21,19 @@
 }
 
 html, body {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;     
-  position: relative;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  font-size: 16px;
-  color: var(--text-color-dark);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color-dark);
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    overflow: auto;
+    min-height: 100%;
+    min-width: 100%;
+    overflow-x: hidden;
 }
-
-
 
 body {
     transition: background-color 0.5s ease, color 0.5s ease;
@@ -48,9 +45,6 @@ body.light-mode {
     color: var(--text-color-light);
 }
 
-/*─────────────────────────────────────────────────────────────────────────────
-   WEBGL BACKGROUND CONTAINER
-─────────────────────────────────────────────────────────────────────────────*/
 #webgl-container {
     position: fixed;
     top: 0;
@@ -62,10 +56,6 @@ body.light-mode {
     z-index: -1;
 }
 
-
-/*─────────────────────────────────────────────────────────────────────────────
-   MAIN LAYOUT & CARD STYLING
-─────────────────────────────────────────────────────────────────────────────*/
 .portfolio-container {
     display: flex;
     justify-content: center;
@@ -88,12 +78,9 @@ body.light-mode {
 }
 
 body.light-mode .box {
-  background-color: var(--squircle-bg-light);
+    background-color: var(--squircle-bg-light);
 }
 
-/*─────────────────────────────────────────────────────────────────────────────
-   LEFT COLUMN (PROFILE & NAV BUTTONS)
-─────────────────────────────────────────────────────────────────────────────*/
 .left-box {
     width: 25%;
     margin-right: 40px;
@@ -104,185 +91,265 @@ body.light-mode .box {
     overflow-y: hidden;
 }
 
-.circular-profile {
-  width: 150px;
-  height: 150px;
-  margin: 0 auto;                /* centered, no bottom margin */
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
-  background-image: url('photo.jpg');
-  border: 3px solid white;
-  transition: transform 0.3s ease;
-}
-.circular-profile:hover {
-  transform: scale(1.05);
-}
-
-h1 {
-  font-size: 1.6em;
-  margin: 10px 0 5px;
-}
-
-h2 {
-  font-size: 1em;
-  margin: 0 0 20px;
-  opacity: 0.8;
-}
-
-.nav-button {
-  background: none;
-  border: none;
-  color: inherit;
-  padding: 10px 14px;
-  font-size: 14px;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  text-decoration: none;
-  border-radius: 10px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  cursor: pointer;
-}
-.nav-button .button-icon {
-  margin-right: 10px;
-  font-size: 16px;
-}
-.nav-button:hover {
-  background-color: var(--nav-active-dark);
-  transform: scale(1.02);
-}
-body.light-mode .nav-button:hover {
-  background-color: var(--nav-active-light);
-}
-
-/* Contact info & download */
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.info-text {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.download-btn {
-  background-color: var(--resume-button-color);
-  color: #fff;
-  padding: 12px;
-  border-radius: 10px;
-  font-weight: bold;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.2s ease;
-}
-.download-btn .button-icon {
-  margin-right: 10px;
-}
-.download-btn:hover {
-  transform: scale(1.02);
-}
-
-/*─────────────────────────────────────────────────────────────────────────────
-   RIGHT COLUMN (TABS & CONTENT)
-─────────────────────────────────────────────────────────────────────────────*/
 .right-box {
     width: 60%;
     padding: 20px;
     overflow-y: auto;
 }
 
-#main-nav {
-  display: flex;
-  gap: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  overflow-x: auto;
-  white-space: nowrap;
-  scrollbar-width: none;    /* Firefox */
-  -ms-overflow-style: none; /* IE/Edge */
+.profile-section {
+    text-align: center;
+    margin-bottom: 20px;
 }
-#main-nav::-webkit-scrollbar {
-  display: none; /* WebKit */
+
+.circular-profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-image: url('abhi3.jpeg');
+    margin: 0 auto 20px;
+    border: 3px solid white;
+    transition: transform 0.3s ease;
+}
+
+.circular-profile:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 1.6em;
+    margin: 10px 0 5px;
+}
+
+h2 {
+    font-size: 1em;
+    margin: 0 0 20px;
+    opacity: 0.8;
+}
+
+.vertical-navbar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 8px 12px;
+    font-size: 14px;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.nav-button:hover {
+    background-color: var(--nav-active-dark);
+    transform: scale(1.05);
+}
+
+body.light-mode .nav-button:hover {
+    background-color: var(--nav-active-light);
+}
+
+.button-icon {
+    margin-right: 15px;
+    font-size: 16px;
+    width: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-info .nav-button {
+    padding: 8px 12px;
+}
+
+.info-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.download-btn {
+    background-color: var(--resume-button-color);
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: left;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: var(--resume-button-color);
+    transform: scale(1.05);
+}
+
+body.light-mode .download-btn,
+body.light-mode .download-btn:hover {
+    background-color: var(--resume-button-color);
+    color: white;
+}
+
+#main-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    flex-wrap: wrap;
 }
 
 .nav-link {
-  padding: 8px 12px;
-  border-radius: 10px;
-  font-size: 14px;
-  white-space: nowrap;
-  flex-shrink: 0;
-  color: inherit;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+    color: inherit;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 2% 4%;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 5px;
 }
-.nav-link.active,
-.nav-link:hover {
-  background-color: var(--nav-active-dark);
-  transform: scale(1.02);
+
+.nav-link:hover, .nav-link.active {
+    background-color: var(--nav-active-dark);
+    transform: scale(1.1);
 }
-body.light-mode .nav-link.active,
-body.light-mode .nav-link:hover {
-  background-color: var(--nav-active-light);
+
+body.light-mode .nav-link:hover, 
+body.light-mode .nav-link.active {
+    background-color: var(--nav-active-light);
 }
 
 #main-content {
-  flex-grow: 1;
-  overflow-y: auto;
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 20px;
 }
 
 .section {
-  display: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.section.active {
-  display: block;
-  opacity: 1;
-}
-.section h3 {
-  font-size: 1.6em;
-  margin-bottom: 15px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
-/*─────────────────────────────────────────────────────────────────────────────
-   CUSTOM SCROLLBARS
-─────────────────────────────────────────────────────────────────────────────*/
+.section.active {
+    display: block;
+    opacity: 1;
+}
+
+h3 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 30px;
+    list-style-type: disc;
+}
+
+li {
+    margin-bottom: 5px;
+    padding-left: 5px;
+    text-indent: 0px;
+}
+
+#tooltip {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+.experience-divider {
+    border: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 20px 0;
+}
+
+body.light-mode .experience-divider {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Custom scrollbar styles */
 .right-box::-webkit-scrollbar,
 #main-content::-webkit-scrollbar {
-  width: 8px;
+    width: 8px;
 }
+
 .right-box::-webkit-scrollbar-track,
 #main-content::-webkit-scrollbar-track {
-  background: var(--scrollbar-bg-dark);
-  border-radius: 4px;
+    background: var(--scrollbar-bg-dark);
+    border-radius: 5px;
 }
+
 .right-box::-webkit-scrollbar-thumb,
 #main-content::-webkit-scrollbar-thumb {
-  background: var(--scrollbar-thumb-dark);
-  border-radius: 4px;
+    background: var(--scrollbar-thumb-dark);
+    border-radius: 5px;
 }
+
 .right-box::-webkit-scrollbar-thumb:hover,
 #main-content::-webkit-scrollbar-thumb:hover {
-  background: var(--scrollbar-thumb-hover-dark);
+    background: var(--scrollbar-thumb-hover-dark);
 }
+
+/* Light mode scrollbar styles */
 body.light-mode .right-box::-webkit-scrollbar-track,
 body.light-mode #main-content::-webkit-scrollbar-track {
-  background: var(--scrollbar-bg-light);
+    background: var(--scrollbar-bg-light);
 }
+
 body.light-mode .right-box::-webkit-scrollbar-thumb,
 body.light-mode #main-content::-webkit-scrollbar-thumb {
-  background: var(--scrollbar-thumb-light);
+    background: var(--scrollbar-thumb-light);
 }
+
 body.light-mode .right-box::-webkit-scrollbar-thumb:hover,
 body.light-mode #main-content::-webkit-scrollbar-thumb:hover {
-  background: var(--scrollbar-thumb-hover-light);
+    background: var(--scrollbar-thumb-hover-light);
+}
+
+/* For Firefox */
+.right-box,
+#main-content {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb-dark) var(--scrollbar-bg-dark);
+}
+
+body.light-mode .right-box,
+body.light-mode #main-content {
+    scrollbar-color: var(--scrollbar-thumb-light) var(--scrollbar-bg-light);
 }
 
 /*─────────────────────────────────────────────────────────────────────────────
@@ -290,11 +357,23 @@ body.light-mode #main-content::-webkit-scrollbar-thumb:hover {
 ─────────────────────────────────────────────────────────────────────────────*/
 /* DESKTOP (≥1201px) keep right‑box scrollable */
 @media (min-width: 1201px) {
-  .portfolio-container { height: 100vh; }
-  .left-box, .right-box { height: 100%; }
-  .left-box { overflow-y: hidden; }
-  .right-box { overflow-y: auto; }
+    .left-box, .right-box {
+        height: calc(90vh - 40px);
+    }
+    
+    .left-box {
+        overflow-y: hidden;
+    }
+    
+    .right-box {
+        overflow-y: auto;
+    }
+
+    .right-box #main-content {
+        font-size: 13px; /* Larger text for desktop */
+    }
 }
+
 
 /* TABLET / LAPTOP (769px–1200px) */
 @media (min-width: 769px) and (max-width: 1200px) {
