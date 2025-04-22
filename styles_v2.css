@@ -512,7 +512,7 @@ body.light-mode #main-content {
 @media (max-width: 1024px) {
   #main-nav {
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     overflow-x: visible;
   }
 }
