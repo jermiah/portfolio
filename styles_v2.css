@@ -462,3 +462,14 @@ body.light-mode #main-content {
   width: 100vw !important;
   height: 100vh !important;
 }
+
+#mode-toggle,
+#lang-toggle {
+  font-size: 13px;
+  padding: 4px 10px;
+  line-height: 1.2;
+  height: 36px;
+  max-width: fit-content;
+  align-self: start;
+}
+
