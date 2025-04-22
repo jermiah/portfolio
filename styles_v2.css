@@ -214,12 +214,9 @@ body.light-mode .download-btn:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap; /* prevent wrapping */
     gap: 24px;          /* spacing between links */
     padding: 10px 20px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    overflow-x: auto;
-    white-space: nowrap;
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
@@ -490,7 +487,7 @@ body.light-mode #main-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap; /* prevent wrapping on desktop */
+    flex-wrap: nowrap;
     gap: 24px;
     padding: 10px 20px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -512,3 +509,10 @@ body.light-mode #main-content {
   }
 }
 
+@media (max-width: 1024px) {
+  #main-nav {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    overflow-x: visible;
+  }
+}
