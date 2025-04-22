@@ -67,24 +67,24 @@ body.light-mode {
    MAIN LAYOUT & CARD STYLING
 ─────────────────────────────────────────────────────────────────────────────*/
 .portfolio-container {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  min-height: 100vh;
-  width: 100%;
-  padding: 20px;
-  gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .box {
-  background-color: var(--squircle-bg-dark);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  transition: background-color 0.5s ease;
+    background-color: var(--squircle-bg-dark);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 body.light-mode .box {
