@@ -485,3 +485,30 @@ body.light-mode #main-content {
   align-self: start;
 }
 
+@media (min-width: 1025px) {
+  #main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; /* prevent wrapping on desktop */
+    gap: 24px;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  #main-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-link {
+    flex: 0 0 auto;
+    font-size: 14px;
+    padding: 8px 16px;
+    margin: 0;
+  }
+}
+
