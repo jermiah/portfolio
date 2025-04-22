@@ -1,72 +1,67 @@
 /*─────────────────────────────────────────────────────────────────────────────
-   FORCE full‑screen canvas behind everything
-─────────────────────────────────────────────────────────────────────────────*/
-#webgl-container {
-  position: fixed !important;
-  inset: 0 !important;      /* shorthand for top/right/bottom/left:0 */
-  z-index: 0 !important;     /* baseline layer */
-  margin: 0 !important;
-  padding: 0 !important;
-}
-.box {
-  position: relative !important;
-  z-index: 1 !important;     /* sits above the canvas */
-}
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  background: none !important;
-}
-
-/*─────────────────────────────────────────────────────────────────────────────
    THEME VARIABLES & GLOBAL RESET
 ─────────────────────────────────────────────────────────────────────────────*/
-:root {
-  /* Colors & themes */
-  --squircle-bg-dark: rgba(0, 0, 0, 0.7);
-  --squircle-bg-light: rgba(255, 255, 255, 0.7);
-  --text-color-dark: #fff;
-  --text-color-light: #000;
-  --nav-active-dark: rgba(255, 255, 255, 0.1);
-  --nav-active-light: rgba(0, 0, 0, 0.1);
-  --scrollbar-bg-dark: rgba(255, 255, 255, 0.05);
-  --scrollbar-thumb-dark: rgba(255, 255, 255, 0.1);
-  --scrollbar-thumb-hover-dark: rgba(255, 255, 255, 0.2);
-  --scrollbar-bg-light: rgba(0, 0, 0, 0.05);
-  --scrollbar-thumb-light: rgba(0, 0, 0, 0.1);
-  --scrollbar-thumb-hover-light: rgba(0, 0, 0, 0.2);
-  --resume-button-color: #4CAF50;
+@viewport {
+  width: device-width;
+  zoom: 1.0;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+:root {
+    --squircle-bg-dark: rgba(0, 0, 0, 0.7);
+    --squircle-bg-light: rgba(255, 255, 255, 0.7);
+    --text-color-dark: #fff;
+    --text-color-light: #000;
+    --nav-active-dark: rgba(255, 255, 255, 0.1);
+    --nav-active-light: rgba(0, 0, 0, 0.1);
+    --button-bg: rgba(255, 255, 255, 0.1);
+    --scrollbar-bg-dark: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-dark: rgba(255, 255, 255, 0.1);
+    --scrollbar-thumb-hover-dark: rgba(255, 255, 255, 0.2);
+    --scrollbar-bg-light: rgba(0, 0, 0, 0.05);
+    --scrollbar-thumb-light: rgba(0, 0, 0, 0.1);
+    --scrollbar-thumb-hover-light: rgba(0, 0, 0, 0.2);
+    --resume-button-color: #4CAF50;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color-dark);
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    overflow: auto;
+    min-height: 100%;
+    min-width: 100%;
+    overflow-x: hidden;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  font-size: 16px;
-  color: var(--text-color-dark);
-  background-attachment: fixed;
-  transition: background-color 0.5s ease, color 0.5s ease;
-  min-height: 100vh;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    position: relative;
+    background-attachment: fixed;
 }
 
 body.light-mode {
-  color: var(--text-color-light);
+    color: var(--text-color-light);
 }
 
 /*─────────────────────────────────────────────────────────────────────────────
    WEBGL BACKGROUND CONTAINER
 ─────────────────────────────────────────────────────────────────────────────*/
 #webgl-container {
-  /* already forced above */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
+    z-index: -1;
 }
+
 
 /*─────────────────────────────────────────────────────────────────────────────
    MAIN LAYOUT & CARD STYLING
