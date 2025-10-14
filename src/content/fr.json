@@ -1,0 +1,324 @@
+{
+  "hero": {
+    "greeting": "Salut, je suis",
+    "name": "Jermiah Jerome",
+    "title": "Data Scientist & Ingénieur IA",
+    "subtitle": "Créer des solutions intelligentes à l'intersection de la data science, du machine learning et de la stratégie business",
+    "cta": {
+      "resume": "Voir le CV",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "nav": {
+    "overview": "Aperçu",
+    "skills": "Compétences",
+    "education": "Éducation",
+    "experience": "Expérience",
+    "certifications": "Certifications",
+    "projects": "Projets",
+    "showcase": "Showcase"
+  },
+  "contact": {
+    "email": "jermiah.jerome96@gmail.com",
+    "phone": "+33 783719197"
+  },
+  "overview": {
+    "title": "Aperçu",
+    "content": [
+      "Je suis un professionnel orienté produit et données, avec plus de 5 ans d'expérience dans les services bancaires et financiers. Mon expertise porte sur la qualité des données, l'automatisation des workflows et la gestion de produit. J'ai mené des projets stratégiques chez BNP Paribas et HSBC, améliorant la conformité réglementaire, l'efficacité opérationnelle et la prise de décision basée sur les données.",
+      "Je poursuis actuellement un Master of Science en Data Science & Stratégie en IA à emlyon business school, où je renforce mes compétences en machine learning, deep learning, RAG et modèles de langage (LLMs). Mon parcours inclut également un MBA en Finance & Analytics ainsi qu'un BTech en Informatique, me permettant de faire le lien entre les enjeux business et la technologie."
+    ],
+    "highlights": {
+      "title": "Ce que j'apporte",
+      "items": [
+        {
+          "title": "Expérience bancaire",
+          "description": "Projets d'impact chez BNP Paribas et HSBC en assurance des données, automatisation et reporting réglementaire — avec plusieurs reconnaissances pour l'innovation et la performance."
+        },
+        {
+          "title": "Innovation produit & stratégie",
+          "description": "Créateur de l'Assistant Stratégique Produit, une application développée avec LLMs et RAG. Elle génère des recommandations stratégiques dynamiques pour plus de 3 000 produits retail, en combinant indicateurs de performance, segmentation client et boucles de retour utilisateur."
+        },
+        {
+          "title": "Recherche en IA",
+          "description": "Responsable d'un projet de recherche en entreprise chez BNP Paribas : 'Adoption stratégique du RAG multimodal open-source en entreprise : enjeux, KPIs et impact business.'"
+        }
+      ]
+    },
+    "featured": {
+      "title": "Projet en vedette",
+      "description": "Démo de l'Assistant Stratégique Produit :",
+      "link": "https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb",
+      "linkText": "GrandView by Prosol"
+    },
+    "closing": "Connectons-nous et construisons ensemble l'avenir de la stratégie augmentée par l'IA.",
+    "note": "Tu veux découvrir les prix, hackathons et communautés ? Va voir la section Showcase."
+  },
+  "skills": {
+    "title": "Compétences",
+    "categories": [
+      {
+        "name": "Expertise",
+        "items": [
+          "Business Intelligence et analyse de données",
+          "Visualisation de données",
+          "Big Data et Data Science",
+          "Apprentissage automatique",
+          "Apprentissage profond",
+          "Traitement du langage naturel (NLP)",
+          "Modèles de langage (LLM)",
+          "Prompt Engineering",
+          "Marchés financiers",
+          "Stratégie en intelligence artificielle"
+        ]
+      },
+      {
+        "name": "Professionnel",
+        "items": [
+          "Gestion de produit",
+          "Gestion de projets technologiques",
+          "Résolution de problèmes & prise de décision",
+          "Collaboration et travail d'équipe",
+          "Gestion des parties prenantes",
+          "Management d'équipe et leadership",
+          "Communication technique"
+        ]
+      },
+      {
+        "name": "Technique",
+        "items": [
+          "Python, R, SQL, NoSQL, VBA/Macros, Scala, DAX",
+          "PyTorch, TensorFlow, Keras, LangChain, LoRA, QLoRA",
+          "Git, GitHub, CUDA, Hugging Face",
+          "GCP, AWS, Snowflake, Databricks",
+          "Power BI, Tableau, Excel Avancé",
+          "Bloomberg, Reuters"
+        ]
+      }
+    ]
+  },
+  "education": {
+    "title": "Éducation",
+    "items": [
+      {
+        "school": "emlyon business school × Université McGill",
+        "degree": "MSc en Data Science & Stratégie IA",
+        "period": "2024–2025",
+        "location": "Paris, France & Montréal, Canada",
+        "description": "emlyon : Accréditée CGE, Triple accréditation EQUIS/AMBA/AACSB, #4 en France. McGill : Université publique canadienne reconnue pour la recherche en IA",
+        "links": {
+          "emlyon": "https://em-lyon.com/fr",
+          "mcgill": "https://www.mcgill.ca/"
+        }
+      },
+      {
+        "school": "Thiagarajar School of Management",
+        "degree": "MBA en Finance & Analytics",
+        "period": "2019–2021",
+        "location": "Madurai, Inde",
+        "description": "École accréditée NAAC, reconnue parmi les meilleures écoles du Sud de l'Inde",
+        "links": {
+          "school": "https://tsm.ac.in"
+        }
+      },
+      {
+        "school": "Institut national de technologie de Tiruchirappalli",
+        "degree": "BTech en informatique",
+        "period": "2014–2018",
+        "location": "Tiruchirappalli, Inde",
+        "description": "Top 10 des instituts d'ingénierie en Inde (classements NIRF)",
+        "links": {
+          "school": "https://www.nitt.edu/"
+        }
+      }
+    ]
+  },
+  "experience": {
+    "title": "Expérience",
+    "items": [
+      {
+        "company": "HSBC, Inde",
+        "position": "Assistant Manager - Gestion de Produit",
+        "period": "12/2022 – 08/2024",
+        "description": [
+          "Assuré la conformité et réduit les risques réglementaires pour la surveillance des communications électroniques et audio à l'échelle mondiale sur deux produits, minimisant les vulnérabilités opérationnelles.",
+          "Dirigé des projets d'assurance des données incluant déploiements, migrations et intégrations, réduisant les problèmes de données de 80% et garantissant la fiabilité pour les parties prenantes mondiales.",
+          "Configuré JIRA pour la gestion des backlogs et processus de conservation, améliorant l'efficacité de 20%. Conçu des tableaux de bord KPI automatisés pour la qualité des données, économisant 0.2 ETP par an."
+        ]
+      },
+      {
+        "company": "BNP Paribas GSO, Inde",
+        "position": "Data Quality Associate",
+        "period": "06/2021 – 10/2022",
+        "description": [
+          "Réalisé du profilage de données et mis en place un processus de qualité des données pour les données de référence dans la création d'actifs, assurant une précision de 100% dans le calcul de la valeur liquidative (NAV).",
+          "Analysé les erreurs de données et développé des tableaux de bord pour améliorer les processus qualité.",
+          "Automatisé des workflows, réduisant les erreurs de 95% et le temps de traitement de 80%, recevant le prix Kaizen pour l'innovation."
+        ]
+      },
+      {
+        "company": "Enprou Technologies India Pvt. Ltd.",
+        "position": "Stagiaire en finance de projet",
+        "period": "05/2018 – 06/2019",
+        "description": [
+          "Réalisé des analyses de trésorerie et prévisions pour garantir la fluidité des opérations financières.",
+          "Optimisé les processus d'inventaire et d'approvisionnement, minimisant les gaspillages et évitant les retards de projets."
+        ]
+      }
+    ]
+  },
+  "certifications": {
+    "title": "Certifications",
+    "items": [
+      {
+        "name": "Certified Scrum Product Owner",
+        "issuer": "Scrum.org",
+        "status": "Certifié"
+      },
+      {
+        "name": "AWS Certified Cloud Practitioner",
+        "issuer": "Amazon Web Services",
+        "status": "Certifié"
+      },
+      {
+        "name": "AWS Spécialité Machine Learning",
+        "issuer": "Amazon Web Services",
+        "status": "Prévu pour mai 2025"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projets",
+    "categories": [
+      {
+        "name": "Projets en entreprise",
+        "items": [
+          {
+            "title": "AI Strategy Copilot chez Prosol",
+            "description": "Assistant IA basé sur Streamlit + LLM pour la stratégie produit retail, intégrant RAG, apprentissage non supervisé, boucles de rétroaction et ingénierie de prompt avancée.",
+            "links": {
+              "code": "https://github.com/jermiah/Product-Strategy-App/blob/main/README.md",
+              "demo": "https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb"
+            },
+            "tags": ["LLM", "RAG", "Streamlit", "Stratégie Produit"]
+          },
+          {
+            "title": "Recherche stratégique chez BNP Paribas",
+            "description": "Adoption stratégique des RAG open-source multimodaux en entreprise : défis, KPIs et impact business. Livre blanc axé sur les cas d'usage, les benchmarks de performance et les voies d'implémentation des agents IA en banque.",
+            "tags": ["Recherche", "RAG", "IA d'entreprise", "Banque"]
+          }
+        ]
+      },
+      {
+        "name": "Projets de Machine Learning et Data Science",
+        "items": [
+          {
+            "title": "Prédiction de faillite",
+            "description": "Modèles de classification utilisant des techniques d'ensemble (régression logistique + XGBoost) pour détecter les faillites dans des jeux de données déséquilibrés.",
+            "links": {
+              "code": "https://github.com/jermiah/machine_learning/blob/main/README.md"
+            },
+            "tags": ["Classification", "XGBoost", "Ensemble Learning"]
+          },
+          {
+            "title": "Durée de séjour hospitalier",
+            "description": "Modèles de classification avec Random Forest, XGBoost et CatBoost pour estimer la durée d'hospitalisation des patients et améliorer l'allocation des ressources.",
+            "tags": ["Santé", "Random Forest", "CatBoost"]
+          },
+          {
+            "title": "Cool Wipes - Programmation linéaire",
+            "description": "Optimisation de la chaîne logistique via Gurobi.",
+            "tags": ["Optimisation", "Supply Chain", "Gurobi"]
+          }
+        ]
+      },
+      {
+        "name": "Projets de Deep Learning",
+        "items": [
+          {
+            "title": "Reconnaissance vocale",
+            "description": "Identification des locuteurs à partir d'audios à l'aide d'ECAPA-TDNN. Combine classification (réseau neuronal) et vérification par similarité (cosine). Démo Gradio, traitement audio avec torchaudio et embeddings SpeechBrain.",
+            "links": {
+              "code": "https://github.com/jermiah/deep_learning/blob/main/README.md"
+            },
+            "tags": ["Audio", "ECAPA-TDNN", "SpeechBrain"]
+          },
+          {
+            "title": "Classification des sentiments (BERT)",
+            "description": "Classification NLP avec BERT fine-tuné sur les avis de films IMDb. Utilisation des Transformers HuggingFace, tokenisation, masquage d'attention et évaluation du modèle.",
+            "tags": ["NLP", "BERT", "Transformers"]
+          },
+          {
+            "title": "Classification d'images",
+            "description": "Reconnaissance d'images avec transfert d'apprentissage (ResNet). Augmentation des données, visualisation de l'entraînement et évaluation sur jeux de données personnalisés.",
+            "tags": ["Vision par ordinateur", "ResNet", "Transfer Learning"]
+          }
+        ]
+      },
+      {
+        "name": "Projets à venir",
+        "items": [
+          {
+            "title": "Frugal AI",
+            "description": "Conception d'un assistant léger et hors ligne pour dispositifs Edge, utilisant des LLMs embarqués pour la traduction et l'explication en temps réel en l'absence de connectivité.",
+            "tags": ["Edge AI", "LLM", "Hors ligne"]
+          },
+          {
+            "title": "Plateforme intelligente de réservation de services",
+            "description": "Système agentique basé sur un RAG, intégré à n8n pour automatiser les réservations avec récupération intelligente d'informations, vérification de disponibilité tenant compte des déplacements, traitement des paiements et notifications WhatsApp.",
+            "tags": ["RAG", "Automation", "n8n", "Agents"]
+          }
+        ]
+      }
+    ]
+  },
+  "showcase": {
+    "title": "Showcase",
+    "awards": {
+      "title": "Récompenses",
+      "items": [
+        "Prix Antares pour performance exceptionnelle : Reconnu pour l'excellence constante chez BNP Paribas.",
+        "Esprit Kaizen – Automatisation des processus : Pour l'automatisation de flux de travail clés et l'amélioration de l'efficacité.",
+        "Esprit Kaizen – Rapport sur la qualité des données : Pour l'amélioration des rapports réglementaires de qualité des données.",
+        "Boursier NTSE : Prix du National Talent Search Examination par le NCERT (Inde) en 2012."
+      ]
+    },
+    "sports": [
+      "2e place – Compétition de roller au niveau district",
+      "2e place – Tournoi d'échecs au niveau district"
+    ],
+    "community": {
+      "title": "Créateur de communauté",
+      "description": "Fondateur de la communauté Paris AI & Tech",
+      "link": "https://www.linkedin.com/posts/jermiah-jerome_paris-ai-tech-community-members-activity-7303817496346730496-QNPT"
+    },
+    "hackathons": {
+      "title": "Participation à des hackathons et concours d'innovation",
+      "items": [
+        "L'Oréal Brandstorm 2025",
+        "Hackathon IA – Novartis",
+        "Défi IA – Sopra Steria"
+      ]
+    },
+    "events": {
+      "title": "Ateliers & Sommets",
+      "items": [
+        "Atelier Google Gemini",
+        "Web Summit Lisbonne",
+        "AWS Summit Paris",
+        "AI Developers Meetup – Station F",
+        "French State of AI – Google Paris"
+      ]
+    }
+  },
+  "footer": {
+    "message": "💡 J'aime mes visiteurs — c'est pourquoi vous pouvez choisir comment voir mon site. Votre satisfaction est mon travail ❤️ — profitez-en dans votre langue et thème préférés !",
+    "copyright": "© 2025 Jermiah Jerome. Créé avec React, Vite, et ❤️"
+  },
+  "likeButton": {
+    "text": "Me recommander",
+    "tooltip": "Chaque clic illumine ma journée 🌟",
+    "counter": "Total de recommandations : {count}"
+  }
+}
