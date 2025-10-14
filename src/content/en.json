@@ -2,11 +2,11 @@
   "hero": {
     "greeting": "Hi, I'm",
     "name": "Jermiah Jerome",
-    "title": "AI Engineer & Researcher",
+    "title": "AI & ML Engineer",
     "titles": [
-      "AI Engineer & Researcher",
-      "Small Language Model Specialist",
       "Multi-Agent Systems Developer",
+      "AI Researcher",
+      "Language Models and NLP Specialist",
       "Applied AI Innovator"
     ],
     "typewriter": {
@@ -15,9 +15,8 @@
       "deleteSpeedMs": 50,
       "pauseMs": 2000
     },
-    "subtitle": "Exploring reasoning-efficient AI — from small language models and multi-agent systems to intent-aware automation",
+    "subtitle": "Forever learning, forever deploying — shaping the future of efficient AI and intelligent agents.",
     "cta": {
-      "resume": "View Resume",
       "github": "GitHub",
       "linkedin": "LinkedIn"
     },
@@ -47,16 +46,15 @@
   "overview": {
     "title": "Overview",
     "content": [
-      "I'm an AI Engineer and Researcher passionate about building compact, reasoning-focused systems that blend rules, retrieval, and generation. My interests span small language models (SLMs), reinforcement-driven fine-tuning, and multi-agent orchestration for business-focused AI automation.",
-      "My technical expertise includes supervised fine-tuning (SFT), gradient-based reinforcement optimization (GRPO), retrieval-augmented generation (RAG), and model orchestration via lightweight MCP agents. I focus on designing cost-efficient yet interpretable systems for applied reasoning and conversational workflows.",
-      "I’m currently completing my Master of Science in Data Science & AI Strategy at emlyon business school, where my research explores intent routing and hybrid architectures that combine deterministic logic with neural reasoning."
+      "I’m an AI Engineer passionate about building compact, efficient systems that blend rules, retrieval, and generation. My interests span supervised fine-tuning of small language models, reinforcement-driven reasoning, and multi-agent orchestration for business-focused AI automation",
+      "My technical expertise includes supervised fine-tuning (SFT), policy-gradient reinforcement learning, retrieval-augmented generation (RAG), and model orchestration via lightweight MCP agents. I focus on designing cost-efficient yet interpretable systems for applied reasoning and conversational workflows."
     ],
     "highlights": {
       "title": "Core Focus Areas",
       "items": [
         {
           "title": "Small & Efficient Language Models",
-          "description": "Designing compact SLMs with reasoning-enhanced fine-tuning (SFT, GRPO) for domain-specific automation."
+          "description": "Designing compact SLMs with supervised fine-tuning (SFT) and Group Relative Policy Optimization (GRPO) for domain-specific automation."
         },
         {
           "title": "Multi-Agent Orchestration",
@@ -70,9 +68,7 @@
     },
     "featured": {
       "title": "Research Highlight",
-      "description": "Exploring efficient intent-routing and recursive reasoning in small models",
-      "link": "https://github.com/jermiah/TinyRecursiveReasoningLab",
-      "linkText": "View Research"
+      "description": "Exploring efficient intent-routing and recursive reasoning in small models"
     },
     "closing": "My goal is to bridge applied AI engineering with practical reasoning research — building systems that are faster, safer, and smarter.",
     "note": "Scroll below for my recent projects, research, and master's thesis."
@@ -151,29 +147,69 @@
       }
     ]
   },
-  "experience": {
-    "title": "Experience",
-    "items": [
-      {
-        "company": "HSBC, India",
-        "position": "Assistant Manager - Product Management",
-        "period": "12/2022 – 08/2024",
-        "description": [
-          "Led automation and assurance projects for data quality and regulatory compliance, cutting issue rates by 80%.",
-          "Deployed automated reporting pipelines and improved global data workflows, enhancing efficiency by 20%."
-        ]
-      },
-      {
-        "company": "BNP Paribas GSO, India",
-        "position": "Data Quality Associate",
-        "period": "06/2021 – 10/2022",
-        "description": [
-          "Built dashboards and automated workflows reducing data errors by 95% and manual processing by 80%.",
-          "Earned the Kaizen Award for Innovation for contributions to regulatory data quality processes."
-        ]
-      }
-    ]
-  },
+"experience": {
+  "title": "Experience",
+  "items": [
+    {
+      "company": "Daijobu AI",
+      "position": "AI Engineer (Intern)",
+      "period": "July 2025 – Present",
+      "location": "Paris, France",
+      "description": [
+        "Researching efficient small language model (SLM) architectures for real-world deployment and reasoning efficiency.",
+        "Developing end-to-end ML solutions — data pipelines, API integrations, and fine-tuning small models using SFT, GRPO, and quantization.",
+        "Building a dynamic questionnaire-to-solution agent framework that captures business pain points and generates automated deliverables.",
+        "Collaborating with clients to refine agentic AI workflows aligned with responsible AI principles and cost-efficient inference."
+      ]
+    },
+    {
+      "company": "Conversy AI",
+      "position": "Student Founder",
+      "period": "August 2025 – Present",
+      "location": "Paris, France",
+      "description": [
+        "Designing a multi-agent orchestration platform using MCP servers for dynamic task routing, evaluation, and observability.",
+        "Leading an international dev team to build scalable SaaS infrastructure enabling small businesses to create custom AI agents within minutes.",
+        "Developing agentic features such as intent routing, RAG-based product search, and automated booking & payment workflows.",
+        "Driving research on hybrid rules + LLM architectures for intent-aware automation and conversational commerce."
+      ]
+    },
+    {
+      "company": "HSBC",
+      "position": "Assistant Manager – Product Management",
+      "period": "December 2022 – August 2024",
+      "location": "Bangalore, India",
+      "description": [
+        "Led automation and assurance projects for data quality and regulatory compliance in global e-communication surveillance.",
+        "Reduced data issues by 80% through workflow optimization and process automation across two key products.",
+        "Designed and deployed automated KPI dashboards, saving 0.2 FTE annually and improving transparency for global teams.",
+        "Optimized JIRA workflows for issue management and custodian tracking, improving operational efficiency by 20%."
+      ]
+    },
+    {
+      "company": "BNP Paribas GSO",
+      "position": "Data Quality Associate",
+      "period": "June 2021 – October 2022",
+      "location": "Chennai, India",
+      "description": [
+        "Enhanced trade reference data accuracy through data profiling, achieving 100% NAV calculation precision.",
+        "Automated workflows that reduced manual processing time by 80% and errors by 95%, earning the Kaizen Award for Innovation.",
+        "Built dashboards to monitor data quality KPIs and improve visibility for global stakeholders."
+      ]
+    },
+    {
+      "company": "Enprou Technologies India Pvt. Ltd.",
+      "position": "Project Finance Trainee",
+      "period": "May 2018 – June 2019",
+      "location": "Trichy, India",
+      "description": [
+        "Performed cash flow and budget analysis to identify cost-saving measures, reducing project expenses by 15%.",
+        "Streamlined procurement and financial tracking processes to ensure smooth project execution."
+      ]
+    }
+  ]
+}
+,
   "certifications": {
     "title": "Certifications",
     "items": [
