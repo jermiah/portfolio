@@ -1,0 +1,324 @@
+{
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Jermiah Jerome",
+    "title": "Data Scientist & AI Engineer",
+    "subtitle": "Building intelligent solutions at the intersection of data science, machine learning, and business strategy",
+    "cta": {
+      "resume": "View Resume",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "nav": {
+    "overview": "Overview",
+    "skills": "Skills",
+    "education": "Education",
+    "experience": "Experience",
+    "certifications": "Certifications",
+    "projects": "Projects",
+    "showcase": "Showcase"
+  },
+  "contact": {
+    "email": "jermiah.jerome96@gmail.com",
+    "phone": "+33 783719197"
+  },
+  "overview": {
+    "title": "Overview",
+    "content": [
+      "I'm a data-driven product thinker with 5+ years of experience in banking and financial services, specializing in data quality, workflow automation, and product management. I've contributed to strategic initiatives at BNP Paribas and HSBC, delivering projects that improved regulatory compliance, streamlined operations, and enhanced decision-making through data.",
+      "Currently, I'm pursuing a Master of Science in Data Science & AI Strategy at emlyon business school, where I'm expanding my capabilities in machine learning, deep learning, RAG and large language models. My academic journey also includes an MBA in Finance & Analytics and a BTech in Computer Science, enabling me to bridge business objectives with technical innovation."
+    ],
+    "highlights": {
+      "title": "What I Bring to the Table",
+      "items": [
+        {
+          "title": "Banking Expertise",
+          "description": "Led impactful initiatives at BNP Paribas and HSBC focused on data assurance, process automation, and regulatory reporting — with multiple recognitions for innovation and delivery."
+        },
+        {
+          "title": "Product & Strategy Innovation",
+          "description": "Developed a Product Strategy Assistant App using LLMs and Retrieval-Augmented Generation (RAG). This tool generated dynamic strategic recommendations for 3,000+ retail products by integrating performance KPIs, customer segmentation insights, and feedback-driven learning loops."
+        },
+        {
+          "title": "AI Research & Thought Leadership",
+          "description": "Leading an in-company research project at BNP Paribas titled: 'Strategic Adoption of Open-Source Multimodal Enterprise RAG: Challenges, KPIs, and Business Impact.'"
+        }
+      ]
+    },
+    "featured": {
+      "title": "Featured Project",
+      "description": "Product Strategy Assistant App Demo:",
+      "link": "https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb",
+      "linkText": "GrandView by Prosol"
+    },
+    "closing": "Let's connect and build the future of AI-powered strategy and innovation together.",
+    "note": "Want to see awards, communities, and hackathons? Check out the Showcase section."
+  },
+  "skills": {
+    "title": "Skills",
+    "categories": [
+      {
+        "name": "Expertise",
+        "items": [
+          "Business Intelligence & Data Analysis",
+          "Data Visualization",
+          "Big Data & Data Science",
+          "Machine Learning",
+          "Deep Learning",
+          "Natural Language Processing (NLP)",
+          "Large Language Models (LLM)",
+          "Prompt Engineering",
+          "Financial Markets",
+          "Artificial Intelligence Strategy"
+        ]
+      },
+      {
+        "name": "Professional",
+        "items": [
+          "Product Management",
+          "Tech Project Management",
+          "Problem Solving & Decision Making",
+          "Collaboration and Teamwork",
+          "Stakeholder Management",
+          "Team Management & Leadership",
+          "Technical Communication"
+        ]
+      },
+      {
+        "name": "Technical",
+        "items": [
+          "Python, R, SQL, NoSQL, VBA/Macros, Scala, DAX",
+          "PyTorch, TensorFlow, Keras, LangChain, LoRA, QLoRA",
+          "Git, GitHub, CUDA, Hugging Face",
+          "GCP, AWS, Snowflake, Databricks",
+          "Power BI, Tableau, Advanced Excel",
+          "Bloomberg, Reuters"
+        ]
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "school": "emlyon business school × McGill University",
+        "degree": "MSc in Data Science & AI Strategy",
+        "period": "2024–2025",
+        "location": "Paris, France & Montreal, Canada",
+        "description": "emlyon: CGE Accredited, EQUIS/AMBA/AACSB Triple Crown, #4 in France for Business Studies. McGill: Top Canadian public university known for AI research and global excellence",
+        "links": {
+          "emlyon": "https://em-lyon.com/en",
+          "mcgill": "https://www.mcgill.ca/"
+        }
+      },
+      {
+        "school": "Thiagarajar School of Management",
+        "degree": "MBA in Finance & Analytics",
+        "period": "2019–2021",
+        "location": "Madurai, India",
+        "description": "NAAC Accredited, Ranked among top private B-schools in South India",
+        "links": {
+          "school": "https://tsm.ac.in"
+        }
+      },
+      {
+        "school": "National Institute of Technology, Tiruchirappalli",
+        "degree": "BTech in Computer Science and Engineering",
+        "period": "2014–2018",
+        "location": "Tiruchirappalli, India",
+        "description": "Top 10 Engineering Institutes in India (NIRF Rankings)",
+        "links": {
+          "school": "https://www.nitt.edu/"
+        }
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "company": "HSBC, India",
+        "position": "Assistant Manager - Product Management",
+        "period": "12/2022 – 08/2024",
+        "description": [
+          "Ensured compliance and mitigated regulatory risks for global e-communication and audio communication surveillance across two products, minimizing operational vulnerabilities.",
+          "Led data assurance projects including deployments, migrations, and integrations, reducing data issues by 80%, optimizing workflows to ensure data accuracy, reliability, and regulatory compliance, and maintaining seamless data delivery by global stakeholders.",
+          "Configured JIRA for issue backlogs and custodian processes, streamlining workflows and improving operational efficiency by 20%. Designed and automated global KPI dashboards for data quality reporting, collectively saving 0.2 FTE annually while enhancing transparency across stakeholders."
+        ]
+      },
+      {
+        "company": "BNP Paribas GSO, India",
+        "position": "Data Quality Associate",
+        "period": "06/2021 – 10/2022",
+        "description": [
+          "Conducted data profiling and implemented a Data Quality process for Trade Reference Data in asset creation, ensuring 100% precision in NAV calculation.",
+          "Analyzed data errors and developed dashboards to enhance quality processes.",
+          "Automated workflows, reducing errors by 95% and processing time by 80%, earning the Kaizen Award for Innovation."
+        ]
+      },
+      {
+        "company": "Enprou Technologies India Pvt. Ltd.",
+        "position": "Project Finance Trainee",
+        "period": "05/2018 – 06/2019",
+        "description": [
+          "Performed cash flow analysis and forecasted requirements to ensure smooth financial operations.",
+          "Optimized inventory and procurement processes, minimizing wastage and avoiding project delays."
+        ]
+      }
+    ]
+  },
+  "certifications": {
+    "title": "Certifications",
+    "items": [
+      {
+        "name": "Certified Scrum Product Owner",
+        "issuer": "Scrum.org",
+        "status": "Certified"
+      },
+      {
+        "name": "AWS Certified Cloud Practitioner",
+        "issuer": "Amazon Web Services",
+        "status": "Certified"
+      },
+      {
+        "name": "AWS Machine Learning Specialty",
+        "issuer": "Amazon Web Services",
+        "status": "Coming May 2025"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "categories": [
+      {
+        "name": "In-Company Projects",
+        "items": [
+          {
+            "title": "AI Strategy Copilot @ Prosol",
+            "description": "A Streamlit + LLM-powered assistant for retail product strategy using RAG, unsupervised learning, feedback loops, and advanced prompt engineering.",
+            "links": {
+              "code": "https://github.com/jermiah/Product-Strategy-App/blob/main/README.md",
+              "demo": "https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb"
+            },
+            "tags": ["LLM", "RAG", "Streamlit", "Product Strategy"]
+          },
+          {
+            "title": "Business White Paper Research @ BNP Paribas",
+            "description": "Strategic Adoption of Open-Source Multimodal Enterprise RAG: Challenges, KPIs, and Business Impact. Focused on evaluating use cases, performance benchmarks, and implementation pathways for enterprise AI agents in banking.",
+            "tags": ["Research", "RAG", "Enterprise AI", "Banking"]
+          }
+        ]
+      },
+      {
+        "name": "Machine Learning & Data Science Projects",
+        "items": [
+          {
+            "title": "Bankruptcy Prediction",
+            "description": "Built classification models using ensemble techniques (Logistic Regression + XGBoost) to detect bankruptcy in imbalanced datasets.",
+            "links": {
+              "code": "https://github.com/jermiah/machine_learning/blob/main/README.md"
+            },
+            "tags": ["Classification", "XGBoost", "Ensemble Learning"]
+          },
+          {
+            "title": "Length of Stay Prediction",
+            "description": "Developed classification models using Random Forest, XGBoost, and CatBoost to estimate hospital stay duration and optimize healthcare resource allocation.",
+            "tags": ["Healthcare", "Random Forest", "CatBoost"]
+          },
+          {
+            "title": "Cool Wipes - Linear Programming",
+            "description": "Supply chain optimization using Gurobi for optimal plant location and demand satisfaction.",
+            "tags": ["Optimization", "Supply Chain", "Gurobi"]
+          }
+        ]
+      },
+      {
+        "name": "Deep Learning Projects",
+        "items": [
+          {
+            "title": "Speaker Recognition",
+            "description": "Speaker identification using ECAPA-TDNN embeddings and a hybrid approach combining classification (neural network) and verification (cosine similarity). Features Gradio demo, audio preprocessing with torchaudio, and SpeechBrain embeddings.",
+            "links": {
+              "code": "https://github.com/jermiah/deep_learning/blob/main/README.md"
+            },
+            "tags": ["Audio", "ECAPA-TDNN", "SpeechBrain"]
+          },
+          {
+            "title": "Sentiment Classification (BERT)",
+            "description": "NLP classification using fine-tuned BERT on IMDb movie review sentiments. Built with HuggingFace Transformers, includes tokenization, attention masking, and model evaluation.",
+            "tags": ["NLP", "BERT", "Transformers"]
+          },
+          {
+            "title": "Image Classification",
+            "description": "Image recognition using transfer learning (ResNet). Features data augmentation, training visualization, and evaluation metrics for custom datasets.",
+            "tags": ["Computer Vision", "ResNet", "Transfer Learning"]
+          }
+        ]
+      },
+      {
+        "name": "Upcoming Projects",
+        "items": [
+          {
+            "title": "Frugal AI",
+            "description": "Designing a lightweight, offline assistant for Edge Devices using on-device LLMs for real-time translation and explanation in zero connectivity environments.",
+            "tags": ["Edge AI", "LLM", "Offline"]
+          },
+          {
+            "title": "Intelligent & Automated Service Booking Platform",
+            "description": "An agentic, RAG-powered system integrated with n8n to automate service bookings with intelligent information retrieval, availability checks with travel constraints, payment processing, and WhatsApp notifications.",
+            "tags": ["RAG", "Automation", "n8n", "Agents"]
+          }
+        ]
+      }
+    ]
+  },
+  "showcase": {
+    "title": "Showcase",
+    "awards": {
+      "title": "Awards",
+      "items": [
+        "Antares Award for Outstanding Performance: Recognized for consistent excellence in delivery and impact at BNP Paribas.",
+        "Spirit of Kaizen – Process Automation: Awarded for automating and optimizing key workflows, enhancing efficiency.",
+        "Spirit of Kaizen – Data Quality Report: Recognized for improving regulatory data quality reporting at BNP Paribas.",
+        "National Talent Search Examination (NTSE) Scholar: Awarded by NCERT (India) for academic excellence in 2012."
+      ]
+    },
+    "sports": [
+      "2nd Place – District Level Roller Skating Competition",
+      "2nd Place – District Level Chess Tournament"
+    ],
+    "community": {
+      "title": "Community Builder",
+      "description": "Creator of the Paris AI & Tech Community",
+      "link": "https://www.linkedin.com/posts/jermiah-jerome_paris-ai-tech-community-members-activity-7303817496346730496-QNPT"
+    },
+    "hackathons": {
+      "title": "Hackathon & Innovation Challenge Participant",
+      "items": [
+        "L'Oréal Brandstorm 2025",
+        "Novartis AI Hackathon",
+        "Sopra Steria AI Challenge"
+      ]
+    },
+    "events": {
+      "title": "Workshops & Summits",
+      "items": [
+        "Google Gemini Workshop",
+        "Web Summit Lisbon",
+        "AWS Summit Paris",
+        "AI Developers Meetup – Station F",
+        "French State of AI – Google Paris"
+      ]
+    }
+  },
+  "footer": {
+    "message": "💡 I love my visitors — that's why you can choose how you view my site. Your satisfaction is my work ❤️ — enjoy it in your favorite language and theme!",
+    "copyright": "© 2025 Jermiah Jerome. Built with React, Vite, and ❤️"
+  },
+  "likeButton": {
+    "text": "Recommend Me",
+    "tooltip": "Each click makes my day brighter 🌟",
+    "counter": "Total recommendations: {count}"
+  }
+}
