@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import Section from './Section';
-import { FiAward, FiUsers, FiZap, FiCalendar, FiTrophy } from 'react-icons/fi';
+import { FiAward, FiUsers, FiZap, FiCalendar } from 'react-icons/fi';
 
 const Showcase = () => {
   const { t } = useTranslation();
@@ -35,7 +35,7 @@ const Showcase = () => {
                 transition={{ delay: index * 0.1 }}
                 className="flex items-start gap-3 text-gray-700 dark:text-gray-300"
               >
-                <FiTrophy className="w-5 h-5 text-yellow-500 mt-1 flex-shrink-0" />
+                <FiAward className="w-5 h-5 text-yellow-500 mt-1 flex-shrink-0" />
                 <span>{award}</span>
               </motion.li>
             ))}
@@ -53,7 +53,7 @@ const Showcase = () => {
             <div key={index} className="card p-6">
               <div className="flex items-center gap-3">
                 <div className="p-2 bg-primary-light/10 dark:bg-primary-dark/10 rounded-lg">
-                  <FiTrophy className="w-6 h-6 text-primary-light dark:text-primary-dark" />
+                  <FiAward className="w-6 h-6 text-primary-light dark:text-primary-dark" />
                 </div>
                 <p className="text-gray-700 dark:text-gray-300 font-medium">{sport}</p>
               </div>
