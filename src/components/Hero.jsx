@@ -124,22 +124,10 @@ const Hero = () => {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href={t('hero.links.resume')}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary flex items-center gap-2"
-          >
-            <FiFileText />
-            {t('hero.cta.resume')}
-          </motion.a>
-
-          <motion.a
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
             href={t('hero.links.github')}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-secondary flex items-center gap-2"
+            className="btn-primary flex items-center gap-2"
           >
             <FiGithub />
             {t('hero.cta.github')}
@@ -151,7 +139,7 @@ const Hero = () => {
             href={t('hero.links.linkedin')}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-secondary flex items-center gap-2"
+            className="btn-primary flex items-center gap-2"
           >
             <FiLinkedin />
             {t('hero.cta.linkedin')}

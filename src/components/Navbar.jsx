@@ -72,25 +72,25 @@ const Navbar = ({ isDark, toggleTheme }) => {
             : 'bg-transparent'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 md:h-20">
-            {/* Hire Me Button */}
+        <div className="w-full px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16 md:h-20 gap-4">
+            {/* Left: Hire Me Button */}
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => scrollToSection('contact')}
-              className="px-4 md:px-6 py-2 md:py-2.5 rounded-lg font-semibold text-sm md:text-base bg-gradient-to-r from-primary-light to-accent-light dark:from-primary-dark dark:to-accent-dark text-white shadow-lg hover:shadow-xl transition-all duration-300"
+              className="flex-shrink-0 px-4 md:px-6 py-2 md:py-2.5 rounded-lg font-semibold text-sm md:text-base bg-gradient-to-r from-primary-light to-accent-light dark:from-primary-dark dark:to-accent-dark text-white shadow-lg hover:shadow-xl transition-all duration-300"
             >
               Hire Me
             </motion.button>
 
-            {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-1">
+            {/* Center: Desktop Navigation - No wrapping */}
+            <div className="hidden lg:flex items-center space-x-1 flex-shrink-0">
               {navItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
+                  className={`px-3 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-all duration-300 ${
                     activeSection === item.id
                       ? 'bg-primary-light/10 dark:bg-primary-dark/10 text-primary-light dark:text-primary-dark'
                       : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
@@ -101,9 +101,9 @@ const Navbar = ({ isDark, toggleTheme }) => {
               ))}
             </div>
 
-            {/* Theme, Language & Fork Button */}
-            <div className="flex items-center space-x-2">
-              {/* Fork Button */}
+            {/* Right: Fork, Theme, Language & Mobile Menu */}
+            <div className="flex items-center space-x-2 flex-shrink-0">
+              {/* Fork Button - Far Right */}
               <motion.a
                 href="https://github.com/jermiah/portfolio"
                 target="_blank"
