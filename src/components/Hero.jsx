@@ -1,31 +1,24 @@
-import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { FiGithub, FiLinkedin, FiFileText, FiMail, FiPhone } from 'react-icons/fi';
+import TypewriterText from './TypewriterText';
 
 const Hero = () => {
   const { t } = useTranslation();
-  const [typedText, setTypedText] = useState('');
-  const [isTypingComplete, setIsTypingComplete] = useState(false);
-  const fullText = t('hero.title');
-
-  useEffect(() => {
-    setTypedText('');
-    setIsTypingComplete(false);
-    let currentIndex = 0;
-
-    const typingInterval = setInterval(() => {
-      if (currentIndex <= fullText.length) {
-        setTypedText(fullText.slice(0, currentIndex));
-        currentIndex++;
-      } else {
-        setIsTypingComplete(true);
-        clearInterval(typingInterval);
-      }
-    }, 100);
-
-    return () => clearInterval(typingInterval);
-  }, [fullText]);
+  
+  // Get typewriter configuration from JSON
+  const titles = t('hero.titles', { returnObjects: true, defaultValue: null });
+  const title = t('hero.title', { defaultValue: 'Data Scientist & AI Engineer' });
+  const typewriterConfig = t('hero.typewriter', { returnObjects: true, defaultValue: {} });
+  
+  // Determine texts to display
+  const textsToType = Array.isArray(titles) && titles.length > 0 ? titles : [title];
+  
+  // Typewriter settings with defaults
+  const typingSpeed = typewriterConfig.speedMs || 100;
+  const deletingSpeed = typewriterConfig.deleteSpeedMs || 50;
+  const pauseDuration = typewriterConfig.pauseMs || 2000;
+  const loop = typewriterConfig.loop !== undefined ? typewriterConfig.loop : true;
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -84,8 +77,13 @@ const Hero = () => {
         {/* Typing Animation */}
         <motion.div variants={itemVariants} className="mb-6">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800 dark:text-gray-200 min-h-[3rem] md:min-h-[4rem]">
-            {typedText}
-            {!isTypingComplete && <span className="typing-cursor"></span>}
+            <TypewriterText 
+              texts={textsToType}
+              loop={loop}
+              typingSpeed={typingSpeed}
+              deletingSpeed={deletingSpeed}
+              pauseDuration={pauseDuration}
+            />
           </h2>
         </motion.div>
 
@@ -126,7 +124,7 @@ const Hero = () => {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="https://drive.google.com/file/d/1LeRR5GtDGdwTmHqf8iuWJakWj5OQ3cnT/view?usp=sharing"
+            href={t('hero.links.resume')}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary flex items-center gap-2"
@@ -138,7 +136,7 @@ const Hero = () => {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="https://github.com/jermiah"
+            href={t('hero.links.github')}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary flex items-center gap-2"
@@ -150,7 +148,7 @@ const Hero = () => {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="https://www.linkedin.com/in/jermiah-jerome/"
+            href={t('hero.links.linkedin')}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary flex items-center gap-2"

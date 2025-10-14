@@ -43,8 +43,9 @@ const ProjectCarousel = () => {
           {categories[activeCategory].items.map((project, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false }}
               transition={{ delay: index * 0.1 }}
               whileHover={{ y: -5 }}
               className="card p-6"

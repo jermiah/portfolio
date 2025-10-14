@@ -9,7 +9,9 @@ import Education from './components/Education';
 import ExperienceTimeline from './components/ExperienceTimeline';
 import Certifications from './components/Certifications';
 import ProjectCarousel from './components/ProjectCarousel';
+import CategorySection from './components/CategorySection';
 import Showcase from './components/Showcase';
+import ContactForm from './components/ContactForm';
 import LikeButton from './components/LikeButton';
 import Footer from './components/Footer';
 
@@ -57,7 +59,10 @@ function App() {
         <ExperienceTimeline />
         <Certifications />
         <ProjectCarousel />
+        <CategorySection sectionKey="research" />
+        <CategorySection sectionKey="opensource" />
         <Showcase />
+        <ContactForm />
       </main>
 
       <Footer />

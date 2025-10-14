@@ -1,51 +1,79 @@
 # 🚀 Deployment Guide
 
-This guide will help you deploy your new React portfolio to GitHub Pages.
+This guide will help you deploy your forked React portfolio to GitHub Pages.
 
 ## 📋 Pre-Deployment Checklist
 
 Before deploying, ensure you have:
 
 - ✅ Node.js installed (v16 or higher)
-- ✅ Git repository initialized
-- ✅ GitHub account with repository access
-- ✅ All content updated in `src/content/en.json` and `src/content/fr.json`
+- ✅ Forked this repository to your GitHub account
+- ✅ Cloned your fork locally
+- ✅ Updated `vite.config.js` with your repository name
+- ✅ Updated `package.json` with your GitHub username and repo name
+- ✅ Customized content in `src/content/en.json` and `src/content/fr.json`
+- ✅ Replaced `public/photo.jpg` with your photo
 
 ---
 
 ## 🔄 Step-by-Step Deployment
 
-### Step 1: Backup Old Files (Optional)
+### Step 1: Fork and Clone
 
-If you want to keep your old portfolio files:
+1. **Fork this repository** on GitHub (click the Fork button)
+2. **Clone your fork**:
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/portfolio.git
+   cd portfolio
+   ```
 
-```bash
-# Create a backup folder
-mkdir old-portfolio
-mv index.html old-portfolio/
-mv script.js old-portfolio/
-mv styles_v2.css old-portfolio/
-mv webgl.js old-portfolio/
-mv README.md old-portfolio/
+### Step 2: Configure for Your GitHub Pages
+
+**Important**: You must update these configuration files with your information!
+
+#### Update `vite.config.js`:
+
+```javascript
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  plugins: [react()],
+  base: '/YOUR_REPO_NAME/',  // ← Change this to your repository name
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: false,
+  },
+})
 ```
 
-### Step 2: Rename New Files
+#### Update `package.json`:
 
-```bash
-# Rename the new files to replace the old ones
-mv index-new.html index.html
-mv README-new.md README.md
+Find and update the `homepage` field:
+
+```json
+{
+  "name": "portfolio",
+  "version": "2.0.0",
+  "homepage": "https://YOUR_USERNAME.github.io/YOUR_REPO_NAME",  // ← Change this
+  // ... rest of the file
+}
 ```
 
-### Step 3: Create Public Folder and Move Photo
+**Example**: If your GitHub username is `johndoe` and your repo is named `my-portfolio`:
+- `vite.config.js`: `base: '/my-portfolio/'`
+- `package.json`: `"homepage": "https://johndoe.github.io/my-portfolio"`
 
-```bash
-# Create public folder if it doesn't exist
-mkdir -p public
+### Step 3: Customize Your Content
 
-# Copy photo to public folder
-cp photo.jpg public/
-```
+Edit these files with your information:
+
+1. **`src/content/en.json`** - Your English content
+2. **`src/content/fr.json`** - Your French content (or delete if not needed)
+3. **`public/photo.jpg`** - Replace with your photo
+
+See the [Content Customization Checklist](#-content-customization-checklist) below.
 
 ### Step 4: Install Dependencies
 
@@ -78,7 +106,16 @@ Open your browser to `http://localhost:5173` and verify:
 - ✅ Responsive design on mobile
 - ✅ Like button triggers confetti
 
-### Step 6: Build for Production
+### Step 6: Enable GitHub Pages
+
+Before deploying, enable GitHub Pages in your repository:
+
+1. Go to your repository on GitHub
+2. Click **Settings** → **Pages**
+3. Under "Source", it will show "GitHub Pages is currently disabled"
+4. Don't worry - it will be enabled automatically after first deployment
+
+### Step 7: Build for Production
 
 ```bash
 npm run build
@@ -86,7 +123,7 @@ npm run build
 
 This creates an optimized production build in the `dist` folder.
 
-### Step 7: Deploy to GitHub Pages
+### Step 8: Deploy to GitHub Pages
 
 ```bash
 npm run deploy
@@ -98,47 +135,103 @@ This command will:
 3. Push the built files to GitHub Pages
 4. Your site will be live at `https://jermiah.github.io/portfolio/`
 
-### Step 8: Verify Deployment
+### Step 9: Verify Deployment
 
-1. Wait 1-2 minutes for GitHub Pages to update
-2. Visit `https://jermiah.github.io/portfolio/`
-3. Test all features on the live site
-4. Check on mobile devices
+1. Wait 1-2 minutes for GitHub Pages to build
+2. Go to your repository **Settings** → **Pages**
+3. You should see: "Your site is published at `https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/`"
+4. Visit your live site
+5. Test all features
+6. Check on mobile devices
+
+**Troubleshooting**: If you see a 404 error:
+- Verify the `base` path in `vite.config.js` matches your repo name exactly
+- Check that the `gh-pages` branch was created
+- Wait a few more minutes for GitHub Pages to finish building
 
 ---
 
-## 🔧 Configuration
+## 🔧 Configuration Details
 
-### GitHub Pages Settings
+### Critical Configuration Files
 
-1. Go to your repository on GitHub
-2. Navigate to **Settings** → **Pages**
-3. Ensure **Source** is set to `gh-pages` branch
-4. The site should be published at `https://jermiah.github.io/portfolio/`
-
-### Base Path Configuration
-
-The `vite.config.js` is already configured with:
+#### 1. `vite.config.js`
 
 ```javascript
-base: '/portfolio/'
+export default defineConfig({
+  plugins: [react()],
+  base: '/YOUR_REPO_NAME/',  // Must match your GitHub repository name
+})
 ```
 
-This ensures all assets load correctly on GitHub Pages.
+#### 2. `package.json`
+
+```json
+{
+  "homepage": "https://YOUR_USERNAME.github.io/YOUR_REPO_NAME",
+  "scripts": {
+    "deploy": "vite build && gh-pages -d dist"
+  }
+}
+```
+
+#### 3. GitHub Pages Settings
+
+After first deployment:
+1. Go to **Settings** → **Pages**
+2. Source should be set to `gh-pages` branch
+3. Your site URL will be displayed
+
+### Common Configuration Mistakes
+
+❌ **Wrong**: `base: '/portfolio/'` (when your repo is named `my-site`)
+✅ **Correct**: `base: '/my-site/'`
+
+❌ **Wrong**: `homepage: "https://jermiah.github.io/portfolio"`
+✅ **Correct**: `homepage: "https://YOUR_USERNAME.github.io/YOUR_REPO_NAME"`
 
 ---
 
-## 📝 Updating Content
+## 📝 Content Customization Checklist
 
-### To Update Content After Deployment:
+After forking, update these in `src/content/en.json`:
+
+### Essential Updates
+
+- [ ] **hero.name** - Your full name
+- [ ] **hero.title** - Your job title
+- [ ] **hero.subtitle** - Your tagline
+- [ ] **hero.links.resume** - Link to your resume
+- [ ] **hero.links.github** - Your GitHub profile URL
+- [ ] **hero.links.linkedin** - Your LinkedIn profile URL
+- [ ] **contact.email** - Your email address
+- [ ] **contact.phone** - Your phone number (optional)
+
+### Content Sections
+
+- [ ] **overview.content** - Your professional summary
+- [ ] **overview.highlights** - Your key strengths
+- [ ] **skills.categories** - Your technical and professional skills
+- [ ] **education.items** - Your education history
+- [ ] **experience.items** - Your work experience
+- [ ] **certifications.items** - Your certifications
+- [ ] **projects.categories** - Your projects with links
+- [ ] **showcase** - Your awards, hackathons, community involvement
+
+### Assets
+
+- [ ] Replace `public/photo.jpg` with your professional photo
+- [ ] Update `index.html` meta tags (title, description, author)
+
+### Updating Content After Deployment
 
 1. **Edit JSON files**:
    ```bash
    # Edit English content
-   nano src/content/en.json
+   code src/content/en.json
    
-   # Edit French content
-   nano src/content/fr.json
+   # Edit French content (if using)
+   code src/content/fr.json
    ```
 
 2. **Test changes locally**:
@@ -286,15 +379,35 @@ If you need to add API keys or secrets:
 
 ---
 
-## 🔄 Continuous Deployment
+## 🔄 Keeping Your Fork Updated
 
-### Option 1: Manual Deployment
+### Sync with Original Template
+
+To get the latest features and bug fixes from the original template:
 
 ```bash
+# One-time setup: Add original repo as upstream
+git remote add upstream https://github.com/jermiah/portfolio.git
+
+# Fetch latest changes
+git fetch upstream
+
+# Merge updates into your fork
+git checkout main
+git merge upstream/main
+
+# Resolve any conflicts in your customized files
+# Then push to your fork
+git push origin main
+
+# Redeploy with updates
+npm run build
 npm run deploy
 ```
 
-### Option 2: GitHub Actions (Automated)
+**Note**: You may need to resolve conflicts in files you've customized (like `en.json`, `fr.json`).
+
+### Automated Deployment with GitHub Actions (Optional)
 
 Create `.github/workflows/deploy.yml`:
 
@@ -360,11 +473,27 @@ This will automatically deploy on every push to the main branch.
 
 If you encounter issues:
 
-1. Check the browser console for errors (F12)
-2. Review the [README.md](README.md) file
-3. Check [Vite documentation](https://vitejs.dev/)
-4. Check [React documentation](https://react.dev/)
-5. Check [GitHub Pages documentation](https://docs.github.com/en/pages)
+1. **Check Configuration**:
+   - Verify `vite.config.js` base path matches your repo name
+   - Verify `package.json` homepage URL is correct
+   - Ensure `gh-pages` branch exists in your repository
+
+2. **Common Issues**:
+   - 404 Error → Check base path configuration
+   - Assets not loading → Clear browser cache, check base path
+   - Build fails → Delete `node_modules` and reinstall
+
+3. **Resources**:
+   - Check the browser console for errors (F12)
+   - Review the [README.md](README.md) file
+   - Check [Vite documentation](https://vitejs.dev/)
+   - Check [React documentation](https://react.dev/)
+   - Check [GitHub Pages documentation](https://docs.github.com/en/pages)
+
+4. **Get Support**:
+   - Open an issue in the original repository
+   - Check existing issues for solutions
+   - Ask in the discussions section
 
 ---
 
@@ -382,7 +511,35 @@ After successful deployment:
 
 **🎉 Congratulations! Your modern portfolio is now live!**
 
-Visit: `https://jermiah.github.io/portfolio/`
+Visit: `https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/`
+
+---
+
+## 🌟 Show Your Support
+
+If this template helped you create your portfolio:
+
+1. ⭐ **Star the original repository**
+2. 🍴 **Share it with others**
+3. 💬 **Tweet about it** and tag the author
+4. 🤝 **Contribute improvements** back to the template
+
+---
+
+## 📊 Post-Deployment Checklist
+
+After successful deployment:
+
+- [ ] Test all sections and navigation
+- [ ] Verify all links work (resume, GitHub, LinkedIn, projects)
+- [ ] Test theme toggle (light/dark)
+- [ ] Test language toggle (EN/FR)
+- [ ] Check mobile responsiveness
+- [ ] Test on different browsers
+- [ ] Verify images load correctly
+- [ ] Check console for errors
+- [ ] Test the "Hire Me" contact form
+- [ ] Share your portfolio link!
 
 ---
 

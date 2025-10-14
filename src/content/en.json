@@ -2,12 +2,29 @@
   "hero": {
     "greeting": "Hi, I'm",
     "name": "Jermiah Jerome",
-    "title": "Data Scientist & AI Engineer",
-    "subtitle": "Building intelligent solutions at the intersection of data science, machine learning, and business strategy",
+    "title": "AI Engineer & Researcher",
+    "titles": [
+      "AI Engineer & Researcher",
+      "Small Language Model Specialist",
+      "Multi-Agent Systems Developer",
+      "Applied AI Innovator"
+    ],
+    "typewriter": {
+      "loop": true,
+      "speedMs": 100,
+      "deleteSpeedMs": 50,
+      "pauseMs": 2000
+    },
+    "subtitle": "Exploring reasoning-efficient AI — from small language models and multi-agent systems to intent-aware automation",
     "cta": {
       "resume": "View Resume",
       "github": "GitHub",
       "linkedin": "LinkedIn"
+    },
+    "links": {
+      "resume": "https://drive.google.com/file/d/1LeRR5GtDGdwTmHqf8iuWJakWj5OQ3cnT/view?usp=sharing",
+      "github": "https://github.com/jermiah",
+      "linkedin": "https://www.linkedin.com/in/jermiah-jerome/"
     }
   },
   "nav": {
@@ -17,43 +34,48 @@
     "experience": "Experience",
     "certifications": "Certifications",
     "projects": "Projects",
+    "research": "Research & Thesis",
+    "opensource": "Open Source",
     "showcase": "Showcase"
   },
   "contact": {
+    "title": "Want to Hire Me?",
+    "subtitle": "Fill out the form below and I'll send you a tailored resume for your role.",
     "email": "jermiah.jerome96@gmail.com",
     "phone": "+33 783719197"
   },
   "overview": {
     "title": "Overview",
     "content": [
-      "I'm a data-driven product thinker with 5+ years of experience in banking and financial services, specializing in data quality, workflow automation, and product management. I've contributed to strategic initiatives at BNP Paribas and HSBC, delivering projects that improved regulatory compliance, streamlined operations, and enhanced decision-making through data.",
-      "Currently, I'm pursuing a Master of Science in Data Science & AI Strategy at emlyon business school, where I'm expanding my capabilities in machine learning, deep learning, RAG and large language models. My academic journey also includes an MBA in Finance & Analytics and a BTech in Computer Science, enabling me to bridge business objectives with technical innovation."
+      "I'm an AI Engineer and Researcher passionate about building compact, reasoning-focused systems that blend rules, retrieval, and generation. My interests span small language models (SLMs), reinforcement-driven fine-tuning, and multi-agent orchestration for business-focused AI automation.",
+      "My technical expertise includes supervised fine-tuning (SFT), gradient-based reinforcement optimization (GRPO), retrieval-augmented generation (RAG), and model orchestration via lightweight MCP agents. I focus on designing cost-efficient yet interpretable systems for applied reasoning and conversational workflows.",
+      "I’m currently completing my Master of Science in Data Science & AI Strategy at emlyon business school, where my research explores intent routing and hybrid architectures that combine deterministic logic with neural reasoning."
     ],
     "highlights": {
-      "title": "What I Bring to the Table",
+      "title": "Core Focus Areas",
       "items": [
         {
-          "title": "Banking Expertise",
-          "description": "Led impactful initiatives at BNP Paribas and HSBC focused on data assurance, process automation, and regulatory reporting — with multiple recognitions for innovation and delivery."
+          "title": "Small & Efficient Language Models",
+          "description": "Designing compact SLMs with reasoning-enhanced fine-tuning (SFT, GRPO) for domain-specific automation."
         },
         {
-          "title": "Product & Strategy Innovation",
-          "description": "Developed a Product Strategy Assistant App using LLMs and Retrieval-Augmented Generation (RAG). This tool generated dynamic strategic recommendations for 3,000+ retail products by integrating performance KPIs, customer segmentation insights, and feedback-driven learning loops."
+          "title": "Multi-Agent Orchestration",
+          "description": "Developing modular, auditable agent systems for contextual decision-making and workflow automation."
         },
         {
-          "title": "AI Research & Thought Leadership",
-          "description": "Leading an in-company research project at BNP Paribas titled: 'Strategic Adoption of Open-Source Multimodal Enterprise RAG: Challenges, KPIs, and Business Impact.'"
+          "title": "Hybrid AI Research",
+          "description": "Exploring rule-first and LLM-fallback architectures that improve reliability, cost-efficiency, and interpretability in production."
         }
       ]
     },
     "featured": {
-      "title": "Featured Project",
-      "description": "Product Strategy Assistant App Demo:",
-      "link": "https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb",
-      "linkText": "GrandView by Prosol"
+      "title": "Research Highlight",
+      "description": "Exploring efficient intent-routing and recursive reasoning in small models",
+      "link": "https://github.com/jermiah/TinyRecursiveReasoningLab",
+      "linkText": "View Research"
     },
-    "closing": "Let's connect and build the future of AI-powered strategy and innovation together.",
-    "note": "Want to see awards, communities, and hackathons? Check out the Showcase section."
+    "closing": "My goal is to bridge applied AI engineering with practical reasoning research — building systems that are faster, safer, and smarter.",
+    "note": "Scroll below for my recent projects, research, and master's thesis."
   },
   "skills": {
     "title": "Skills",
@@ -61,39 +83,34 @@
       {
         "name": "Expertise",
         "items": [
-          "Business Intelligence & Data Analysis",
-          "Data Visualization",
-          "Big Data & Data Science",
-          "Machine Learning",
-          "Deep Learning",
-          "Natural Language Processing (NLP)",
-          "Large Language Models (LLM)",
-          "Prompt Engineering",
-          "Financial Markets",
-          "Artificial Intelligence Strategy"
+          "Machine Learning & Deep Learning",
+          "Small Language Models (SLMs)",
+          "Reinforcement Tuning (SFT, GRPO)",
+          "Retrieval-Augmented Generation (RAG)",
+          "Multi-Agent Systems & Orchestration",
+          "Prompt Engineering & Evaluation",
+          "Applied AI for Business Automation"
         ]
       },
       {
         "name": "Professional",
         "items": [
-          "Product Management",
-          "Tech Project Management",
-          "Problem Solving & Decision Making",
-          "Collaboration and Teamwork",
-          "Stakeholder Management",
-          "Team Management & Leadership",
-          "Technical Communication"
+          "AI System Design",
+          "Technical Research Writing",
+          "Cross-functional Collaboration",
+          "Project & Product Management",
+          "Problem Solving & Decision Making"
         ]
       },
       {
         "name": "Technical",
         "items": [
-          "Python, R, SQL, NoSQL, VBA/Macros, Scala, DAX",
-          "PyTorch, TensorFlow, Keras, LangChain, LoRA, QLoRA",
-          "Git, GitHub, CUDA, Hugging Face",
-          "GCP, AWS, Snowflake, Databricks",
-          "Power BI, Tableau, Advanced Excel",
-          "Bloomberg, Reuters"
+          "Python, R, SQL, NoSQL",
+          "PyTorch, Transformers, LangChain",
+          "LoRA, QLoRA, bitsandbytes",
+          "Git, Docker, Hugging Face, MCP",
+          "AWS, GCP, Databricks",
+          "Power BI, Tableau, Streamlit"
         ]
       }
     ]
@@ -106,7 +123,7 @@
         "degree": "MSc in Data Science & AI Strategy",
         "period": "2024–2025",
         "location": "Paris, France & Montreal, Canada",
-        "description": "emlyon: CGE Accredited, EQUIS/AMBA/AACSB Triple Crown, #4 in France for Business Studies. McGill: Top Canadian public university known for AI research and global excellence",
+        "description": "emlyon: CGE Accredited, EQUIS/AMBA/AACSB Triple Crown. McGill: globally recognized for AI and data science excellence.",
         "links": {
           "emlyon": "https://em-lyon.com/en",
           "mcgill": "https://www.mcgill.ca/"
@@ -117,7 +134,7 @@
         "degree": "MBA in Finance & Analytics",
         "period": "2019–2021",
         "location": "Madurai, India",
-        "description": "NAAC Accredited, Ranked among top private B-schools in South India",
+        "description": "Ranked among the top private B-schools in South India.",
         "links": {
           "school": "https://tsm.ac.in"
         }
@@ -127,7 +144,7 @@
         "degree": "BTech in Computer Science and Engineering",
         "period": "2014–2018",
         "location": "Tiruchirappalli, India",
-        "description": "Top 10 Engineering Institutes in India (NIRF Rankings)",
+        "description": "One of India’s top 10 engineering institutes (NIRF Rankings).",
         "links": {
           "school": "https://www.nitt.edu/"
         }
@@ -142,9 +159,8 @@
         "position": "Assistant Manager - Product Management",
         "period": "12/2022 – 08/2024",
         "description": [
-          "Ensured compliance and mitigated regulatory risks for global e-communication and audio communication surveillance across two products, minimizing operational vulnerabilities.",
-          "Led data assurance projects including deployments, migrations, and integrations, reducing data issues by 80%, optimizing workflows to ensure data accuracy, reliability, and regulatory compliance, and maintaining seamless data delivery by global stakeholders.",
-          "Configured JIRA for issue backlogs and custodian processes, streamlining workflows and improving operational efficiency by 20%. Designed and automated global KPI dashboards for data quality reporting, collectively saving 0.2 FTE annually while enhancing transparency across stakeholders."
+          "Led automation and assurance projects for data quality and regulatory compliance, cutting issue rates by 80%.",
+          "Deployed automated reporting pipelines and improved global data workflows, enhancing efficiency by 20%."
         ]
       },
       {
@@ -152,18 +168,8 @@
         "position": "Data Quality Associate",
         "period": "06/2021 – 10/2022",
         "description": [
-          "Conducted data profiling and implemented a Data Quality process for Trade Reference Data in asset creation, ensuring 100% precision in NAV calculation.",
-          "Analyzed data errors and developed dashboards to enhance quality processes.",
-          "Automated workflows, reducing errors by 95% and processing time by 80%, earning the Kaizen Award for Innovation."
-        ]
-      },
-      {
-        "company": "Enprou Technologies India Pvt. Ltd.",
-        "position": "Project Finance Trainee",
-        "period": "05/2018 – 06/2019",
-        "description": [
-          "Performed cash flow analysis and forecasted requirements to ensure smooth financial operations.",
-          "Optimized inventory and procurement processes, minimizing wastage and avoiding project delays."
+          "Built dashboards and automated workflows reducing data errors by 95% and manual processing by 80%.",
+          "Earned the Kaizen Award for Innovation for contributions to regulatory data quality processes."
         ]
       }
     ]
@@ -172,19 +178,19 @@
     "title": "Certifications",
     "items": [
       {
-        "name": "Certified Scrum Product Owner",
-        "issuer": "Scrum.org",
-        "status": "Certified"
-      },
-      {
         "name": "AWS Certified Cloud Practitioner",
         "issuer": "Amazon Web Services",
         "status": "Certified"
       },
       {
+        "name": "Certified Scrum Product Owner (CSPO)",
+        "issuer": "Scrum.org",
+        "status": "Certified"
+      },
+      {
         "name": "AWS Machine Learning Specialty",
         "issuer": "Amazon Web Services",
-        "status": "Coming May 2025"
+        "status": "Expected May 2025"
       }
     ]
   },
@@ -207,6 +213,45 @@
             "title": "Business White Paper Research @ BNP Paribas",
             "description": "Strategic Adoption of Open-Source Multimodal Enterprise RAG: Challenges, KPIs, and Business Impact. Focused on evaluating use cases, performance benchmarks, and implementation pathways for enterprise AI agents in banking.",
             "tags": ["Research", "RAG", "Enterprise AI", "Banking"]
+          }
+        ]
+      },
+      {
+        "name": "AI & Agent Projects",
+        "items": [
+          {
+            "title": "ConversyAI (Multi-Agent SaaS)",
+            "description": "A multi-agent conversational commerce platform with intent routing, RAG-powered product search, and automated booking workflows. Built with LangChain, Qdrant, and FastAPI.",
+            "links": {
+              "code": "https://github.com/jermiah/conversyai"
+            },
+            "tags": ["Multi-Agent", "RAG", "LangChain", "FastAPI", "Qdrant"]
+          },
+          {
+            "title": "Document Organizer Agent",
+            "description": "An intelligent agent that automatically categorizes, tags, and organizes documents using vision-language models and semantic search. Supports PDFs, images, and text files.",
+            "links": {
+              "code": "https://github.com/jermiah/document-organizer-agent"
+            },
+            "tags": ["Agent", "VLM", "Document AI", "Automation"]
+          },
+          {
+            "title": "Diagnostic Reasoning Agent",
+            "description": "A medical diagnostic assistant using chain-of-thought reasoning and retrieval from medical knowledge bases. Implements step-by-step diagnostic workflows with explainable outputs.",
+            "links": {
+              "code": "https://github.com/jermiah/diagnostic-reasoning-agent"
+            },
+            "tags": ["Healthcare", "CoT", "RAG", "Reasoning"]
+          }
+        ],
+        "ongoingWork": [
+          {
+            "title": "Intent-Routing Agent for E-Commerce",
+            "description": "Building a hybrid rules-first + LLM fallback system for conversational commerce with sub-100ms latency."
+          },
+          {
+            "title": "Multi-Agent Code Review System",
+            "description": "Orchestrating specialized agents for security, performance, and style analysis in code reviews."
           }
         ]
       },
@@ -255,20 +300,161 @@
             "tags": ["Computer Vision", "ResNet", "Transfer Learning"]
           }
         ]
-      },
+      }
+    ]
+  },
+  "research": {
+    "title": "Research & Thesis",
+    "categories": [
       {
-        "name": "Upcoming Projects",
+        "name": "Ongoing Works",
         "items": [
           {
-            "title": "Frugal AI",
-            "description": "Designing a lightweight, offline assistant for Edge Devices using on-device LLMs for real-time translation and explanation in zero connectivity environments.",
-            "tags": ["Edge AI", "LLM", "Offline"]
+            "title": "Tiny Recursive Models (TRM)",
+            "description": "Implementing recursive reasoning for small models using PyTorch + Hugging Face, enhancing depth without scaling compute. Exploring how compact models can achieve deeper reasoning through iterative refinement.",
+            "links": {
+              "code": "https://github.com/jermiah/TinyRecursiveReasoningLab"
+            },
+            "tags": ["PyTorch", "Recursive Reasoning", "SLM", "Research"]
           },
           {
-            "title": "Intelligent & Automated Service Booking Platform",
-            "description": "An agentic, RAG-powered system integrated with n8n to automate service bookings with intelligent information retrieval, availability checks with travel constraints, payment processing, and WhatsApp notifications.",
-            "tags": ["RAG", "Automation", "n8n", "Agents"]
+            "title": "Frugal Reasoning in Edge AI",
+            "description": "Exploring energy-efficient and privacy-safe reasoning for on-device AI systems using small model architectures. Focus on quantization, pruning, and knowledge distillation for edge deployment.",
+            "tags": ["Edge AI", "Quantization", "Privacy", "Efficiency"]
+          },
+          {
+            "title": "Master's Thesis: Intent-Routing Agent for Conversational Commerce",
+            "description": "Designing a hybrid, rules-first intent-routing agent for conversational commerce that classifies and executes user intents (RAG, order, booking) with a lightweight LLM fallback. The system emphasizes auditability, low latency, and cost-efficient reasoning.",
+            "links": {
+              "code": "https://github.com/jermiah/thesis-intent-routing"
+            },
+            "tags": ["Intent Routing", "Hybrid AI", "Conversational Commerce", "Thesis"]
+          },
+          {
+            "title": "Gradient-Based Reinforcement for Small Models",
+            "description": "Investigating GRPO (Gradient-based Reinforcement Policy Optimization) for fine-tuning compact language models on reasoning tasks.",
+            "tags": ["GRPO", "Reinforcement Learning", "SLM"]
+          },
+          {
+            "title": "Multimodal RAG for Technical Documentation",
+            "description": "Building a retrieval system that combines text, diagrams, and code snippets for enhanced technical support.",
+            "tags": ["RAG", "Multimodal", "Documentation"]
           }
+        ]
+      },
+      {
+        "name": "Completed Works",
+        "items": []
+      }
+    ]
+  },
+  "opensource": {
+    "title": "Open Source",
+    "categories": [
+      {
+        "name": "Completed Works",
+        "items": [
+          {
+            "title": "Goose CLI – Enhanced Edition",
+            "description": "A Rust-based coding assistant improving prompt engineering, system metrics, and runtime observability for AI agents. Features v2 system/subagent prompts, file-level metrics, and switchable runtime prompts.",
+            "links": {
+              "code": "https://github.com/jermiah/goose_jerry"
+            },
+            "tags": ["Rust", "Prompt Engineering", "Metrics", "CLI"]
+          }
+        ]
+      },
+      {
+        "name": "Ongoing Works",
+        "items": [
+          {
+            "title": "Conversy LLM SDK",
+            "description": "A lightweight SDK for RAG pipelines and multi-agent orchestration with vector search, adaptive embeddings, and Phoenix tracing. Multi-tenant architecture with Qdrant filter translator and retrieval adapters.",
+            "links": {
+              "code": "https://github.com/jermiah/conversy-sdk"
+            },
+            "tags": ["SDK", "RAG", "Tracing", "Qdrant", "Multi-Agent"]
+          },
+          {
+            "title": "Tiny Recursive Reasoning Lab",
+            "description": "Implements TRM reasoning for small models. Integrated with Hugging Face Transformers with focus on efficiency and reasoning quality. Includes benchmarks and evaluation scripts.",
+            "links": {
+              "code": "https://github.com/jermiah/TinyRecursiveReasoningLab"
+            },
+            "tags": ["PyTorch", "Recursive Reasoning", "SLM", "Benchmarking"]
+          },
+          {
+            "title": "MCP Server for Agent Orchestration",
+            "description": "Building a Model Context Protocol server for seamless multi-agent communication and state management.",
+            "tags": ["MCP", "Multi-Agent", "Orchestration"]
+          },
+          {
+            "title": "LLM Evaluation Framework",
+            "description": "Creating an open-source framework for evaluating LLM performance on reasoning, factuality, and safety metrics.",
+            "tags": ["Evaluation", "LLM", "Benchmarking"]
+          }
+        ]
+      }
+    ]
+  },
+  "thesis": {
+    "title": "Master’s Thesis",
+    "subtitle": "An Intent-Routing Agent for Conversational Commerce",
+    "university": "emlyon business school",
+    "year": "2025",
+    "description": "Designing a hybrid, rules-first intent-routing agent for conversational commerce that classifies and executes user intents (RAG, order, booking) with a lightweight LLM fallback. The system emphasizes auditability, low latency, and cost-efficient reasoning.",
+    "objectives": [
+      "Develop a compact router using deterministic rules and a fallback small model for ambiguous cases.",
+      "Normalize entity extraction (dates, quantities, contacts) via hybrid rule–LLM methods.",
+      "Integrate a mini RAG layer for PDF and spreadsheet data to handle product and service information retrieval.",
+      "Evaluate the agent for routing accuracy, end-to-end success, latency, cost, and safety metrics."
+    ],
+    "keywords": [
+      "Intent Routing",
+      "Hybrid AI Systems",
+      "Conversational Commerce",
+      "Rules-First Logic",
+      "LLM Fallback",
+      "Auditability & Evaluation"
+    ],
+    "expectedContributions": [
+      "A small, auditable routing agent achieving high accuracy and cost efficiency.",
+      "Reusable datasets and evaluation scripts for conversational routing tasks.",
+      "Evidence supporting rules-first + small-LLM hybrid architectures for reliable AI workflows."
+    ],
+    "link": "https://github.com/jermiah"
+  },
+  "openSource": {
+    "title": "Open-Source Contributions",
+    "items": [
+      {
+        "project": "Conversy LLM SDK (Upcoming)",
+        "repo": "https://github.com/jermiah",
+        "tags": ["SDK", "RAG", "Tracing", "Qdrant"],
+        "highlights": [
+          "Multi-tenant architecture with Phoenix tracing",
+          "Qdrant filter translator and retrieval adapters",
+          "Adaptive embeddings for vector reasoning"
+        ]
+      },
+      {
+        "project": "Goose CLI – Enhanced Edition",
+        "repo": "https://github.com/jermiah/goose_jerry",
+        "tags": ["Rust", "Prompt Engineering", "Metrics", "CLI"],
+        "highlights": [
+          "v2 system/subagent prompts",
+          "File-level metrics and analytics",
+          "Switchable runtime prompts via environment variables"
+        ]
+      },
+      {
+        "project": "Tiny Recursive Reasoning Lab",
+        "repo": "https://github.com/jermiah/TinyRecursiveReasoningLab",
+        "tags": ["PyTorch", "Recursive Reasoning", "SLM"],
+        "highlights": [
+          "Implements TRM reasoning for small models",
+          "Integrated with Hugging Face Transformers",
+          "Focus on efficiency and reasoning quality"
         ]
       }
     ]
@@ -278,42 +464,40 @@
     "awards": {
       "title": "Awards",
       "items": [
-        "Antares Award for Outstanding Performance: Recognized for consistent excellence in delivery and impact at BNP Paribas.",
-        "Spirit of Kaizen – Process Automation: Awarded for automating and optimizing key workflows, enhancing efficiency.",
-        "Spirit of Kaizen – Data Quality Report: Recognized for improving regulatory data quality reporting at BNP Paribas.",
-        "National Talent Search Examination (NTSE) Scholar: Awarded by NCERT (India) for academic excellence in 2012."
+        "Antares Award – BNP Paribas: Outstanding Performance",
+        "Spirit of Kaizen – Process Automation",
+        "Spirit of Kaizen – Data Quality Reporting",
+        "NTSE Scholar (India) – NCERT Award for Academic Excellence"
       ]
     },
-    "sports": [
-      "2nd Place – District Level Roller Skating Competition",
-      "2nd Place – District Level Chess Tournament"
-    ],
     "community": {
       "title": "Community Builder",
       "description": "Creator of the Paris AI & Tech Community",
       "link": "https://www.linkedin.com/posts/jermiah-jerome_paris-ai-tech-community-members-activity-7303817496346730496-QNPT"
     },
     "hackathons": {
-      "title": "Hackathon & Innovation Challenge Participant",
+      "title": "Hackathons & Challenges",
       "items": [
-        "L'Oréal Brandstorm 2025",
+        "🏆 Winner – Blackbox AI × 42AI Hackathon (KidShield Agent)",
+        "🏆 Winner – Paris Open Build (Mistral + Windsurf)",
         "Novartis AI Hackathon",
-        "Sopra Steria AI Challenge"
+        "Sopra Steria AI Challenge",
+        "L’Oréal Brandstorm 2025"
       ]
     },
     "events": {
       "title": "Workshops & Summits",
       "items": [
         "Google Gemini Workshop",
-        "Web Summit Lisbon",
         "AWS Summit Paris",
+        "Web Summit Lisbon",
         "AI Developers Meetup – Station F",
         "French State of AI – Google Paris"
       ]
     }
   },
   "footer": {
-    "message": "💡 I love my visitors — that's why you can choose how you view my site. Your satisfaction is my work ❤️ — enjoy it in your favorite language and theme!",
+    "message": "⚡ Building reasoning-efficient AI that’s fast, reliable, and explainable.",
     "copyright": "© 2025 Jermiah Jerome. Built with React, Vite, and ❤️"
   },
   "likeButton": {
