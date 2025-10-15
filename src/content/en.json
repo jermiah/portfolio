@@ -300,7 +300,15 @@
     "code": "https://github.com/jermiah/rfp-prospecting-agent"
               },
               "tags": ["B2B", "CoT", "Reasoning", "Agent"]
-            }
+            },
+                {
+      "title": "OQL Generation Model (Fine-Tuning & GRPO)",
+      "description": "Deployed a compact small language model fine-tuned to generate optimized OQL queries from structured schema and natural-language requests. The project involves supervised fine-tuning and GRPO reinforcement to improve logical reasoning, query correctness, and efficiency. It explores advanced inference optimization using quantization and high-performance engines like vLLM for GPU environments, enabling fast, accurate OQL generation across varied schemas, differnet languages, and complex queries.",
+      "links": {
+        "code": "https://github.com/jermiah/oql-generation-model"
+      },
+      "tags": ["LLM", "Fine-Tuning", "GRPO", "OQL", "Inference", "Quantization"]
+    }
           ]
         }
       ]

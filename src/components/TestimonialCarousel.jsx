@@ -1,13 +1,25 @@
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence, useMotionValue, useTransform, animate } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { FiLinkedin, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { subscribeToTestimonials } from '../firebase';
 
 const TestimonialCarousel = () => {
   const [testimonials, setTestimonials] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-  const [direction, setDirection] = useState(0);
+
+  useEffect(() => {
+    // Detect if device is mobile
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   useEffect(() => {
     // Subscribe to real-time testimonials
@@ -20,30 +32,27 @@ const TestimonialCarousel = () => {
   }, []);
 
   useEffect(() => {
-    // Auto-scroll every 5 seconds
-    if (!isAutoPlaying || testimonials.length === 0) return;
+    // Auto-scroll every 5 seconds (disabled on mobile)
+    if (!isAutoPlaying || testimonials.length === 0 || isMobile) return;
 
     const interval = setInterval(() => {
-      setDirection(1);
       setCurrentIndex((prev) => (prev + 1) % testimonials.length);
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [isAutoPlaying, testimonials.length]);
+  }, [isAutoPlaying, testimonials.length, isMobile]);
 
   const goToNext = () => {
     setIsAutoPlaying(false);
-    setDirection(1);
     setCurrentIndex((prev) => (prev + 1) % testimonials.length);
   };
 
   const goToPrevious = () => {
     setIsAutoPlaying(false);
-    setDirection(-1);
     setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   };
 
-  const handleDragEnd = (event, { offset, velocity }) => {
+  const handleDragEnd = (_event, { offset, velocity }) => {
     const swipe = Math.abs(offset.x) * velocity.x;
 
     if (swipe < -10000) {
@@ -61,7 +70,7 @@ const TestimonialCarousel = () => {
 
   return (
     <>
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden flex items-start">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentIndex}
@@ -73,7 +82,7 @@ const TestimonialCarousel = () => {
             dragConstraints={{ left: 0, right: 0 }}
             dragElastic={0.3}
             onDragEnd={handleDragEnd}
-            className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-900 rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-xl cursor-grab active:cursor-grabbing"
+            className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-900 rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-xl cursor-grab active:cursor-grabbing w-full"
           >
             {/* Quote Icon */}
             <div className="text-3xl sm:text-4xl text-blue-500/20 dark:text-blue-400/20 font-serif mb-2 sm:mb-3">"</div>
@@ -133,7 +142,6 @@ const TestimonialCarousel = () => {
                 key={index}
                 onClick={() => {
                   setIsAutoPlaying(false);
-                  setDirection(index > currentIndex ? 1 : -1);
                   setCurrentIndex(index);
                 }}
                 className={`h-1.5 sm:h-2 rounded-full transition-all duration-300 ${
