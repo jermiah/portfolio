@@ -62,28 +62,32 @@ const Overview = () => {
           </div>
         </div>
 
-        {/* Featured Project */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="card p-6 md:p-8 mt-12 bg-gradient-to-br from-primary-light/10 to-accent-light/10 dark:from-primary-dark/10 dark:to-accent-dark/10"
-        >
-          <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100">
-            {t('overview.featured.title')}
-          </h3>
-          <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
-            {t('overview.featured.description')}
-          </p>
-          <a
-            href={t('overview.featured.link')}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block text-primary-light dark:text-primary-dark font-semibold hover:underline text-lg"
+        {/* Featured Project - Only show if it exists in JSON */}
+        {t('overview.featured.title', { defaultValue: '' }) && (
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="card p-6 md:p-8 mt-12 bg-gradient-to-br from-primary-light/10 to-accent-light/10 dark:from-primary-dark/10 dark:to-accent-dark/10"
           >
-            {t('overview.featured.linkText')} →
-          </a>
-        </motion.div>
+            <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100">
+              {t('overview.featured.title')}
+            </h3>
+            <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
+              {t('overview.featured.description')}
+            </p>
+            {t('overview.featured.link', { defaultValue: '' }) && (
+              <a
+                href={t('overview.featured.link')}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-primary-light dark:text-primary-dark font-semibold hover:underline text-lg"
+              >
+                {t('overview.featured.linkText')} →
+              </a>
+            )}
+          </motion.div>
+        )}
 
         {/* Closing */}
         <motion.div
