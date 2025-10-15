@@ -1,14 +1,16 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { FiGithub, FiLinkedin, FiMail, FiPhone, FiHeart, FiUsers } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiMail, FiPhone, FiHeart, FiUsers, FiEdit3 } from 'react-icons/fi';
 import TypewriterText from './TypewriterText';
-import { subscribeToRecommendations, subscribeToVisitors, incrementVisitors } from '../firebase';
+import TestimonialCarousel from './TestimonialCarousel';
+import { subscribeToRecommendations, subscribeToVisitors, incrementVisitors, subscribeToTestimonials } from '../firebase';
 
 const Hero = () => {
   const { t } = useTranslation();
   const [recommendationCount, setRecommendationCount] = useState(0);
   const [visitorCount, setVisitorCount] = useState(0);
+  const [testimonialCount, setTestimonialCount] = useState(0);
 
   useEffect(() => {
     // Track visitor (only once per device/browser)
@@ -29,10 +31,15 @@ const Hero = () => {
       setVisitorCount(count);
     });
 
+    const unsubscribeTestimonials = subscribeToTestimonials((testimonials) => {
+      setTestimonialCount(testimonials.length);
+    });
+
     // Cleanup subscriptions on unmount
     return () => {
       unsubscribeRecommendations();
       unsubscribeVisitors();
+      unsubscribeTestimonials();
     };
   }, []);
   
@@ -71,7 +78,17 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center pt-20 pb-16 px-4">
+    <section id="hero" className="min-h-screen flex items-center justify-center pt-20 pb-16 px-4 relative">
+      {/* Testimonial Carousel - Desktop Left Side */}
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.5, duration: 0.8 }}
+        className="hidden lg:block absolute left-8 top-1/2 -translate-y-1/2 w-80"
+      >
+        <TestimonialCarousel />
+      </motion.div>
+
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -170,22 +187,41 @@ const Hero = () => {
             </div>
           </motion.div>
 
-          {/* Recommendation Count */}
+          {/* Loves Count (Quick Heart Clicks) */}
           <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             whileHover={{ scale: 1.05 }}
             className="group relative inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-pink-500 to-red-500 text-white rounded-full shadow-lg cursor-help"
-            title="Live recommendation count stored in Firebase Realtime Database"
+            title="People who loved my profile"
           >
             <FiHeart className="w-4 h-4 fill-current" />
             <span className="font-semibold text-sm">
-              {recommendationCount} {recommendationCount === 1 ? 'Recommendation' : 'Recommendations'}
+              {recommendationCount} {recommendationCount === 1 ? 'Love' : 'Loves'}
             </span>
             {/* Tooltip */}
             <div className="absolute bottom-full mb-2 hidden group-hover:block w-64 p-3 bg-gray-900 dark:bg-gray-800 text-white text-xs rounded-lg shadow-xl z-50">
-              <p className="font-semibold mb-1">💖 Total Recommendations</p>
-              <p className="text-gray-300">Total recommendations received on this portfolio, tracked via Firebase Realtime Database. Each device can recommend once.</p>
+              <p className="font-semibold mb-1">💖 Profile Loves</p>
+              <p className="text-gray-300">People who loved my profile, tracked via Firebase Realtime Database. Each device can love once.</p>
+            </div>
+          </motion.div>
+
+          {/* Written Recommendations Count */}
+          <motion.div
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            whileHover={{ scale: 1.05 }}
+            className="group relative inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full shadow-lg cursor-help"
+            title="Written recommendations received"
+          >
+            <FiEdit3 className="w-4 h-4" />
+            <span className="font-semibold text-sm">
+              {testimonialCount} {testimonialCount === 1 ? 'Recommendation' : 'Recommendations'}
+            </span>
+            {/* Tooltip */}
+            <div className="absolute bottom-full mb-2 hidden group-hover:block w-64 p-3 bg-gray-900 dark:bg-gray-800 text-white text-xs rounded-lg shadow-xl z-50">
+              <p className="font-semibold mb-1">✍️ Written Recommendations</p>
+              <p className="text-gray-300">Detailed recommendations received on this portfolio, tracked via Firebase Realtime Database. Each person can write once.</p>
             </div>
           </motion.div>
         </motion.div>
@@ -193,7 +229,7 @@ const Hero = () => {
         {/* CTA Buttons */}
         <motion.div
           variants={itemVariants}
-          className="flex flex-wrap justify-center gap-4"
+          className="flex flex-wrap justify-center gap-4 mb-8"
         >
           <motion.a
             whileHover={{ scale: 1.05 }}
@@ -218,6 +254,14 @@ const Hero = () => {
             <FiLinkedin />
             {t('hero.cta.linkedin')}
           </motion.a>
+        </motion.div>
+
+        {/* Testimonial Carousel - Mobile Below Buttons */}
+        <motion.div
+          variants={itemVariants}
+          className="lg:hidden max-w-md mx-auto"
+        >
+          <TestimonialCarousel />
         </motion.div>
 
         {/* Scroll Indicator */}
