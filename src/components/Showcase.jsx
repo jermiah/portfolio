@@ -186,8 +186,8 @@ const Showcase = () => {
                     return (
                       <motion.div
                         key={index}
-                        initial={{ opacity: 0, x: -10 }}
-                        whileInView={{ opacity: 1, x: 0 }}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.3, delay: index * 0.05 }}
                         className="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-between gap-3"
@@ -225,8 +225,8 @@ const Showcase = () => {
                     return (
                       <motion.div
                         key={index}
-                        initial={{ opacity: 0, x: -10 }}
-                        whileInView={{ opacity: 1, x: 0 }}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.3, delay: index * 0.05 }}
                         className="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-between gap-3"
