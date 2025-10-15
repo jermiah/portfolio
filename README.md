@@ -66,20 +66,22 @@ A modern, interactive, and bilingual portfolio website built with React, Vite, T
 ## 🚀 Quick Start
 
 ```bash
-# Clone the repository
+# 1. Fork this repository on GitHub (click the Fork button at the top right)
+
+# 2. Clone YOUR forked repository
 git clone https://github.com/YOUR_USERNAME/portfolio.git
 cd portfolio
 
-# Install dependencies
+# 3. Install dependencies
 npm install
 
-# Start development server
+# 4. Start development server
 npm run dev
 
-# Build for production
+# 5. Build for production
 npm run build
 
-# Deploy to GitHub Pages
+# 6. Deploy to GitHub Pages
 npm run deploy
 ```
 
