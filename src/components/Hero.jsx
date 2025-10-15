@@ -42,15 +42,15 @@ const Hero = () => {
       unsubscribeTestimonials();
     };
   }, []);
-  
+
   // Get typewriter configuration from JSON
   const titles = t('hero.titles', { returnObjects: true, defaultValue: null });
   const title = t('hero.title', { defaultValue: 'Data Scientist & AI Engineer' });
   const typewriterConfig = t('hero.typewriter', { returnObjects: true, defaultValue: {} });
-  
+
   // Determine texts to display
   const textsToType = Array.isArray(titles) && titles.length > 0 ? titles : [title];
-  
+
   // Typewriter settings with defaults
   const typingSpeed = typewriterConfig.speedMs || 100;
   const deletingSpeed = typewriterConfig.deleteSpeedMs || 50;
@@ -79,12 +79,12 @@ const Hero = () => {
 
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center pt-20 pb-16 px-4 relative">
-      {/* Testimonial Carousel - Desktop Left Side */}
+      {/* Testimonial Carousel - Desktop Bottom Left */}
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.5, duration: 0.8 }}
-        className="hidden lg:block absolute left-8 top-1/2 -translate-y-1/2 w-80"
+        className="hidden lg:block absolute left-4 bottom-8 w-80 max-h-[60vh] overflow-y-auto"
       >
         <TestimonialCarousel />
       </motion.div>
@@ -123,14 +123,16 @@ const Hero = () => {
 
         {/* Typing Animation */}
         <motion.div variants={itemVariants} className="mb-6">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800 dark:text-gray-200 min-h-[3rem] md:min-h-[4rem]">
-            <TypewriterText 
-              texts={textsToType}
-              loop={loop}
-              typingSpeed={typingSpeed}
-              deletingSpeed={deletingSpeed}
-              pauseDuration={pauseDuration}
-            />
+          <h2 className="text-xl md:text-3xl lg:text-4xl font-semibold text-gray-800 dark:text-gray-200 min-h-[3rem] md:min-h-[4rem]">
+            <span className="inline-block whitespace-nowrap md:whitespace-normal">
+              <TypewriterText
+                texts={textsToType}
+                loop={loop}
+                typingSpeed={typingSpeed}
+                deletingSpeed={deletingSpeed}
+                pauseDuration={pauseDuration}
+              />
+            </span>
           </h2>
         </motion.div>
 

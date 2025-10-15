@@ -1,37 +1,47 @@
 # 🚀 Modern Portfolio Template
 
-A modern, interactive, and bilingual portfolio website built with React, Vite, TailwindCSS, and Framer Motion. Features smooth animations, dark/light theme toggle, and dynamic content management through JSON files.
+A modern, interactive, and bilingual portfolio website built with React, Vite, TailwindCSS, Framer Motion, and Firebase. Features smooth animations, dark/light theme toggle, dynamic content management, and real-time testimonials.
 
 🌐 **Live Demo**: [https://jermiah.github.io/portfolio](https://jermiah.github.io/portfolio)
 
 ⭐ **If you like this template, please give it a star!**
 
-🍴 **Want to use this for your own portfolio? Fork it and follow the setup guide below!**
+🍴 **Want to use this for your own portfolio? Fork it and follow the setup guide!**
 
 ---
 
 ## ✨ Features
 
-- 🎨 **Modern Design**: Inspired by top portfolio sites with elegant animations
-- 🌓 **Dark/Light Theme**: Smooth theme transitions with localStorage persistence
-- 🌍 **Bilingual Support**: English/French language toggle (EN/FR)
-- 🎭 **Framer Motion Animations**: Scroll-triggered reveals, hover effects, and smooth transitions
-- 📱 **Fully Responsive**: Mobile-first design that works on all devices
-- 🎯 **Interactive Elements**: Animated hero with typing effect, project carousel, experience timeline
-- ❤️ **Like Button**: Fun recommendation feature with confetti animation
-- 🎨 **Particle Background**: Animated canvas background with connected particles
-- 📝 **Easy Content Management**: Edit content via JSON files without touching code
-- ⚡ **Fast & Optimized**: Built with Vite for lightning-fast performance
-- 🔒 **SEO Friendly**: Proper meta tags and Open Graph support
+### Core Features
+- 🎨 **Modern Design** - Elegant, professional design with smooth animations
+- 🌓 **Dark/Light Theme** - Smooth theme transitions with localStorage persistence
+- 🌍 **Bilingual Support** - English/French language toggle (EN/FR)
+- 📱 **Fully Responsive** - Mobile-first design that works on all devices
+- ⚡ **Fast & Optimized** - Built with Vite for lightning-fast performance
+
+### Interactive Elements
+- 🎭 **Framer Motion Animations** - Scroll-triggered reveals, hover effects, smooth transitions
+- 🎯 **Animated Hero** - Typing effect and animated testimonial carousel
+- 🎠 **Project Carousel** - Swipeable project categories with smooth animations
+- 📝 **Real-time Testimonials** - Firebase-powered testimonial system with carousel
+- ❤️ **Like Button** - Fun recommendation feature with confetti animation
+- 🎨 **Particle Background** - Animated canvas background with connected particles
+
+### Admin Features
+- 🔐 **Admin Panel** - Password-protected admin dashboard
+- ✅ **Testimonial Management** - Approve, reject, and edit testimonials
+- 🔥 **Firebase Integration** - Real-time database for testimonials
+- 📊 **Content Management** - Easy JSON-based content editing
 
 ---
 
 ## 🛠️ Tech Stack
 
 - **Framework**: React 18
-- **Build Tool**: Vite
-- **Styling**: TailwindCSS
-- **Animations**: Framer Motion
+- **Build Tool**: Vite 5
+- **Styling**: TailwindCSS 3
+- **Animations**: Framer Motion 11
+- **Backend**: Firebase Realtime Database
 - **Internationalization**: i18next, react-i18next
 - **Icons**: React Icons
 - **Confetti**: canvas-confetti
@@ -39,206 +49,150 @@ A modern, interactive, and bilingual portfolio website built with React, Vite, T
 
 ---
 
-## 🍴 Fork This Template
+## 📚 Documentation
 
-### Quick Start (For Your Own Portfolio)
+### Quick Links
+- **[Setup Guide](./SETUP.md)** - Fork, customize, and deploy your portfolio
+- **[Firebase Setup](./FIREBASE.md)** - Configure Firebase for testimonials
+- **[Admin Panel](./ADMIN.md)** - Manage testimonials and admin features
 
-1. **Fork this repository**
-   - Click the "Fork" button at the top right of this page
-   - This creates a copy in your GitHub account
-
-2. **Clone your forked repository**
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/portfolio.git
-   cd portfolio
-   ```
-
-3. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-4. **Configure for your GitHub Pages**
-   
-   Edit `vite.config.js` and change the base path to match your repository name:
-   ```javascript
-   export default defineConfig({
-     plugins: [react()],
-     base: '/YOUR_REPO_NAME/',  // Change 'portfolio' to your repo name
-   })
-   ```
-
-5. **Update package.json**
-   
-   Edit `package.json` and update the homepage:
-   ```json
-   {
-     "homepage": "https://YOUR_USERNAME.github.io/YOUR_REPO_NAME"
-   }
-   ```
-
-6. **Customize your content**
-   
-   Edit these files with your information:
-   - `src/content/en.json` - Your English content
-   - `src/content/fr.json` - Your French content (or remove if not needed)
-   - `public/photo.jpg` - Replace with your photo
-
-7. **Test locally**
-   ```bash
-   npm run dev
-   ```
-   Visit `http://localhost:5173` to see your changes
-
-8. **Deploy to GitHub Pages**
-   ```bash
-   npm run build
-   npm run deploy
-   ```
-   
-   Your site will be live at: `https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/`
-
-### 🔄 Sync with Original Template (Get Updates)
-
-To get the latest features and improvements from the original template:
-
-```bash
-# Add the original repo as upstream (one-time setup)
-git remote add upstream https://github.com/jermiah/portfolio.git
-
-# Fetch latest changes from original
-git fetch upstream
-
-# Merge updates into your fork
-git checkout main
-git merge upstream/main
-
-# Push updates to your fork
-git push origin main
-```
-
-**Note**: After syncing, you may need to resolve conflicts in your customized content files.
+### Getting Started
+1. Read the **[Setup Guide](./SETUP.md)** to fork and customize the template
+2. Follow **[Firebase Setup](./FIREBASE.md)** if you want testimonials feature
+3. Check **[Admin Panel](./ADMIN.md)** to learn how to manage testimonials
 
 ---
 
-## 🚀 Deployment
-
-### First-Time Deployment Setup
-
-1. **Enable GitHub Pages in your repository**
-   - Go to your repository on GitHub
-   - Navigate to **Settings** → **Pages**
-   - Under "Source", select **gh-pages** branch (it will be created automatically on first deploy)
-   - Click **Save**
-
-2. **Deploy your site**
-   ```bash
-   npm run build
-   npm run deploy
-   ```
-
-3. **Wait 1-2 minutes** for GitHub Pages to build
-
-4. **Visit your live site**
-   ```
-   https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/
-   ```
-
-### Updating Your Site
-
-After making changes to content or code:
+## 🚀 Quick Start
 
 ```bash
-# Test locally first
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/portfolio.git
+cd portfolio
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
 
-# Build and deploy
+# Build for production
 npm run build
+
+# Deploy to GitHub Pages
 npm run deploy
 ```
 
-### Important Configuration
+Visit `http://localhost:5173` to see your portfolio locally.
 
-Make sure these match your GitHub username and repository name:
+---
 
-**vite.config.js**:
-```javascript
-base: '/YOUR_REPO_NAME/'
+## 📁 Project Structure
+
 ```
-
-**package.json**:
-```json
-"homepage": "https://YOUR_USERNAME.github.io/YOUR_REPO_NAME"
+portfolio/
+├── public/
+│   └── photo.jpg                    # Profile photo
+├── src/
+│   ├── components/
+│   │   ├── AdminPanel.jsx           # Admin dashboard for testimonials
+│   │   ├── Background.jsx           # Animated particle background
+│   │   ├── Navbar.jsx               # Navigation with theme/language toggle
+│   │   ├── Hero.jsx                 # Hero section with typing animation
+│   │   ├── Section.jsx              # Reusable section wrapper
+│   │   ├── Overview.jsx             # Professional summary
+│   │   ├── Skills.jsx               # Skills grid
+│   │   ├── Education.jsx            # Education section
+│   │   ├── ExperienceTimeline.jsx   # Work experience timeline
+│   │   ├── Certifications.jsx       # Certifications with status
+│   │   ├── ProjectCarousel.jsx      # Swipeable projects carousel
+│   │   ├── Showcase.jsx             # Awards and achievements
+│   │   ├── TestimonialCarousel.jsx  # Testimonials carousel
+│   │   ├── TestimonialForm.jsx      # Testimonial submission form
+│   │   ├── ContactForm.jsx          # Contact form
+│   │   ├── LikeButton.jsx           # Recommendation button
+│   │   └── Footer.jsx               # Footer with social links
+│   ├── content/
+│   │   ├── en.json                  # English content
+│   │   └── fr.json                  # French content
+│   ├── firebase.js                  # Firebase configuration
+│   ├── i18n.js                      # i18next configuration
+│   ├── App.jsx                      # Main app component
+│   ├── main.jsx                     # Entry point
+│   └── index.css                    # Global styles + scale adjustments
+├── .env                             # Environment variables (Firebase, admin)
+├── index.html                       # HTML template
+├── package.json                     # Dependencies and scripts
+├── vite.config.js                   # Vite configuration
+├── tailwind.config.js               # Tailwind configuration
+├── firebase.json                    # Firebase configuration
+├── README.md                        # This file
+├── SETUP.md                         # Setup and customization guide
+├── FIREBASE.md                      # Firebase setup guide
+└── ADMIN.md                         # Admin panel guide
 ```
 
 ---
 
-## 📝 Content Management
+## 🎯 Key Sections
 
-All content is stored in JSON files for easy editing without touching code.
+### 1. Hero Section
+- Animated greeting with typing effect
+- Profile photo with hover effects
+- Social links (Resume, GitHub, LinkedIn)
+- Real-time testimonial carousel (left side, desktop)
 
-### Quick Customization Checklist
+### 2. Overview
+- Professional summary with highlights
+- Key achievements and expertise
 
-After forking, update these key areas in `src/content/en.json`:
+### 3. Skills
+- Categorized skills (Expertise, Professional, Technical)
+- Animated skill cards
 
-- [ ] **hero.name**: Your full name
-- [ ] **hero.title**: Your job title/role
-- [ ] **hero.subtitle**: Your tagline
-- [ ] **hero.links**: Your resume, GitHub, LinkedIn URLs
-- [ ] **contact.email**: Your email address
-- [ ] **overview.content**: Your professional summary
-- [ ] **skills.categories**: Your skills
-- [ ] **education.items**: Your education history
-- [ ] **experience.items**: Your work experience
-- [ ] **projects.categories**: Your projects
-- [ ] **showcase**: Your awards and achievements
+### 4. Education
+- Academic background with institution links
+- Degree details and graduation dates
 
-### Content Structure
+### 5. Experience
+- Work history in timeline format
+- Grouped concurrent roles
+- Company details and achievements
 
-```json
-{
-  "hero": {
-    "greeting": "Hi, I'm",
-    "name": "Your Name",              // ← Change this
-    "title": "Your Title",            // ← Change this
-    "subtitle": "Your subtitle",      // ← Change this
-    "links": {
-      "resume": "YOUR_RESUME_URL",    // ← Change this
-      "github": "YOUR_GITHUB_URL",    // ← Change this
-      "linkedin": "YOUR_LINKEDIN_URL" // ← Change this
-    }
-  },
-  "contact": {
-    "email": "your.email@example.com" // ← Change this
-  }
-  // ... more sections
-}
-```
+### 6. Certifications
+- Professional certifications with status indicators
+- Green checkmark for "Certified"
+- Red clock for "Soon" or pending
 
-### Editing Content
+### 7. Projects
+- Professional and Personal categories
+- Swipeable carousel navigation
+- Project cards with tags and links
+- Support for subcategories (e.g., Ongoing Work)
 
-1. Open `src/content/en.json` (and `fr.json` if using French)
-2. Find the section you want to edit
-3. Update the text, links, or data
-4. Save the file
-5. Test locally: `npm run dev`
-6. Deploy: `npm run build && npm run deploy`
+### 8. Showcase
+- Awards and achievements
+- Hackathons with optional links
+- Events (Attended and Conducted)
+- Community involvement
 
-### Removing French Language Support
+### 9. Testimonials
+- Real-time testimonials from Firebase
+- Swipeable carousel with navigation
+- Submission form for new testimonials
+- Admin approval system
 
-If you don't need bilingual support:
-
-1. Delete `src/content/fr.json`
-2. Remove language toggle from `src/components/Navbar.jsx`
-3. Simplify `src/i18n.js` to only support English
+### 10. Contact
+- Contact form
+- Social media links
+- Footer with copyright
 
 ---
 
 ## 🎨 Customization
 
 ### Theme Colors
-
-Edit `tailwind.config.js` to customize colors:
+Edit `tailwind.config.js` to customize brand colors:
 
 ```javascript
 colors: {
@@ -253,113 +207,76 @@ colors: {
 }
 ```
 
+### Content
+All content is managed through JSON files:
+- `src/content/en.json` - English content
+- `src/content/fr.json` - French content
+
+See **[Setup Guide](./SETUP.md)** for detailed content customization.
+
 ### Animations
+Animations are powered by Framer Motion. Edit component files to adjust:
+- Animation duration
+- Easing functions
+- Hover effects
+- Scroll triggers
 
-Modify animation settings in `src/components/` files using Framer Motion props:
+### Sizing
+The portfolio uses a global scale of 0.95 (95% of original size) for all content except the navbar. Edit `src/index.css` to adjust:
 
-```javascript
-<motion.div
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6 }}
->
+```css
+main {
+  transform: scale(0.95);
+  transform-origin: top center;
+}
 ```
 
 ---
 
-## 🌐 Language Toggle
+## 🌐 Features Details
 
-The site automatically detects the user's language preference from localStorage. Users can toggle between English and French using the globe icon in the navbar.
+### Language Toggle
+- Automatic language detection from localStorage
+- Toggle between English (EN) and French (FR)
+- Click the 🌐 globe icon in navbar
+- Preference persists across sessions
 
-### How it works:
+### Theme Toggle
+- Light and dark mode support
+- Respects system preference on first visit
+- Click the ☀️/🌙 icon in navbar
+- Smooth transitions with Tailwind CSS
 
-1. Click the 🌐 globe icon in the navigation bar
-2. The language switches between EN ↔ FR
-3. Preference is saved in localStorage
-4. On next visit, the site loads in the user's preferred language
+### Swipe/Touch Support
+- Touch-enabled carousels on mobile
+- Mouse drag on desktop
+- Works on testimonials and projects sections
+- Smooth animations on swipe
 
----
-
-## 🌓 Theme Toggle
-
-### How to use:
-
-1. Click the ☀️/🌙 icon in the navigation bar
-2. Theme switches between Light ↔ Dark mode
-3. Preference is saved in localStorage
-4. Respects system preference on first visit
-
----
-
-## ❤️ Recommendation Feature
-
-The "Recommend Me" button is a fun, interactive feature:
-
-- Click the heart button to recommend
-- Each click triggers a confetti animation 🎉
-- Counter is stored in localStorage
-- Shows total recommendations received
+### Testimonials System
+- Real-time updates from Firebase
+- Public submission form
+- Admin approval workflow
+- Edit capabilities for approved testimonials
+- LinkedIn profile links
 
 ---
 
-## 📁 Project Structure
+## 📱 Browser Support
 
-```
-portfolio/
-├── public/
-│   └── photo.jpg              # Profile photo
-├── src/
-│   ├── components/
-│   │   ├── Background.jsx     # Animated particle background
-│   │   ├── Navbar.jsx         # Navigation with theme/language toggle
-│   │   ├── Hero.jsx           # Hero section with typing animation
-│   │   ├── Section.jsx        # Reusable section wrapper
-│   │   ├── Overview.jsx       # Overview section
-│   │   ├── Skills.jsx         # Skills grid
-│   │   ├── Education.jsx      # Education timeline
-│   │   ├── ExperienceTimeline.jsx  # Work experience
-│   │   ├── Certifications.jsx # Certifications
-│   │   ├── ProjectCarousel.jsx     # Projects with categories
-│   │   ├── Showcase.jsx       # Awards and achievements
-│   │   ├── LikeButton.jsx     # Recommendation button
-│   │   └── Footer.jsx         # Footer with social links
-│   ├── content/
-│   │   ├── en.json            # English content
-│   │   └── fr.json            # French content
-│   ├── i18n.js                # i18next configuration
-│   ├── App.jsx                # Main app component
-│   ├── main.jsx               # Entry point
-│   └── index.css              # Global styles
-├── index.html                 # HTML template
-├── package.json               # Dependencies
-├── vite.config.js             # Vite configuration
-├── tailwind.config.js         # Tailwind configuration
-└── README.md                  # This file
-```
-
----
-
-## 🎯 Key Sections
-
-1. **Hero**: Animated introduction with typing effect
-2. **Overview**: Professional summary with highlights
-3. **Skills**: Categorized technical and professional skills
-4. **Education**: Academic background with institution links
-5. **Experience**: Work history in timeline format
-6. **Certifications**: Professional certifications
-7. **Projects**: Categorized projects with links and tags
-8. **Showcase**: Awards, hackathons, and community involvement
+- ✅ Chrome (latest)
+- ✅ Firefox (latest)
+- ✅ Safari (latest)
+- ✅ Edge (latest)
+- ✅ Mobile browsers (iOS Safari, Chrome Mobile)
 
 ---
 
 ## 🐛 Troubleshooting
 
 ### Build Issues
-
-If you encounter build errors:
-
 ```bash
-# Clear node_modules and reinstall
+# Clear and reinstall dependencies
 rm -rf node_modules package-lock.json
 npm install
 
@@ -369,88 +286,24 @@ npm run dev
 ```
 
 ### Deployment Issues
-
-If deployment fails:
-
 ```bash
 # Ensure gh-pages is installed
 npm install gh-pages --save-dev
 
-# Try deploying again
+# Verify configuration in vite.config.js and package.json
 npm run deploy
 ```
 
-### Theme Not Persisting
-
-Clear browser localStorage and refresh:
-
-```javascript
-// In browser console
-localStorage.clear();
-location.reload();
-```
-
----
-
-## 📱 Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
+### Firebase Issues
+- Check `.env` file exists with correct Firebase credentials
+- Verify Firebase rules in Firebase Console
+- See **[Firebase Setup](./FIREBASE.md)** for detailed troubleshooting
 
 ---
 
 ## 🤝 Contributing
 
-This is a personal portfolio, but suggestions are welcome!
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
----
-
-## 📄 License
-
-This project is open source and available under the MIT License.
-
----
-
-## 👤 Original Author
-
-**Jermiah Jerome**
-
-- GitHub: [@jermiah](https://github.com/jermiah)
-- LinkedIn: [jermiah-jerome](https://www.linkedin.com/in/jermiah-jerome/)
-- Email: jermiah.jerome96@gmail.com
-
----
-
-## 🌟 Using This Template?
-
-If you're using this template for your portfolio:
-
-1. ⭐ **Star this repository** to show your support
-2. 🍴 **Fork it** to create your own version
-3. 📝 **Customize** the content with your information
-4. 🚀 **Deploy** to GitHub Pages
-5. 💬 **Share** your portfolio link!
-
-### Show Your Support
-
-If this template helped you create your portfolio, consider:
-- Giving it a star ⭐
-- Sharing it with others
-- Contributing improvements back to the original repo
-
----
-
-## 🤝 Contributing to the Template
-
-Found a bug or have a feature suggestion? Contributions are welcome!
+Contributions are welcome! If you have suggestions for improvements:
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
@@ -459,11 +312,27 @@ Found a bug or have a feature suggestion? Contributions are welcome!
 5. Open a Pull Request
 
 ### Development Guidelines
-
 - Keep the template generic and reusable
 - Test on multiple browsers and devices
 - Update documentation for new features
-- Follow the existing code style
+- Follow existing code style
+
+---
+
+## 📄 License
+
+This project is open source and available under the MIT License. Feel free to use it for your personal portfolio!
+
+---
+
+## 👤 Author
+
+**Jermiah Jerome**
+
+- 🌐 Portfolio: [https://jermiah.github.io/portfolio](https://jermiah.github.io/portfolio)
+- 💼 LinkedIn: [jermiah-jerome](https://www.linkedin.com/in/jermiah-jerome/)
+- 🐙 GitHub: [@jermiah](https://github.com/jermiah)
+- 📧 Email: jermiah.jerome96@gmail.com
 
 ---
 
@@ -481,6 +350,17 @@ Found a bug or have a feature suggestion? Contributions are welcome!
 - 📦 Bundle Size: Optimized with Vite
 - 🚀 Load Time: < 2 seconds on 3G
 - ♿ Accessibility: WCAG 2.1 AA compliant
+
+---
+
+## 🌟 Show Your Support
+
+If this template helped you create your portfolio:
+
+- ⭐ Star this repository
+- 🍴 Fork it for your own use
+- 💬 Share it with others
+- 🤝 Contribute improvements
 
 ---
 

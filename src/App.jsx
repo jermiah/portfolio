@@ -18,7 +18,7 @@ import AdminPanel from './components/AdminPanel';
 
 function App() {
   const { i18n } = useTranslation();
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
   const [showAdmin, setShowAdmin] = useState(false);
 
   // Check if current URL is admin page
@@ -36,11 +36,10 @@ function App() {
   }, []);
 
   useEffect(() => {
-    // Load theme preference
+    // Load theme preference - default to dark mode
     const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const shouldBeDark = savedTheme === 'dark' || (!savedTheme && prefersDark);
-    
+    const shouldBeDark = savedTheme !== 'light'; // Dark unless explicitly set to light
+
     setIsDark(shouldBeDark);
     if (shouldBeDark) {
       document.documentElement.classList.add('dark');

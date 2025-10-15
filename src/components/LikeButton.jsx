@@ -98,7 +98,7 @@ const LikeButton = () => {
   };
 
   return (
-    <div className="fixed bottom-8 right-8 z-40 flex flex-col gap-4">
+    <div className="fixed bottom-4 right-4 md:bottom-8 md:right-8 z-40 flex flex-col gap-3 md:gap-4">
       {/* Write Testimonial Button */}
       <motion.button
         initial={{ scale: 0 }}
@@ -107,16 +107,16 @@ const LikeButton = () => {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setIsFormOpen(true)}
-        className="group relative p-4 rounded-full shadow-2xl transition-all duration-300 bg-gradient-to-r from-purple-500 to-pink-500 hover:shadow-purple-500/50 text-white"
+        className="group relative p-3 md:p-4 rounded-full shadow-2xl transition-all duration-300 bg-gradient-to-r from-purple-500 to-pink-500 hover:shadow-purple-500/50 text-white"
       >
-        <FiEdit3 className="w-8 h-8" />
+        <FiEdit3 className="w-5 h-5 md:w-8 md:h-8" />
 
         {/* "Write Recommendation" Text - Left side of button */}
         {localStorage.getItem('hasWrittenTestimonial') !== 'true' && (
           <motion.div
             initial={{ opacity: 0, x: 10 }}
             animate={{ opacity: 1, x: 0 }}
-            className="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-gray-800/70 dark:bg-gray-700/70 backdrop-blur-sm text-white/90 px-3 py-1.5 rounded-md shadow-md whitespace-nowrap font-medium text-xs"
+            className="absolute right-full mr-2 md:mr-3 top-1/2 -translate-y-1/2 bg-gray-800/70 dark:bg-gray-700/70 backdrop-blur-sm text-white/90 px-2 py-1 md:px-3 md:py-1.5 rounded-md shadow-md whitespace-nowrap font-medium text-[10px] md:text-xs"
           >
             Write Recommendation
           </motion.div>
@@ -127,7 +127,7 @@ const LikeButton = () => {
           <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
-            className="absolute -top-2 -right-2 bg-white dark:bg-gray-900 text-purple-500 dark:text-purple-400 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold border-2 border-purple-500 shadow-lg"
+            className="absolute -top-1 -right-1 md:-top-2 md:-right-2 bg-white dark:bg-gray-900 text-purple-500 dark:text-purple-400 rounded-full w-6 h-6 md:w-8 md:h-8 flex items-center justify-center text-xs md:text-sm font-bold border-2 border-purple-500 shadow-lg"
           >
             {testimonialCount}
           </motion.div>
@@ -171,7 +171,7 @@ const LikeButton = () => {
           whileTap={{ scale: 0.9 }}
           onClick={handleLike}
           disabled={isLoading}
-          className={`group relative p-4 rounded-full shadow-2xl transition-all duration-300 ${
+          className={`group relative p-3 md:p-4 rounded-full shadow-2xl transition-all duration-300 ${
             hasRecommended
               ? 'bg-gray-400 dark:bg-gray-600 cursor-not-allowed'
               : 'bg-gradient-to-r from-pink-500 to-red-500 hover:shadow-pink-500/50'
@@ -182,7 +182,7 @@ const LikeButton = () => {
             <motion.div
               initial={{ opacity: 0, x: 10 }}
               animate={{ opacity: 1, x: 0 }}
-              className="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-gray-800/70 dark:bg-gray-700/70 backdrop-blur-sm text-white/90 px-3 py-1.5 rounded-md shadow-md whitespace-nowrap font-medium text-xs"
+              className="absolute right-full mr-2 md:mr-3 top-1/2 -translate-y-1/2 bg-gray-800/70 dark:bg-gray-700/70 backdrop-blur-sm text-white/90 px-2 py-1 md:px-3 md:py-1.5 rounded-md shadow-md whitespace-nowrap font-medium text-[10px] md:text-xs"
             >
               Love My Profile
             </motion.div>
@@ -193,7 +193,7 @@ const LikeButton = () => {
             <motion.div
               initial={{ opacity: 0, x: 10 }}
               animate={{ opacity: 1, x: 0 }}
-              className="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-blue-500/70 backdrop-blur-sm text-white px-3 py-1.5 rounded-md shadow-md whitespace-nowrap font-medium text-xs"
+              className="absolute right-full mr-2 md:mr-3 top-1/2 -translate-y-1/2 bg-blue-500/70 backdrop-blur-sm text-white px-2 py-1 md:px-3 md:py-1.5 rounded-md shadow-md whitespace-nowrap font-medium text-[10px] md:text-xs"
             >
               Saving...
             </motion.div>
@@ -203,7 +203,7 @@ const LikeButton = () => {
             animate={hasRecommended || isLoading ? {} : { scale: [1, 1.2, 1] }}
             transition={{ duration: 1, repeat: Infinity }}
           >
-            <FiHeart className="w-8 h-8 fill-current" />
+            <FiHeart className="w-5 h-5 md:w-8 md:h-8 fill-current" />
           </motion.div>
 
           {/* Counter Badge */}
@@ -211,7 +211,7 @@ const LikeButton = () => {
             <motion.div
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
-              className="absolute -top-2 -right-2 bg-white dark:bg-gray-900 text-pink-500 dark:text-pink-400 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold border-2 border-pink-500 shadow-lg"
+              className="absolute -top-1 -right-1 md:-top-2 md:-right-2 bg-white dark:bg-gray-900 text-pink-500 dark:text-pink-400 rounded-full w-6 h-6 md:w-8 md:h-8 flex items-center justify-center text-xs md:text-sm font-bold border-2 border-pink-500 shadow-lg"
             >
               {likeCount}
             </motion.div>

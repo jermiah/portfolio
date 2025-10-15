@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useMotionValue, useTransform, animate } from 'framer-motion';
 import { FiLinkedin, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { subscribeToTestimonials } from '../firebase';
 
@@ -7,6 +7,7 @@ const TestimonialCarousel = () => {
   const [testimonials, setTestimonials] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const [direction, setDirection] = useState(0);
 
   useEffect(() => {
     // Subscribe to real-time testimonials
@@ -23,6 +24,7 @@ const TestimonialCarousel = () => {
     if (!isAutoPlaying || testimonials.length === 0) return;
 
     const interval = setInterval(() => {
+      setDirection(1);
       setCurrentIndex((prev) => (prev + 1) % testimonials.length);
     }, 5000);
 
@@ -31,93 +33,113 @@ const TestimonialCarousel = () => {
 
   const goToNext = () => {
     setIsAutoPlaying(false);
+    setDirection(1);
     setCurrentIndex((prev) => (prev + 1) % testimonials.length);
   };
 
   const goToPrevious = () => {
     setIsAutoPlaying(false);
+    setDirection(-1);
     setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   };
 
+  const handleDragEnd = (event, { offset, velocity }) => {
+    const swipe = Math.abs(offset.x) * velocity.x;
+
+    if (swipe < -10000) {
+      goToNext();
+    } else if (swipe > 10000) {
+      goToPrevious();
+    }
+  };
+
   if (testimonials.length === 0) {
-    return null; // Don't show carousel if no testimonials
+    return null;
   }
 
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <div className="relative w-full">
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={currentIndex}
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -50 }}
-          transition={{ duration: 0.3 }}
-          className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-900 rounded-2xl p-6 shadow-xl"
-        >
-          {/* Quote Icon */}
-          <div className="text-5xl text-blue-500/20 dark:text-blue-400/20 font-serif mb-4">"</div>
+    <>
+      <div className="relative overflow-hidden">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={currentIndex}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            dragElastic={0.3}
+            onDragEnd={handleDragEnd}
+            className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-900 rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-xl cursor-grab active:cursor-grabbing"
+          >
+            {/* Quote Icon */}
+            <div className="text-3xl sm:text-4xl text-blue-500/20 dark:text-blue-400/20 font-serif mb-2 sm:mb-3">"</div>
 
-          {/* Testimonial Text */}
-          <p className="text-gray-700 dark:text-gray-300 text-sm md:text-base leading-relaxed mb-6 min-h-[100px]">
-            {currentTestimonial.text}
-          </p>
+            {/* Testimonial Text */}
+            <p className="text-gray-700 dark:text-gray-300 text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4">
+              {currentTestimonial.text}
+            </p>
 
-          {/* Author Info */}
-          <div className="flex items-center justify-between">
-            <div>
-              <h4 className="font-semibold text-gray-900 dark:text-white">
-                {currentTestimonial.name}
-              </h4>
-              {currentTestimonial.role && (
-                <p className="text-sm text-gray-600 dark:text-gray-400">
-                  {currentTestimonial.role}
-                </p>
+            {/* Author Info */}
+            <div className="flex items-center justify-between gap-2">
+              <div className="flex-1 min-w-0">
+                <h4 className="font-semibold text-gray-900 dark:text-white text-xs sm:text-sm truncate">
+                  {currentTestimonial.name}
+                </h4>
+                {currentTestimonial.role && (
+                  <p className="text-xs text-gray-600 dark:text-gray-400 truncate">
+                    {currentTestimonial.role}
+                  </p>
+                )}
+              </div>
+
+              {/* LinkedIn Link */}
+              {currentTestimonial.linkedIn && (
+                <a
+                  href={currentTestimonial.linkedIn}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-1.5 bg-blue-500 hover:bg-blue-600 text-white rounded-full transition-colors flex-shrink-0"
+                  title="View LinkedIn Profile"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <FiLinkedin className="w-3 h-3 sm:w-4 sm:h-4" />
+                </a>
               )}
             </div>
-
-            {/* LinkedIn Link */}
-            {currentTestimonial.linkedIn && (
-              <a
-                href={currentTestimonial.linkedIn}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-blue-500 hover:bg-blue-600 text-white rounded-full transition-colors"
-                title="View LinkedIn Profile"
-              >
-                <FiLinkedin className="w-5 h-5" />
-              </a>
-            )}
-          </div>
-        </motion.div>
-      </AnimatePresence>
+          </motion.div>
+        </AnimatePresence>
+      </div>
 
       {/* Navigation Controls */}
       {testimonials.length > 1 && (
-        <div className="flex items-center justify-center gap-4 mt-4">
+        <div className="flex items-center justify-center gap-2 sm:gap-3 mt-3 sm:mt-4">
           {/* Previous Button */}
           <button
             onClick={goToPrevious}
-            className="p-2 bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full shadow-md transition-colors"
+            className="p-1.5 sm:p-2 bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full shadow-md transition-colors"
             aria-label="Previous testimonial"
           >
-            <FiChevronLeft className="w-5 h-5 text-gray-700 dark:text-gray-300" />
+            <FiChevronLeft className="w-3 h-3 sm:w-4 sm:h-4 text-gray-700 dark:text-gray-300" />
           </button>
 
           {/* Dots Indicator */}
-          <div className="flex gap-2">
+          <div className="flex gap-1 sm:gap-1.5">
             {testimonials.map((_, index) => (
               <button
                 key={index}
                 onClick={() => {
                   setIsAutoPlaying(false);
+                  setDirection(index > currentIndex ? 1 : -1);
                   setCurrentIndex(index);
                 }}
-                className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                className={`h-1.5 sm:h-2 rounded-full transition-all duration-300 ${
                   index === currentIndex
-                    ? 'bg-blue-500 w-8'
-                    : 'bg-gray-300 dark:bg-gray-600 hover:bg-gray-400'
+                    ? 'bg-blue-500 w-5 sm:w-6'
+                    : 'w-1.5 sm:w-2 bg-gray-300 dark:bg-gray-600 hover:bg-gray-400'
                 }`}
                 aria-label={`Go to testimonial ${index + 1}`}
               />
@@ -127,19 +149,14 @@ const TestimonialCarousel = () => {
           {/* Next Button */}
           <button
             onClick={goToNext}
-            className="p-2 bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full shadow-md transition-colors"
+            className="p-1.5 sm:p-2 bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full shadow-md transition-colors"
             aria-label="Next testimonial"
           >
-            <FiChevronRight className="w-5 h-5 text-gray-700 dark:text-gray-300" />
+            <FiChevronRight className="w-3 h-3 sm:w-4 sm:h-4 text-gray-700 dark:text-gray-300" />
           </button>
         </div>
       )}
-
-      {/* Counter */}
-      <div className="text-center mt-2 text-xs text-gray-500 dark:text-gray-400">
-        {currentIndex + 1} of {testimonials.length}
-      </div>
-    </div>
+    </>
   );
 };
 

@@ -37,6 +37,40 @@
   }
 }
 
+/* Scale down all content except navbar - only on desktop to avoid mobile rendering issues */
+@media (min-width: 768px) {
+  main {
+    transform: scale(0.92);
+    transform-origin: top center;
+  }
+
+  footer {
+    transform: scale(0.92);
+    transform-origin: top center;
+  }
+}
+
+/* Reduce base font sizes globally (except navbar) */
+main {
+  font-size: 0.95rem;
+}
+
+main h1 {
+  font-size: 0.95em;
+}
+
+main h2 {
+  font-size: 0.95em;
+}
+
+main h3 {
+  font-size: 0.95em;
+}
+
+main .card {
+  padding: 0.9em;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
