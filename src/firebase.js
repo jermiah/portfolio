@@ -217,8 +217,8 @@ export const getTestimonials = async (limit = 20) => {
       const testimonials = [];
       snapshot.forEach((childSnapshot) => {
         const data = childSnapshot.val();
-        // Only include approved testimonials
-        if (data.approved) {
+        // Only include approved testimonials - handle both boolean true and string "true"
+        if (data.approved === true || data.approved === 'true') {
           testimonials.push({
             id: childSnapshot.key,
             ...data
@@ -259,8 +259,8 @@ export const subscribeToTestimonials = (callback, limit = 20) => {
     snapshot.forEach((childSnapshot) => {
       const data = childSnapshot.val();
       console.log('Testimonial data:', data); // Debug log
-      // Only include approved testimonials
-      if (data.approved === true) {
+      // Only include approved testimonials - handle both boolean true and string "true"
+      if (data.approved === true || data.approved === 'true') {
         testimonials.push({
           id: childSnapshot.key,
           ...data

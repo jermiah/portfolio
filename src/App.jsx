@@ -14,10 +14,26 @@ import Showcase from './components/Showcase';
 import ContactForm from './components/ContactForm';
 import LikeButton from './components/LikeButton';
 import Footer from './components/Footer';
+import AdminPanel from './components/AdminPanel';
 
 function App() {
   const { i18n } = useTranslation();
   const [isDark, setIsDark] = useState(false);
+  const [showAdmin, setShowAdmin] = useState(false);
+
+  // Check if current URL is admin page
+  useEffect(() => {
+    const path = window.location.hash;
+    setShowAdmin(path === '#admin');
+
+    // Listen for hash changes
+    const handleHashChange = () => {
+      setShowAdmin(window.location.hash === '#admin');
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
 
   useEffect(() => {
     // Load theme preference
@@ -46,11 +62,16 @@ function App() {
     }
   };
 
+  // Show admin panel if on admin route
+  if (showAdmin) {
+    return <AdminPanel />;
+  }
+
   return (
     <div className="min-h-screen relative">
       <Background isDark={isDark} />
       <Navbar isDark={isDark} toggleTheme={toggleTheme} />
-      
+
       <main>
         <Hero />
         <Overview />
