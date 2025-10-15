@@ -250,7 +250,7 @@ export const subscribeToTestimonials = (callback, limit = 20) => {
 
   const testimonialsQuery = query(
     testimonialsRef,
-    orderByChild('approved'),
+    orderByChild('timestamp'),
     limitToLast(limit)
   );
 

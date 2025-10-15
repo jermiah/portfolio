@@ -32,17 +32,17 @@ const Certifications = () => {
                   {cert.issuer}
                 </p>
                 <div className="flex items-center gap-2">
-                  {cert.status.includes('Coming') || cert.status.includes('Prévu') ? (
+                  {cert.status.toLowerCase().includes('certified') || cert.status.toLowerCase().includes('certifié') ? (
                     <>
-                      <FiClock className="w-4 h-4 text-accent-light dark:text-accent-dark" />
-                      <span className="text-sm text-accent-light dark:text-accent-dark font-medium">
+                      <FiCheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm text-green-500 font-medium">
                         {cert.status}
                       </span>
                     </>
                   ) : (
                     <>
-                      <FiCheckCircle className="w-4 h-4 text-green-500" />
-                      <span className="text-sm text-green-500 font-medium">
+                      <FiClock className="w-4 h-4 text-red-500" />
+                      <span className="text-sm text-red-500 font-medium">
                         {cert.status}
                       </span>
                     </>
