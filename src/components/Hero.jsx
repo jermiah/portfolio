@@ -1,43 +1,40 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { FiGithub, FiLinkedin, FiFileText, FiMail, FiPhone, FiHeart } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiMail, FiPhone, FiHeart, FiUsers } from 'react-icons/fi';
 import TypewriterText from './TypewriterText';
+import { subscribeToRecommendations, subscribeToVisitors, incrementVisitors } from '../firebase';
 
 const Hero = () => {
   const { t } = useTranslation();
   const [recommendationCount, setRecommendationCount] = useState(0);
+  const [visitorCount, setVisitorCount] = useState(0);
 
   useEffect(() => {
-    // Get recommendation count from localStorage
-    const savedCount = localStorage.getItem('likeCount');
-    if (savedCount) {
-      setRecommendationCount(parseInt(savedCount, 10));
+    // Track visitor (only once per device/browser)
+    const hasVisited = localStorage.getItem('hasVisited');
+    if (!hasVisited) {
+      incrementVisitors().catch(error => {
+        console.error('Failed to increment visitor count:', error);
+      });
+      localStorage.setItem('hasVisited', 'true');
     }
 
-    // Listen for storage changes (when recommendation is added)
-    const handleStorageChange = () => {
-      const count = localStorage.getItem('likeCount');
-      if (count) {
-        setRecommendationCount(parseInt(count, 10));
-      }
-    };
+    // Subscribe to real-time updates from Firebase
+    const unsubscribeRecommendations = subscribeToRecommendations((count) => {
+      setRecommendationCount(count);
+    });
 
-    window.addEventListener('storage', handleStorageChange);
-    
-    // Also check periodically for updates in the same tab
-    const interval = setInterval(() => {
-      const count = localStorage.getItem('likeCount');
-      if (count && parseInt(count, 10) !== recommendationCount) {
-        setRecommendationCount(parseInt(count, 10));
-      }
-    }, 1000);
+    const unsubscribeVisitors = subscribeToVisitors((count) => {
+      setVisitorCount(count);
+    });
 
+    // Cleanup subscriptions on unmount
     return () => {
-      window.removeEventListener('storage', handleStorageChange);
-      clearInterval(interval);
+      unsubscribeRecommendations();
+      unsubscribeVisitors();
     };
-  }, [recommendationCount]);
+  }, []);
   
   // Get typewriter configuration from JSON
   const titles = t('hero.titles', { returnObjects: true, defaultValue: null });
@@ -149,25 +146,49 @@ const Hero = () => {
           </a>
         </motion.div>
 
-        {/* Recommendation Count Badge */}
-        {recommendationCount > 0 && (
+        {/* Stats Badges - Shows global counts from Firebase */}
+        <motion.div
+          variants={itemVariants}
+          className="flex flex-wrap items-center justify-center gap-3 mb-8"
+        >
+          {/* Visitor Count */}
           <motion.div
-            variants={itemVariants}
-            className="flex items-center justify-center gap-2 mb-8"
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            whileHover={{ scale: 1.05 }}
+            className="group relative inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full shadow-lg cursor-help"
+            title="Live visitor count tracked via Firebase Realtime Database"
           >
-            <motion.div
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              whileHover={{ scale: 1.05 }}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-pink-500 to-red-500 text-white rounded-full shadow-lg"
-            >
-              <FiHeart className="w-4 h-4 fill-current" />
-              <span className="font-semibold text-sm">
-                {recommendationCount} {recommendationCount === 1 ? 'Recommendation' : 'Recommendations'}
-              </span>
-            </motion.div>
+            <FiUsers className="w-4 h-4" />
+            <span className="font-semibold text-sm">
+              {visitorCount.toLocaleString()} {visitorCount === 1 ? 'Visitor' : 'Visitors'}
+            </span>
+            {/* Tooltip */}
+            <div className="absolute bottom-full mb-2 hidden group-hover:block w-64 p-3 bg-gray-900 dark:bg-gray-800 text-white text-xs rounded-lg shadow-xl z-50">
+              <p className="font-semibold mb-1">👥 Total Visitors</p>
+              <p className="text-gray-300">Total unique visitors to this portfolio, tracked via Firebase Realtime Database. Each device is counted once.</p>
+            </div>
           </motion.div>
-        )}
+
+          {/* Recommendation Count */}
+          <motion.div
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            whileHover={{ scale: 1.05 }}
+            className="group relative inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-pink-500 to-red-500 text-white rounded-full shadow-lg cursor-help"
+            title="Live recommendation count stored in Firebase Realtime Database"
+          >
+            <FiHeart className="w-4 h-4 fill-current" />
+            <span className="font-semibold text-sm">
+              {recommendationCount} {recommendationCount === 1 ? 'Recommendation' : 'Recommendations'}
+            </span>
+            {/* Tooltip */}
+            <div className="absolute bottom-full mb-2 hidden group-hover:block w-64 p-3 bg-gray-900 dark:bg-gray-800 text-white text-xs rounded-lg shadow-xl z-50">
+              <p className="font-semibold mb-1">💖 Total Recommendations</p>
+              <p className="text-gray-300">Total recommendations received on this portfolio, tracked via Firebase Realtime Database. Each device can recommend once.</p>
+            </div>
+          </motion.div>
+        </motion.div>
 
         {/* CTA Buttons */}
         <motion.div

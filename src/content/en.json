@@ -6,9 +6,7 @@
     "titles": [
       "AI & ML Engineer",
       "Multi-Agent Systems Developer",
-      "AI Researcher",
-      "Language Models and NLP Specialist",
-      "Applied AI Innovator"
+      "Language Models and NLP Specialist"
     ],
     "typewriter": {
       "loop": true,
@@ -297,6 +295,21 @@
     "personal": {
       "title": "Personal",
       "categories": [
+        {
+          "name": "Ongoing Projects",
+          "items": [
+            {
+              "title": "Personal Knowledge Base with RAG",
+              "description": "Building an intelligent personal knowledge management system using RAG for efficient information retrieval, note-taking, and organization.",
+              "tags": ["RAG", "Knowledge Management", "Personal AI"]
+            },
+            {
+              "title": "AI Writing Assistant",
+              "description": "Developing a context-aware writing assistant that helps with technical documentation, blog posts, and research papers.",
+              "tags": ["NLP", "Writing", "Productivity"]
+            }
+          ]
+        },
         {
           "name": "AI Projects",
           "items": [
