@@ -1,6 +1,6 @@
 # 🚀 Modern Portfolio Template
 
-A modern, interactive, and bilingual portfolio website built with React, Vite, TailwindCSS, Framer Motion, and Firebase. Features smooth animations, dark/light theme toggle, dynamic content management, and real-time testimonials.
+A modern, interactive, and bilingual portfolio website built with React, Vite, TailwindCSS, Framer Motion, and Firebase. Features smooth animations, dark/light theme toggle, dynamic content management,real-time testimonials , visitor counts, and likes!
 
 🌐 **Live Demo**: [https://jermiah.github.io/portfolio](https://jermiah.github.io/portfolio)
 
