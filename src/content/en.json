@@ -242,6 +242,36 @@
       "title": "Professional",
       "categories": [
         {
+          "name": "Ongoing Projects",
+          "categories": [
+            {
+              "name": "Agent Projects",
+              "items": [
+                {
+                  "title": "ConversyAI (Multi-Agent SaaS)",
+                  "description": "A multi-agent conversational commerce platform with intent routing, RAG-powered product search, and automated booking workflows. Built with LangChain, Qdrant, and FastAPI.",
+                  "tags": ["Multi-Agent", "RAG", "LangChain", "FastAPI", "Qdrant"]
+                },
+                {
+                  "title": "Document Organizer Agent",
+                  "description": "An intelligent agent that automatically categorizes, tags, and organizes documents using vision-language models and semantic search. Supports PDFs, images, and text files.",
+                  "tags": ["Agent", "VLM", "Document AI", "Automation"]
+                }
+              ]
+            },
+            {
+              "name": "Research & Development",
+              "items": [
+                {
+                  "title": "Intent-Routing Agent for E-Commerce",
+                  "description": "Building a hybrid rules-first + LLM fallback system for conversational commerce with sub-100ms latency.",
+                  "tags": ["Intent Routing", "Hybrid AI", "Low Latency"]
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "In-Company Projects",
           "items": [
             {
@@ -264,38 +294,12 @@
           "name": "AI & Agent Projects",
           "items": [
             {
-              "title": "ConversyAI (Multi-Agent SaaS)",
-              "description": "A multi-agent conversational commerce platform with intent routing, RAG-powered product search, and automated booking workflows. Built with LangChain, Qdrant, and FastAPI.",
-              "links": {
-                "code": "https://github.com/jermiah/conversyai"
-              },
-              "tags": ["Multi-Agent", "RAG", "LangChain", "FastAPI", "Qdrant"]
-            },
-            {
-              "title": "Document Organizer Agent",
-              "description": "An intelligent agent that automatically categorizes, tags, and organizes documents using vision-language models and semantic search. Supports PDFs, images, and text files.",
-              "links": {
-                "code": "https://github.com/jermiah/document-organizer-agent"
-              },
-              "tags": ["Agent", "VLM", "Document AI", "Automation"]
-            },
-            {
               "title": "Diagnostic Reasoning Agent",
-               "description": "An AI-powered prospecting and diagnostic agent that engages website visitors through an intelligent questionnaire to capture business needs and automatically generate tailored AI solution proposals. It leverages structured reasoning, retrieval-augmented generation (RAG), and domain-specific templates to analyze responses, identify pain points, match relevant use cases, and produce a personalized PDF summary with Daijobu’s proposed solutions and a free diagnostic call offer.",
+               "description": "An AI-powered prospecting and diagnostic agent that engages website visitors through an intelligent questionnaire to capture business needs and automatically generate tailored AI solution proposals. It leverages structured reasoning, retrieval-augmented generation (RAG), and domain-specific templates to analyze responses, identify pain points, match relevant use cases, and produce a personalized PDF summary with Daijobu's proposed solutions and a free diagnostic call offer.",
   "links": {
     "code": "https://github.com/jermiah/rfp-prospecting-agent"
               },
-              "tags": ["B2B", "CoT", "Reasoning"]
-            }
-          ],
-          "ongoingWork": [
-            {
-              "title": "Intent-Routing Agent for E-Commerce",
-              "description": "Building a hybrid rules-first + LLM fallback system for conversational commerce with sub-100ms latency."
-            },
-            {
-              "title": "Multi-Agent Code Review System",
-              "description": "Orchestrating specialized agents for security, performance, and style analysis in code reviews."
+              "tags": ["B2B", "CoT", "Reasoning", "Agent"]
             }
           ]
         }
@@ -306,27 +310,39 @@
       "categories": [
         {
           "name": "Ongoing Projects",
-          "items": [
+          "categories": [
             {
-              "title": "Personal Knowledge Base with RAG",
-              "description": "Building an intelligent personal knowledge management system using RAG for efficient information retrieval, note-taking, and organization.",
-              "tags": ["RAG", "Knowledge Management", "Personal AI"]
-            },
-            {
-              "title": "AI Writing Assistant",
-              "description": "Developing a context-aware writing assistant that helps with technical documentation, blog posts, and research papers.",
-              "tags": ["NLP", "Writing", "Productivity"]
+              "name": "AI Projects",
+              "items": [
+                {
+                  "title": "AI Writing Assistant",
+                  "description": "Developing a context-aware writing assistant that helps with technical documentation, blog posts, and research papers.",
+                  "tags": ["NLP", "Writing", "Productivity"]
+                }
+              ]
             }
           ]
         },
         {
           "name": "AI Projects",
           "items": [
-            {
-              "title": "Personal RAG Project",
-              "description": "Building a personal knowledge management system using RAG for efficient information retrieval and organization. (Content to be updated)",
-              "tags": ["RAG", "Personal Project", "Knowledge Management"]
-            }
+                {
+                  "title": "QA Intelligent System",
+                  "description": "Developed an intelligent cybersecurity question-answering pipeline capable of predicting accurate, personalized responses to unseen compliance questions. The system integrates exact-match lookup, logistic regression classification, hybrid retrieval (BM25 + FAISS), cross-encoder reranking, and controlled LLM answer generation using Mistral-7B. It ensures factual, hallucination-free answers through multi-stage reranking and context-aware inference, achieving >90% accuracy across user-specific predictions.",
+                     "links": {
+                    "code": "https://github.com/jermiah/LLM-and-RAG/blob/main/QA_Intelligent_System/README.md"
+                  },
+                  "tags": ["RAG", "Knowledge Management", "Personal AI"]
+                },
+                {
+  "title": "Cogniscope – Unified LLM & VLM Evaluation Suite",
+  "description": "A lightweight benchmarking and analysis suite for evaluating large language and vision-language models via OpenRouter. Cogniscope provides a unified tool to assess model output quality, reasoning strength, audio/video transcription accuracy, and multimodal understanding. It enables detailed model-to-model comparisons with task-level cost tracking, token usage analytics, latency insights, and capability visualizations — all in one transparent dashboard.",
+  "links": {
+    "code": "https://github.com/jermiah/Cogniscope"
+  },
+  "tags": ["OpenRouter","LLM", "VLM", "Benchmarking", "Evaluation", "AI Metrics", "Model Comparison"]
+}
+
           ]
         },
         {
@@ -385,7 +401,7 @@
         "name": "Ongoing Works",
         "items": [
           {
-            "title": "Tiny Recursive Models (TRM)",
+            "title": "Tiny Recursive Reasoning Lab",
             "description": "Implementing recursive reasoning for small models using PyTorch + Hugging Face, enhancing depth without scaling compute. Exploring how compact models can achieve deeper reasoning through iterative refinement.",
             "links": {
               "code": "https://github.com/jermiah/TinyRecursiveReasoningLab"
@@ -393,27 +409,14 @@
             "tags": ["PyTorch", "Recursive Reasoning", "SLM", "Research"]
           },
           {
-            "title": "Frugal Reasoning in Edge AI",
+            "title": "Frugal AI: Buidling Efficient On-Device Reasoning SLM",
             "description": "Exploring energy-efficient and privacy-safe reasoning for on-device AI systems using small model architectures. Focus on quantization, pruning, and knowledge distillation for edge deployment.",
-            "tags": ["Edge AI", "Quantization", "Privacy", "Efficiency"]
+            "tags": ["Edge AI", "Quantization", "Privacy", "Efficiency", "Research","Recursive Reasoning"]
           },
           {
             "title": "Master's Thesis: Intent-Routing Agent for Conversational Commerce",
             "description": "Designing a hybrid, rules-first intent-routing agent for conversational commerce that classifies and executes user intents (RAG, order, booking) with a lightweight LLM fallback. The system emphasizes auditability, low latency, and cost-efficient reasoning.",
-            "links": {
-              "code": "https://github.com/jermiah/thesis-intent-routing"
-            },
             "tags": ["Intent Routing", "Hybrid AI", "Conversational Commerce", "Thesis"]
-          },
-          {
-            "title": "Gradient-Based Reinforcement for Small Models",
-            "description": "Investigating GRPO (Gradient-based Reinforcement Policy Optimization) for fine-tuning compact language models on reasoning tasks.",
-            "tags": ["GRPO", "Reinforcement Learning", "SLM"]
-          },
-          {
-            "title": "Multimodal RAG for Technical Documentation",
-            "description": "Building a retrieval system that combines text, diagrams, and code snippets for enhanced technical support.",
-            "tags": ["RAG", "Multimodal", "Documentation"]
           }
         ]
       },
@@ -449,24 +452,6 @@
               "code": "https://github.com/jermiah/conversy-sdk"
             },
             "tags": ["SDK", "RAG", "Tracing", "Qdrant", "Multi-Agent"]
-          },
-          {
-            "title": "Tiny Recursive Reasoning Lab",
-            "description": "Implements TRM reasoning for small models. Integrated with Hugging Face Transformers with focus on efficiency and reasoning quality. Includes benchmarks and evaluation scripts.",
-            "links": {
-              "code": "https://github.com/jermiah/TinyRecursiveReasoningLab"
-            },
-            "tags": ["PyTorch", "Recursive Reasoning", "SLM", "Benchmarking"]
-          },
-          {
-            "title": "MCP Server for Agent Orchestration",
-            "description": "Building a Model Context Protocol server for seamless multi-agent communication and state management.",
-            "tags": ["MCP", "Multi-Agent", "Orchestration"]
-          },
-          {
-            "title": "LLM Evaluation Framework",
-            "description": "Creating an open-source framework for evaluating LLM performance on reasoning, factuality, and safety metrics.",
-            "tags": ["Evaluation", "LLM", "Benchmarking"]
           }
         ]
       }

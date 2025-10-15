@@ -83,93 +83,114 @@ const ProjectCarousel = () => {
           transition={{ duration: 0.3 }}
           className="grid md:grid-cols-2 gap-6"
         >
-          {categories[activeCategory]?.items?.map((project, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false }}
-              transition={{ delay: index * 0.1 }}
-              whileHover={{ y: -5 }}
-              className="card p-6"
-            >
-              <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-3">
-                {project.title}
-              </h3>
-              
-              <p className="text-gray-700 dark:text-gray-300 mb-4">
-                {project.description}
-              </p>
-
-              {/* Tags */}
-              {project.tags && (
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((tag, tagIndex) => (
-                    <span
-                      key={tagIndex}
-                      className="px-3 py-1 text-xs font-medium bg-primary-light/10 dark:bg-primary-dark/10 text-primary-light dark:text-primary-dark rounded-full"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              )}
-
-              {/* Links */}
-              {project.links && (
-                <div className="flex flex-wrap gap-3">
-                  {project.links.code && (
-                    <a
-                      href={project.links.code}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-sm text-primary-light dark:text-primary-dark hover:underline"
-                    >
-                      <FiGithub className="w-4 h-4" />
-                      Code
-                    </a>
-                  )}
-                  {project.links.demo && (
-                    <a
-                      href={project.links.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-sm text-primary-light dark:text-primary-dark hover:underline"
-                    >
-                      <FiExternalLink className="w-4 h-4" />
-                      Demo
-                    </a>
-                  )}
-                </div>
-              )}
-            </motion.div>
-          ))}
-
-          {/* Ongoing Work Section (for AI & Agent Projects) */}
-          {categories[activeCategory]?.ongoingWork && (
+          {/* Check if this is "Ongoing Work" category with subcategories */}
+          {categories[activeCategory]?.categories ? (
             <>
-              <div className="col-span-full mt-8 mb-4">
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
-                  Ongoing Work
-                </h3>
-              </div>
-              {categories[activeCategory].ongoingWork.map((project, index) => (
+              {categories[activeCategory].categories.map((subCategory, catIndex) => (
+                <div key={`sub-cat-${catIndex}`} className="col-span-full">
+                  <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6 mt-4">
+                    {subCategory.name}
+                  </h3>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    {subCategory.items.map((project, index) => (
+                      <motion.div
+                        key={`sub-${catIndex}-${index}`}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: false }}
+                        transition={{ delay: index * 0.1 }}
+                        whileHover={{ y: -5 }}
+                        className="card p-6 border-l-4 border-accent-light dark:border-accent-dark"
+                      >
+                        <h4 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-3">
+                          {project.title}
+                        </h4>
+
+                        <p className="text-gray-700 dark:text-gray-300 mb-4">
+                          {project.description}
+                        </p>
+
+                        {/* Tags */}
+                        {project.tags && (
+                          <div className="flex flex-wrap gap-2">
+                            {project.tags.map((tag, tagIndex) => (
+                              <span
+                                key={tagIndex}
+                                className="px-3 py-1 text-xs font-medium bg-accent-light/10 dark:bg-accent-dark/10 text-accent-light dark:text-accent-dark rounded-full"
+                              >
+                                {tag}
+                              </span>
+                            ))}
+                          </div>
+                        )}
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </>
+          ) : (
+            /* Regular category with items */
+            <>
+              {categories[activeCategory]?.items?.map((project, index) => (
                 <motion.div
-                  key={`ongoing-${index}`}
+                  key={index}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: false }}
                   transition={{ delay: index * 0.1 }}
                   whileHover={{ y: -5 }}
-                  className="card p-6 border-l-4 border-accent-light dark:border-accent-dark"
+                  className="card p-6"
                 >
                   <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-3">
                     {project.title}
                   </h3>
-                  
-                  <p className="text-gray-700 dark:text-gray-300">
+
+                  <p className="text-gray-700 dark:text-gray-300 mb-4">
                     {project.description}
                   </p>
+
+                  {/* Tags */}
+                  {project.tags && (
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {project.tags.map((tag, tagIndex) => (
+                        <span
+                          key={tagIndex}
+                          className="px-3 py-1 text-xs font-medium bg-primary-light/10 dark:bg-primary-dark/10 text-primary-light dark:text-primary-dark rounded-full"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Links */}
+                  {project.links && (
+                    <div className="flex flex-wrap gap-3">
+                      {project.links.code && (
+                        <a
+                          href={project.links.code}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 text-sm text-primary-light dark:text-primary-dark hover:underline"
+                        >
+                          <FiGithub className="w-4 h-4" />
+                          Code
+                        </a>
+                      )}
+                      {project.links.demo && (
+                        <a
+                          href={project.links.demo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 text-sm text-primary-light dark:text-primary-dark hover:underline"
+                        >
+                          <FiExternalLink className="w-4 h-4" />
+                          Demo
+                        </a>
+                      )}
+                    </div>
+                  )}
                 </motion.div>
               ))}
             </>
