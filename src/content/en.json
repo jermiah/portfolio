@@ -294,8 +294,8 @@
           "name": "AI & Agent Projects",
           "items": [
             {
-              "title": "Diagnostic Reasoning Agent",
-               "description": "An AI-powered prospecting and diagnostic agent that engages website visitors through an intelligent questionnaire to capture business needs and automatically generate tailored AI solution proposals. It leverages structured reasoning, retrieval-augmented generation (RAG), and domain-specific templates to analyze responses, identify pain points, match relevant use cases, and produce a personalized PDF summary with Daijobu's proposed solutions and a free diagnostic call offer.",
+              "title": "Prosecting & Diagnostic Agent",
+               "description": "An AI-powered prospecting and diagnostic agent that engages website visitors through an intelligent questionnaire to capture business needs and automatically generate tailored AI solution proposals. It leverages structured reasoning, and domain-specific templates to analyze responses, identify pain points, match relevant use cases, and produce a personalized PDF summary with proposed solutions and sent via email.",
   "links": {
     "code": "https://github.com/jermiah/rfp-prospecting-agent"
               },
