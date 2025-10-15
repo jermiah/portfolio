@@ -190,7 +190,7 @@ const Showcase = () => {
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.3, delay: index * 0.05 }}
-                        className="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-between gap-3"
+                        className="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-between gap-3 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
                       >
                         <p className="text-gray-700 dark:text-gray-300">{eventData.name}</p>
                         {hasLink && (
@@ -229,7 +229,7 @@ const Showcase = () => {
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.3, delay: index * 0.05 }}
-                        className="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-between gap-3"
+                        className="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-between gap-3 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
                       >
                         <p className="text-gray-700 dark:text-gray-300">{eventData.name}</p>
                         {hasLink && (
