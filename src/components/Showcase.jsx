@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import Section from './Section';
-import { FiAward, FiUsers, FiZap, FiCalendar } from 'react-icons/fi';
+import { FiAward, FiUsers, FiZap, FiCalendar, FiExternalLink } from 'react-icons/fi';
 
 const Showcase = () => {
   const { t } = useTranslation();
@@ -117,25 +117,41 @@ const Showcase = () => {
               </h3>
             </div>
             <div className="grid md:grid-cols-3 gap-4">
-              {showcase.hackathons.items.map((hackathon, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: false }}
-                  transition={{ delay: index * 0.1 }}
-                  whileHover={{ scale: 1.05 }}
-                  className="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg text-center"
-                >
-                  <p className="text-gray-700 dark:text-gray-300 font-medium">{hackathon}</p>
-                </motion.div>
-              ))}
+              {showcase.hackathons.items.map((hackathon, index) => {
+                const hackathonData = typeof hackathon === 'string' ? { name: hackathon, link: '' } : hackathon;
+                const hasLink = hackathonData.link && hackathonData.link.trim() !== '';
+
+                return (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: false }}
+                    transition={{ delay: index * 0.1 }}
+                    whileHover={{ scale: 1.05 }}
+                    className="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-between gap-3"
+                  >
+                    <p className="text-gray-700 dark:text-gray-300 font-medium">{hackathonData.name}</p>
+                    {hasLink && (
+                      <a
+                        href={hackathonData.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-shrink-0 p-1 hover:bg-gray-200 dark:hover:bg-gray-700 rounded transition-colors"
+                        title="View hackathon link"
+                      >
+                        <FiExternalLink className="w-4 h-4 text-accent-light dark:text-accent-dark" />
+                      </a>
+                    )}
+                  </motion.div>
+                );
+              })}
             </div>
           </motion.div>
         )}
 
         {/* Events */}
-        {showcase.events && showcase.events.items && (
+        {showcase.events && (showcase.events.attended || showcase.events.conducted) && (
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -150,20 +166,84 @@ const Showcase = () => {
                 {showcase.events.title}
               </h3>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {showcase.events.items.map((event, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: false }}
-                  transition={{ delay: index * 0.1 }}
-                  className="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg"
-                >
-                  <p className="text-gray-700 dark:text-gray-300">{event}</p>
-                </motion.div>
-              ))}
-            </div>
+
+            {/* Events Attended */}
+            {showcase.events.attended && showcase.events.attended.items && showcase.events.attended.items.length > 0 && (
+              <div className="mb-8">
+                <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
+                  {showcase.events.attended.title}
+                </h4>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {showcase.events.attended.items.map((event, index) => {
+                    const eventData = typeof event === 'string' ? { name: event, link: '' } : event;
+                    const hasLink = eventData.link && eventData.link.trim() !== '';
+
+                    return (
+                      <motion.div
+                        key={index}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: false }}
+                        transition={{ delay: index * 0.1 }}
+                        className="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-between gap-3"
+                      >
+                        <p className="text-gray-700 dark:text-gray-300">{eventData.name}</p>
+                        {hasLink && (
+                          <a
+                            href={eventData.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex-shrink-0 p-1 hover:bg-gray-200 dark:hover:bg-gray-700 rounded transition-colors"
+                            title="View event link"
+                          >
+                            <FiExternalLink className="w-4 h-4 text-green-500" />
+                          </a>
+                        )}
+                      </motion.div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            {/* Events Conducted */}
+            {showcase.events.conducted && showcase.events.conducted.items && showcase.events.conducted.items.length > 0 && (
+              <div>
+                <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
+                  {showcase.events.conducted.title}
+                </h4>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {showcase.events.conducted.items.map((event, index) => {
+                    const eventData = typeof event === 'string' ? { name: event, link: '' } : { name: event.title || event.name, link: event.link || '' };
+                    const hasLink = eventData.link && eventData.link.trim() !== '';
+
+                    return (
+                      <motion.div
+                        key={index}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: false }}
+                        transition={{ delay: index * 0.1 }}
+                        className="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-between gap-3"
+                      >
+                        <p className="text-gray-700 dark:text-gray-300">{eventData.name}</p>
+                        {hasLink && (
+                          <a
+                            href={eventData.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex-shrink-0 p-1 hover:bg-gray-200 dark:hover:bg-gray-700 rounded transition-colors"
+                            title="View event link"
+                          >
+                            <FiExternalLink className="w-4 h-4 text-green-500" />
+                          </a>
+                        )}
+                      </motion.div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
           </motion.div>
         )}
       </div>

@@ -538,22 +538,64 @@
     "hackathons": {
       "title": "Hackathons & Challenges",
       "items": [
-        "🏆 Winner – Blackbox AI × 42AI Hackathon (KidShield Agent)",
-        "🏆 Winner – Paris Open Build (Mistral + Windsurf)",
-        "Novartis AI Hackathon",
-        "Sopra Steria AI Challenge",
-        "L’Oréal Brandstorm 2025"
+        {
+          "name": "🏆 Winner – Blackbox AI × 42AI Agents Hackathon",
+          "link": "https://www.linkedin.com/posts/jermiah-jerome_42ai-hackathon-artificialintelligence-activity-7370742726318845952-EmpO?utm_source=share&utm_medium=member_desktop&rcm=ACoAACq09WUBzILj3ZIoG_SJNGbuRMhzVPyVcHs"
+        },
+        {
+          "name": "🏆 Winner – Paris Open Build (Mistral + Windsurf)",
+          "link": "https://www.linkedin.com/posts/jermiah-jerome_ai-vibecoding-aiagents-activity-7368768781667467264-7_at?utm_source=share&utm_medium=member_desktop&rcm=ACoAACq09WUBzILj3ZIoG_SJNGbuRMhzVPyVcHs"
+        },
+        {
+          "name": "Novartis AI Hackathon",
+          "link": ""
+        },
+        {
+          "name": "Sopra Steria AI Challenge",
+          "link": ""
+        },
+        {
+          "name": "L'Oréal Brandstorm 2025",
+          "link": ""
+        }
       ]
     },
     "events": {
-      "title": "Workshops & Summits",
-      "items": [
-        "Google Gemini Workshop",
-        "AWS Summit Paris",
-        "Web Summit Lisbon",
-        "AI Developers Meetup – Station F",
-        "French State of AI – Google Paris"
-      ]
+      "title": "Events",
+      "attended": {
+        "title": "Events Attended",
+        "items": [
+          {
+            "name": "Google Gemini Workshop",
+            "link": ""
+          },
+          {
+            "name": "AWS Summit Paris",
+            "link": ""
+          },
+          {
+            "name": "Web Summit Lisbon",
+            "link": ""
+          },
+          {
+            "name": "AI Developers Meetup – Station F",
+            "link": ""
+          },
+          {
+            "name": "French State of AI – Google Paris",
+            "link": ""
+          }
+        ]
+      },
+      "conducted": {
+        "title": "Events Conducted",
+        "items": [
+          {
+            "name": "Daijobu AI Moment: Speaking on the Future of AI & Software",
+             "link": "https://www.linkedin.com/posts/jermiah-jerome_ai-slm-llm-activity-7377282309630332928-vX0m?utm_source=share&utm_medium=member_desktop&rcm=ACoAACq09WUBzILj3ZIoG_SJNGbuRMhzVPyVcHs"
+          }
+        ]
+      }
     }
   },
   "footer": {
