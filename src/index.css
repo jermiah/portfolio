@@ -8,16 +8,37 @@
   body {
     @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
   }
 
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  /* Mobile performance optimizations */
+  @media (max-width: 768px) {
+    * {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+    }
   }
 }
 
 @layer components {
   .section-container {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16;
+  }
+
+  /* Reduce bottom padding for contact section to avoid excessive space */
+  #contact.section-container {
+    @apply pb-6 md:pb-8;
   }
 
   .gradient-text {
@@ -29,46 +50,56 @@
   }
 
   .btn-primary {
-    @apply px-6 py-3 bg-primary-light dark:bg-primary-dark text-white rounded-lg font-medium hover:scale-105 transition-all duration-300 shadow-md hover:shadow-xl;
+    @apply px-5 py-2.5 bg-primary-light dark:bg-primary-dark text-white rounded-lg font-medium hover:scale-105 transition-all duration-300 shadow-md hover:shadow-xl text-sm;
   }
 
   .btn-secondary {
-    @apply px-6 py-3 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded-lg font-medium hover:scale-105 transition-all duration-300;
+    @apply px-5 py-2.5 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded-lg font-medium hover:scale-105 transition-all duration-300 text-sm;
   }
 }
 
-/* Scale down all content except navbar - only on desktop to avoid mobile rendering issues */
-@media (min-width: 768px) {
-  main {
-    transform: scale(0.92);
-    transform-origin: top center;
-  }
-
-  footer {
-    transform: scale(0.92);
-    transform-origin: top center;
-  }
-}
-
-/* Reduce base font sizes globally (except navbar) */
+/* Reduce base font sizes to match 92% scale */
 main {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
 }
 
 main h1 {
-  font-size: 0.95em;
+  font-size: 0.92em;
 }
 
 main h2 {
-  font-size: 0.95em;
+  font-size: 0.92em;
 }
 
 main h3 {
-  font-size: 0.95em;
+  font-size: 0.92em;
 }
 
 main .card {
-  padding: 0.9em;
+  padding: 0.85em;
+}
+
+/* Disable section title animations on desktop */
+@media (min-width: 769px) {
+  /* Remove section title slide-in animations */
+  section h2,
+  section h3 {
+    animation: none !important;
+    transition: opacity 0.3s ease !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  /* Simple fade-in only for cards and content */
+  .card,
+  section > div {
+    transition: opacity 0.4s ease, box-shadow 0.3s ease !important;
+  }
+
+  /* Remove excessive motion animations */
+  [data-projection-id] {
+    transition: opacity 0.3s ease !important;
+  }
 }
 
 /* Custom scrollbar */
@@ -141,4 +172,60 @@ main .card {
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Mobile-specific performance improvements */
+@media (max-width: 768px) {
+  /* Disable most animations on mobile to prevent blinking */
+  * {
+    animation: none !important;
+  }
+
+  /* Force all elements to be visible immediately - no fade-in animations */
+  main * {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  /* Simple opacity transitions only for cards on interaction */
+  .card {
+    transition: opacity 0.2s ease !important;
+  }
+
+  /* Disable all motion divs animations */
+  div[style*="opacity"],
+  div[style*="transform"] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  /* Disable hover effects on mobile */
+  .card:hover,
+  .btn-primary:hover,
+  .btn-secondary:hover {
+    transform: none !important;
+    box-shadow: inherit !important;
+  }
+
+  /* Remove section title animations */
+  section h2,
+  section h3,
+  section h4 {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  /* Disable framer motion animations */
+  [data-projection-id] {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  /* Smooth scrolling only */
+  html {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
 }

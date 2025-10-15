@@ -71,21 +71,24 @@ function App() {
       <Background isDark={isDark} />
       <Navbar isDark={isDark} toggleTheme={toggleTheme} />
 
-      <main>
-        <Hero />
-        <Overview />
-        <Skills />
-        <Education />
-        <ExperienceTimeline />
-        <Certifications />
-        <ProjectCarousel />
-        <CategorySection sectionKey="research" />
-        <CategorySection sectionKey="opensource" />
-        <Showcase />
-        <ContactForm />
-      </main>
+      <div className="content-wrapper">
+        <main>
+          <Hero />
+          <Overview />
+          <Skills />
+          <Education />
+          <ExperienceTimeline />
+          <Certifications />
+          <ProjectCarousel />
+          <CategorySection sectionKey="research" />
+          <CategorySection sectionKey="opensource" />
+          <Showcase />
+          <ContactForm />
+        </main>
 
-      <Footer />
+        <Footer />
+      </div>
+
       <LikeButton />
     </div>
   );

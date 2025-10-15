@@ -96,19 +96,19 @@ const Hero = () => {
         className="max-w-5xl mx-auto text-center"
       >
         {/* Profile Image */}
-        <motion.div variants={itemVariants} className="mb-8">
+        <motion.div variants={itemVariants} className="mb-6">
           <motion.img
             whileHover={{ scale: 1.05 }}
             src="/portfolio/photo.jpg"
             alt="Jermiah Jerome"
-            className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto object-cover border-4 border-primary-light dark:border-primary-dark shadow-2xl"
+            className="w-28 h-28 md:w-36 md:h-36 rounded-full mx-auto object-cover border-4 border-primary-light dark:border-primary-dark shadow-2xl"
           />
         </motion.div>
 
         {/* Greeting */}
         <motion.p
           variants={itemVariants}
-          className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-4"
+          className="text-base md:text-lg text-gray-600 dark:text-gray-400 mb-3"
         >
           {t('hero.greeting')}
         </motion.p>
@@ -116,14 +116,14 @@ const Hero = () => {
         {/* Name */}
         <motion.h1
           variants={itemVariants}
-          className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 gradient-text"
+          className="text-3xl md:text-5xl lg:text-6xl font-bold mb-5 gradient-text"
         >
           {t('hero.name')}
         </motion.h1>
 
         {/* Typing Animation */}
-        <motion.div variants={itemVariants} className="mb-6">
-          <h2 className="text-xl md:text-3xl lg:text-4xl font-semibold text-gray-800 dark:text-gray-200 min-h-[3rem] md:min-h-[4rem]">
+        <motion.div variants={itemVariants} className="mb-5">
+          <h2 className="text-lg md:text-2xl lg:text-3xl font-semibold text-gray-800 dark:text-gray-200 min-h-[2.5rem] md:min-h-[3.5rem]">
             <span className="inline-block whitespace-nowrap md:whitespace-normal">
               <TypewriterText
                 texts={textsToType}
@@ -139,7 +139,7 @@ const Hero = () => {
         {/* Subtitle */}
         <motion.p
           variants={itemVariants}
-          className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-8"
+          className="text-base md:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-6"
         >
           {t('hero.subtitle')}
         </motion.p>
@@ -147,7 +147,7 @@ const Hero = () => {
         {/* Contact Info */}
         <motion.div
           variants={itemVariants}
-          className="flex flex-wrap justify-center gap-4 mb-8 text-sm md:text-base"
+          className="flex flex-wrap justify-center gap-3 mb-6 text-sm"
         >
           <a
             href={`mailto:${t('contact.email')}`}
@@ -168,7 +168,7 @@ const Hero = () => {
         {/* Stats Badges - Shows global counts from Firebase */}
         <motion.div
           variants={itemVariants}
-          className="flex flex-wrap items-center justify-center gap-3 mb-8"
+          className="flex flex-wrap items-center justify-center gap-2 mb-6"
         >
           {/* Visitor Count */}
           <motion.div
@@ -231,7 +231,7 @@ const Hero = () => {
         {/* CTA Buttons */}
         <motion.div
           variants={itemVariants}
-          className="flex flex-wrap justify-center gap-4 mb-8"
+          className="flex flex-wrap justify-center gap-3 mb-6"
         >
           <motion.a
             whileHover={{ scale: 1.05 }}
@@ -269,7 +269,7 @@ const Hero = () => {
         {/* Scroll Indicator */}
         <motion.div
           variants={itemVariants}
-          className="mt-16"
+          className="mt-12"
         >
           <motion.div
             animate={{ y: [0, 10, 0] }}

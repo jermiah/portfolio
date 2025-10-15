@@ -561,9 +561,9 @@
       ]
     },
     "events": {
-      "title": "Events",
+      "title": "Workshop & Events",
       "attended": {
-        "title": "Events Attended",
+        "title": "Attended",
         "items": [
           {
             "name": "Google Gemini Workshop",
@@ -588,7 +588,7 @@
         ]
       },
       "conducted": {
-        "title": "Events Conducted",
+        "title": "Conducted",
         "items": [
           {
             "name": "Daijobu AI Moment: Speaking on the Future of AI & Software",

@@ -18,9 +18,10 @@ const Showcase = () => {
         {/* Awards */}
         {showcase.awards && showcase.awards.items && (
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
             className="card p-6 md:p-8"
           >
             <div className="flex items-center gap-3 mb-6">
@@ -37,8 +38,8 @@ const Showcase = () => {
                   key={index}
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: false }}
-                  transition={{ delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: index * 0.1 }}
                   className="flex items-start gap-3 text-gray-700 dark:text-gray-300"
                 >
                   <FiAward className="w-5 h-5 text-yellow-500 mt-1 flex-shrink-0" />
@@ -51,31 +52,34 @@ const Showcase = () => {
 
         {/* Sports Achievements */}
         {showcase.sports && showcase.sports.length > 0 && (
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false }}
-            className="grid md:grid-cols-2 gap-6"
-          >
+          <div className="grid md:grid-cols-2 gap-6">
             {showcase.sports.map((sport, index) => (
-              <div key={index} className="card p-6">
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                className="card p-6"
+              >
                 <div className="flex items-center gap-3">
                   <div className="p-2 bg-primary-light/10 dark:bg-primary-dark/10 rounded-lg">
                     <FiAward className="w-6 h-6 text-primary-light dark:text-primary-dark" />
                   </div>
                   <p className="text-gray-700 dark:text-gray-300 font-medium">{sport}</p>
                 </div>
-              </div>
+              </motion.div>
             ))}
-          </motion.div>
+          </div>
         )}
 
         {/* Community */}
         {showcase.community && (
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false }}
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
             className="card p-6 md:p-8 bg-gradient-to-br from-primary-light/10 to-accent-light/10 dark:from-primary-dark/10 dark:to-accent-dark/10"
           >
             <div className="flex items-center gap-3 mb-4">
@@ -103,9 +107,10 @@ const Showcase = () => {
         {/* Hackathons */}
         {showcase.hackathons && showcase.hackathons.items && (
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
             className="card p-6 md:p-8"
           >
             <div className="flex items-center gap-3 mb-6">
@@ -126,10 +131,9 @@ const Showcase = () => {
                     key={index}
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: false }}
-                    transition={{ delay: index * 0.1 }}
-                    whileHover={{ scale: 1.05 }}
-                    className="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-between gap-3"
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.3, delay: index * 0.05 }}
+                    className="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-between gap-3 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
                   >
                     <p className="text-gray-700 dark:text-gray-300 font-medium">{hackathonData.name}</p>
                     {hasLink && (
@@ -153,9 +157,10 @@ const Showcase = () => {
         {/* Events */}
         {showcase.events && (showcase.events.attended || showcase.events.conducted) && (
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
             className="card p-6 md:p-8"
           >
             <div className="flex items-center gap-3 mb-6">
@@ -181,10 +186,10 @@ const Showcase = () => {
                     return (
                       <motion.div
                         key={index}
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: false }}
-                        transition={{ delay: index * 0.1 }}
+                        initial={{ opacity: 0, x: -10 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.3, delay: index * 0.05 }}
                         className="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-between gap-3"
                       >
                         <p className="text-gray-700 dark:text-gray-300">{eventData.name}</p>
@@ -220,10 +225,10 @@ const Showcase = () => {
                     return (
                       <motion.div
                         key={index}
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: false }}
-                        transition={{ delay: index * 0.1 }}
+                        initial={{ opacity: 0, x: -10 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.3, delay: index * 0.05 }}
                         className="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-between gap-3"
                       >
                         <p className="text-gray-700 dark:text-gray-300">{eventData.name}</p>

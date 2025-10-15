@@ -42,7 +42,7 @@ const Section = ({ id, title, children, className = '' }) => {
             initial={{ opacity: 0, x: -20 }}
             animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-12 gradient-text"
+            className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 gradient-text"
           >
             {title}
           </motion.h2>
