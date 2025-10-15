@@ -46,7 +46,7 @@
     "title": "Overview",
     "content": [
       "I’m an AI Engineer passionate about building compact, efficient systems that blend rules, retrieval, and generation. My interests span supervised fine-tuning of small language models, reinforcement-driven reasoning, and multi-agent orchestration for business-focused AI automation",
-      "My technical expertise includes supervised fine-tuning (SFT), policy-gradient reinforcement learning, retrieval-augmented generation (RAG), and model orchestration via lightweight MCP agents. I focus on designing cost-efficient yet interpretable systems for applied reasoning and conversational workflows."
+      "My technical expertise includes supervised fine-tuning (SFT), policy-gradient reinforcement learning, retrieval-augmented generation (RAG), and agent orchestration. I focus on designing cost-efficient yet interpretable systems for applied reasoning and conversational workflows."
     ],
     "highlights": {
       "title": "Core Focus Areas",
@@ -67,9 +67,9 @@
     },
     "featured": {
       "title": "Research Highlight",
-      "description": "Exploring efficient intent-routing and recursive reasoning in small models"
+      "description": "Exploring efficient intent-routing agent and recursive reasoning in small models"
     },
-    "closing": "My goal is to bridge applied AI engineering with practical reasoning research — building systems that are faster, safer, and smarter."
+    "closing": "My goal is to bridge applied AI engineering with practical use cases — building systems that are faster, safer, and smarter."
   },
   "skills": {
     "title": "Skills",
@@ -78,11 +78,13 @@
         "name": "Expertise",
         "items": [
           "Machine Learning & Deep Learning",
-          "Small Language Models (SLMs)",
-          "Reinforcement Tuning (SFT, GRPO)",
+          "Fine Tuning & Prompt Engineering",
+          "Natural Language Processing (NLP)",
+          "Language Models (LLMs & SLMs)",
+          "Reinforcement Leanring (GRPO)",
           "Retrieval-Augmented Generation (RAG)",
           "Multi-Agent Systems & Orchestration",
-          "Prompt Engineering & Evaluation",
+          "Evaluation and Benchmarking",
           "Applied AI for Business Automation"
         ]
       },
@@ -90,21 +92,28 @@
         "name": "Professional",
         "items": [
           "AI System Design",
-          "Technical Research Writing",
+          "Technical Research & Prototyping",
           "Cross-functional Collaboration",
-          "Project & Product Management",
-          "Problem Solving & Decision Making"
+          "Product Management",
+          "Problem Solving & Decision Making",
+          "Agile & Scrum Methodologies",
+          "Data Analysis & Visualization",
+          "Technical Communication",
+          "Mentoring & Leadership"
+        
         ]
       },
       {
         "name": "Technical",
         "items": [
           "Python, R, SQL, NoSQL",
-          "PyTorch, Transformers, LangChain",
+          "PyTorch, Transformers, LangChain, LangGraph",
+          "FastAPI, Streamlit, Gradio",
+          "Arize, Weights & Biases, LangFuse",
           "LoRA, QLoRA, bitsandbytes",
-          "Git, Docker, Hugging Face, MCP",
-          "AWS, GCP, Databricks",
-          "Power BI, Tableau, Streamlit"
+          "Git, Docker, Hugging Face, MCP, A2A",
+          "AWS, GCP, Firebase",
+          "Power BI, Tableau, Advance Excel"
         ]
       }
     ]
@@ -272,11 +281,11 @@
             },
             {
               "title": "Diagnostic Reasoning Agent",
-              "description": "A medical diagnostic assistant using chain-of-thought reasoning and retrieval from medical knowledge bases. Implements step-by-step diagnostic workflows with explainable outputs.",
-              "links": {
-                "code": "https://github.com/jermiah/diagnostic-reasoning-agent"
+               "description": "An AI-powered prospecting and diagnostic agent that engages website visitors through an intelligent questionnaire to capture business needs and automatically generate tailored AI solution proposals. It leverages structured reasoning, retrieval-augmented generation (RAG), and domain-specific templates to analyze responses, identify pain points, match relevant use cases, and produce a personalized PDF summary with Daijobu’s proposed solutions and a free diagnostic call offer.",
+  "links": {
+    "code": "https://github.com/jermiah/rfp-prospecting-agent"
               },
-              "tags": ["Healthcare", "CoT", "RAG", "Reasoning"]
+              "tags": ["B2B", "CoT", "Reasoning"]
             }
           ],
           "ongoingWork": [
