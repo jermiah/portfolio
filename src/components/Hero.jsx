@@ -1,10 +1,43 @@
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { FiGithub, FiLinkedin, FiFileText, FiMail, FiPhone } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiFileText, FiMail, FiPhone, FiHeart } from 'react-icons/fi';
 import TypewriterText from './TypewriterText';
 
 const Hero = () => {
   const { t } = useTranslation();
+  const [recommendationCount, setRecommendationCount] = useState(0);
+
+  useEffect(() => {
+    // Get recommendation count from localStorage
+    const savedCount = localStorage.getItem('likeCount');
+    if (savedCount) {
+      setRecommendationCount(parseInt(savedCount, 10));
+    }
+
+    // Listen for storage changes (when recommendation is added)
+    const handleStorageChange = () => {
+      const count = localStorage.getItem('likeCount');
+      if (count) {
+        setRecommendationCount(parseInt(count, 10));
+      }
+    };
+
+    window.addEventListener('storage', handleStorageChange);
+    
+    // Also check periodically for updates in the same tab
+    const interval = setInterval(() => {
+      const count = localStorage.getItem('likeCount');
+      if (count && parseInt(count, 10) !== recommendationCount) {
+        setRecommendationCount(parseInt(count, 10));
+      }
+    }, 1000);
+
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+      clearInterval(interval);
+    };
+  }, [recommendationCount]);
   
   // Get typewriter configuration from JSON
   const titles = t('hero.titles', { returnObjects: true, defaultValue: null });
@@ -115,6 +148,26 @@ const Hero = () => {
             <span className="hidden sm:inline">{t('contact.phone')}</span>
           </a>
         </motion.div>
+
+        {/* Recommendation Count Badge */}
+        {recommendationCount > 0 && (
+          <motion.div
+            variants={itemVariants}
+            className="flex items-center justify-center gap-2 mb-8"
+          >
+            <motion.div
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              whileHover={{ scale: 1.05 }}
+              className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-pink-500 to-red-500 text-white rounded-full shadow-lg"
+            >
+              <FiHeart className="w-4 h-4 fill-current" />
+              <span className="font-semibold text-sm">
+                {recommendationCount} {recommendationCount === 1 ? 'Recommendation' : 'Recommendations'}
+              </span>
+            </motion.div>
+          </motion.div>
+        )}
 
         {/* CTA Buttons */}
         <motion.div

@@ -4,6 +4,7 @@
     "name": "Jermiah Jerome",
     "title": "AI & ML Engineer",
     "titles": [
+      "AI & ML Engineer",
       "Multi-Agent Systems Developer",
       "AI Researcher",
       "Language Models and NLP Specialist",
@@ -206,10 +207,9 @@
         "Performed cash flow and budget analysis to identify cost-saving measures, reducing project expenses by 15%.",
         "Streamlined procurement and financial tracking processes to ensure smooth project execution."
       ]
-    }
-  ]
-}
-,
+      }
+    ]
+  },
   "certifications": {
     "title": "Certifications",
     "items": [
@@ -232,112 +232,130 @@
   },
   "projects": {
     "title": "Projects",
-    "categories": [
-      {
-        "name": "In-Company Projects",
-        "items": [
-          {
-            "title": "AI Strategy Copilot @ Prosol",
-            "description": "A Streamlit + LLM-powered assistant for retail product strategy using RAG, unsupervised learning, feedback loops, and advanced prompt engineering.",
-            "links": {
-              "code": "https://github.com/jermiah/Product-Strategy-App/blob/main/README.md",
-              "demo": "https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb"
+    "professional": {
+      "title": "Professional",
+      "categories": [
+        {
+          "name": "In-Company Projects",
+          "items": [
+            {
+              "title": "AI Strategy Copilot @ Prosol",
+              "description": "A Streamlit + LLM-powered assistant for retail product strategy using RAG, unsupervised learning, feedback loops, and advanced prompt engineering.",
+              "links": {
+                "code": "https://github.com/jermiah/Product-Strategy-App/blob/main/README.md",
+                "demo": "https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb"
+              },
+              "tags": ["LLM", "RAG", "Streamlit", "Product Strategy"]
             },
-            "tags": ["LLM", "RAG", "Streamlit", "Product Strategy"]
-          },
-          {
-            "title": "Business White Paper Research @ BNP Paribas",
-            "description": "Strategic Adoption of Open-Source Multimodal Enterprise RAG: Challenges, KPIs, and Business Impact. Focused on evaluating use cases, performance benchmarks, and implementation pathways for enterprise AI agents in banking.",
-            "tags": ["Research", "RAG", "Enterprise AI", "Banking"]
-          }
-        ]
-      },
-      {
-        "name": "AI & Agent Projects",
-        "items": [
-          {
-            "title": "ConversyAI (Multi-Agent SaaS)",
-            "description": "A multi-agent conversational commerce platform with intent routing, RAG-powered product search, and automated booking workflows. Built with LangChain, Qdrant, and FastAPI.",
-            "links": {
-              "code": "https://github.com/jermiah/conversyai"
+            {
+              "title": "Business White Paper Research @ BNP Paribas",
+              "description": "Strategic Adoption of Open-Source Multimodal Enterprise RAG: Challenges, KPIs, and Business Impact. Focused on evaluating use cases, performance benchmarks, and implementation pathways for enterprise AI agents in banking.",
+              "tags": ["Research", "RAG", "Enterprise AI", "Banking"]
+            }
+          ]
+        },
+        {
+          "name": "AI & Agent Projects",
+          "items": [
+            {
+              "title": "ConversyAI (Multi-Agent SaaS)",
+              "description": "A multi-agent conversational commerce platform with intent routing, RAG-powered product search, and automated booking workflows. Built with LangChain, Qdrant, and FastAPI.",
+              "links": {
+                "code": "https://github.com/jermiah/conversyai"
+              },
+              "tags": ["Multi-Agent", "RAG", "LangChain", "FastAPI", "Qdrant"]
             },
-            "tags": ["Multi-Agent", "RAG", "LangChain", "FastAPI", "Qdrant"]
-          },
-          {
-            "title": "Document Organizer Agent",
-            "description": "An intelligent agent that automatically categorizes, tags, and organizes documents using vision-language models and semantic search. Supports PDFs, images, and text files.",
-            "links": {
-              "code": "https://github.com/jermiah/document-organizer-agent"
+            {
+              "title": "Document Organizer Agent",
+              "description": "An intelligent agent that automatically categorizes, tags, and organizes documents using vision-language models and semantic search. Supports PDFs, images, and text files.",
+              "links": {
+                "code": "https://github.com/jermiah/document-organizer-agent"
+              },
+              "tags": ["Agent", "VLM", "Document AI", "Automation"]
             },
-            "tags": ["Agent", "VLM", "Document AI", "Automation"]
-          },
-          {
-            "title": "Diagnostic Reasoning Agent",
-            "description": "A medical diagnostic assistant using chain-of-thought reasoning and retrieval from medical knowledge bases. Implements step-by-step diagnostic workflows with explainable outputs.",
-            "links": {
-              "code": "https://github.com/jermiah/diagnostic-reasoning-agent"
+            {
+              "title": "Diagnostic Reasoning Agent",
+              "description": "A medical diagnostic assistant using chain-of-thought reasoning and retrieval from medical knowledge bases. Implements step-by-step diagnostic workflows with explainable outputs.",
+              "links": {
+                "code": "https://github.com/jermiah/diagnostic-reasoning-agent"
+              },
+              "tags": ["Healthcare", "CoT", "RAG", "Reasoning"]
+            }
+          ],
+          "ongoingWork": [
+            {
+              "title": "Intent-Routing Agent for E-Commerce",
+              "description": "Building a hybrid rules-first + LLM fallback system for conversational commerce with sub-100ms latency."
             },
-            "tags": ["Healthcare", "CoT", "RAG", "Reasoning"]
-          }
-        ],
-        "ongoingWork": [
-          {
-            "title": "Intent-Routing Agent for E-Commerce",
-            "description": "Building a hybrid rules-first + LLM fallback system for conversational commerce with sub-100ms latency."
-          },
-          {
-            "title": "Multi-Agent Code Review System",
-            "description": "Orchestrating specialized agents for security, performance, and style analysis in code reviews."
-          }
-        ]
-      },
-      {
-        "name": "Machine Learning & Data Science Projects",
-        "items": [
-          {
-            "title": "Bankruptcy Prediction",
-            "description": "Built classification models using ensemble techniques (Logistic Regression + XGBoost) to detect bankruptcy in imbalanced datasets.",
-            "links": {
-              "code": "https://github.com/jermiah/machine_learning/blob/main/README.md"
+            {
+              "title": "Multi-Agent Code Review System",
+              "description": "Orchestrating specialized agents for security, performance, and style analysis in code reviews."
+            }
+          ]
+        }
+      ]
+    },
+    "personal": {
+      "title": "Personal",
+      "categories": [
+        {
+          "name": "AI Projects",
+          "items": [
+            {
+              "title": "Personal RAG Project",
+              "description": "Building a personal knowledge management system using RAG for efficient information retrieval and organization. (Content to be updated)",
+              "tags": ["RAG", "Personal Project", "Knowledge Management"]
+            }
+          ]
+        },
+        {
+          "name": "Machine Learning & Data Science Projects",
+          "items": [
+            {
+              "title": "Bankruptcy Prediction",
+              "description": "Built classification models using ensemble techniques (Logistic Regression + XGBoost) to detect bankruptcy in imbalanced datasets.",
+              "links": {
+                "code": "https://github.com/jermiah/machine_learning/blob/main/README.md"
+              },
+              "tags": ["Classification", "XGBoost", "Ensemble Learning"]
             },
-            "tags": ["Classification", "XGBoost", "Ensemble Learning"]
-          },
-          {
-            "title": "Length of Stay Prediction",
-            "description": "Developed classification models using Random Forest, XGBoost, and CatBoost to estimate hospital stay duration and optimize healthcare resource allocation.",
-            "tags": ["Healthcare", "Random Forest", "CatBoost"]
-          },
-          {
-            "title": "Cool Wipes - Linear Programming",
-            "description": "Supply chain optimization using Gurobi for optimal plant location and demand satisfaction.",
-            "tags": ["Optimization", "Supply Chain", "Gurobi"]
-          }
-        ]
-      },
-      {
-        "name": "Deep Learning Projects",
-        "items": [
-          {
-            "title": "Speaker Recognition",
-            "description": "Speaker identification using ECAPA-TDNN embeddings and a hybrid approach combining classification (neural network) and verification (cosine similarity). Features Gradio demo, audio preprocessing with torchaudio, and SpeechBrain embeddings.",
-            "links": {
-              "code": "https://github.com/jermiah/deep_learning/blob/main/README.md"
+            {
+              "title": "Length of Stay Prediction",
+              "description": "Developed classification models using Random Forest, XGBoost, and CatBoost to estimate hospital stay duration and optimize healthcare resource allocation.",
+              "tags": ["Healthcare", "Random Forest", "CatBoost"]
             },
-            "tags": ["Audio", "ECAPA-TDNN", "SpeechBrain"]
-          },
-          {
-            "title": "Sentiment Classification (BERT)",
-            "description": "NLP classification using fine-tuned BERT on IMDb movie review sentiments. Built with HuggingFace Transformers, includes tokenization, attention masking, and model evaluation.",
-            "tags": ["NLP", "BERT", "Transformers"]
-          },
-          {
-            "title": "Image Classification",
-            "description": "Image recognition using transfer learning (ResNet). Features data augmentation, training visualization, and evaluation metrics for custom datasets.",
-            "tags": ["Computer Vision", "ResNet", "Transfer Learning"]
-          }
-        ]
-      }
-    ]
+            {
+              "title": "Cool Wipes - Linear Programming",
+              "description": "Supply chain optimization using Gurobi for optimal plant location and demand satisfaction.",
+              "tags": ["Optimization", "Supply Chain", "Gurobi"]
+            }
+          ]
+        },
+        {
+          "name": "Deep Learning Projects",
+          "items": [
+            {
+              "title": "Speaker Recognition",
+              "description": "Speaker identification using ECAPA-TDNN embeddings and a hybrid approach combining classification (neural network) and verification (cosine similarity). Features Gradio demo, audio preprocessing with torchaudio, and SpeechBrain embeddings.",
+              "links": {
+                "code": "https://github.com/jermiah/deep_learning/blob/main/README.md"
+              },
+              "tags": ["Audio", "ECAPA-TDNN", "SpeechBrain"]
+            },
+            {
+              "title": "Sentiment Classification (BERT)",
+              "description": "NLP classification using fine-tuned BERT on IMDb movie review sentiments. Built with HuggingFace Transformers, includes tokenization, attention masking, and model evaluation.",
+              "tags": ["NLP", "BERT", "Transformers"]
+            },
+            {
+              "title": "Image Classification",
+              "description": "Image recognition using transfer learning (ResNet). Features data augmentation, training visualization, and evaluation metrics for custom datasets.",
+              "tags": ["Computer Vision", "ResNet", "Transfer Learning"]
+            }
+          ]
+        }
+      ]
+    }
   },
   "research": {
     "title": "Research & Thesis",
@@ -540,5 +558,11 @@
     "text": "Recommend Me",
     "tooltip": "Each click makes my day brighter 🌟",
     "counter": "Total recommendations: {count}"
+  },
+  "tooltips": {
+    "hireMe": "Let's collaborate! Your satisfaction is my commitment 🤝",
+    "fork": "Love this portfolio? Fork it and make it yours! 🚀",
+    "theme": "Switch between light and dark — I adapt to your preference ✨",
+    "language": "Parlez-vous français? Switch languages seamlessly 🌍"
   }
 }

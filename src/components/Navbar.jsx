@@ -1,15 +1,16 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { FiSun, FiMoon, FiGlobe, FiMenu, FiX, FiGitBranch } from 'react-icons/fi';
+import { FiSun, FiMoon, FiGlobe, FiMenu, FiX, FiGitBranch, FiHome } from 'react-icons/fi';
 
 const Navbar = ({ isDark, toggleTheme }) => {
   const { t, i18n } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState('overview');
+  const [activeSection, setActiveSection] = useState('hero');
 
   const navItems = [
+    { id: 'hero', label: '', icon: FiHome },
     { id: 'overview', label: t('nav.overview') },
     { id: 'skills', label: t('nav.skills') },
     { id: 'education', label: t('nav.education') },
@@ -74,15 +75,23 @@ const Navbar = ({ isDark, toggleTheme }) => {
       >
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20 gap-4">
-            {/* Left: Hire Me Button */}
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => scrollToSection('contact')}
-              className="flex-shrink-0 px-4 md:px-6 py-2 md:py-2.5 rounded-lg font-semibold text-sm md:text-base bg-gradient-to-r from-primary-light to-accent-light dark:from-primary-dark dark:to-accent-dark text-white shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              Hire Me
-            </motion.button>
+            {/* Left: Hire Me Button with Tooltip */}
+            <div className="relative group">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => scrollToSection('contact')}
+                className="flex-shrink-0 px-4 md:px-6 py-2 rounded-lg font-semibold text-sm md:text-base bg-gradient-to-r from-primary-light to-accent-light dark:from-primary-dark dark:to-accent-dark text-white shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                Hire Me
+              </motion.button>
+              {/* Tooltip */}
+              <div className="absolute left-0 top-full mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50">
+                <div className="bg-gray-900 dark:bg-gray-800 text-white text-xs px-3 py-2 rounded-lg shadow-xl whitespace-nowrap">
+                  {t('tooltips.hireMe')}
+                </div>
+              </div>
+            </div>
 
             {/* Center: Desktop Navigation - No wrapping */}
             <div className="hidden lg:flex items-center space-x-1 flex-shrink-0">
@@ -95,47 +104,74 @@ const Navbar = ({ isDark, toggleTheme }) => {
                       ? 'bg-primary-light/10 dark:bg-primary-dark/10 text-primary-light dark:text-primary-dark'
                       : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
                   }`}
+                  aria-label={item.icon ? 'Home' : item.label}
                 >
-                  {item.label}
+                  {item.icon ? <item.icon size={18} /> : item.label}
                 </button>
               ))}
             </div>
 
             {/* Right: Fork, Theme, Language & Mobile Menu */}
             <div className="flex items-center space-x-2 flex-shrink-0">
-              {/* Fork Button - Far Right */}
-              <motion.a
-                href="https://github.com/jermiah/portfolio"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="hidden md:flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-primary-light to-accent-light dark:from-primary-dark dark:to-accent-dark text-white text-sm font-medium shadow-md hover:shadow-lg transition-all duration-300"
-                aria-label="Fork this website"
-              >
-                <FiGitBranch size={16} />
-                <span>Fork</span>
-              </motion.a>
+              {/* Fork Button with Tooltip */}
+              <div className="relative group">
+                <motion.a
+                  href="https://github.com/jermiah/portfolio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="hidden md:flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-primary-light to-accent-light dark:from-primary-dark dark:to-accent-dark text-white text-sm font-medium shadow-md hover:shadow-lg transition-all duration-300"
+                  aria-label="Fork this website"
+                >
+                  <FiGitBranch size={16} />
+                  <span>Fork</span>
+                </motion.a>
+                {/* Tooltip */}
+                <div className="absolute right-0 top-full mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50">
+                  <div className="bg-gray-900 dark:bg-gray-800 text-white text-xs px-3 py-2 rounded-lg shadow-xl whitespace-nowrap">
+                    {t('tooltips.fork')}
+                  </div>
+                </div>
+              </div>
 
-              <motion.button
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                onClick={toggleTheme}
-                className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
-                aria-label="Toggle theme"
-              >
-                {isDark ? <FiSun size={20} /> : <FiMoon size={20} />}
-              </motion.button>
+              {/* Theme Toggle with Tooltip */}
+              <div className="relative group">
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  onClick={toggleTheme}
+                  className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+                  aria-label="Toggle theme"
+                >
+                  {isDark ? <FiSun size={20} /> : <FiMoon size={20} />}
+                </motion.button>
+                {/* Tooltip */}
+                <div className="absolute right-0 top-full mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50">
+                  <div className="bg-gray-900 dark:bg-gray-800 text-white text-xs px-3 py-2 rounded-lg shadow-xl whitespace-nowrap">
+                    {t('tooltips.theme')}
+                  </div>
+                </div>
+              </div>
 
-              <motion.button
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                onClick={toggleLanguage}
-                className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
-                aria-label="Toggle language"
-              >
-                <FiGlobe size={20} />
-              </motion.button>
+              {/* Language Toggle with Tooltip */}
+              <div className="relative group">
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  onClick={toggleLanguage}
+                  className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+                  aria-label="Toggle language"
+                >
+                  <FiGlobe size={20} />
+                </motion.button>
+                {/* Tooltip */}
+                <div className="absolute right-0 top-full mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50">
+                  <div className="bg-gray-900 dark:bg-gray-800 text-white text-xs px-3 py-2 rounded-lg shadow-xl whitespace-nowrap">
+                    {t('tooltips.language')}
+                  </div>
+                </div>
+              </div>
 
               {/* Mobile Menu Button */}
               <motion.button
@@ -165,13 +201,14 @@ const Navbar = ({ isDark, toggleTheme }) => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`w-full text-left px-4 py-3 rounded-lg text-sm font-medium transition-all duration-300 ${
+                className={`w-full text-left px-4 py-3 rounded-lg text-sm font-medium transition-all duration-300 flex items-center gap-2 ${
                   activeSection === item.id
                     ? 'bg-primary-light/10 dark:bg-primary-dark/10 text-primary-light dark:text-primary-dark'
                     : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
                 }`}
               >
-                {item.label}
+                {item.icon && <item.icon size={18} />}
+                {item.label || 'Home'}
               </button>
             ))}
           </div>

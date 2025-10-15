@@ -6,13 +6,56 @@ import { FiChevronLeft, FiChevronRight, FiGithub, FiExternalLink } from 'react-i
 
 const ProjectCarousel = () => {
   const { t } = useTranslation();
-  const categories = t('projects.categories', { returnObjects: true });
+  const projectsData = t('projects', { returnObjects: true });
+  
+  // Level 1: Professional/Personal toggle
+  const [activeSection, setActiveSection] = useState('professional');
+  
+  // Level 2: Category within section
   const [activeCategory, setActiveCategory] = useState(0);
 
+  // Get current section data
+  const currentSection = projectsData[activeSection];
+  const categories = currentSection?.categories || [];
+
+  // Handle section change and reset category
+  const handleSectionChange = (section) => {
+    setActiveSection(section);
+    setActiveCategory(0);
+  };
+
   return (
-    <Section id="projects" title={t('projects.title')}>
-      {/* Category Tabs */}
-      <div className="flex flex-wrap gap-3 mb-8">
+    <Section id="projects" title={projectsData.title}>
+      {/* Level 1: Professional/Personal Toggle */}
+      <div className="flex justify-center gap-4 mb-6">
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={() => handleSectionChange('professional')}
+          className={`px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-300 ${
+            activeSection === 'professional'
+              ? 'bg-gradient-to-r from-primary-light to-accent-light dark:from-primary-dark dark:to-accent-dark text-white shadow-lg'
+              : 'bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-700'
+          }`}
+        >
+          {projectsData.professional?.title}
+        </motion.button>
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={() => handleSectionChange('personal')}
+          className={`px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-300 ${
+            activeSection === 'personal'
+              ? 'bg-gradient-to-r from-primary-light to-accent-light dark:from-primary-dark dark:to-accent-dark text-white shadow-lg'
+              : 'bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-700'
+          }`}
+        >
+          {projectsData.personal?.title}
+        </motion.button>
+      </div>
+
+      {/* Level 2: Category Tabs */}
+      <div className="flex flex-wrap gap-3 mb-8 justify-center">
         {categories.map((category, index) => (
           <motion.button
             key={index}
@@ -33,14 +76,14 @@ const ProjectCarousel = () => {
       {/* Projects Grid */}
       <AnimatePresence mode="wait">
         <motion.div
-          key={activeCategory}
+          key={`${activeSection}-${activeCategory}`}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.3 }}
           className="grid md:grid-cols-2 gap-6"
         >
-          {categories[activeCategory].items.map((project, index) => (
+          {categories[activeCategory]?.items?.map((project, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
@@ -101,6 +144,36 @@ const ProjectCarousel = () => {
               )}
             </motion.div>
           ))}
+
+          {/* Ongoing Work Section (for AI & Agent Projects) */}
+          {categories[activeCategory]?.ongoingWork && (
+            <>
+              <div className="col-span-full mt-8 mb-4">
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+                  Ongoing Work
+                </h3>
+              </div>
+              {categories[activeCategory].ongoingWork.map((project, index) => (
+                <motion.div
+                  key={`ongoing-${index}`}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: false }}
+                  transition={{ delay: index * 0.1 }}
+                  whileHover={{ y: -5 }}
+                  className="card p-6 border-l-4 border-accent-light dark:border-accent-dark"
+                >
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-3">
+                    {project.title}
+                  </h3>
+                  
+                  <p className="text-gray-700 dark:text-gray-300">
+                    {project.description}
+                  </p>
+                </motion.div>
+              ))}
+            </>
+          )}
         </motion.div>
       </AnimatePresence>
 
