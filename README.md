@@ -56,32 +56,25 @@ A modern, interactive, and bilingual portfolio website built with React, Vite, T
 - **[Firebase Setup](./FIREBASE.md)** - Configure Firebase for testimonials
 - **[Admin Panel](./ADMIN.md)** - Manage testimonials and admin features
 
-### Getting Started
-1. Read the **[Setup Guide](./SETUP.md)** to fork and customize the template
-2. Follow **[Firebase Setup](./FIREBASE.md)** if you want testimonials feature
-3. Check **[Admin Panel](./ADMIN.md)** to learn how to manage testimonials
-
 ---
 
 ## 🚀 Quick Start
 
 ```bash
-# 1. Fork this repository on GitHub (click the Fork button at the top right)
-
-# 2. Clone YOUR forked repository
+# Clone the repository
 git clone https://github.com/YOUR_USERNAME/portfolio.git
 cd portfolio
 
-# 3. Install dependencies
+# Install dependencies
 npm install
 
-# 4. Start development server
+# Start development server
 npm run dev
 
-# 5. Build for production
+# Build for production
 npm run build
 
-# 6. Deploy to GitHub Pages
+# Deploy to GitHub Pages
 npm run deploy
 ```
 
@@ -338,14 +331,6 @@ This project is open source and available under the MIT License. Feel free to us
 
 ---
 
-## 🙏 Acknowledgments
-
-- Design inspiration from [darpanjain.com](https://darpanjain.com), [mitchellsparrow.com](https://www.mitchellsparrow.com/), and [thepioneer.vc](https://thepioneer.vc/)
-- Built with modern web technologies and best practices
-- Animated with Framer Motion for smooth, professional interactions
-
----
-
 ## 📊 Performance
 
 - ⚡ Lighthouse Score: 95+ (Performance, Accessibility, Best Practices, SEO)
@@ -367,5 +352,3 @@ If this template helped you create your portfolio:
 ---
 
 **Made with ❤️ by Jermiah Jerome**
-
-*Your satisfaction is my work — enjoy it in your favorite language and theme!*
