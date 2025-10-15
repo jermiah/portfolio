@@ -89,20 +89,26 @@ const Overview = () => {
           </motion.div>
         )}
 
-        {/* Closing */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-center mt-12 space-y-4"
-        >
-          <p className="text-xl font-medium text-gray-800 dark:text-gray-200">
-            {t('overview.closing')}
-          </p>
-          <p className="text-gray-600 dark:text-gray-400 italic">
-            {t('overview.note')}
-          </p>
-        </motion.div>
+        {/* Closing - Only show if it exists in JSON */}
+        {(t('overview.closing', { defaultValue: '' }) || t('overview.note', { defaultValue: '' })) && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="text-center mt-12 space-y-4"
+          >
+            {t('overview.closing', { defaultValue: '' }) && (
+              <p className="text-xl font-medium text-gray-800 dark:text-gray-200">
+                {t('overview.closing')}
+              </p>
+            )}
+            {t('overview.note', { defaultValue: '' }) && (
+              <p className="text-gray-600 dark:text-gray-400 italic">
+                {t('overview.note')}
+              </p>
+            )}
+          </motion.div>
+        )}
       </div>
     </Section>
   );
