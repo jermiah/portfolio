@@ -4,10 +4,9 @@
     "name": "Jermiah Jerome",
     "title": "Ingénieur IA & ML",
     "titles": [
-      "Développeur de systèmes multi-agents",
-      "Chercheur en IA",
-      "Spécialiste des modèles de langage et du NLP",
-      "Innovateur en IA appliquée"
+      "Ingénieur IA & ML",
+      "Développeur de Systèmes Multi-Agents",
+      "Spécialiste des Modèles de Langage et du NLP"
     ],
     "typewriter": {
       "loop": true,
@@ -15,7 +14,7 @@
       "deleteSpeedMs": 50,
       "pauseMs": 2000
     },
-    "subtitle": "Toujours en apprentissage, toujours en déploiement — façonner l’avenir d’une IA efficace et d’agents intelligents.",
+    "subtitle": "Toujours en apprentissage, toujours en déploiement — façonner l'avenir de l'IA efficace et des agents intelligents.",
     "cta": {
       "github": "GitHub",
       "linkedin": "LinkedIn"
@@ -29,49 +28,48 @@
   "nav": {
     "overview": "Aperçu",
     "skills": "Compétences",
-    "education": "Éducation",
+    "education": "Formation",
     "experience": "Expérience",
     "certifications": "Certifications",
     "projects": "Projets",
-    "research": "Recherche et Thèse",
+    "research": "Recherche & Thèse",
     "opensource": "Open Source",
     "showcase": "Vitrine"
   },
   "contact": {
-    "title": "Vous souhaitez me recruter ?",
-    "subtitle": "Remplissez le formulaire ci-dessous et je vous enverrai un CV personnalisé pour votre poste.",
+    "title": "Envie de me recruter ?",
+    "subtitle": "Remplissez le formulaire ci-dessous et je vous enverrai un CV adapté à votre poste.",
     "email": "jermiah.jerome96@gmail.com",
     "phone": "+33 783719197"
   },
   "overview": {
     "title": "Aperçu",
     "content": [
-      "Je suis un ingénieur IA passionné par la création de systèmes compacts et efficaces combinant règles, recherche et génération. Mes intérêts couvrent le fine-tuning supervisé de petits modèles de langage, le raisonnement renforcé et l’orchestration multi-agent pour l’automatisation des processus orientés entreprise.",
-      "Mon expertise technique inclut le fine-tuning supervisé (SFT), l’apprentissage par renforcement basé sur les politiques, la génération augmentée par récupération (RAG) et l’orchestration de modèles via des agents MCP légers. Je conçois des systèmes rentables et interprétables pour le raisonnement appliqué et les flux conversationnels."
+      "Je suis un Ingénieur IA passionné par la construction de systèmes compacts et efficaces qui combinent règles, récupération et génération. Mes centres d'intérêt couvrent l'ajustement supervisé de petits modèles de langage, le raisonnement par renforcement, et l'orchestration multi-agents pour l'automatisation d'entreprise axée sur l'IA.",
+      "Mon expertise technique comprend l'ajustement supervisé (SFT), l'apprentissage par renforcement à gradient de politique, la génération augmentée par récupération (RAG), et l'orchestration d'agents. Je me concentre sur la conception de systèmes rentables et interprétables pour le raisonnement appliqué et les flux conversationnels."
     ],
     "highlights": {
-      "title": "Domaines Clés",
+      "title": "Domaines d'expertise principaux",
       "items": [
         {
-          "title": "Petits Modèles de Langage Efficaces",
-          "description": "Conception de modèles SLM compacts avec fine-tuning supervisé (SFT) et Group Relative Policy Optimization (GRPO) pour l’automatisation spécifique aux domaines."
+          "title": "Modèles de Langage Petits & Efficaces",
+          "description": "Conception de SLM compacts avec ajustement supervisé (SFT) et Group Relative Policy Optimization (GRPO) pour l'automatisation spécifique à un domaine."
         },
         {
-          "title": "Orchestration Multi-Agent",
-          "description": "Développement de systèmes d’agents modulaires et auditables pour la prise de décision contextuelle et l’automatisation des workflows."
+          "title": "Orchestration Multi-Agents",
+          "description": "Développement de systèmes d'agents modulaires et auditables pour la prise de décision contextuelle et l'automatisation des flux de travail."
         },
         {
-          "title": "Recherche en IA Hybride",
-          "description": "Exploration d’architectures « rules-first » avec recours aux LLMs pour améliorer la fiabilité, l’efficacité et l’interprétabilité en production."
+          "title": "Recherche IA Hybride",
+          "description": "Exploration d'architectures règles-d'abord et LLM-de-secours qui améliorent la fiabilité, la rentabilité et l'interprétabilité en production."
         }
       ]
     },
     "featured": {
-      "title": "Fait marquant de recherche",
-      "description": "Exploration du routage d’intentions et du raisonnement récursif dans les petits modèles"
+      "title": "Point de Recherche",
+      "description": "Explorer un agent de routage d'intention efficace et le raisonnement récursif dans les petits modèles"
     },
-    "closing": "Mon objectif est de relier l’ingénierie de l’IA appliquée à la recherche en raisonnement pratique — en construisant des systèmes plus rapides, plus sûrs et plus intelligents.",
-    "note": "Faites défiler ci-dessous pour découvrir mes projets récents, mes recherches et ma thèse de master."
+    "closing": "Mon objectif est de combler l'ingénierie IA appliquée avec des cas d'usage pratiques — construire des systèmes plus rapides, plus sûrs et plus intelligents."
   },
   "skills": {
     "title": "Compétences",
@@ -79,68 +77,76 @@
       {
         "name": "Expertise",
         "items": [
-          "Apprentissage automatique et apprentissage profond",
-          "Petits modèles de langage (SLMs)",
-          "Entraînement par renforcement (SFT, GRPO)",
-          "Génération augmentée par récupération (RAG)",
-          "Systèmes et orchestration multi-agents",
-          "Ingénierie et évaluation des prompts",
-          "IA appliquée à l’automatisation des processus métiers"
+          "Apprentissage Automatique & Deep Learning",
+          "Fine-Tuning & Ingénierie de Prompts",
+          "Traitement du Langage Naturel (NLP)",
+          "Modèles de Langage (LLM & SLM)",
+          "Apprentissage par Renforcement (GRPO)",
+          "Génération Augmentée par Récupération (RAG)",
+          "Systèmes Multi-Agents & Orchestration",
+          "Évaluation et Benchmarking",
+          "IA Appliquée pour l'Automatisation d'Entreprise"
         ]
       },
       {
-        "name": "Professionnelles",
+        "name": "Professionnel",
         "items": [
-          "Conception de systèmes IA",
-          "Rédaction technique et recherche",
-          "Collaboration interfonctionnelle",
-          "Gestion de projet et de produit",
-          "Résolution de problèmes et prise de décision"
+          "Conception de Systèmes IA",
+          "Recherche Technique & Prototypage",
+          "Collaboration Interfonctionnelle",
+          "Gestion de Produit",
+          "Résolution de Problèmes & Prise de Décision",
+          "Méthodologies Agile & Scrum",
+          "Analyse & Visualisation de Données",
+          "Communication Technique",
+          "Mentorat & Leadership"
         ]
       },
       {
-        "name": "Techniques",
+        "name": "Technique",
         "items": [
           "Python, R, SQL, NoSQL",
-          "PyTorch, Transformers, LangChain",
+          "PyTorch, Transformers, LangChain, LangGraph",
+          "FastAPI, Streamlit, Gradio",
+          "Arize, Weights & Biases, LangFuse",
           "LoRA, QLoRA, bitsandbytes",
-          "Git, Docker, Hugging Face, MCP",
-          "AWS, GCP, Databricks",
-          "Power BI, Tableau, Streamlit"
+          "Git, Docker, Hugging Face, MCP, A2A",
+          "AWS, GCP, Firebase",
+          "Power BI, Tableau, Excel Avancé"
         ]
       }
     ]
   },
   "education": {
-    "title": "Éducation",
+    "title": "Formation",
     "items": [
       {
-        "school": "emlyon business school × Université McGill",
+        "school": "emlyon business school × McGill University",
         "degree": "MSc en Data Science & Stratégie IA",
         "period": "2024–2025",
         "location": "Paris, France & Montréal, Canada",
-        "description": "emlyon : accréditée CGE, triple accréditation EQUIS/AMBA/AACSB. McGill : reconnue mondialement pour l’excellence en IA et data science.",
+        "description": "emlyon : Accrédité CGE, Triple Couronne EQUIS/AMBA/AACSB. McGill : reconnue mondialement pour l'excellence en IA et data science.",
         "links": {
-          "emlyon": "https://em-lyon.com/fr",
+          "emlyon": "https://em-lyon.com/en",
           "mcgill": "https://www.mcgill.ca/"
         }
       },
       {
         "school": "Thiagarajar School of Management",
-        "degree": "MBA en Finance et Analytique",
+        "degree": "MBA en Finance & Analytics",
         "period": "2019–2021",
         "location": "Madurai, Inde",
-        "description": "Classée parmi les meilleures écoles privées du sud de l’Inde.",
+        "description": "Classée parmi les meilleures écoles de commerce privées du Sud de l'Inde.",
         "links": {
           "school": "https://tsm.ac.in"
         }
       },
       {
-        "school": "Institut National de Technologie, Tiruchirappalli",
+        "school": "National Institute of Technology, Tiruchirappalli",
         "degree": "BTech en Informatique et Ingénierie",
         "period": "2014–2018",
         "location": "Tiruchirappalli, Inde",
-        "description": "Parmi les 10 meilleurs instituts d’ingénierie d’Inde (classement NIRF).",
+        "description": "L'un des 10 meilleurs instituts d'ingénierie de l'Inde (Classement NIRF).",
         "links": {
           "school": "https://www.nitt.edu/"
         }
@@ -152,59 +158,59 @@
     "items": [
       {
         "company": "Daijobu AI",
-        "position": "Ingénieur IA (stagiaire)",
+        "position": "Ingénieur IA (Stagiaire)",
         "period": "Juillet 2025 – Présent",
         "location": "Paris, France",
         "description": [
-          "Recherche sur des architectures de petits modèles de langage (SLM) efficaces pour le déploiement en production.",
-          "Développement de solutions ML complètes — pipelines de données, intégrations API et fine-tuning de modèles via SFT, GRPO et quantification.",
-          "Création d’un agent dynamique de type « questionnaire-to-solution » générant automatiquement des livrables personnalisés.",
-          "Collaboration avec les clients pour affiner les flux d’IA agentique alignés avec les principes d’IA responsable."
+          "Recherche sur les architectures de petits modèles de langage (SLM) efficaces pour le déploiement réel et l'efficacité du raisonnement.",
+          "Développement de solutions ML de bout en bout — pipelines de données, intégrations API, et ajustement de petits modèles avec SFT, GRPO et quantification.",
+          "Construction d'un framework d'agent dynamique questionnaire-à-solution qui capture les points de douleur métier et génère des livrables automatisés.",
+          "Collaboration avec les clients pour affiner les flux de travail d'IA agentique alignés sur les principes d'IA responsable et l'inférence rentable."
         ]
       },
       {
         "company": "Conversy AI",
-        "position": "Fondateur étudiant",
+        "position": "Fondateur Étudiant",
         "period": "Août 2025 – Présent",
         "location": "Paris, France",
         "description": [
-          "Conception d’une plateforme d’orchestration multi-agent basée sur MCP pour le routage dynamique des tâches, l’évaluation et l’observabilité.",
-          "Direction d’une équipe internationale pour construire une infrastructure SaaS évolutive permettant aux PME de créer leurs propres agents IA en quelques minutes.",
-          "Développement de fonctionnalités agentiques comme le routage d’intentions, la recherche produit RAG et l’automatisation de la réservation et du paiement.",
-          "Recherche sur les architectures hybrides règles + LLM pour l’automatisation conversationnelle intelligente."
+          "Conception d'une plateforme d'orchestration multi-agents utilisant des serveurs MCP pour le routage dynamique des tâches, l'évaluation et l'observabilité.",
+          "Direction d'une équipe de développement internationale pour construire une infrastructure SaaS évolutive permettant aux petites entreprises de créer des agents IA personnalisés en quelques minutes.",
+          "Développement de fonctionnalités agentiques telles que le routage d'intention, la recherche de produits basée sur RAG, et les flux de réservation et paiement automatisés.",
+          "Recherche sur les architectures hybrides règles + LLM pour l'automatisation consciente de l'intention et le commerce conversationnel."
         ]
       },
       {
         "company": "HSBC",
-        "position": "Assistant Manager – Gestion de produit",
+        "position": "Assistant Manager – Gestion de Produit",
         "period": "Décembre 2022 – Août 2024",
         "location": "Bangalore, Inde",
         "description": [
-          "Direction de projets d’automatisation et d’assurance qualité des données pour la conformité réglementaire mondiale.",
-          "Réduction des problèmes de données de 80 % grâce à l’optimisation des workflows et à l’automatisation.",
-          "Conception de tableaux de bord KPI automatisés, économisant 0,2 ETP et améliorant la transparence des processus.",
-          "Optimisation des workflows JIRA pour la gestion des incidents et le suivi des processus de conservation."
+          "Direction de projets d'automatisation et d'assurance pour la qualité des données et la conformité réglementaire dans la surveillance mondiale des communications électroniques.",
+          "Réduction de 80% des problèmes de données grâce à l'optimisation des flux de travail et l'automatisation des processus sur deux produits clés.",
+          "Conception et déploiement de tableaux de bord KPI automatisés, économisant 0,2 ETP par an et améliorant la transparence pour les équipes mondiales.",
+          "Optimisation des flux de travail JIRA pour la gestion des problèmes et le suivi des dépositaires, améliorant l'efficacité opérationnelle de 20%."
         ]
       },
       {
         "company": "BNP Paribas GSO",
-        "position": "Associé Qualité des Données",
+        "position": "Associé Qualité de Données",
         "period": "Juin 2021 – Octobre 2022",
         "location": "Chennai, Inde",
         "description": [
-          "Amélioration de la précision des données de référence grâce au profilage et à la mise en place de processus qualité.",
-          "Automatisation de workflows réduisant de 95 % les erreurs et de 80 % le temps de traitement, récompensée par le prix Kaizen pour l’innovation.",
-          "Création de tableaux de bord pour le suivi des indicateurs de qualité des données à l’échelle mondiale."
+          "Amélioration de la précision des données de référence commerciales grâce au profilage de données, atteignant 100% de précision de calcul NAV.",
+          "Automatisation des flux de travail réduisant le temps de traitement manuel de 80% et les erreurs de 95%, remportant le Prix Kaizen pour l'Innovation.",
+          "Construction de tableaux de bord pour surveiller les KPI de qualité des données et améliorer la visibilité pour les parties prenantes mondiales."
         ]
       },
       {
         "company": "Enprou Technologies India Pvt. Ltd.",
-        "position": "Stagiaire en finance de projet",
+        "position": "Stagiaire Finance de Projet",
         "period": "Mai 2018 – Juin 2019",
         "location": "Trichy, Inde",
         "description": [
-          "Analyse des flux de trésorerie et identification de mesures d’économie réduisant les coûts de 15 %. ",
-          "Optimisation du suivi financier et de l’approvisionnement pour une exécution fluide des projets."
+          "Analyse des flux de trésorerie et du budget pour identifier les mesures d'économie, réduisant les dépenses du projet de 15%.",
+          "Rationalisation des processus d'approvisionnement et de suivi financier pour assurer une exécution fluide du projet."
         ]
       }
     ]
@@ -225,17 +231,392 @@
       {
         "name": "AWS Machine Learning Specialty",
         "issuer": "Amazon Web Services",
-        "status": "Prévu pour mai 2025"
+        "status": "Bientôt"
       }
     ]
   },
+  "projects": {
+    "title": "Projets",
+    "professional": {
+      "title": "Professionnel",
+      "categories": [
+        {
+          "name": "Projets en cours",
+          "categories": [
+            {
+              "name": "Projets d'Agents",
+              "items": [
+                {
+                  "title": "ConversyAI (SaaS Multi-Agents)",
+                  "description": "Une plateforme de commerce conversationnel multi-agents avec routage d'intention, recherche de produits alimentée par RAG, et flux de réservation automatisés. Construit avec LangChain, Qdrant et FastAPI.",
+                  "tags": ["Multi-Agent", "RAG", "LangChain", "FastAPI", "Qdrant"]
+                },
+                {
+                  "title": "Agent Organisateur de Documents",
+                  "description": "Un agent intelligent qui catégorise, étiquette et organise automatiquement les documents à l'aide de modèles de langage visuel et de recherche sémantique. Prend en charge les PDF, images et fichiers texte.",
+                  "tags": ["Agent", "VLM", "Document AI", "Automatisation"]
+                }
+              ]
+            },
+            {
+              "name": "Recherche & Développement",
+              "items": [
+                {
+                  "title": "Agent de Routage d'Intention pour l'E-Commerce",
+                  "description": "Construction d'un système hybride règles-d'abord + LLM de secours pour le commerce conversationnel avec une latence inférieure à 100ms.",
+                  "tags": ["Routage d'Intention", "IA Hybride", "Faible Latence"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Projets en Entreprise",
+          "items": [
+            {
+              "title": "Copilote de Stratégie IA @ Prosol",
+              "description": "Un assistant alimenté par Streamlit + LLM pour la stratégie produit de détail utilisant RAG, apprentissage non supervisé, boucles de retour et ingénierie de prompts avancée.",
+              "links": {
+                "code": "https://github.com/jermiah/Product-Strategy-App/blob/main/README.md",
+                "demo": "https://www.linkedin.com/posts/jermiah-jerome_ai-retail-streamlit-activity-7313457551096827904-baIb"
+              },
+              "tags": ["LLM", "RAG", "Streamlit", "Stratégie Produit"]
+            },
+            {
+              "title": "Recherche Livre Blanc d'Entreprise @ BNP Paribas",
+              "description": "Adoption Stratégique du RAG d'Entreprise Multimodal Open-Source : Défis, KPI et Impact Commercial. Focus sur l'évaluation des cas d'usage, des benchmarks de performance et des parcours d'implémentation pour les agents IA d'entreprise dans la banque.",
+              "tags": ["Recherche", "RAG", "IA d'Entreprise", "Banque"]
+            }
+          ]
+        },
+        {
+          "name": "Projets IA & Agents",
+          "items": [
+            {
+              "title": "Agent de Prospection & Diagnostic",
+              "description": "Un agent de prospection et de diagnostic alimenté par l'IA qui engage les visiteurs du site Web à travers un questionnaire intelligent pour capturer les besoins commerciaux et générer automatiquement des propositions de solutions IA sur mesure. Il exploite le raisonnement structuré et des modèles spécifiques au domaine pour analyser les réponses, identifier les points de douleur, faire correspondre les cas d'usage pertinents et produire un résumé PDF personnalisé avec les solutions proposées et envoyé par e-mail.",
+              "links": {
+                "code": "https://github.com/jermiah/rfp-prospecting-agent"
+              },
+              "tags": ["B2B", "CoT", "Raisonnement", "Agent"]
+            },
+            {
+              "title": "Modèle de Génération OQL (Fine-Tuning & GRPO)",
+              "description": "Déploiement d'un petit modèle de langage compact affiné pour générer des requêtes OQL optimisées à partir de schémas structurés et de demandes en langage naturel. Le projet implique un ajustement supervisé et un renforcement GRPO pour améliorer le raisonnement logique, l'exactitude des requêtes et l'efficacité. Il explore l'optimisation avancée de l'inférence en utilisant la quantification et des moteurs haute performance comme vLLM pour les environnements GPU, permettant une génération OQL rapide et précise à travers des schémas variés, différentes langues et des requêtes complexes.",
+              "links": {
+                "code": "https://github.com/jermiah/oql-generation-model"
+              },
+              "tags": ["LLM", "Fine-Tuning", "GRPO", "OQL", "Inférence", "Quantification"]
+            }
+          ]
+        }
+      ]
+    },
+    "personal": {
+      "title": "Personnel",
+      "categories": [
+        {
+          "name": "Projets en cours",
+          "categories": [
+            {
+              "name": "Projets IA",
+              "items": [
+                {
+                  "title": "Assistant d'Écriture IA",
+                  "description": "Développement d'un assistant d'écriture contextuel qui aide avec la documentation technique, les articles de blog et les articles de recherche.",
+                  "tags": ["NLP", "Écriture", "Productivité"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Projets IA",
+          "items": [
+            {
+              "title": "Système Intelligent de Q&R",
+              "description": "Développement d'un pipeline intelligent de questions-réponses en cybersécurité capable de prédire des réponses précises et personnalisées à des questions de conformité non vues. Le système intègre une recherche par correspondance exacte, une classification par régression logistique, une récupération hybride (BM25 + FAISS), un reclassement par encodeur croisé, et une génération de réponses LLM contrôlée utilisant Mistral-7B. Il garantit des réponses factuelles et sans hallucination grâce à un reclassement multi-étapes et une inférence contextuelle, atteignant >90% de précision sur les prédictions spécifiques aux utilisateurs.",
+              "links": {
+                "code": "https://github.com/jermiah/LLM-and-RAG/blob/main/QA_Intelligent_System/README.md"
+              },
+              "tags": ["RAG", "Gestion des Connaissances", "IA Personnelle"]
+            },
+            {
+              "title": "Cogniscope – Suite Unifiée d'Évaluation LLM & VLM",
+              "description": "Une suite légère de benchmarking et d'analyse pour évaluer les grands modèles de langage et de vision-langage via OpenRouter. Cogniscope fournit un outil unifié pour évaluer la qualité de sortie du modèle, la force de raisonnement, la précision de transcription audio/vidéo et la compréhension multimodale. Il permet des comparaisons détaillées modèle-à-modèle avec suivi des coûts au niveau des tâches, analyse de l'utilisation des tokens, aperçus de latence et visualisations de capacités — le tout dans un tableau de bord transparent.",
+              "links": {
+                "code": "https://github.com/jermiah/Cogniscope"
+              },
+              "tags": ["OpenRouter", "LLM", "VLM", "Benchmarking", "Évaluation", "Métriques IA", "Comparaison de Modèles"]
+            }
+          ]
+        },
+        {
+          "name": "Projets Machine Learning & Data Science",
+          "items": [
+            {
+              "title": "Prédiction de Faillite",
+              "description": "Construction de modèles de classification utilisant des techniques d'ensemble (Régression Logistique + XGBoost) pour détecter la faillite dans des ensembles de données déséquilibrés.",
+              "links": {
+                "code": "https://github.com/jermiah/machine_learning/blob/main/README.md"
+              },
+              "tags": ["Classification", "XGBoost", "Apprentissage d'Ensemble"]
+            },
+            {
+              "title": "Prédiction de Durée de Séjour",
+              "description": "Développement de modèles de classification utilisant Random Forest, XGBoost et CatBoost pour estimer la durée de séjour hospitalier et optimiser l'allocation des ressources de santé.",
+              "tags": ["Santé", "Random Forest", "CatBoost"]
+            },
+            {
+              "title": "Cool Wipes - Programmation Linéaire",
+              "description": "Optimisation de la chaîne d'approvisionnement utilisant Gurobi pour l'emplacement optimal des usines et la satisfaction de la demande.",
+              "tags": ["Optimisation", "Chaîne d'Approvisionnement", "Gurobi"]
+            }
+          ]
+        },
+        {
+          "name": "Projets Deep Learning",
+          "items": [
+            {
+              "title": "Reconnaissance du Locuteur",
+              "description": "Identification du locuteur utilisant des embeddings ECAPA-TDNN et une approche hybride combinant classification (réseau neuronal) et vérification (similarité cosinus). Comprend une démo Gradio, prétraitement audio avec torchaudio, et embeddings SpeechBrain.",
+              "links": {
+                "code": "https://github.com/jermiah/deep_learning/blob/main/README.md"
+              },
+              "tags": ["Audio", "ECAPA-TDNN", "SpeechBrain"]
+            },
+            {
+              "title": "Classification de Sentiment (BERT)",
+              "description": "Classification NLP utilisant BERT affiné sur les sentiments de critiques de films IMDb. Construit avec HuggingFace Transformers, inclut la tokenisation, le masquage d'attention et l'évaluation du modèle.",
+              "tags": ["NLP", "BERT", "Transformers"]
+            },
+            {
+              "title": "Image Classification",
+              "description": "Reconnaissance d'images utilisant le transfer learning (ResNet). Comprend l'augmentation de données, la visualisation de l'entraînement et les métriques d'évaluation pour des ensembles de données personnalisés.",
+              "tags": ["Vision par Ordinateur", "ResNet", "Transfer Learning"]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "research": {
+    "title": "Recherche & Thèse",
+    "categories": [
+      {
+        "name": "Travaux en cours",
+        "items": [
+          {
+            "title": "Tiny Recursive Reasoning Lab",
+            "description": "Implémentation du raisonnement récursif pour les petits modèles utilisant PyTorch + Hugging Face, améliorant la profondeur sans augmenter le calcul. Explorer comment les modèles compacts peuvent atteindre un raisonnement plus profond grâce au raffinement itératif.",
+            "links": {
+              "code": "https://github.com/jermiah/TinyRecursiveReasoningLab"
+            },
+            "tags": ["PyTorch", "Raisonnement Récursif", "SLM", "Recherche"]
+          },
+          {
+            "title": "IA Frugale : Construire un SLM de Raisonnement Sur Appareil Efficace",
+            "description": "Explorer le raisonnement économe en énergie et respectueux de la vie privée pour les systèmes IA sur appareil utilisant des architectures de petits modèles. Focus sur la quantification, l'élagage et la distillation de connaissances pour le déploiement en périphérie.",
+            "tags": ["IA en Périphérie", "Quantification", "Confidentialité", "Efficacité", "Recherche", "Raisonnement Récursif"]
+          },
+          {
+            "title": "Thèse de Master : Agent de Routage d'Intention pour le Commerce Conversationnel",
+            "description": "Conception d'un agent de routage d'intention hybride, règles-d'abord pour le commerce conversationnel qui classifie et exécute les intentions utilisateur (RAG, commande, réservation) avec un LLM léger de secours. Le système met l'accent sur l'auditabilité, la faible latence et le raisonnement rentable.",
+            "tags": ["Routage d'Intention", "IA Hybride", "Commerce Conversationnel", "Thèse"]
+          }
+        ]
+      },
+      {
+        "name": "Travaux terminés",
+        "items": []
+      }
+    ]
+  },
+  "opensource": {
+    "title": "Open Source",
+    "categories": [
+      {
+        "name": "Travaux terminés",
+        "items": [
+          {
+            "title": "Goose CLI – Édition Améliorée",
+            "description": "Un assistant de codage basé sur Rust améliorant l'ingénierie de prompts, les métriques système et l'observabilité runtime pour les agents IA. Comprend des prompts système/sous-agent v2, des métriques au niveau fichier et des prompts runtime interchangeables.",
+            "links": {
+              "code": "https://github.com/jermiah/goose_jerry"
+            },
+            "tags": ["Rust", "Ingénierie de Prompts", "Métriques", "CLI"]
+          }
+        ]
+      },
+      {
+        "name": "Travaux en cours",
+        "items": [
+          {
+            "title": "Conversy LLM SDK",
+            "description": "Un SDK léger pour les pipelines RAG et l'orchestration multi-agents avec recherche vectorielle, embeddings adaptatifs et traçage Phoenix. Architecture multi-tenant avec traducteur de filtre Qdrant et adaptateurs de récupération.",
+            "links": {
+              "code": "https://github.com/jermiah/conversy-sdk"
+            },
+            "tags": ["SDK", "RAG", "Traçage", "Qdrant", "Multi-Agent"]
+          }
+        ]
+      }
+    ]
+  },
+  "thesis": {
+    "title": "Thèse de Master",
+    "subtitle": "Un Agent de Routage d'Intention pour le Commerce Conversationnel",
+    "university": "emlyon business school",
+    "year": "2025",
+    "description": "Conception d'un agent de routage d'intention hybride, règles-d'abord pour le commerce conversationnel qui classifie et exécute les intentions utilisateur (RAG, commande, réservation) avec un LLM léger de secours. Le système met l'accent sur l'auditabilité, la faible latence et le raisonnement rentable.",
+    "objectives": [
+      "Développer un routeur compact utilisant des règles déterministes et un petit modèle de secours pour les cas ambigus.",
+      "Normaliser l'extraction d'entités (dates, quantités, contacts) via des méthodes hybrides règle–LLM.",
+      "Intégrer une couche mini RAG pour les données PDF et tableur afin de gérer la récupération d'informations sur les produits et services.",
+      "Évaluer l'agent pour la précision du routage, le succès de bout en bout, la latence, le coût et les métriques de sécurité."
+    ],
+    "keywords": [
+      "Routage d'Intention",
+      "Systèmes IA Hybrides",
+      "Commerce Conversationnel",
+      "Logique Règles-d'Abord",
+      "LLM de Secours",
+      "Auditabilité & Évaluation"
+    ],
+    "expectedContributions": [
+      "Un agent de routage petit et auditable atteignant une haute précision et une rentabilité.",
+      "Ensembles de données réutilisables et scripts d'évaluation pour les tâches de routage conversationnel.",
+      "Preuves soutenant les architectures hybrides règles-d'abord + petit-LLM pour des flux de travail IA fiables."
+    ],
+    "link": "https://github.com/jermiah"
+  },
+  "openSource": {
+    "title": "Contributions Open-Source",
+    "items": [
+      {
+        "project": "Conversy LLM SDK (À venir)",
+        "repo": "https://github.com/jermiah",
+        "tags": ["SDK", "RAG", "Traçage", "Qdrant"],
+        "highlights": [
+          "Architecture multi-tenant avec traçage Phoenix",
+          "Traducteur de filtre Qdrant et adaptateurs de récupération",
+          "Embeddings adaptatifs pour le raisonnement vectoriel"
+        ]
+      },
+      {
+        "project": "Goose CLI – Édition Améliorée",
+        "repo": "https://github.com/jermiah/goose_jerry",
+        "tags": ["Rust", "Ingénierie de Prompts", "Métriques", "CLI"],
+        "highlights": [
+          "Prompts système/sous-agent v2",
+          "Métriques et analyses au niveau fichier",
+          "Prompts runtime interchangeables via variables d'environnement"
+        ]
+      },
+      {
+        "project": "Tiny Recursive Reasoning Lab",
+        "repo": "https://github.com/jermiah/TinyRecursiveReasoningLab",
+        "tags": ["PyTorch", "Raisonnement Récursif", "SLM"],
+        "highlights": [
+          "Implémente le raisonnement TRM pour les petits modèles",
+          "Intégré avec Hugging Face Transformers",
+          "Focus sur l'efficacité et la qualité du raisonnement"
+        ]
+      }
+    ]
+  },
+  "showcase": {
+    "title": "Vitrine",
+    "awards": {
+      "title": "Récompenses",
+      "items": [
+        "Prix Antares – BNP Paribas : Performance Exceptionnelle",
+        "Esprit de Kaizen – Automatisation de Processus",
+        "Esprit de Kaizen – Rapport de Qualité de Données",
+        "Boursier NTSE (Inde) – Prix NCERT pour l'Excellence Académique"
+      ]
+    },
+    "community": {
+      "title": "Bâtisseur de Communauté",
+      "description": "Créateur de la Communauté IA & Tech de Paris",
+      "link": "https://www.linkedin.com/posts/jermiah-jerome_paris-ai-tech-community-members-activity-7303817496346730496-QNPT"
+    },
+    "hackathons": {
+      "title": "Hackathons & Défis",
+      "items": [
+        {
+          "name": "🏆 Gagnant – Hackathon Blackbox AI × 42AI Agents",
+          "link": "https://www.linkedin.com/posts/jermiah-jerome_42ai-hackathon-artificialintelligence-activity-7370742726318845952-EmpO?utm_source=share&utm_medium=member_desktop&rcm=ACoAACq09WUBzILj3ZIoG_SJNGbuRMhzVPyVcHs"
+        },
+        {
+          "name": "🏆 Gagnant – Paris Open Build (Mistral + Windsurf)",
+          "link": "https://www.linkedin.com/posts/jermiah-jerome_ai-vibecoding-aiagents-activity-7368768781667467264-7_at?utm_source=share&utm_medium=member_desktop&rcm=ACoAACq09WUBzILj3ZIoG_SJNGbuRMhzVPyVcHs"
+        },
+        {
+          "name": "Hackathon IA Novartis",
+          "link": ""
+        },
+        {
+          "name": "Défi IA Sopra Steria",
+          "link": ""
+        },
+        {
+          "name": "L'Oréal Brandstorm 2025",
+          "link": ""
+        }
+      ]
+    },
+    "events": {
+      "title": "Ateliers & Événements",
+      "attended": {
+        "title": "Participé",
+        "items": [
+          {
+            "name": "Atelier Google Gemini",
+            "link": ""
+          },
+          {
+            "name": "AWS Summit Paris",
+            "link": ""
+          },
+          {
+            "name": "Web Summit Lisbonne",
+            "link": ""
+          },
+          {
+            "name": "Meetup Développeurs IA – Station F",
+            "link": ""
+          },
+          {
+            "name": "État Français de l'IA – Google Paris",
+            "link": ""
+          }
+        ]
+      },
+      "conducted": {
+        "title": "Animé",
+        "items": [
+          {
+            "name": "Daijobu AI Moment : Intervention sur l'Avenir de l'IA & du Logiciel",
+            "link": "https://www.linkedin.com/posts/jermiah-jerome_ai-slm-llm-activity-7377282309630332928-vX0m?utm_source=share&utm_medium=member_desktop&rcm=ACoAACq09WUBzILj3ZIoG_SJNGbuRMhzVPyVcHs"
+          }
+        ]
+      }
+    }
+  },
   "footer": {
-    "message": "⚡ Construire une IA raisonneuse, rapide, fiable et explicable.",
-    "copyright": "© 2025 Jermiah Jerome. Construit avec React, Vite et ❤️"
+    "message": "⚡ Construire une IA efficace en raisonnement, rapide, fiable et explicable.",
+    "copyright": "© 2025 Jermiah Jerome. Construit avec React, Vite, et ❤️"
   },
   "likeButton": {
     "text": "Recommandez-moi",
     "tooltip": "Chaque clic illumine ma journée 🌟",
-    "counter": "Nombre total de recommandations : {count}"
+    "counter": "Total de recommandations : {count}"
+  },
+  "tooltips": {
+    "hireMe": "Collaborons ! Votre satisfaction est mon engagement 🤝",
+    "fork": "Vous aimez ce portfolio ? Forkez-le et appropriez-vous-le ! 🚀",
+    "theme": "Basculez entre clair et sombre — je m'adapte à vos préférences ✨",
+    "language": "Parlez-vous français ? Changez de langue de manière transparente 🌍"
   }
 }
