@@ -3,7 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
 import { FiHeart, FiEdit3 } from 'react-icons/fi';
-import { incrementRecommendations, subscribeToRecommendations, subscribeToTestimonials } from '../firebase';
+import { incrementRecommendations, subscribeToRecommendations, subscribeToTestimonials, hasUserRecommended } from '../firebase';
+import { getOrCreateFingerprint } from '../utils/fingerprint';
 import TestimonialForm from './TestimonialForm';
 
 const LikeButton = () => {
@@ -40,8 +41,9 @@ const LikeButton = () => {
   }, []);
 
   const handleLike = async () => {
-    // Check if user has already recommended
+    // STEP 1: Check localStorage FIRST (fast, instant check)
     if (hasRecommended) {
+      console.log('🚫 Blocked by localStorage: User already recommended');
       setShowMessage(true);
       setTimeout(() => setShowMessage(false), 3000);
       return;
@@ -52,10 +54,29 @@ const LikeButton = () => {
     setIsLoading(true);
 
     try {
-      // Increment count in Firebase
-      const newCount = await incrementRecommendations();
+      // STEP 2: Check Firebase fingerprint (server-side validation)
+      const fingerprint = getOrCreateFingerprint();
+      console.log('🔐 Checking fingerprint:', fingerprint);
+
+      const alreadyRecommendedInFirebase = await hasUserRecommended(fingerprint);
+
+      if (alreadyRecommendedInFirebase) {
+        console.log('🚫 Blocked by Firebase: User already recommended');
+        // Update localStorage to reflect Firebase state
+        setHasRecommended(true);
+        localStorage.setItem('hasRecommended', 'true');
+
+        // Show message
+        setShowMessage(true);
+        setTimeout(() => setShowMessage(false), 3000);
+        return;
+      }
+
+      // STEP 3: User is new - Add recommendation
+      console.log('✅ New user - Adding recommendation');
+      const newCount = await incrementRecommendations(fingerprint);
       setLikeCount(newCount);
-      
+
       // Mark user as having recommended (localStorage)
       setHasRecommended(true);
       localStorage.setItem('hasRecommended', 'true');
@@ -90,8 +111,17 @@ const LikeButton = () => {
       }, 400);
     } catch (error) {
       console.error('Failed to increment recommendations:', error);
-      // Show error message
-      alert('Failed to save recommendation. Please check your internet connection and Firebase configuration.');
+
+      // Handle specific error for duplicate attempts
+      if (error.message === 'USER_ALREADY_RECOMMENDED') {
+        setHasRecommended(true);
+        localStorage.setItem('hasRecommended', 'true');
+        setShowMessage(true);
+        setTimeout(() => setShowMessage(false), 3000);
+      } else {
+        // Show error message for other errors
+        alert('Failed to save recommendation. Please check your internet connection and Firebase configuration.');
+      }
     } finally {
       setIsLoading(false);
     }

@@ -53,6 +53,7 @@ A modern, interactive, and bilingual portfolio website built with React, Vite, T
 
 ### Quick Links
 - **[Setup Guide](./SETUP.md)** - Fork, customize, and deploy your portfolio
+- **[Deployment Guide](./DEPLOYMENT.md)** - Deploy from any branch to GitHub Pages
 - **[Firebase Setup](./FIREBASE.md)** - Configure Firebase for testimonials
 - **[Admin Panel](./ADMIN.md)** - Manage testimonials and admin features
 
@@ -123,6 +124,7 @@ portfolio/
 ├── firebase.json                    # Firebase configuration
 ├── README.md                        # This file
 ├── SETUP.md                         # Setup and customization guide
+├── DEPLOYMENT.md                    # Deployment guide (deploy from any branch)
 ├── FIREBASE.md                      # Firebase setup guide
 └── ADMIN.md                         # Admin panel guide
 ```
