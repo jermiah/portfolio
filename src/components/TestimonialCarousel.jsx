@@ -70,7 +70,7 @@ const TestimonialCarousel = () => {
 
   return (
     <>
-      <div className="relative overflow-hidden flex items-start">
+      <div className="relative overflow-hidden flex items-stretch min-h-[200px] sm:min-h-[220px]">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentIndex}
@@ -82,18 +82,18 @@ const TestimonialCarousel = () => {
             dragConstraints={{ left: 0, right: 0 }}
             dragElastic={0.3}
             onDragEnd={handleDragEnd}
-            className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-900 rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-xl cursor-grab active:cursor-grabbing w-full"
+            className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-900 rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-xl cursor-grab active:cursor-grabbing w-full flex flex-col"
           >
             {/* Quote Icon */}
             <div className="text-3xl sm:text-4xl text-blue-500/20 dark:text-blue-400/20 font-serif mb-2 sm:mb-3">"</div>
 
             {/* Testimonial Text */}
-            <p className="text-gray-700 dark:text-gray-300 text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4">
+            <p className="text-gray-700 dark:text-gray-300 text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4 flex-grow line-clamp-4 sm:line-clamp-5">
               {currentTestimonial.text}
             </p>
 
             {/* Author Info */}
-            <div className="flex items-center justify-between gap-2">
+            <div className="flex items-center justify-between gap-2 mt-auto">
               <div className="flex-1 min-w-0">
                 <h4 className="font-semibold text-gray-900 dark:text-white text-xs sm:text-sm truncate">
                   {currentTestimonial.name}
