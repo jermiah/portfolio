@@ -1,5 +1,6 @@
 import { initializeApp } from 'firebase/app';
-import { getDatabase, ref, runTransaction, onValue, push, set, query, orderByChild, limitToLast } from 'firebase/database';
+import { getDatabase, ref, runTransaction, onValue, push, set, query, orderByChild, limitToLast, get } from 'firebase/database';
+import { getAuth } from 'firebase/auth';
 
 // Firebase configuration
 // TODO: Replace with your Firebase project credentials
@@ -17,10 +18,12 @@ const firebaseConfig = {
 // Initialize Firebase
 let app;
 let database;
+let auth;
 
 try {
   app = initializeApp(firebaseConfig);
   database = getDatabase(app);
+  auth = getAuth(app);
   console.log('✅ Firebase initialized successfully');
 } catch (error) {
   console.error('❌ Firebase initialization error:', error);
@@ -30,27 +33,74 @@ try {
 
 // References to database paths
 const recommendationsRef = database ? ref(database, 'recommendations/count') : null;
+const recommendationsUsersRef = database ? ref(database, 'recommendations/users') : null;
 const visitorsRef = database ? ref(database, 'visitors/count') : null;
 const testimonialsRef = database ? ref(database, 'testimonials') : null;
 
 /**
- * Increment the recommendation count in Firebase
+ * Check if a user fingerprint has already recommended
+ * @param {string} fingerprint - The user's browser fingerprint
+ * @returns {Promise<boolean>} True if user has already recommended
+ */
+export const hasUserRecommended = async (fingerprint) => {
+  if (!recommendationsUsersRef) {
+    console.error('Firebase not initialized');
+    return false;
+  }
+
+  try {
+    const userRef = ref(database, `recommendations/users/${fingerprint}`);
+    const snapshot = await get(userRef);
+    const exists = snapshot.exists();
+
+    if (exists) {
+      console.log('🔍 User fingerprint found in Firebase:', fingerprint);
+    } else {
+      console.log('✨ New user fingerprint:', fingerprint);
+    }
+
+    return exists;
+  } catch (error) {
+    console.error('❌ Error checking user fingerprint:', error);
+    return false;
+  }
+};
+
+/**
+ * Increment the recommendation count in Firebase with fingerprint tracking
+ * @param {string} fingerprint - The user's browser fingerprint
  * @returns {Promise<number>} The new count value
  */
-export const incrementRecommendations = async () => {
-  if (!recommendationsRef) {
+export const incrementRecommendations = async (fingerprint) => {
+  if (!recommendationsRef || !recommendationsUsersRef) {
     console.error('Firebase not initialized');
     throw new Error('Firebase not configured. Please see FIREBASE_SETUP_GUIDE.md');
   }
 
   try {
+    // Double-check if user already recommended (server-side validation)
+    const alreadyRecommended = await hasUserRecommended(fingerprint);
+    if (alreadyRecommended) {
+      console.warn('⚠️ User already recommended (fingerprint found)');
+      throw new Error('USER_ALREADY_RECOMMENDED');
+    }
+
+    // Increment the count
     const result = await runTransaction(recommendationsRef, (currentValue) => {
       // Increment the current value, or start at 1 if null
       return (currentValue || 0) + 1;
     });
 
     if (result.committed) {
+      // Store the user fingerprint with timestamp
+      const userRef = ref(database, `recommendations/users/${fingerprint}`);
+      await set(userRef, {
+        timestamp: Date.now(),
+        liked: true
+      });
+
       console.log('✅ Recommendation count incremented:', result.snapshot.val());
+      console.log('🔐 User fingerprint stored:', fingerprint);
       return result.snapshot.val();
     } else {
       throw new Error('Transaction not committed');
@@ -276,4 +326,4 @@ export const subscribeToTestimonials = (callback, limit = 20) => {
   });
 };
 
-export { database };
+export { database, auth };
