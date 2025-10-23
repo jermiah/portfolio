@@ -1,5 +1,6 @@
 import { initializeApp } from 'firebase/app';
 import { getDatabase, ref, runTransaction, onValue, push, set, query, orderByChild, limitToLast, get } from 'firebase/database';
+import { getAuth } from 'firebase/auth';
 
 // Firebase configuration
 // TODO: Replace with your Firebase project credentials
@@ -17,10 +18,12 @@ const firebaseConfig = {
 // Initialize Firebase
 let app;
 let database;
+let auth;
 
 try {
   app = initializeApp(firebaseConfig);
   database = getDatabase(app);
+  auth = getAuth(app);
   console.log('✅ Firebase initialized successfully');
 } catch (error) {
   console.error('❌ Firebase initialization error:', error);
@@ -323,4 +326,4 @@ export const subscribeToTestimonials = (callback, limit = 20) => {
   });
 };
 
-export { database };
+export { database, auth };

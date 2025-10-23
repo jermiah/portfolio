@@ -1,24 +1,40 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FiLock, FiCheck, FiX, FiLogOut, FiEye, FiLinkedin, FiEdit2, FiSave } from 'react-icons/fi';
+import { FiLock, FiCheck, FiX, FiLogOut, FiEye, FiLinkedin, FiEdit2, FiSave, FiMail } from 'react-icons/fi';
 import { getDatabase, ref, onValue, update } from 'firebase/database';
-import { database } from '../firebase';
+import { signInWithEmailAndPassword, signOut, onAuthStateChanged } from 'firebase/auth';
+import { database, auth } from '../firebase';
 
 const AdminPanel = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [testimonials, setTestimonials] = useState([]);
   const [loading, setLoading] = useState(false);
   const [editingId, setEditingId] = useState(null);
   const [editForm, setEditForm] = useState({});
+  const [authLoading, setAuthLoading] = useState(true);
 
-  // Check if already authenticated in session
+  // Monitor Firebase Auth state
   useEffect(() => {
-    const isAdmin = sessionStorage.getItem('isAdmin');
-    if (isAdmin === 'true') {
-      setIsAuthenticated(true);
+    if (!auth) {
+      setAuthLoading(false);
+      return;
     }
+
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        console.log('✅ User authenticated:', user.email);
+        setIsAuthenticated(true);
+      } else {
+        console.log('❌ User not authenticated');
+        setIsAuthenticated(false);
+      }
+      setAuthLoading(false);
+    });
+
+    return () => unsubscribe();
   }, []);
 
   // Load testimonials when authenticated
@@ -42,26 +58,51 @@ const AdminPanel = () => {
     return () => unsubscribe();
   }, [isAuthenticated]);
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
     setError('');
+    setLoading(true);
 
-    // Simple password protection - you can change this password
-    // For production, use environment variable: import.meta.env.VITE_ADMIN_PASSWORD
-    const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD || 'admin123';
+    if (!auth) {
+      setError('Firebase Authentication not initialized');
+      setLoading(false);
+      return;
+    }
 
-    if (password === ADMIN_PASSWORD) {
-      setIsAuthenticated(true);
-      sessionStorage.setItem('isAdmin', 'true');
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+      console.log('✅ Login successful');
+      setEmail('');
       setPassword('');
-    } else {
-      setError('Invalid password');
+    } catch (error) {
+      console.error('❌ Login error:', error);
+
+      // User-friendly error messages
+      if (error.code === 'auth/invalid-credential' || error.code === 'auth/wrong-password') {
+        setError('Invalid email or password');
+      } else if (error.code === 'auth/user-not-found') {
+        setError('No admin account found. Please create one in Firebase Console.');
+      } else if (error.code === 'auth/invalid-email') {
+        setError('Invalid email address');
+      } else if (error.code === 'auth/too-many-requests') {
+        setError('Too many failed attempts. Please try again later.');
+      } else {
+        setError(`Login failed: ${error.message}`);
+      }
+    } finally {
+      setLoading(false);
     }
   };
 
-  const handleLogout = () => {
-    setIsAuthenticated(false);
-    sessionStorage.removeItem('isAdmin');
+  const handleLogout = async () => {
+    if (!auth) return;
+
+    try {
+      await signOut(auth);
+      console.log('✅ Logout successful');
+    } catch (error) {
+      console.error('❌ Logout error:', error);
+    }
   };
 
   const handleApprove = async (testimonialId) => {
@@ -141,6 +182,17 @@ const AdminPanel = () => {
   };
 
   // Login Form
+  if (authLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gray-900">
+        <div className="text-white text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mx-auto mb-4"></div>
+          <p className="text-gray-400">Loading...</p>
+        </div>
+      </div>
+    );
+  }
+
   if (!isAuthenticated) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-900 px-4">
@@ -154,21 +206,41 @@ const AdminPanel = () => {
               <FiLock className="w-8 h-8 text-blue-400" />
             </div>
           </div>
-          <h1 className="text-2xl font-bold text-white text-center mb-6">
+          <h1 className="text-2xl font-bold text-white text-center mb-2">
             Admin Panel
           </h1>
+          <p className="text-sm text-gray-400 text-center mb-6">
+            Sign in with your Firebase admin account
+          </p>
           <form onSubmit={handleLogin} className="space-y-4">
             <div>
               <label className="block text-sm font-medium text-gray-300 mb-2">
+                <FiMail className="inline mr-2" />
+                Email Address
+              </label>
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="admin@example.com"
+                className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                required
+                disabled={loading}
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-300 mb-2">
+                <FiLock className="inline mr-2" />
                 Password
               </label>
               <input
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                placeholder="Enter admin password"
+                placeholder="Enter your password"
                 className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 required
+                disabled={loading}
               />
             </div>
             {error && (
@@ -178,14 +250,30 @@ const AdminPanel = () => {
             )}
             <button
               type="submit"
-              className="w-full py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition-colors"
+              disabled={loading}
+              className="w-full py-3 bg-blue-500 hover:bg-blue-600 disabled:bg-blue-500/50 disabled:cursor-not-allowed text-white font-semibold rounded-lg transition-colors flex items-center justify-center gap-2"
             >
-              Login
+              {loading ? (
+                <>
+                  <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
+                  Signing in...
+                </>
+              ) : (
+                'Sign In'
+              )}
             </button>
           </form>
-          <p className="text-xs text-gray-500 text-center mt-4">
-            Access restricted to administrators only
-          </p>
+          <div className="mt-6 p-4 bg-gray-900 rounded-lg border border-gray-700">
+            <p className="text-xs text-gray-400 mb-2">
+              <strong className="text-gray-300">First time setup?</strong>
+            </p>
+            <ol className="text-xs text-gray-400 space-y-1 list-decimal list-inside">
+              <li>Go to Firebase Console</li>
+              <li>Navigate to Authentication</li>
+              <li>Enable Email/Password sign-in</li>
+              <li>Add a new user with admin email</li>
+            </ol>
+          </div>
         </motion.div>
       </div>
     );

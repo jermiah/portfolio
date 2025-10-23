@@ -180,7 +180,7 @@ const Hero = () => {
           >
             <FiUsers className="w-4 h-4" />
             <span className="font-semibold text-sm">
-              {visitorCount.toLocaleString()} {visitorCount === 1 ? 'Visitor' : 'Visitors'}
+              {visitorCount.toLocaleString()} {visitorCount === 1 ? 'Unique Visitor' : 'Unique Visitors'}
             </span>
             {/* Tooltip */}
             <div className="absolute bottom-full mb-2 hidden group-hover:block w-64 p-3 bg-gray-900 dark:bg-gray-800 text-white text-xs rounded-lg shadow-xl z-50">

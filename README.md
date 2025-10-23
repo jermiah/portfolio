@@ -28,9 +28,9 @@ A modern, interactive, and bilingual portfolio website built with React, Vite, T
 - 🎨 **Particle Background** - Animated canvas background with connected particles
 
 ### Admin Features
-- 🔐 **Admin Panel** - Password-protected admin dashboard
+- 🔐 **Admin Panel** - Firebase Authentication-protected admin dashboard
 - ✅ **Testimonial Management** - Approve, reject, and edit testimonials
-- 🔥 **Firebase Integration** - Real-time database for testimonials
+- 🔥 **Firebase Integration** - Real-time database and authentication
 - 📊 **Content Management** - Easy JSON-based content editing
 
 ---
