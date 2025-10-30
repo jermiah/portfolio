@@ -131,7 +131,7 @@ portfolio/
 
 ---
 
-## 🎯 Key Sections
+##  Key Sections
 
 ### 1. Hero Section
 - Animated greeting with typing effect
