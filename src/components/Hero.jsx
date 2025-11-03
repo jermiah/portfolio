@@ -156,7 +156,7 @@ const Hero = () => {
             className="h-8 md:h-12 w-auto transition-transform"
           />
           <p className="text-base md:text-lg text-blue-300 dark:text-blue-300 text-center">
-            Member — The AI Collective, Paris Chapter
+            Core Committee Member — The AI Collective, Paris Chapter
           </p>
         </motion.div>
 

@@ -21,6 +21,11 @@ function App() {
   const [isDark, setIsDark] = useState(true);
   const [showAdmin, setShowAdmin] = useState(false);
 
+  // Scroll to top on page load/refresh
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   // Check if current URL is admin page
   useEffect(() => {
     const path = window.location.hash;
