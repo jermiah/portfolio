@@ -1,41 +1,41 @@
-# 🚀 Modern Portfolio Template
+#  Modern Portfolio Template
 
 A modern, interactive, and bilingual portfolio website built with React, Vite, TailwindCSS, Framer Motion, and Firebase. Features smooth animations, dark/light theme toggle, dynamic content management,real-time testimonials , visitor counts, and likes!
 
 🌐 **Live Demo**: [https://jermiah.github.io/portfolio](https://jermiah.github.io/portfolio)
 
-⭐ **If you like this template, please give it a star!**
+ **If you like this template, please give it a star!**
 
-🍴 **Want to use this for your own portfolio? Fork it and follow the setup guide!**
+ **Want to use this for your own portfolio? Fork it and follow the setup guide!**
 
 ---
 
-## ✨ Features
+##  Features
 
 ### Core Features
-- 🎨 **Modern Design** - Elegant, professional design with smooth animations
-- 🌓 **Dark/Light Theme** - Smooth theme transitions with localStorage persistence
-- 🌍 **Bilingual Support** - English/French language toggle (EN/FR)
-- 📱 **Fully Responsive** - Mobile-first design that works on all devices
-- ⚡ **Fast & Optimized** - Built with Vite for lightning-fast performance
+-  **Modern Design** - Elegant, professional design with smooth animations
+-  **Dark/Light Theme** - Smooth theme transitions with localStorage persistence
+-  **Bilingual Support** - English/French language toggle (EN/FR)
+-  **Fully Responsive** - Mobile-first design that works on all devices
+-  **Fast & Optimized** - Built with Vite for lightning-fast performance
 
 ### Interactive Elements
-- 🎭 **Framer Motion Animations** - Scroll-triggered reveals, hover effects, smooth transitions
-- 🎯 **Animated Hero** - Typing effect and animated testimonial carousel
-- 🎠 **Project Carousel** - Swipeable project categories with smooth animations
-- 📝 **Real-time Testimonials** - Firebase-powered testimonial system with carousel
-- ❤️ **Like Button** - Fun recommendation feature with confetti animation
-- 🎨 **Particle Background** - Animated canvas background with connected particles
+-  **Framer Motion Animations** - Scroll-triggered reveals, hover effects, smooth transitions
+-  **Animated Hero** - Typing effect and animated testimonial carousel
+-  **Project Carousel** - Swipeable project categories with smooth animations
+-  **Real-time Testimonials** - Firebase-powered testimonial system with carousel
+-  **Like Button** - Fun recommendation feature with confetti animation
+-  **Particle Background** - Animated canvas background with connected particles
 
 ### Admin Features
-- 🔐 **Admin Panel** - Firebase Authentication-protected admin dashboard
-- ✅ **Testimonial Management** - Approve, reject, and edit testimonials
-- 🔥 **Firebase Integration** - Real-time database and authentication
-- 📊 **Content Management** - Easy JSON-based content editing
+-  **Admin Panel** - Firebase Authentication-protected admin dashboard
+-  **Testimonial Management** - Approve, reject, and edit testimonials
+-  **Firebase Integration** - Real-time database and authentication
+-  **Content Management** - Easy JSON-based content editing
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Framework**: React 18
 - **Build Tool**: Vite 5
@@ -49,7 +49,7 @@ A modern, interactive, and bilingual portfolio website built with React, Vite, T
 
 ---
 
-## 📚 Documentation
+##  Documentation
 
 ### Quick Links
 - **[Setup Guide](./SETUP.md)** - Fork, customize, and deploy your portfolio
@@ -59,7 +59,7 @@ A modern, interactive, and bilingual portfolio website built with React, Vite, T
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ```bash
 # Clone the repository
@@ -83,7 +83,7 @@ Visit `http://localhost:5173` to see your portfolio locally.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 portfolio/
@@ -131,7 +131,7 @@ portfolio/
 
 ---
 
-## 🎯 Key Sections
+##  Key Sections
 
 ### 1. Hero Section
 - Animated greeting with typing effect
@@ -186,7 +186,7 @@ portfolio/
 
 ---
 
-## 🎨 Customization
+##  Customization
 
 ### Theme Colors
 Edit `tailwind.config.js` to customize brand colors:
@@ -230,7 +230,7 @@ main {
 
 ---
 
-## 🌐 Features Details
+##  Features Details
 
 ### Language Toggle
 - Automatic language detection from localStorage
@@ -259,7 +259,7 @@ main {
 
 ---
 
-## 📱 Browser Support
+##  Browser Support
 
 - ✅ Chrome (latest)
 - ✅ Firefox (latest)
@@ -269,7 +269,7 @@ main {
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Build Issues
 ```bash
@@ -298,7 +298,7 @@ npm run deploy
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! If you have suggestions for improvements:
 
@@ -316,40 +316,40 @@ Contributions are welcome! If you have suggestions for improvements:
 
 ---
 
-## 📄 License
+##  License
 
 This project is open source and available under the MIT License. Feel free to use it for your personal portfolio!
 
 ---
 
-## 👤 Author
+##  Author
 
 **Jermiah Jerome**
 
-- 🌐 Portfolio: [https://jermiah.github.io/portfolio](https://jermiah.github.io/portfolio)
-- 💼 LinkedIn: [jermiah-jerome](https://www.linkedin.com/in/jermiah-jerome/)
-- 🐙 GitHub: [@jermiah](https://github.com/jermiah)
-- 📧 Email: jermiah.jerome96@gmail.com
+-  Portfolio: [https://jermiah.github.io/portfolio](https://jermiah.github.io/portfolio)
+-  LinkedIn: [jermiah-jerome](https://www.linkedin.com/in/jermiah-jerome/)
+-  GitHub: [@jermiah](https://github.com/jermiah)
+-  Email: jermiah.jerome96@gmail.com
 
 ---
 
 ## 📊 Performance
 
-- ⚡ Lighthouse Score: 95+ (Performance, Accessibility, Best Practices, SEO)
-- 📦 Bundle Size: Optimized with Vite
-- 🚀 Load Time: < 2 seconds on 3G
-- ♿ Accessibility: WCAG 2.1 AA compliant
+-  Lighthouse Score: 95+ (Performance, Accessibility, Best Practices, SEO)
+-  Bundle Size: Optimized with Vite
+-  Load Time: < 2 seconds on 3G
+-  Accessibility: WCAG 2.1 AA compliant
 
 ---
 
-## 🌟 Show Your Support
+##  Show Your Support
 
 If this template helped you create your portfolio:
 
-- ⭐ Star this repository
-- 🍴 Fork it for your own use
-- 💬 Share it with others
-- 🤝 Contribute improvements
+-  Star this repository
+-  Fork it for your own use
+-  Share it with others
+-  Contribute improvements
 
 ---
 
