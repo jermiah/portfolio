@@ -97,10 +97,27 @@ const Showcase = () => {
               href={showcase.community.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block text-primary-light dark:text-primary-dark font-semibold hover:underline"
+              className="inline-block text-primary-light dark:text-primary-dark font-semibold hover:underline mb-4"
             >
               View Community Post →
             </a>
+            {showcase.community.memberships && showcase.community.memberships.length > 0 && (
+              <ul className="space-y-3 mt-6 pt-4 border-t border-gray-200 dark:border-gray-700">
+                {showcase.community.memberships.map((membership, index) => (
+                  <motion.li
+                    key={index}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: index * 0.1 }}
+                    className="flex items-center gap-3 text-gray-700 dark:text-gray-300"
+                  >
+                    <FiUsers className="w-5 h-5 text-primary-light dark:text-primary-dark flex-shrink-0" />
+                    <span className="text-base md:text-lg font-medium">{membership}</span>
+                  </motion.li>
+                ))}
+              </ul>
+            )}
           </motion.div>
         )}
 

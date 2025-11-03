@@ -144,6 +144,22 @@ const Hero = () => {
           {t('hero.subtitle')}
         </motion.p>
 
+        {/* AI Collective Membership */}
+        <motion.div
+          variants={itemVariants}
+          className="flex items-center justify-center gap-3 mb-6"
+        >
+          <motion.img
+            whileHover={{ scale: 1.05 }}
+            src="/portfolio/Logo.svg"
+            alt="The AI Collective Logo"
+            className="h-8 md:h-12 w-auto transition-transform"
+          />
+          <p className="text-base md:text-lg text-blue-300 dark:text-blue-300 text-center">
+            Member — The AI Collective, Paris Chapter
+          </p>
+        </motion.div>
+
         {/* Contact Info */}
         <motion.div
           variants={itemVariants}

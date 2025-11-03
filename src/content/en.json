@@ -163,10 +163,10 @@
       "period": "July 2025 – Present",
       "location": "Paris, France",
       "description": [
-        "Researching efficient small language model (SLM) architectures for real-world deployment and reasoning efficiency.",
-        "Developing end-to-end ML solutions — data pipelines, API integrations, and fine-tuning small models using SFT, GRPO, and quantization.",
-        "Building a dynamic questionnaire-to-solution agent framework that captures business pain points and generates automated deliverables.",
-        "Collaborating with clients to refine agentic AI workflows aligned with responsible AI principles and cost-efficient inference."
+        "Researching efficient small language model architectures for deployment.",
+        "Deployed scalable language models inference solutions using vLLM for fast API-based model serving, integrated with custom data pipelines. Fine-tuned small language models (SFT, GRPO) using Hugging Face to optimize reasoning efficiency.",
+        "Built DocuBench to benchmark document analysis tasks across 400+ AI models, enabling capability evaluation and comparison.",
+        "Contributed to building Ebideck, an agent-based dynamic questionnaire-to-solution framework that captures business pain points, generates customized deliverables, and automates outreach to prospects."
       ]
     },
     {
@@ -541,9 +541,12 @@
       ]
     },
     "community": {
-      "title": "Community Builder",
+      "title": "Community & Leadership",
       "description": "Creator of the Paris AI & Tech Community",
-      "link": "https://www.linkedin.com/posts/jermiah-jerome_paris-ai-tech-community-members-activity-7303817496346730496-QNPT"
+      "link": "https://www.linkedin.com/posts/jermiah-jerome_paris-ai-tech-community-members-activity-7303817496346730496-QNPT",
+      "memberships": [
+        "Member of The AI Collective – Paris Chapter"
+      ]
     },
     "hackathons": {
       "title": "Hackathons & Challenges",

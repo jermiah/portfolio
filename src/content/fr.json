@@ -162,10 +162,10 @@
         "period": "Juillet 2025 – Présent",
         "location": "Paris, France",
         "description": [
-          "Recherche sur les architectures de petits modèles de langage (SLM) efficaces pour le déploiement réel et l'efficacité du raisonnement.",
-          "Développement de solutions ML de bout en bout — pipelines de données, intégrations API, et ajustement de petits modèles avec SFT, GRPO et quantification.",
-          "Construction d'un framework d'agent dynamique questionnaire-à-solution qui capture les points de douleur métier et génère des livrables automatisés.",
-          "Collaboration avec les clients pour affiner les flux de travail d'IA agentique alignés sur les principes d'IA responsable et l'inférence rentable."
+          "Recherche sur les architectures de petits modèles de langage efficaces pour le déploiement.",
+          "Déploiement de solutions d'inférence de modèles de langage évolutives utilisant vLLM pour un service de modèles rapide basé sur API, intégré avec des pipelines de données personnalisés. Affinage de petits modèles de langage (SFT, GRPO) à l'aide de Hugging Face pour optimiser l'efficacité du raisonnement.",
+          "Construction de DocuBench pour comparer les tâches d'analyse de documents sur plus de 400 modèles IA, permettant l'évaluation et la comparaison des capacités.",
+          "Contribution à la construction d'Ebideck, un framework dynamique basé sur les agents de questionnaire-à-solution qui capture les points de douleur métier, génère des livrables personnalisés et automatise la prospection."
         ]
       },
       {
@@ -539,9 +539,12 @@
       ]
     },
     "community": {
-      "title": "Bâtisseur de Communauté",
+      "title": "Communauté & Leadership",
       "description": "Créateur de la Communauté IA & Tech de Paris",
-      "link": "https://www.linkedin.com/posts/jermiah-jerome_paris-ai-tech-community-members-activity-7303817496346730496-QNPT"
+      "link": "https://www.linkedin.com/posts/jermiah-jerome_paris-ai-tech-community-members-activity-7303817496346730496-QNPT",
+      "memberships": [
+        "Membre de The AI Collective – Chapitre de Paris"
+      ]
     },
     "hackathons": {
       "title": "Hackathons & Défis",
