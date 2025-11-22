@@ -165,7 +165,8 @@
           "Recherche sur les architectures de petits modèles de langage efficaces pour le déploiement.",
           "Déploiement de solutions d'inférence de modèles de langage évolutives utilisant vLLM pour un service de modèles rapide basé sur API, intégré avec des pipelines de données personnalisés. Affinage de petits modèles de langage (SFT, GRPO) à l'aide de Hugging Face pour optimiser l'efficacité du raisonnement.",
           "Construction de DocuBench pour comparer les tâches d'analyse de documents sur plus de 400 modèles IA, permettant l'évaluation et la comparaison des capacités.",
-          "Contribution à la construction d'Ebideck, un framework dynamique basé sur les agents de questionnaire-à-solution qui capture les points de douleur métier, génère des livrables personnalisés et automatise la prospection."
+          "Contribution à la construction d'Ebideck, un framework dynamique basé sur les agents de questionnaire-à-solution qui capture les points de douleur métier, génère des livrables personnalisés et automatise la prospection.",
+          "Développement actuellement de Bengodoc Document Organizer qui automatise l'analyse des documents, le regroupement des pages et l'extraction structurée en utilisant des pipelines hybrides d'OCR + récupération et raisonnement LLM."
         ]
       },
       {
@@ -556,6 +557,10 @@
         {
           "name": "🏆 Gagnant – Paris Open Build (Mistral + Windsurf)",
           "link": "https://www.linkedin.com/posts/jermiah-jerome_ai-vibecoding-aiagents-activity-7368768781667467264-7_at?utm_source=share&utm_medium=member_desktop&rcm=ACoAACq09WUBzILj3ZIoG_SJNGbuRMhzVPyVcHs"
+        },
+        {
+          "name": "🏆 Gagnant –  The AI Collective × BLACKBOX.AI Hackathon",
+          "link": "https://www.linkedin.com/posts/jermiah-jerome_hackathon-ai-accessibility-activity-7386572758198968320-5eWO?utm_source=share&utm_medium=member_desktop&rcm=ACoAACq09WUBzILj3ZIoG_SJNGbuRMhzVPyVcHs"
         },
         {
           "name": "Hackathon IA Novartis",

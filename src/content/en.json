@@ -166,7 +166,8 @@
         "Researching efficient small language model architectures for deployment.",
         "Deployed scalable language models inference solutions using vLLM for fast API-based model serving, integrated with custom data pipelines. Fine-tuned small language models (SFT, GRPO) using Hugging Face to optimize reasoning efficiency.",
         "Built DocuBench to benchmark document analysis tasks across 400+ AI models, enabling capability evaluation and comparison.",
-        "Contributed to building Ebideck, an agent-based dynamic questionnaire-to-solution framework that captures business pain points, generates customized deliverables, and automates outreach to prospects."
+        "Contributed to building Ebideck, an agent-based dynamic questionnaire-to-solution framework that captures business pain points, generates customized deliverables, and automates outreach to prospects.",
+        "Currently developing Bengodoc Document Organizer that automates document parsing, page grouping, and structured extraction using hybrid OCR + LLM retrieval and reasoning pipelines."
       ]
     },
     {
@@ -558,6 +559,10 @@
         {
           "name": "🏆 Winner – Paris Open Build (Mistral + Windsurf)",
           "link": "https://www.linkedin.com/posts/jermiah-jerome_ai-vibecoding-aiagents-activity-7368768781667467264-7_at?utm_source=share&utm_medium=member_desktop&rcm=ACoAACq09WUBzILj3ZIoG_SJNGbuRMhzVPyVcHs"
+        },
+                {
+          "name": "🏆 Winner –  The AI Collective × BLACKBOX.AI Hackathon",
+          "link": "https://www.linkedin.com/posts/jermiah-jerome_hackathon-ai-accessibility-activity-7386572758198968320-5eWO?utm_source=share&utm_medium=member_desktop&rcm=ACoAACq09WUBzILj3ZIoG_SJNGbuRMhzVPyVcHs"
         },
         {
           "name": "Novartis AI Hackathon",
