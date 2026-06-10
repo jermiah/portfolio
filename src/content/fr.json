@@ -157,9 +157,22 @@
     "title": "Expérience",
     "items": [
       {
+        "company": "Foundever",
+        "position": "Ingénieur IA Conversationnelle",
+        "period": "Février 2026 – Présent",
+        "location": "Paris, France",
+        "description": [
+          "Pilotage de déploiements d'IA conversationnelle pour des clients grands comptes, notamment Volkswagen Financial Services, Bath & Body Works et Edenred, sur des parcours d'agents vocaux et chat.",
+          "Amélioration du taux moyen de containment des voice bots de 45% à 75% grâce à l'orchestration multi-agents, la restructuration des workflows, le prompt engineering, l'optimisation des bases de connaissances et des flux conversationnels.",
+          "Développement et déploiement d'agents vocaux germanophones avec Cognigy, Deepgram, Azure Neural TTS, Azure OpenAI, EverDesk CRM et des intégrations de validation de contrats.",
+          "Configuration d'Azure OpenAI sur Azure AI Foundry avec guardrails, filtrage de contenu, transfert SMS et appels via CXone, et handover Zendesk pour des agents de service client en production.",
+          "Administration du tenant Cognigy global, gestion des connexions LLM propres à chaque client et standardisation de l'isolation des ressources pour la conformité sur plusieurs déploiements."
+        ]
+      },
+      {
         "company": "Daijobu AI",
         "position": "Ingénieur IA (Stagiaire)",
-        "period": "Juillet 2025 – Présent",
+        "period": "Juillet 2025 – Janvier 2026",
         "location": "Paris, France",
         "description": [
           "Recherche sur les architectures de petits modèles de langage efficaces pour le déploiement.",

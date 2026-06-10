@@ -158,9 +158,22 @@
   "title": "Experience",
   "items": [
     {
+      "company": "Foundever",
+      "position": "Conversational AI Engineer",
+      "period": "February 2026 – Present",
+      "location": "Paris, France",
+      "description": [
+        "Leading conversational AI deployments for enterprise clients including Volkswagen Financial Services, Bath & Body Works, and Edenred across voice and chat agent workflows.",
+        "Improved average containment rates across deployed voice bots from 45% to 75% through multi-agent orchestration, workflow restructuring, prompt engineering, knowledge-base tuning, and flow optimization.",
+        "Developed and deployed German-language voice agents using Cognigy, Deepgram, Azure Neural TTS, Azure OpenAI, EverDesk CRM, and contract validation integrations.",
+        "Configured Azure OpenAI on Azure AI Foundry with guardrails, content filtering, SMS and call transfer via CXone, and Zendesk handover for production customer-service agents.",
+        "Administering the global Cognigy tenant, managing client-specific LLM connections, and standardizing resource isolation for compliance across multiple deployments."
+      ]
+    },
+    {
       "company": "Daijobu AI",
       "position": "AI Engineer (Intern)",
-      "period": "July 2025 – Present",
+      "period": "July 2025 – January 2026",
       "location": "Paris, France",
       "description": [
         "Researching efficient small language model architectures for deployment.",
