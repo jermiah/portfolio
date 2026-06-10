@@ -6,13 +6,13 @@ import { getAuth } from 'firebase/auth';
 // TODO: Replace with your Firebase project credentials
 // Get these from: Firebase Console → Project Settings → Your apps → Web app
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "YOUR_API_KEY_HERE",
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || "YOUR_AUTH_DOMAIN_HERE",
-  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL || "YOUR_DATABASE_URL_HERE",
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "YOUR_PROJECT_ID_HERE",
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || "YOUR_STORAGE_BUCKET_HERE",
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "YOUR_MESSAGING_SENDER_ID_HERE",
-  appId: import.meta.env.VITE_FIREBASE_APP_ID || "YOUR_APP_ID_HERE"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "AIzaSyDsp1wpU3fvqqYG7S30Iwg3GcmTyKsnKwc",
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || "portfolio-recommendation-b5dd3.firebaseapp.com",
+  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL || "https://portfolio-recommendation-b5dd3-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "portfolio-recommendation-b5dd3",
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || "portfolio-recommendation-b5dd3.firebasestorage.app",
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "263692658555",
+  appId: import.meta.env.VITE_FIREBASE_APP_ID || "1:263692658555:web:c680fae5d41ad680643fde"
 };
 
 // Initialize Firebase
